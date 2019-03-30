@@ -1,0 +1,3924 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/icdo/"
+     xml:base="http://purl.obolibrary.org/obo/icdo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/icdo.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/BFO_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/OGMS_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/PATO_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/UBERON_imports.owl"/>
+        <obo:IAO_0000115>ICDO: International Classification of Diseases Ontology</obo:IAO_0000115>
+        <dc:contributor>Edison Ong</dc:contributor>
+        <oboInOwl:created_by>Ling Wan</oboInOwl:created_by>
+        <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
+        <oboInOwl:creation_date>3-30-2019</oboInOwl:creation_date>
+        <owl:versionInfo>1.0.3</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000005 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000005">
+        <rdfs:label xml:lang="en">has gbt_14396 code</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000006 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000006">
+        <rdfs:label xml:lang="en">has icd11 code</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000017 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000017">
+        <rdfs:label xml:lang="en">definition reference source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000035 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000035">
+        <rdfs:label xml:lang="en">has_alternative_id in icd10</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000039 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000039">
+        <rdfs:label xml:lang="en">has icd10 code</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000042 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000042">
+        <rdfs:label xml:lang="en">has quality of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000053">
+        <rdfs:label xml:lang="en">caused by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000078 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000078">
+        <rdfs:label xml:lang="en">occurs in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000081 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000081">
+        <rdfs:label xml:lang="en">has disease output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000109 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000109">
+        <rdfs:label xml:lang="en">has icd11 code</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
+        <obo:IAO_0000115>Disease process is the progression disease in an individual over time. The process begins with the appropriate exposure to or accumulation of factors sufficient for the disease process to begin in a susceptible host. For an infectious disease, the exposure is a microorganism. For cancer, the exposure may be a factor that initiates the process, such as asbestos fibers or components in tobacco smoke (for lung cancer), or one that promotes the process, such as estrogen (for endometrial cancer).</obo:IAO_0000115>
+        <obo:ICDO_0000017>https://www.cdc.gov/ophss/csels/dsepd/ss1978/lesson1/section9.html</obo:ICDO_0000017>
+        <oboInOwl:hasExactSynonym xml:lang="en">disorder</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">disease process</rdfs:label>
+        <rdfs:label xml:lang="zh">疾病过程</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001690"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">diseases of the ear or mastoid process DP</rdfs:label>
+        <rdfs:label xml:lang="zh">耳或乳突疾病</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000003">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000107"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000107"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">atresia DP</rdfs:label>
+        <rdfs:label xml:lang="zh">闭锁</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">infectious diseases of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳感染性疾病</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000007">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">disease of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳疾病</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:label xml:lang="en">ossification DP</rdfs:label>
+        <rdfs:label xml:lang="zh">骨化</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:label xml:lang="en">cellulitis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">蜂窝织炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000010">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000044"/>
+        <obo:ICDO_0000005>H60.900</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">otitis externa DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">infectious</rdfs:label>
+        <rdfs:label xml:lang="zh">感染性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000013">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000088"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000088"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">is a major abnormality in the shape of a body part or organ compared to the normal shape of that part.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">deformity DP</rdfs:label>
+        <rdfs:label xml:lang="en">畸形</rdfs:label>
+        <rdfs:label xml:lang="zh">畸形</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000014">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000096"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:label xml:lang="en">cholesteatoma DP</rdfs:label>
+        <rdfs:label xml:lang="zh">胆脂瘤</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000015">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001757"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000102"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000020"/>
+        <obo:ICDO_0000005>H61.102</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">pinna fistula DP</rdfs:label>
+        <rdfs:label xml:lang="zh">耳郭瘘</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000090"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">noninfectious inflammation of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳非感染性炎症</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <obo:IAO_0000115>A disease process that has the outcome of the formation of a cyst</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cyst DP</rdfs:label>
+        <rdfs:label xml:lang="zh">囊肿</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001690"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="zh">inflammatory object in ear</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">otitis</rdfs:label>
+        <rdfs:label xml:lang="zh">耳炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000020">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000102"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000102"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">fistula DP</rdfs:label>
+        <rdfs:label xml:lang="zh">瘘</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000044"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000099"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">granuloma DP</rdfs:label>
+        <rdfs:label xml:lang="zh">肉芽肿</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:label xml:lang="en">noninflammatory disorders DP</rdfs:label>
+        <rdfs:label xml:lang="zh">非炎症性疾病</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">tumor DP</rdfs:label>
+        <rdfs:label xml:lang="zh">肿物</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000024">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000097"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000059"/>
+        <rdfs:label xml:lang="en">scar DP</rdfs:label>
+        <rdfs:label xml:lang="zh">瘢痕</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000022"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">noninflammatory disorders of the external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">非炎症性外耳疾患</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000026">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000084"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000084"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A hernia occurs when an organ pushes through an opening in the muscle or tissue that holds it in place. For example, the intestines may break through a weakened area in the abdominal wall.
+Hernias are most common in the abdomen, but they can also appear in the upper thigh, belly button, and groin areas. Most hernias aren’t immediately life-threatening, but they don’t go away on their own. Sometimes they can require surgery to prevent potentially dangerous complications.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.healthline.com/health/hernia</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">hernia DP</rdfs:label>
+        <rdfs:label xml:lang="zh">疝</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000141"/>
+        <rdfs:label xml:lang="en">obstructive</rdfs:label>
+        <rdfs:label xml:lang="zh">阻塞性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001690"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">otitis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">耳炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:label xml:lang="en">stenosis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">狭窄</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000030">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000103"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000103"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">pseudocyst DP</rdfs:label>
+        <rdfs:label xml:lang="zh">假性囊肿</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000044"/>
+        <oboInOwl:hasExactSynonym xml:lang="zh">感染</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">infectious disease DP</rdfs:label>
+        <rdfs:label xml:lang="zh">感染性疾病过程</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:label xml:lang="en">immune system disease process DP</rdfs:label>
+        <rdfs:label xml:lang="zh">免疫系统疾病过程</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002062"/>
+        <oboInOwl:hasExactSynonym xml:lang="zh">获得性</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym xml:lang="zh">烧伤后</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">acquired</rdfs:label>
+        <rdfs:label xml:lang="zh">后天性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:label xml:lang="en">other</rdfs:label>
+        <rdfs:label xml:lang="zh">其他的</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:label xml:lang="en">specified</rdfs:label>
+        <rdfs:label xml:lang="zh">特指的</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:label xml:lang="en">unspecified</rdfs:label>
+        <rdfs:label xml:lang="zh">非特指的</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <rdfs:label xml:lang="en">diseases claasified elsewhere</rdfs:label>
+        <rdfs:label xml:lang="zh">可分类于他处的疾病</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">necrotic otitis externa LHPM</rdfs:label>
+        <rdfs:label xml:lang="zh">坏死性外耳炎 LHPM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">a disease process of a tissue reaction to an internal or external injury.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">http://purl.obolibrary.org/obo/MPATH_212</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">inflammation disease process DP</rdfs:label>
+        <rdfs:label xml:lang="zh">炎症</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000054"/>
+        <rdfs:label xml:lang="en">Aspergillus</rdfs:label>
+        <rdfs:label xml:lang="zh">曲霉菌</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000054"/>
+        <rdfs:label xml:lang="en">Candida</rdfs:label>
+        <rdfs:label xml:lang="zh">念珠菌</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">chemical</rdfs:label>
+        <rdfs:label xml:lang="zh">化学性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:label xml:lang="en">necrosis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">坏死</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000048"/>
+        <rdfs:label xml:lang="en">severe necrosis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">严重坏死</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002062"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000050"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">diffuse</rdfs:label>
+        <rdfs:label xml:lang="zh">弥漫性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">hemorrhagic</rdfs:label>
+        <rdfs:label xml:lang="zh">出血性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000064"/>
+        <rdfs:label xml:lang="en">water</rdfs:label>
+        <rdfs:label xml:lang="zh">水</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <rdfs:label xml:lang="en">fungus</rdfs:label>
+        <rdfs:label xml:lang="zh">真菌</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000055">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000124"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">perichondritis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">软骨膜炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000093"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002418"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000131"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">chondrodermatitis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">软骨皮炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">nodularis</rdfs:label>
+        <rdfs:label xml:lang="zh">结节性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">noninfectious</rdfs:label>
+        <rdfs:label xml:lang="zh">非感染性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">skin disease DP</rdfs:label>
+        <rdfs:label xml:lang="zh">皮肤疾病</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000116"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasRelatedSynonym xml:lang="zh">疖</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">abscess DP</rdfs:label>
+        <rdfs:label xml:lang="zh">脓肿</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">seborrhoeic</rdfs:label>
+        <rdfs:label xml:lang="zh">脂溢性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">noninflammatory</rdfs:label>
+        <rdfs:label xml:lang="zh">非炎症性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002062"/>
+        <rdfs:label xml:lang="en">cauliflower like</rdfs:label>
+        <rdfs:label xml:lang="zh">菜花样的</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">environment entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000065">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000098"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000024"/>
+        <rdfs:label xml:lang="en">keloid DP</rdfs:label>
+        <rdfs:label xml:lang="zh">瘢痕瘤</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000066">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000108"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">exostosis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外生骨疣</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">hematoma</rdfs:label>
+        <rdfs:label xml:lang="zh">血肿</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000059"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000106"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym xml:lang="zh">角化症</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">keratosis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">角化病</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115>is a closed sac, having a distinct membrane and division compared with the nearby tissue. Hence, it is a cluster of cells that has grouped together to form a sac (not unlike the manner in which water molecules group together, forming a bubble); however, the distinguishing aspect of a cyst is that the cells forming the &quot;shell&quot; of such a sac are distinctly abnormal (in both appearance and behaviour) when compared with all surrounding cells for that given location. It may contain air, fluids, or semi-solid material. A collection of pus is called an abscess, not a cyst. Once formed, sometimes a cyst may resolve on its own. When a cyst fails to resolve, it may need to be removed surgically, but that would depend upon its type and location.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cyst</rdfs:label>
+        <rdfs:label xml:lang="zh">囊肿</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">actinic</rdfs:label>
+        <rdfs:label xml:lang="zh">光化性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">impacted</rdfs:label>
+        <rdfs:label xml:lang="zh">栓塞性的</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000064"/>
+        <rdfs:label xml:lang="en">chemical entity</rdfs:label>
+        <rdfs:label xml:lang="zh">化学物质</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000011"/>
+        <rdfs:label xml:lang="en">bacterial</rdfs:label>
+        <rdfs:label xml:lang="zh">细菌性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">parasitic</rdfs:label>
+        <rdfs:label xml:lang="zh">寄生性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">viral</rdfs:label>
+        <rdfs:label xml:lang="zh">病毒性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">eczematoid</rdfs:label>
+        <rdfs:label xml:lang="zh">湿疹样</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <rdfs:label xml:lang="en">pathological anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000059"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">erysipelas DP</rdfs:label>
+        <rdfs:label xml:lang="zh">丹毒</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115 xml:lang="zh">is the abnormal exit of tissue or an organ, such as the bowel, through the wall of the cavity in which it normally resides.[1] Hernias come in a number of different types.[6] Most commonly they involve the abdomen, specifically the groin.[6] Groin hernias are most common of the inguinal type but may also be femoral.[1] Other hernias include hiatus, incisional, and umbilical hernias.[6] Symptoms are present in about 66% of people with groin hernias.[1] This may include pain or discomfort especially with coughing, exercise, or going to the bathroom.[1] Often it gets worse throughout the day and improves when lying down.[1] A bulging area may occur that becomes larger when bearing down.[1] Groin hernias occur more often on the right than left side.[1] The main concern is strangulation, where the blood supply to part of the bowel is blocked.[1] This usually produces severe pain and tenderness of the area.[1] Hiatus or hiatal hernias often result in heartburn but may also cause chest pain or pain with eating.[</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">hernia</rdfs:label>
+        <rdfs:label xml:lang="zh">疝</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">necrotic</rdfs:label>
+        <rdfs:label xml:lang="zh">坏死性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001757"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000088"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">pinna defect after burn PKPM</rdfs:label>
+        <rdfs:label xml:lang="zh">烧伤后耳廓缺损 PKPM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000088"/>
+        <obo:IAO_0000115 xml:lang="en">is an irreversible condition that occurs when the external portion of the ear is hit and develops a blood clot or other collection of fluid under the perichondrium. This separates the cartilage from the overlying perichondrium that supplies its nutrients, causing it to die and resulting in the formation of fibrous tissue in the overlying skin. As a result, the outer ear becomes permanently swollen and deformed, resembling a cauliflower.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cauliflower ear</rdfs:label>
+        <rdfs:label xml:lang="zh">菜花耳</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115 xml:lang="en">abnormality in the shape of a body part or organ</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">defect</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="zh">缺损</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">deformity</rdfs:label>
+        <rdfs:label xml:lang="zh">畸形</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:label xml:lang="en">Obsolete class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000044"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000058"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">noninfectious inflammation DP</rdfs:label>
+        <rdfs:label xml:lang="zh">非感染性炎症</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000064"/>
+        <rdfs:label xml:lang="en">sunlight</rdfs:label>
+        <rdfs:label xml:lang="zh">日光</rdfs:label>
+        <rdfs:label xml:lang="zh">阳光</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">mycotic</rdfs:label>
+        <rdfs:label xml:lang="zh">真菌性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000093">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000014"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000044"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>dermatitis</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">dermatitis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">皮炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000125"/>
+        <oboInOwl:hasExactSynonym xml:lang="zh">枪伤</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">acquired from gun shoot</rdfs:label>
+        <rdfs:label xml:lang="zh">枪伤后</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000088"/>
+        <rdfs:label xml:lang="en">defect</rdfs:label>
+        <rdfs:label xml:lang="zh">缺损</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115>is a destructive and expanding growth consisting of keratinizing squamous epithelium in the middle ear and/or mastoid process. Cholesteatomas are not cancerous as the name may suggest, but can cause significant problems because of their erosive and expansile properties. This can result in the destruction of the bones of the middle ear (ossicles), as well as growth through the base of the skull into the brain. They often become infected and can result in chronically draining ears. Treatment almost always consists of surgical removal.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cholesteatoma</rdfs:label>
+        <rdfs:label xml:lang="zh">胆脂瘤</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115 xml:lang="en">is an area of fibrous tissue that replaces normal skin after an injury. Scars result from the biological process of wound repair in the skin, as well as in other organs and tissues of the body. Thus, scarring is a natural part of the healing process. With the exception of very minor lesions, every wound (e.g., after accident, disease, or surgery) results in some degree of scarring. An exception to this are animals with complete regeneration, which regrow tissue without scar formation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">scar</rdfs:label>
+        <rdfs:label xml:lang="zh">瘢痕</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000097"/>
+        <obo:IAO_0000115 xml:lang="zh">Keloid, also known as keloid disorder and keloidal scar,[1] is the formation of a type of scar which, depending on its maturity, is composed mainly of either type III (early) or type I (late) collagen. It is a result of an overgrowth of granulation tissue (collagen type 3) at the site of a healed skin injury which is then slowly replaced by collagen type 1. Keloids are firm, rubbery lesions or shiny, fibrous nodules, and can vary from pink to the color of the person&apos;s skin or red to dark brown in color. A keloid scar is benign and not contagious, but sometimes accompanied by severe itchiness, pain,[2] and changes in texture. In severe cases, it can affect movement of skin. Keloid scars are seen 15 times more frequently in people of sub-Saharan African descent than in people of European descent.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">keloid </rdfs:label>
+        <rdfs:label xml:lang="zh">瘢痕瘤</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115 xml:lang="zh">is a structure formed during inflammation that is found in many diseases. It is a collection of immune cells known as macrophages.[1] Granulomas form when the immune system attempts to wall off substances it perceives as foreign but is unable to eliminate. Such substances include infectious organisms including bacteria and fungi, as well as other materials such as keratin and suture fragments.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">granuloma</rdfs:label>
+        <rdfs:label xml:lang="zh">肉芽肿</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000100">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000110"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000110"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">cellulitis of external ear TSEM</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳蜂窝织炎 TSEM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <rdfs:label xml:lang="en">exostosis</rdfs:label>
+        <rdfs:label xml:lang="zh">外生骨疣</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115 xml:lang="en">is an abnormal connection between two hollow spaces (technically, two epithelialized surfaces), such as blood vessels, intestines, or other hollow organs. Fistulas are usually caused by injury or surgery, but they can also result from an infection or inflammation.[3] Fistulas are generally a disease condition, but they may be surgically created for therapeutic reasons.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">fistula</rdfs:label>
+        <rdfs:label xml:lang="zh">瘘</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115 xml:lang="zh">Pseudocysts are like cysts, but lack epithelial or endothelial cells. Initial management consists of general supportive care. Symptoms and complications caused by pseudocysts require surgery. Computed tomography (CT) scans are used for initial imaging of cysts, and endoscopic ultrasounds are used in differentiating between cysts and pseudocysts. Endoscopic drainage is a popular and effective method of treating pseudocysts.
+
+This is not to be confused with the so-called &quot;pseudocystic appearance&quot;, mainly radiographically, of other lesions, such as Stafne static bone cyst and aneurysmal bone cyst[1] of the jaws.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">pseudocyst</rdfs:label>
+        <rdfs:label xml:lang="zh">假性囊肿</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115 xml:lang="en">is a type of abnormal and excessive growth, called neoplasia, of tissue. The growth of a neoplasm is uncoordinated with that of the normal surrounding tissue, and it persists growing abnormally, even if the original trigger is removed.[1][2][3] This abnormal growth usually (but not always) forms a mass.[4] When it forms a mass, it may be called a tumor.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">neoplasm</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">tumor</rdfs:label>
+        <rdfs:label xml:lang="zh">肿物</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">inflammatory</rdfs:label>
+        <rdfs:label xml:lang="zh">炎症性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115 xml:lang="zh">is a growth of keratin on the skin or on mucous membranes stemming from keratinocytes, the prominent cell type in the epidermis.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="zh">角化病</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym xml:lang="zh">角质化</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">keratosis</rdfs:label>
+        <rdfs:label xml:lang="zh">角化症</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115>is a condition in which an orifice or passage in the body is (usually abnormally) closed or absent. Examples of atresia include: Biliary atresia, a condition in newborns in which the common bile duct between the liver and the small intestine is blocked or absent.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Atresia</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">atresia</rdfs:label>
+        <rdfs:label xml:lang="zh">闭锁</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115 xml:lang="en">An exostosis, also known as bone spur, is the formation of new bone on the surface of a bone.[1] Exostoses can cause chronic pain ranging from mild to debilitatingly severe, depending on the shape, size, and location of the lesion. It is most commonly found in places like the ribs, where small bone growths form, but sometimes larger growths can grow on places like the ankles, knees, shoulders, elbows and hips. Very rarely are they on the skull.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">exostosis</rdfs:label>
+        <rdfs:label xml:lang="zh">外生骨疣</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115 xml:lang="en">inflammation object in cellulite</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cellulitis</rdfs:label>
+        <rdfs:label xml:lang="zh">蜂窝织炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115>abnormal narrowed structure or organ</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">stenosis</rdfs:label>
+        <rdfs:label xml:lang="zh">狭窄</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115 xml:lang="en">is an acute infection typically with a skin rash, usually on any of the legs and toes, face, arms, and fingers.[1] It is an infection of the upper dermis and superficial lymphatics, usually caused by beta-hemolytic group A Streptococcus bacteria on scratches or otherwise infected areas.[2] Erysipelas is more superficial than cellulitis, and is typically more raised and demarcated.[1] The term is from Greek ἐρυσίπελας, meaning &quot;red skin&quot;.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">erysipelas</rdfs:label>
+        <rdfs:label xml:lang="zh">丹毒</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000113">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000116"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000060"/>
+        <obo:ICDO_0000005>H60.000</obo:ICDO_0000005>
+        <obo:ICDO_0000006>AA00</obo:ICDO_0000006>
+        <obo:ICDO_0000039>H60.0</obo:ICDO_0000039>
+        <oboInOwl:hasRelatedSynonym xml:lang="zh">疖</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym xml:lang="zh">痈</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">abscess of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳脓肿</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115>bony substance</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ossification</rdfs:label>
+        <rdfs:label xml:lang="zh">骨化</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115 xml:lang="en">inflammation object exist</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="zh">炎症</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">inflammation</rdfs:label>
+        <rdfs:label xml:lang="zh">炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115>is a collection of pus that has built up within the tissue of the body.[1] Signs and symptoms of abscesses include redness, pain, warmth, and swelling.[1] The swelling may feel fluid-filled when pressed.[1] The area of redness often extends beyond the swelling.[6] Carbuncles and boils are types of abscess that often involve hair follicles, with carbuncles being larger.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Abscess</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">abscess</rdfs:label>
+        <rdfs:label xml:lang="zh">脓肿</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000116"/>
+        <obo:IAO_0000115>is a cluster of boils caused by bacterial infection, most commonly with Staphylococcus aureus or Streptococcus pyogenes.[1] The presence of a carbuncle is a sign that the immune system is active and fighting the infection.[2] The infection is contagious and may spread to other areas of the body, or other people; those living in the same residence may develop carbuncles at the same time.[3] In the early 21st century, infection involving methicillin-resistant staphylococcus aureus (MRSA) has become more common.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Carbuncle</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">carbuncle</rdfs:label>
+        <rdfs:label xml:lang="zh">痈</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000116"/>
+        <obo:IAO_0000115>is a deep folliculitis, infection of the hair follicle. It is most commonly caused by infection by the bacterium Staphylococcus aureus, resulting in a painful swollen area on the skin caused by an accumulation of pus and dead tissue.[1] Boils which are expanded are basically pus-filled nodules.[2][verification needed] Individual boils clustered together are called carbuncles.[3] Most human infections are caused by coagulase-positive S. aureus strains, notable for the bacteria&apos;s ability to produce coagulase, an enzyme that can clot blood. Almost any organ system can be infected by S. aureus.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">boil</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">furuncle</rdfs:label>
+        <rdfs:label xml:lang="zh">疖</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000054"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">mycosis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">真菌病</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115 xml:lang="en">a necrotic object</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">necrosis</rdfs:label>
+        <rdfs:label xml:lang="zh">坏死</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000126"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000107"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">external acoustic meatus atresia after burn JY</rdfs:label>
+        <rdfs:label xml:lang="zh">烧伤后外耳道闭锁 JYPM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000096"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">cholesteatoma of external auditory canal JYEM</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳道胆脂瘤 JYEM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115 xml:lang="en">inflammation object in the skin of cartilage tissue</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">chondrodermatitis</rdfs:label>
+        <rdfs:label xml:lang="zh">软骨皮炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <obo:IAO_0000115 xml:lang="en">inflammation object in the membrane of cartilage tissue</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">perichondritis</rdfs:label>
+        <rdfs:label xml:lang="zh">软骨膜炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000034"/>
+        <rdfs:label xml:lang="en">acquired from injury</rdfs:label>
+        <rdfs:label xml:lang="zh">因外伤导致的</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000125"/>
+        <oboInOwl:hasExactSynonym xml:lang="en">after burn</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">烧伤后</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">acquired from burn</rdfs:label>
+        <rdfs:label xml:lang="zh">烧伤后</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000125"/>
+        <oboInOwl:hasExactSynonym xml:lang="zh">砍伤后</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">acquired from knife</rdfs:label>
+        <rdfs:label xml:lang="zh">刀伤后</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001757"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">infectious disorder in pinna</rdfs:label>
+        <rdfs:label xml:lang="zh">耳廓感染 PKDM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
+        <rdfs:label xml:lang="en">dermis and subcutaneous tissues</rdfs:label>
+        <rdfs:label xml:lang="zh">皮及皮下组织</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000118"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">外耳道疖 PKPM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">dermatitis</rdfs:label>
+        <rdfs:label xml:lang="zh">皮炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001757"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000099"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">granuloma in pinna</rdfs:label>
+        <rdfs:label xml:lang="zh">耳廓肉芽肿 PKPM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000133">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000117"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000113"/>
+        <obo:ICDO_0000005>H60.002</obo:ICDO_0000005>
+        <rdfs:label xml:lang="zh">外耳痈</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000134">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000118"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000113"/>
+        <obo:ICDO_0000005>H60.001</obo:ICDO_0000005>
+        <rdfs:label xml:lang="zh">外耳疖</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_10H60.3 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_10H60.3">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000011"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_11AA0Y"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000005>H60.300</obo:ICDO_0000005>
+        <obo:ICDO_0000039>H60.3</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">other infective otitis externa DP</rdfs:label>
+        <rdfs:label xml:lang="zh">感染性外耳炎，其他的</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_10H60.4 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_10H60.4">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000096"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000014"/>
+        <obo:ICDO_0000005>H60.400</obo:ICDO_0000005>
+        <obo:ICDO_0000039>H60.4</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">cholesteatoma of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳胆脂瘤</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_10H61.1 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_10H61.1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000058"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001757"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000007"/>
+        <obo:ICDO_0000005>H61.100</obo:ICDO_0000005>
+        <obo:ICDO_0000039>H61.1</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">noninfective disorders of pinna DP</rdfs:label>
+        <rdfs:label xml:lang="zh">耳郭非感染性疾患</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_10H61.8 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_10H61.8">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000089"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000005 xml:lang="zh">H61.800</obo:ICDO_0000005>
+        <obo:ICDO_0000039 xml:lang="zh">H61.8</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">other specified disorders of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳其他特指的疾患</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_10H61.81 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_10H61.81">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000108"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000066"/>
+        <obo:ICDO_0000005>H61.802</obo:ICDO_0000005>
+        <obo:ICDO_0000039>H61.8</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">exostosis of external canal DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳道外生骨疣</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_10H62 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_10H62">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000089"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000039>H62</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">disorders of external ear in diseases classified elsewhere DP</rdfs:label>
+        <rdfs:label xml:lang="zh">分类于他处的的外耳疾患</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_10H62.0 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_10H62.0">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_10H62"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000035>A46†</obo:ICDO_0000035>
+        <obo:ICDO_0000039>H62.0</obo:ICDO_0000039>
+        <oboInOwl:hasRelatedSynonym>Otitis externa in erysipelas</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">otitis externa in bacterial diseases classified elsewhere DP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_10H62.1 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_10H62.1">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_10H62"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000077"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000035>B00.1†</obo:ICDO_0000035>
+        <obo:ICDO_0000035>B02.8†</obo:ICDO_0000035>
+        <obo:ICDO_0000035>Otitis externa in herpesviral [herpes simplex] infection</obo:ICDO_0000035>
+        <obo:ICDO_0000039>H62.1</obo:ICDO_0000039>
+        <oboInOwl:hasRelatedSynonym>Otitis externa in zoster</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">otitis externa in viral diseases classified elsewhere DP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_10H62.2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_10H62.2">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_11AA03"/>
+        <obo:ICDO_0000035>B36.9†</obo:ICDO_0000035>
+        <obo:ICDO_0000035>B37.2†</obo:ICDO_0000035>
+        <obo:ICDO_0000035>B44.8†</obo:ICDO_0000035>
+        <obo:ICDO_0000039>H62.2</obo:ICDO_0000039>
+        <oboInOwl:hasRelatedSynonym>Otitis externa in aspergillosis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Otitis externa in candidiasis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Otomycosis NOS</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">otitis externa in mycoses DP</rdfs:label>
+        <rdfs:label xml:lang="zh">真菌性外耳炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_10H62.3 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_10H62.3">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_10H62"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000039>H62.3</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">otitis externa in other infectious and parasitic diseases classified elsewhere DP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_10H62.4 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_10H62.4">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_10H62"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000039>H62.4</obo:ICDO_0000039>
+        <oboInOwl:hasAlternativeId>L01.-†</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasRelatedSynonym>Otitis externa in impetigo</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">otitis externa in other diseases classified elsewhere DP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_10H62.8 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_10H62.8">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_10H62"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000039>H62.8</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">other disorders of external ear in diseases classified elsewhere DP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_111B70.01 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_111B70.01">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000112"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000006>1B70.01</obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">erysipelas of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳丹毒</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_111F20.10 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_111F20.10">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000092"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000045"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001690"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_11AA03"/>
+        <obo:ICDO_0000006>1F20.10</obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">aspergillus otomycosis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">曲霉菌真菌病</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_111F23.16 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_111F23.16">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000092"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000046"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001690"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_11AA03"/>
+        <obo:ICDO_0000006>1F23.16 </obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">candida otomycosis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">念珠菌属真菌病</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA01 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA01">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000110"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000009"/>
+        <obo:ICDO_0000005>H60.100</obo:ICDO_0000005>
+        <obo:ICDO_0000006>AA01</obo:ICDO_0000006>
+        <obo:ICDO_0000039>H60.1</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">cellulitis of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳蜂窝织炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA02 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA02">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002097"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+        <obo:ICDO_0000005>H60.200</obo:ICDO_0000005>
+        <obo:ICDO_0000006>AA02</obo:ICDO_0000006>
+        <obo:ICDO_0000039>H60.2</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">malignant otitis externa DP</rdfs:label>
+        <rdfs:label xml:lang="zh">恶性外耳炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA03 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA03">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000054"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001690"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000119"/>
+        <obo:ICDO_0000006>AA03 </obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">otomycosis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">耳真菌病</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA04 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA04">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000124"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000055"/>
+        <obo:ICDO_0000005>H61.000</obo:ICDO_0000005>
+        <obo:ICDO_0000006>AA04</obo:ICDO_0000006>
+        <obo:ICDO_0000039>H61.0</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">perichondritis of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳软骨膜炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA0Y -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA0Y">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_10H61.8"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000006>AA0Y </obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">other specified infectious diseases of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">其他特指的外耳感染</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA0Z -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA0Z">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000011"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000038"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+        <obo:ICDO_0000006>AA0Z </obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">Infectious diseases of external ear, unspecified DP</rdfs:label>
+        <rdfs:label xml:lang="zh">耳廓感染，未特指的</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA10 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA10">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000061"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
+        <obo:ICDO_0000006>AA10 </obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">seborrhoeic otitis externa DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳脂溢性皮炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA11 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA11">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000058"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
+        <obo:ICDO_0000005>H60.500</obo:ICDO_0000005>
+        <obo:ICDO_0000006>AA11</obo:ICDO_0000006>
+        <obo:ICDO_0000039>H60.5</obo:ICDO_0000039>
+        <oboInOwl:hasExactSynonym xml:lang="en">acute otitis externa, noninfective DP</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">acute noninfectious otitis externa DP</rdfs:label>
+        <rdfs:label xml:lang="zh">急性非感染性耳炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA12 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA12">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000057"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002418"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000131"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000131"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000006>AA12</obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">chondrodermatitis nodularis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">结节性软骨皮炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA13 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA13">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001863"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
+        <obo:ICDO_0000005>H60.801</obo:ICDO_0000005>
+        <obo:ICDO_0000006>AA13</obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">chronic otitis externa DP</rdfs:label>
+        <rdfs:label xml:lang="zh">慢性外耳炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA1Y -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA1Y">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000090"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000089"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000006>AA1Y </obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">other specified noninfectious inflammation of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">其他特指的非感染性外耳炎症</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA1Z -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA1Z">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000090"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000006>AA1Z</obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">Noninfectious inflammation of external ear, unspecified DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳非感染性炎症，未特指的</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA3Z -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA3Z">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000038"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
+        <obo:ICDO_0000006>AA3Z </obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">otitis externa, unspecified DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳炎，未特指的</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA40 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA40">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000034"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000088"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000013"/>
+        <obo:ICDO_0000006>AA40</obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">acquired deformity of external auditory canal DP</rdfs:label>
+        <rdfs:label xml:lang="zh">获得性外耳道畸形</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA40.1 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA40.1">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000029"/>
+        <obo:ICDO_0000005>H61.300</obo:ICDO_0000005>
+        <obo:ICDO_0000006>AA40.1</obo:ICDO_0000006>
+        <obo:ICDO_0000039>H61.3</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">acquired stenosis of external auditory canal DP</rdfs:label>
+        <rdfs:label xml:lang="zh">后天性外耳道狭窄</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA40.2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA40.2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000096"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_10H60.4"/>
+        <obo:ICDO_0000006>AA40.2</obo:ICDO_0000006>
+        <obo:ICDO_0000039>H60.4 </obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">cholesteatoma of external auditory canal DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳道胆脂瘤</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA40.Y -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA40.Y">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000089"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000088"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000006>AA40.Y</obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">other specified acquired deformity of external auditory canal DP</rdfs:label>
+        <rdfs:label xml:lang="zh">其他特指的获得性外耳道畸形</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA41 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA41">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000034"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001757"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000088"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000013"/>
+        <obo:ICDO_0000006>AA41 </obo:ICDO_0000006>
+        <oboInOwl:hasExactSynonym xml:lang="zh">后天性耳廓畸形</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">acquired deformity of pinna DP</rdfs:label>
+        <rdfs:label xml:lang="zh">获得性耳廓畸形</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA41.0 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA41.0">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000087"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000087"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>Cauliflower ear</obo:IAO_0000118>
+        <obo:ICDO_0000006>AA41.0 </obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">cauliflower ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">后天性外耳道狭窄</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA41.Y -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA41.Y">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000089"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001757"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000088"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000006>AA41.Y </obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">other specified acquired deformity of pinna DP</rdfs:label>
+        <rdfs:label xml:lang="zh">其他特指的获得性耳廓畸形</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA42 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA42">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000073"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002297"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000025"/>
+        <obo:ICDO_0000005>H61.200</obo:ICDO_0000005>
+        <obo:ICDO_0000006>AA42</obo:ICDO_0000006>
+        <obo:ICDO_0000039>H61.2</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">impacted cerumen DP</rdfs:label>
+        <rdfs:label xml:lang="zh">耵聍栓塞</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA4Y -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA4Y">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000089"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000006>AA4Y</obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">other specified noninflammatory disorders of the external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">其他特指的外耳非感染性疾患</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA4Z -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA4Z">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000025"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000006>AA4Z</obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">noninflammatory disorders of the external ear, unspecified DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳非感染性疾患，未特指的</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA6Z -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA6Z">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000038"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000002"/>
+        <obo:ICDO_0000005>H61.900</obo:ICDO_0000005>
+        <obo:ICDO_0000006>AA6Z </obo:ICDO_0000006>
+        <obo:ICDO_0000039>H61.9</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">diseases of external ear, unspecified DP</rdfs:label>
+        <rdfs:label xml:lang="zh">耳廓疾病，未特指的</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11EE60.00 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11EE60.00">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001847"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000098"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000065"/>
+        <obo:ICDO_0000006>EE60.00</obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">ear-lobe keloid DP</rdfs:label>
+        <rdfs:label xml:lang="zh">耳垂瘢痕瘤</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11EG40 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11EG40">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001961"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000131"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+        <obo:ICDO_0000006>EG40 </obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">contact dermatitis of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳接触性皮炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_bgtH60.401 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_bgtH60.401">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000099"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000021"/>
+        <obo:ICDO_0000005>H60.401</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">granuloma of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳肉芽肿</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_bgtH60.402 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_bgtH60.402">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000027"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000106"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000070"/>
+        <obo:ICDO_0000005>H60.402</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">obstructive keratosis of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳阻塞性角化病</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_bgtH61.806 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_bgtH61.806">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000071"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000018"/>
+        <obo:ICDO_0000005>H61.806</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">external ear canal cyst DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳道囊肿</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH60.301 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH60.301">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000051"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000005>H60.301</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">hemorrhagic otitis externa DP</rdfs:label>
+        <rdfs:label xml:lang="zh">出血性外耳炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH60.302 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH60.302">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000050"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+        <obo:ICDO_0000005>H60.302</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">diffuse otitis externa DP</rdfs:label>
+        <rdfs:label xml:lang="zh">弥漫性外耳炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH60.303 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH60.303">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000052"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:ICDO_0000005>H60.303</obo:ICDO_0000005>
+        <oboInOwl:hasExactSynonym>beach ear DP</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">swimmer&apos;s ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">游泳者耳病</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH60.403 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH60.403">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000099"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000021"/>
+        <obo:ICDO_0000005>H60.403</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">granuloma  of external ear canal DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳道肉芽肿</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH60.501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH60.501">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000003"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
+        <obo:ICDO_0000005>H60.501</obo:ICDO_0000005>
+        <obo:ICDO_0000039>H60.54</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">acute eczematoid otitis externa DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳湿疹</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH60.502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH60.502">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000091"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
+        <obo:ICDO_0000005>H60.502</obo:ICDO_0000005>
+        <obo:ICDO_0000039>H60.51</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">acute actinic otitis externa DP</rdfs:label>
+        <rdfs:label xml:lang="zh">急性光化性外耳炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH60.503 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH60.503">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000074"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
+        <obo:ICDO_0000005>H60.503</obo:ICDO_0000005>
+        <obo:ICDO_0000039>H60.52</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">acute chemical otitis externa DP</rdfs:label>
+        <rdfs:label xml:lang="zh">急性化学性外耳炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH61.001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH61.001">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000057"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001863"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002418"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002488"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+        <obo:ICDO_0000005>H61.001</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">chondrodermatitis nodularis chronica helicis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">慢性结节性耳轮软骨皮炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH61.002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH61.002">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001757"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000097"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000024"/>
+        <obo:ICDO_0000005>H61.002</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">pinna scar DP</rdfs:label>
+        <rdfs:label xml:lang="zh">耳郭瘢痕</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH61.101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH61.101">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000034"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000088"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000013"/>
+        <obo:ICDO_0000005>H61.101</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">acquired deformity of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">后天性外耳畸形</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH61.103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH61.103">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001757"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000103"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000030"/>
+        <obo:ICDO_0000005>H61.103</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">pinna pseudocyst DP</rdfs:label>
+        <rdfs:label xml:lang="zh">耳郭假性囊肿</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH61.104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH61.104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000008"/>
+        <obo:ICDO_0000005>H61.104</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">hematoma  ossification behind ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">耳后血肿骨化</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH61.105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH61.105">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001757"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000104"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000023"/>
+        <obo:ICDO_0000005>H61.105</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">pinna tumor DP</rdfs:label>
+        <rdfs:label xml:lang="zh">耳郭肿物</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH61.801 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH61.801">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003700"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000084"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000026"/>
+        <obo:ICDO_0000005>H61.801</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">temporomandibular joint  external ear canal   hernia DP</rdfs:label>
+        <rdfs:label xml:lang="zh">颞下颌关节外耳道疝</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH61.803 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH61.803">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000102"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000020"/>
+        <obo:ICDO_0000005>H61.803</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">external ear fistula DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳瘘</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH61.804 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH61.804">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000106"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000070"/>
+        <obo:ICDO_0000005>H61.804</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">external ear canal keratosis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳道角化症</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH61.805 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH61.805">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000120"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000048"/>
+        <obo:ICDO_0000005>H61.805</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">external ear canal necrosis DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳道坏死</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH61.901 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH61.901">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000104"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000023"/>
+        <obo:ICDO_0000005>H61.901</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">external ear canal tumor DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳道肿物</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_gbtH61.902 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH61.902">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000034"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000107"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000003"/>
+        <obo:ICDO_0000005>H61.902</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">acquired external ear canal atresia DP</rdfs:label>
+        <rdfs:label xml:lang="zh">后天性外耳道闭锁</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000051 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000051">
+        <rdfs:label xml:lang="zh">形态学的</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000141 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000141">
+        <rdfs:label xml:lang="zh">结构性</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000389 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000389">
+        <rdfs:label xml:lang="zh">急性</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001863 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001863">
+        <rdfs:label xml:lang="zh">慢性</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001961 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001961">
+        <rdfs:label xml:lang="en">contact</rdfs:label>
+        <rdfs:label xml:lang="zh">接触性</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002097 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0002097">
+        <oboInOwl:hasExactSynonym xml:lang="zh">恶性</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">neoplastic, malignant</rdfs:label>
+        <rdfs:label xml:lang="zh">肿瘤性的，恶性</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000014 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000014">
+        <rdfs:label xml:lang="en">zong of skin</rdfs:label>
+        <rdfs:label xml:lang="zh">皮肤</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001352 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001352">
+        <rdfs:label xml:lang="en">external acoustic meatus</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳道</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001690 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001690">
+        <rdfs:label xml:lang="en">ear</rdfs:label>
+        <rdfs:label xml:lang="zh">耳</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001691 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001691">
+        <rdfs:label xml:lang="en">external ear</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001757 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001757">
+        <oboInOwl:hasExactSynonym xml:lang="zh">耳郭</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">pinna</rdfs:label>
+        <rdfs:label xml:lang="zh">耳廓</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001847 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001847">
+        <rdfs:label xml:lang="en">lobule of pinna</rdfs:label>
+        <rdfs:label xml:lang="zh">耳垂</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002297 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002297">
+        <rdfs:label xml:lang="zh">耵聍</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002418 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002418">
+        <rdfs:label xml:lang="en">cartilage tissue</rdfs:label>
+        <rdfs:label xml:lang="zh">软骨组织</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0002488 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002488">
+        <oboInOwl:hasExactSynonym>helix of external ear</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">helix of outer ear</rdfs:label>
+        <rdfs:label xml:lang="zh">耳轮</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003700 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0003700">
+        <rdfs:label xml:lang="en">temporomandibular joint</rdfs:label>
+        <rdfs:label xml:lang="zh">颞下颌关节</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">laterality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="zh">外耳道湿疹 JYPM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <rdfs:label xml:lang="en">eczema</rdfs:label>
+        <rdfs:label xml:lang="zh">湿疹</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001863"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="zh">慢性外耳道炎 JYPM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000116"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="zh">外耳道脓肿 PKPM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000099"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="zh">耳后肉芽肿 PKPM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+        <rdfs:label xml:lang="zh">耳后</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001757"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="zh">耳廓软骨膜炎 PKPM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
+        <rdfs:label xml:lang="en">right</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
+        <rdfs:label xml:lang="en">left</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
+        <rdfs:label xml:lang="en">bilateral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
+        <rdfs:label xml:lang="en">Unilateral, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
+        <rdfs:label xml:lang="en">Unspecified laterality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001847">
+        <rdfs:label xml:lang="en">constricted</rdfs:label>
+        <rdfs:label xml:lang="zh">狭窄的</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0002011">
+        <rdfs:label xml:lang="en">neoplastic</rdfs:label>
+        <rdfs:label xml:lang="zh">肿瘤性</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001459">
+        <rdfs:label xml:lang="zh">外耳皮肤</rdfs:label>
+        <rdfs:label xml:lang="en">skin of external ear</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
