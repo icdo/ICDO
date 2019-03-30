@@ -1,0 +1,22 @@
+﻿[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/icdo/SYMP_imports.owl
+
+[Source ontology]
+SYMP
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/SYMP_0000567  #general symptom
+includeAllChildren
+ http://purl.obolibrary.org/obo/SYMP_0000488  #skin and integumentary tissue symptom
+includeAllChildren
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/SYMP_0000462 #symptom
+subClassOf http://purl.obolibrary.org/obo/BFO_0000017  #realizable entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]

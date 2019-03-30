@@ -1,0 +1,28 @@
+﻿[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/icdo/DOID_imports.owl
+
+[Source ontology]
+DOID
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/DOID_11330   #erysipelas 
+http://purl.obolibrary.org/obo/DOID_3488   # cellulitis 
+http://purl.obolibrary.org/obo/DOID_203   #exostosis
+http://purl.obolibrary.org/obo/DOID_869   # cholesteatoma 
+http://purl.obolibrary.org/obo/DOID_161    #keratosis
+http://purl.obolibrary.org/obo/DOID_2176   #carbuncle 
+http://purl.obolibrary.org/obo/DOID_222    #perichondritis
+http://purl.obolibrary.org/obo/DOID_2723  # dermatitis 
+http://purl.obolibrary.org/obo/DOID_9463    #otitis externa
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/DOID_4 #disease 
+subClassOf http://purl.obolibrary.org/obo/BFO_0000016    #disposition
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]

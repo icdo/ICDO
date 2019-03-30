@@ -1,0 +1,49 @@
+﻿[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/icdo/BFO_imports.owl
+
+[Source ontology]
+BFO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/BFO_0000004 #independent continuant
+http://purl.obolibrary.org/obo/BFO_0000015 #process
+http://purl.obolibrary.org/obo/BFO_0000020 #specifically dependent continuant
+http://purl.obolibrary.org/obo/BFO_0000031
+http://purl.obolibrary.org/obo/BFO_0000144
+http://purl.obolibrary.org/obo/BFO_0000145
+http://purl.obolibrary.org/obo/BFO_0000148
+http://purl.obolibrary.org/obo/BFO_0000003
+http://purl.obolibrary.org/obo/BFO_0000002
+http://purl.obolibrary.org/obo/BFO_0000011
+http://purl.obolibrary.org/obo/BFO_0000008
+http://purl.obolibrary.org/obo/BFO_0000040
+http://purl.obolibrary.org/obo/BFO_0000141
+http://purl.obolibrary.org/obo/BFO_0000028
+http://purl.obolibrary.org/obo/BFO_0000026
+http://purl.obolibrary.org/obo/BFO_0000009
+http://purl.obolibrary.org/obo/BFO_0000018
+http://purl.obolibrary.org/obo/BFO_0000038
+http://purl.obolibrary.org/obo/BFO_0000182
+http://purl.obolibrary.org/obo/BFO_0000034
+http://purl.obolibrary.org/obo/BFO_0000023
+http://purl.obolibrary.org/obo/BFO_0000016
+http://purl.obolibrary.org/obo/BFO_0000017
+http://purl.obolibrary.org/obo/BFO_0000019
+http://purl.obolibrary.org/obo/BFO_0000024
+http://purl.obolibrary.org/obo/BFO_0000146
+http://purl.obolibrary.org/obo/BFO_0000142
+http://purl.obolibrary.org/obo/BFO_0000147
+http://purl.obolibrary.org/obo/BFO_0000006
+http://purl.obolibrary.org/obo/BFO_0000029
+http://purl.obolibrary.org/obo/BFO_0000006
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001 #entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+[Source annotation URIs to be excluded]

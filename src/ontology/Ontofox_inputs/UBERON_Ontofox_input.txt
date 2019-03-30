@@ -1,0 +1,28 @@
+﻿[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/icdo/UBERON_imports.owl
+
+[Source ontology]
+UBERON
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/UBERON_0001691 #external ear
+http://purl.obolibrary.org/obo/UBERON_0003700 #temporomandibular joint
+http://purl.obolibrary.org/obo/UBERON_0001352 #External acoustic tube
+http://purl.obolibrary.org/obo/UBERON_0002488 #helix of outer ear
+http://purl.obolibrary.org/obo/UBERON_0002418 #cartilage tissue
+http://purl.obolibrary.org/obo/UBERON_0001757 #pinna
+http://purl.obolibrary.org/obo/UBERON_0001690 #ear
+http://purl.obolibrary.org/obo/UBERON_0002297 #cerumen
+http://purl.obolibrary.org/obo/UBERON_0001847  #lobule of pinna
+http://purl.obolibrary.org/obo/UBERON_0001459 #skin of external ear
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/UBERON_0000061 #anatomical structure
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040   #material entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]

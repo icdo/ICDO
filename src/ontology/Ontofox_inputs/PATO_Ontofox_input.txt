@@ -1,0 +1,24 @@
+﻿[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/icdo/PATO_imports.owl
+
+[Source ontology]
+PATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/PATO_0001863   #Chronic 
+http://purl.obolibrary.org/obo/PATO_0000389   #Acute
+http://purl.obolibrary.org/obo/PATO_0001847   #stenosis
+http://purl.obolibrary.org/obo/PATO_0001961   #Contact 
+http://purl.obolibrary.org/obo/PATO_0002097   #Malignant
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/PATO_0000001   #quality
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019    #quality
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]
