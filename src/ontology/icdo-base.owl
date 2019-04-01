@@ -120,14 +120,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000109 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000109">
-        <rdfs:label xml:lang="en">has icd11 code</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1620,7 +1612,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000107"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">external acoustic meatus atresia after burn JY</rdfs:label>
+        <rdfs:label xml:lang="en">external acoustic meatus atresia after burn JYPM</rdfs:label>
         <rdfs:label xml:lang="zh">烧伤后外耳道闭锁 JYPM</rdfs:label>
     </owl:Class>
     
@@ -1757,7 +1749,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000118"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">外耳道疖 PKPM</rdfs:label>
+        <rdfs:label xml:lang="en">external ear furuncle PKPM</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳道疖 PKPM</rdfs:label>
     </owl:Class>
     
 
@@ -1825,6 +1818,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000113"/>
         <obo:ICDO_0000005>H60.002</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">external ear carbuncle DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳痈</rdfs:label>
     </owl:Class>
     
@@ -1849,6 +1843,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000113"/>
         <obo:ICDO_0000005>H60.001</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">external ear furuncle DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳疖</rdfs:label>
     </owl:Class>
     
@@ -3119,16 +3114,42 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH60.303">
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ICDO_0000004"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000053"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000052"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002"/>
+            </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000052"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:ICDO_0000005>H60.303</obo:ICDO_0000005>
         <oboInOwl:hasExactSynonym>beach ear DP</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">swimmer&apos;s ear DP</rdfs:label>
@@ -3737,6 +3758,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">external ear canal eczema</rdfs:label>
         <rdfs:label xml:lang="zh">外耳道湿疹 JYPM</rdfs:label>
     </owl:Class>
     
@@ -3774,6 +3796,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">chronic external ear canal otitis JYPM</rdfs:label>
         <rdfs:label xml:lang="zh">慢性外耳道炎 JYPM</rdfs:label>
     </owl:Class>
     
@@ -3795,6 +3818,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">external ear canal abscess PKPM</rdfs:label>
         <rdfs:label xml:lang="zh">外耳道脓肿 PKPM</rdfs:label>
     </owl:Class>
     
@@ -3816,6 +3840,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000099"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">granuloma behind ear PKPM</rdfs:label>
         <rdfs:label xml:lang="zh">耳后肉芽肿 PKPM</rdfs:label>
     </owl:Class>
     
@@ -3825,6 +3850,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+        <rdfs:label xml:lang="en">behind ear</rdfs:label>
         <rdfs:label xml:lang="zh">耳后</rdfs:label>
     </owl:Class>
     
@@ -3846,6 +3872,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">pinna perichondritis PKPM</rdfs:label>
         <rdfs:label xml:lang="zh">耳廓软骨膜炎 PKPM</rdfs:label>
     </owl:Class>
     
@@ -3892,6 +3919,31 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
         <rdfs:label xml:lang="en">Unspecified laterality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000001">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:label xml:lang="en">swimmer&apos;s ear LHEM</rdfs:label>
+        <rdfs:label xml:lang="zh">游泳者耳病 LHEM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <rdfs:label xml:lang="en">swimmer&apos;s ear</rdfs:label>
     </owl:Class>
     
 
