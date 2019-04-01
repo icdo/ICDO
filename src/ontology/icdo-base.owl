@@ -920,8 +920,9 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     <!-- http://purl.obolibrary.org/obo/ICDO_0000064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000064">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000003"/>
         <rdfs:label xml:lang="en">environment entity</rdfs:label>
+        <rdfs:label xml:lang="zh">环境因素</rdfs:label>
     </owl:Class>
     
 
@@ -3128,6 +3129,18 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000053"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000052"/>
             </owl:Restriction>
@@ -3944,6 +3957,26 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
         <rdfs:label xml:lang="en">swimmer&apos;s ear</rdfs:label>
+        <rdfs:label xml:lang="zh">游泳者耳病</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="zh">Etiology Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000003"/>
+        <rdfs:label xml:lang="en">Genetic Entity</rdfs:label>
+        <rdfs:label xml:lang="zh">遗传因素</rdfs:label>
     </owl:Class>
     
 
