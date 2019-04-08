@@ -120,6 +120,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000005 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000005">
+        <rdfs:label xml:lang="zh">has syndrome of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
