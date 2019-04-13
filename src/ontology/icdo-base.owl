@@ -1,27 +1,27 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/icdo/"
      xml:base="http://purl.obolibrary.org/obo/icdo/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/icdo.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/BFO_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/UBERON_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/OGMS_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/PATO_imports.owl"/>
-        <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
-        <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
-        <owl:versionInfo>1.0.5</owl:versionInfo>
-        <oboInOwl:creation_date>3-30-2019</oboInOwl:creation_date>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/UBERON_imports.owl"/>
         <obo:IAO_0000115>ICDO: International Classification of Diseases Ontology</obo:IAO_0000115>
         <dc:contributor>Edison Ong</dc:contributor>
+        <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
+        <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
+        <oboInOwl:creation_date>4-13-2019</oboInOwl:creation_date>
+        <owl:versionInfo>1.0.6</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -85,6 +85,15 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000012 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000012">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+        <rdfs:label xml:lang="en">occurs in anatomical side</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -3744,8 +3753,13 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
-        <rdfs:label xml:lang="en">laterality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <obo:IAO_0000115>An anotomical entity that refers to the side of the body affected</obo:IAO_0000115>
+        <obo:IAO_0000117>Ling Wan, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>anatomical side</obo:IAO_0000118>
+        <obo:IAO_0000118>laterality</obo:IAO_0000118>
+        <obo:IAO_0000119>http://provcomm.ibx.com/ProvComm/ProvComm.nsf/afe9b349fb4d82ef85257912006dc3f7/d72597970a1e0b49852579d1004b472c!OpenDocument</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">laterality of anatomical entity</rdfs:label>
     </owl:Class>
     
 
@@ -3890,7 +3904,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
-        <rdfs:label xml:lang="en">right</rdfs:label>
+        <obo:IAO_0000117>Ling Wan, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">right side of anatomical entity</rdfs:label>
     </owl:Class>
     
 
@@ -3899,7 +3914,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
-        <rdfs:label xml:lang="en">left</rdfs:label>
+        <obo:IAO_0000117>Ling Wan, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">left side of anatomical entity</rdfs:label>
     </owl:Class>
     
 
@@ -3908,7 +3924,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
-        <rdfs:label xml:lang="en">bilateral</rdfs:label>
+        <obo:IAO_0000117>Ling Wan, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">bilateral side of anatomical entity</rdfs:label>
     </owl:Class>
     
 
@@ -3917,7 +3934,9 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
-        <rdfs:label xml:lang="en">Unilateral, unspecified</rdfs:label>
+        <obo:IAO_0000117>Ling Wan, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Unilateral, unspecified</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">unspecified unilateral side of anatomical entity</rdfs:label>
     </owl:Class>
     
 
@@ -3926,7 +3945,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
-        <rdfs:label xml:lang="en">Unspecified laterality</rdfs:label>
+        <obo:IAO_0000117>Ling Wan, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">unspecified laterality of anatomical entity</rdfs:label>
     </owl:Class>
     
 
@@ -4000,5 +4020,5 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
