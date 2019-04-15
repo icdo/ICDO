@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/icdo/"
      xml:base="http://purl.obolibrary.org/obo/icdo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/icdo.owl">
-        <obo:IAO_0000115>ICDO: International Classification of Diseases Ontology</obo:IAO_0000115>
-        <dc:contributor>Edison Ong</dc:contributor>
-        <oboInOwl:created_by>Ling Wan</oboInOwl:created_by>
         <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
-        <oboInOwl:creation_date>3-30-2019</oboInOwl:creation_date>
-        <owl:versionInfo>1.0.3</owl:versionInfo>
+        <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
+        <owl:versionInfo>1.0.6</owl:versionInfo>
+        <obo:IAO_0000115>ICDO: International Classification of Diseases Ontology</obo:IAO_0000115>
+        <oboInOwl:creation_date>4-13-2019</oboInOwl:creation_date>
+        <dc:contributor>Edison Ong</dc:contributor>
     </owl:Ontology>
     
 
@@ -123,6 +123,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label>definition</rdfs:label>
         <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -143,6 +144,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label>editor note</rdfs:label>
         <rdfs:label xml:lang="en">editor note</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor note</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -255,14 +257,6 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000006">
         <rdfs:label xml:lang="en">has icd11 code</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000017 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000017">
-        <rdfs:label xml:lang="en">definition reference source</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -604,6 +598,23 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000012 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000012">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+        <rdfs:label xml:lang="en">occurs in anatomical side</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000031 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000031">
+        <rdfs:label xml:lang="en">has syndrome of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ICDO_0000042 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000042">
@@ -631,15 +642,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/ICDO_0000081 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000081">
+        <obo:IAO_0000115>An object property that represents a relation between a disease process and a material entity where the disease process has the material entity as a typically abnormal material output.</obo:IAO_0000115>
+        <obo:IAO_0000117>Eric Wan, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has disease output</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000109 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000109">
-        <rdfs:label xml:lang="en">has icd11 code</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1324,7 +1329,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
         <obo:IAO_0000115>Disease process is the progression disease in an individual over time. The process begins with the appropriate exposure to or accumulation of factors sufficient for the disease process to begin in a susceptible host. For an infectious disease, the exposure is a microorganism. For cancer, the exposure may be a factor that initiates the process, such as asbestos fibers or components in tobacco smoke (for lung cancer), or one that promotes the process, such as estrogen (for endometrial cancer).</obo:IAO_0000115>
-        <obo:ICDO_0000017>https://www.cdc.gov/ophss/csels/dsepd/ss1978/lesson1/section9.html</obo:ICDO_0000017>
+        <obo:IAO_0000119>https://www.cdc.gov/ophss/csels/dsepd/ss1978/lesson1/section9.html</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym xml:lang="en">disorder</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">disease process</rdfs:label>
         <rdfs:label xml:lang="zh">疾病过程</rdfs:label>
@@ -1427,7 +1432,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/ICDO_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000044"/>
         <rdfs:label xml:lang="en">cellulitis DP</rdfs:label>
         <rdfs:label xml:lang="zh">蜂窝织炎</rdfs:label>
     </owl:Class>
@@ -1451,7 +1456,7 @@ We also have the outstanding issue of how to aim different definitions to differ
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000044"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000028"/>
         <obo:ICDO_0000005>H60.900</obo:ICDO_0000005>
         <rdfs:label xml:lang="en">otitis externa DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳炎</rdfs:label>
@@ -1479,12 +1484,6 @@ We also have the outstanding issue of how to aim different definitions to differ
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000088"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">is a major abnormality in the shape of a body part or organ compared to the normal shape of that part.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">deformity DP</rdfs:label>
         <rdfs:label xml:lang="en">畸形</rdfs:label>
@@ -1571,9 +1570,9 @@ We also have the outstanding issue of how to aim different definitions to differ
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001690"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="zh">inflammatory object in ear</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">otitis</rdfs:label>
-        <rdfs:label xml:lang="zh">耳炎</rdfs:label>
+        <obo:IAO_0000115 xml:lang="zh">inflammatory anatomical entity that is located in ear</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">otitis anatomical entity</rdfs:label>
+        <rdfs:label xml:lang="zh">耳炎体</rdfs:label>
     </owl:Class>
     
 
@@ -1718,7 +1717,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     <!-- http://purl.obolibrary.org/obo/ICDO_0000028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000044"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
@@ -1795,7 +1794,6 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002062"/>
         <oboInOwl:hasExactSynonym xml:lang="zh">获得性</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="zh">烧伤后</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">acquired</rdfs:label>
         <rdfs:label xml:lang="zh">后天性</rdfs:label>
     </owl:Class>
@@ -1868,12 +1866,6 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000033"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">a disease process of a tissue reaction to an internal or external injury.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://purl.obolibrary.org/obo/MPATH_212</obo:IAO_0000119>
         <rdfs:label xml:lang="en">inflammation disease process DP</rdfs:label>
@@ -1987,7 +1979,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000124"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000028"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
@@ -2108,8 +2100,9 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     <!-- http://purl.obolibrary.org/obo/ICDO_0000064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000064">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000003"/>
         <rdfs:label xml:lang="en">environment entity</rdfs:label>
+        <rdfs:label xml:lang="zh">环境因素</rdfs:label>
     </owl:Class>
     
 
@@ -2416,7 +2409,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000131"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000044"/>
@@ -2599,6 +2592,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000106">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
         <obo:IAO_0000115 xml:lang="zh">is a growth of keratin on the skin or on mucous membranes stemming from keratinocytes, the prominent cell type in the epidermis.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Keratosis</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym xml:lang="zh">角化病</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym xml:lang="zh">角质化</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">keratosis</rdfs:label>
@@ -2633,10 +2627,10 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000110 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000110">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
-        <obo:IAO_0000115 xml:lang="en">inflammation object in cellulite</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">cellulitis</rdfs:label>
-        <rdfs:label xml:lang="zh">蜂窝织炎</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+        <obo:IAO_0000115 xml:lang="en">inflammatory anatomical entity that is located in a cellulite</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cellulitis anatomical entity</rdfs:label>
+        <rdfs:label xml:lang="zh">蜂窝织炎体</rdfs:label>
     </owl:Class>
     
 
@@ -2707,10 +2701,11 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
-        <obo:IAO_0000115 xml:lang="en">inflammation object exist</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym xml:lang="zh">炎症</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">inflammation</rdfs:label>
-        <rdfs:label xml:lang="zh">炎</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">a physical pathological anatomic entity that is a result of an inflammation process</obo:IAO_0000115>
+        <obo:IAO_0000117>Eric Wan, Oliver He</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym xml:lang="zh">炎症体</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">inflammatory anatomical entity</rdfs:label>
+        <rdfs:label xml:lang="zh">发炎体</rdfs:label>
     </owl:Class>
     
 
@@ -2800,7 +2795,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000107"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">external acoustic meatus atresia after burn JY</rdfs:label>
+        <rdfs:label xml:lang="en">external acoustic meatus atresia after burn JYPM</rdfs:label>
         <rdfs:label xml:lang="zh">烧伤后外耳道闭锁 JYPM</rdfs:label>
     </owl:Class>
     
@@ -2831,10 +2826,10 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000123 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000123">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
-        <obo:IAO_0000115 xml:lang="en">inflammation object in the skin of cartilage tissue</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">chondrodermatitis</rdfs:label>
-        <rdfs:label xml:lang="zh">软骨皮炎</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+        <obo:IAO_0000115 xml:lang="en">inflammatory anatomical entity that is located in the skin of a cartilage tissue</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">chondrodermatitis anatomical entity</rdfs:label>
+        <rdfs:label xml:lang="zh">软骨皮炎体</rdfs:label>
     </owl:Class>
     
 
@@ -2842,10 +2837,10 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000124 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000124">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
-        <obo:IAO_0000115 xml:lang="en">inflammation object in the membrane of cartilage tissue</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">perichondritis</rdfs:label>
-        <rdfs:label xml:lang="zh">软骨膜炎</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+        <obo:IAO_0000115 xml:lang="en">inflammatiory anatomical entity in the membrane of cartilage tissue</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">perichondritis anatomical entity</rdfs:label>
+        <rdfs:label xml:lang="zh">软骨膜炎体</rdfs:label>
     </owl:Class>
     
 
@@ -2867,7 +2862,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <oboInOwl:hasExactSynonym xml:lang="en">after burn</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">烧伤后</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">acquired from burn</rdfs:label>
-        <rdfs:label xml:lang="zh">烧伤后</rdfs:label>
+        <rdfs:label xml:lang="zh">烧伤所致</rdfs:label>
     </owl:Class>
     
 
@@ -2937,7 +2932,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000118"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">外耳道疖 PKPM</rdfs:label>
+        <rdfs:label xml:lang="en">external ear furuncle PKPM</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳道疖 PKPM</rdfs:label>
     </owl:Class>
     
 
@@ -2958,8 +2954,9 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">dermatitis</rdfs:label>
-        <rdfs:label xml:lang="zh">皮炎</rdfs:label>
+        <obo:IAO_0000115>inflammatory anatomical entity that is located in skin</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">dermatitis anatomical entity</rdfs:label>
+        <rdfs:label xml:lang="zh">皮炎体</rdfs:label>
     </owl:Class>
     
 
@@ -3005,6 +3002,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000113"/>
         <obo:ICDO_0000005>H60.002</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">external ear carbuncle DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳痈</rdfs:label>
     </owl:Class>
     
@@ -3029,6 +3027,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000113"/>
         <obo:ICDO_0000005>H60.001</obo:ICDO_0000005>
+        <rdfs:label xml:lang="en">external ear furuncle DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳疖</rdfs:label>
     </owl:Class>
     
@@ -3591,7 +3590,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -3624,7 +3623,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -3691,7 +3690,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -3779,7 +3778,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -4299,16 +4298,54 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH60.303">
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ICDO_0000004"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000053"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000052"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002"/>
+            </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000053"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000052"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:ICDO_0000005>H60.303</obo:ICDO_0000005>
         <oboInOwl:hasExactSynonym>beach ear DP</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">swimmer&apos;s ear DP</rdfs:label>
@@ -4388,7 +4425,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -4422,7 +4459,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -6324,8 +6361,13 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
-        <rdfs:label xml:lang="en">laterality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <obo:IAO_0000115>An anotomical entity that refers to the side of the body affected</obo:IAO_0000115>
+        <obo:IAO_0000117>Ling Wan, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>anatomical side</obo:IAO_0000118>
+        <obo:IAO_0000118>laterality</obo:IAO_0000118>
+        <obo:IAO_0000119>http://provcomm.ibx.com/ProvComm/ProvComm.nsf/afe9b349fb4d82ef85257912006dc3f7/d72597970a1e0b49852579d1004b472c!OpenDocument</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">laterality of anatomical entity</rdfs:label>
     </owl:Class>
     
 
@@ -6346,6 +6388,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">external ear canal eczema</rdfs:label>
         <rdfs:label xml:lang="zh">外耳道湿疹 JYPM</rdfs:label>
     </owl:Class>
     
@@ -6383,6 +6426,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">chronic external ear canal otitis JYPM</rdfs:label>
         <rdfs:label xml:lang="zh">慢性外耳道炎 JYPM</rdfs:label>
     </owl:Class>
     
@@ -6404,6 +6448,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">external ear canal abscess PKPM</rdfs:label>
         <rdfs:label xml:lang="zh">外耳道脓肿 PKPM</rdfs:label>
     </owl:Class>
     
@@ -6425,6 +6470,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000099"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">granuloma behind ear PKPM</rdfs:label>
         <rdfs:label xml:lang="zh">耳后肉芽肿 PKPM</rdfs:label>
     </owl:Class>
     
@@ -6434,6 +6480,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+        <rdfs:label xml:lang="en">behind ear</rdfs:label>
         <rdfs:label xml:lang="zh">耳后</rdfs:label>
     </owl:Class>
     
@@ -6455,6 +6502,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">pinna perichondritis PKPM</rdfs:label>
         <rdfs:label xml:lang="zh">耳廓软骨膜炎 PKPM</rdfs:label>
     </owl:Class>
     
@@ -6464,7 +6512,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
-        <rdfs:label xml:lang="en">right</rdfs:label>
+        <obo:IAO_0000117>Ling Wan, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">right side of anatomical entity</rdfs:label>
     </owl:Class>
     
 
@@ -6473,7 +6522,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
-        <rdfs:label xml:lang="en">left</rdfs:label>
+        <obo:IAO_0000117>Ling Wan, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">left side of anatomical entity</rdfs:label>
     </owl:Class>
     
 
@@ -6482,7 +6532,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
-        <rdfs:label xml:lang="en">bilateral</rdfs:label>
+        <obo:IAO_0000117>Ling Wan, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">bilateral side of anatomical entity</rdfs:label>
     </owl:Class>
     
 
@@ -6491,7 +6542,9 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
-        <rdfs:label xml:lang="en">Unilateral, unspecified</rdfs:label>
+        <obo:IAO_0000117>Ling Wan, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>Unilateral, unspecified</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">unspecified unilateral side of anatomical entity</rdfs:label>
     </owl:Class>
     
 
@@ -6500,7 +6553,53 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000001"/>
-        <rdfs:label xml:lang="en">Unspecified laterality</rdfs:label>
+        <obo:IAO_0000117>Ling Wan, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">unspecified laterality of anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000001">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:label xml:lang="en">swimmer&apos;s ear LHEM</rdfs:label>
+        <rdfs:label xml:lang="zh">游泳者耳病 LHEM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <rdfs:label xml:lang="en">swimmer&apos;s ear</rdfs:label>
+        <rdfs:label xml:lang="zh">游泳者耳病</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">Etiology Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000003"/>
+        <rdfs:label xml:lang="en">Genetic Entity</rdfs:label>
+        <rdfs:label xml:lang="zh">遗传因素</rdfs:label>
     </owl:Class>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
@@ -6517,8 +6616,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
      -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/bfo.owl">
-        <dc:contributor>Leonard Jacuzzo</dc:contributor>
         <dc:contributor>Janna Hastings</dc:contributor>
+        <dc:contributor>Leonard Jacuzzo</dc:contributor>
         <foaf:mbox rdf:resource="mailto:bfo-owl-devel@googlegroups.com"/>
         <dc:contributor>Barry Smith</dc:contributor>
         <rdfs:comment xml:lang="en">Please see the project site https://github.com/BFO-ontology/BFO, the bfo2 owl discussion group http://groups.google.com/group/bfo-owl-devel , the bfo2 discussion group http://groups.google.com/group/bfo-devel, the tracking google doc http://goo.gl/IlrEE, and the current version of the bfo2 reference http://purl.obolibrary.org/obo/bfo/dev/bfo2-reference.docx . This ontology is generated from a specification at https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/ and with the code that generates the OWL version in https://github.com/BFO-ontology/BFO/tree/master/src/tools/. A very early version of BFO version 2 in CLIF is at http://purl.obolibrary.org/obo/bfo/dev/bfo.clif</rdfs:comment>
@@ -6533,11 +6632,11 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <dc:contributor>Mathias Brochhausen</dc:contributor>
         <rdfs:comment>This BFO 2.0 version represents a major update to BFO and is not strictly backwards compatible with BFO 1.1. The previous OWL version of BFO, version 1.1.1 will remain available at http://ifomis.org/bfo/1.1 and will no longer be updated. The BFO 2.0 OWL is a classes-only specification. The incorporation of core relations has been held over for a later version.</rdfs:comment>
         <dc:contributor>Mauricio Almeida</dc:contributor>
-        <dc:contributor>Bjoern Peters</dc:contributor>
         <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
+        <dc:contributor>Bjoern Peters</dc:contributor>
         <dc:contributor>Melanie Courtot</dc:contributor>
-        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
         <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
+        <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
         <rdfs:seeAlso rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/tools/"/>
         <dc:contributor>James A. Overton</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. ‘Entity’ is an example of a  primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
@@ -6548,8 +6647,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
         <dc:contributor>Randall Dipert</dc:contributor>
-        <dc:contributor>Larry Hunter</dc:contributor>
         <dc:contributor>Stefan Schulz</dc:contributor>
+        <dc:contributor>Larry Hunter</dc:contributor>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <dc:contributor>Chris Mungall</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/"/>
@@ -6558,14 +6657,14 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <dc:contributor>Mark Ressler</dc:contributor>
         <dc:contributor>Albert Goldfain</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: BFO’s treatment of continuants and occurrents - as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality - earlier called the ‘SNAP’ and ‘SPAN’ perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science</obo:IAO_0000116>
-        <dc:contributor>Alan Ruttenberg</dc:contributor>
         <dc:contributor>Bill Duncan</dc:contributor>
         <dc:contributor>Ludger Jansen</dc:contributor>
+        <dc:contributor>Alan Ruttenberg</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/owl"/>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
