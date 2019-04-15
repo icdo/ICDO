@@ -53,14 +53,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000017 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000017">
-        <rdfs:label xml:lang="en">definition reference source</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ICDO_0000035 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000035">
@@ -97,6 +89,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000031 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000031">
+        <rdfs:label xml:lang="en">has syndrome of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ICDO_0000042 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000042">
@@ -124,15 +124,9 @@
     <!-- http://purl.obolibrary.org/obo/ICDO_0000081 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000081">
+        <obo:IAO_0000115>An object property that represents a relation between a disease process and a material entity where the disease process has the material entity as a typically abnormal material output.</obo:IAO_0000115>
+        <obo:IAO_0000117>Eric Wan, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has disease output</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000005 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000005">
-        <rdfs:label xml:lang="zh">has syndrome of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -153,7 +147,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
         <obo:IAO_0000115>Disease process is the progression disease in an individual over time. The process begins with the appropriate exposure to or accumulation of factors sufficient for the disease process to begin in a susceptible host. For an infectious disease, the exposure is a microorganism. For cancer, the exposure may be a factor that initiates the process, such as asbestos fibers or components in tobacco smoke (for lung cancer), or one that promotes the process, such as estrogen (for endometrial cancer).</obo:IAO_0000115>
-        <obo:ICDO_0000017>https://www.cdc.gov/ophss/csels/dsepd/ss1978/lesson1/section9.html</obo:ICDO_0000017>
+        <obo:IAO_0000119>https://www.cdc.gov/ophss/csels/dsepd/ss1978/lesson1/section9.html</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym xml:lang="en">disorder</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">disease process</rdfs:label>
         <rdfs:label xml:lang="zh">疾病过程</rdfs:label>
@@ -394,8 +388,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001690"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="zh">inflammatory object in ear</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">otitis IAE</rdfs:label>
+        <obo:IAO_0000115 xml:lang="zh">inflammatory anatomical entity that is located in ear</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">otitis anatomical entity</rdfs:label>
         <rdfs:label xml:lang="zh">耳炎体</rdfs:label>
     </owl:Class>
     
@@ -1416,6 +1410,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000106">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
         <obo:IAO_0000115 xml:lang="zh">is a growth of keratin on the skin or on mucous membranes stemming from keratinocytes, the prominent cell type in the epidermis.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Keratosis</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym xml:lang="zh">角化病</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym xml:lang="zh">角质化</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">keratosis</rdfs:label>
@@ -1451,7 +1446,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000110">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
-        <obo:IAO_0000115 xml:lang="en">has inflammatory anatomical entity  in cellulite</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">inflammatory anatomical entity that is located in a cellulite</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cellulitis anatomical entity</rdfs:label>
         <rdfs:label xml:lang="zh">蜂窝织炎体</rdfs:label>
     </owl:Class>
@@ -1524,7 +1519,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
-        <obo:IAO_0000115 xml:lang="en">a physical pathological object occurs in anatomical structure casued by inflammation process</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a physical pathological anatomic entity that is a result of an inflammation process</obo:IAO_0000115>
+        <obo:IAO_0000117>Eric Wan, Oliver He</obo:IAO_0000117>
         <oboInOwl:hasExactSynonym xml:lang="zh">炎症体</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">inflammatory anatomical entity</rdfs:label>
         <rdfs:label xml:lang="zh">发炎体</rdfs:label>
@@ -1649,8 +1645,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000123">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
-        <obo:IAO_0000115 xml:lang="en">inflammatory anatomical entity  in the skin of cartilage tissue</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">chondrodermatitis IAE</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">inflammatory anatomical entity that is located in the skin of a cartilage tissue</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">chondrodermatitis anatomical entity</rdfs:label>
         <rdfs:label xml:lang="zh">软骨皮炎体</rdfs:label>
     </owl:Class>
     
@@ -1661,7 +1657,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000124">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
         <obo:IAO_0000115 xml:lang="en">inflammatiory anatomical entity in the membrane of cartilage tissue</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">perichondritis IAE</rdfs:label>
+        <rdfs:label xml:lang="en">perichondritis anatomical entity</rdfs:label>
         <rdfs:label xml:lang="zh">软骨膜炎体</rdfs:label>
     </owl:Class>
     
@@ -1776,7 +1772,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">dermatitis IAE</rdfs:label>
+        <obo:IAO_0000115>inflammatory anatomical entity that is located in skin</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">dermatitis anatomical entity</rdfs:label>
         <rdfs:label xml:lang="zh">皮炎体</rdfs:label>
     </owl:Class>
     
