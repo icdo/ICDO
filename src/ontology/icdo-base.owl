@@ -1,27 +1,27 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/icdo/"
      xml:base="http://purl.obolibrary.org/obo/icdo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/icdo.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/BFO_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/UBERON_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/OGMS_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/PATO_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/UBERON_imports.owl"/>
-        <obo:IAO_0000115>ICDO: International Classification of Diseases Ontology</obo:IAO_0000115>
-        <dc:contributor>Edison Ong</dc:contributor>
-        <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
         <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
-        <oboInOwl:creation_date>4-13-2019</oboInOwl:creation_date>
+        <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
         <owl:versionInfo>1.0.6</owl:versionInfo>
+        <obo:IAO_0000115>ICDO: International Classification of Diseases Ontology</obo:IAO_0000115>
+        <oboInOwl:creation_date>4-13-2019</oboInOwl:creation_date>
+        <dc:contributor>Edison Ong</dc:contributor>
     </owl:Ontology>
     
 
@@ -251,6 +251,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000044"/>
+        <oboInOwl:hasRelatedSynonym>cellulitis</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">cellulitis DP</rdfs:label>
         <rdfs:label xml:lang="zh">蜂窝织炎</rdfs:label>
     </owl:Class>
@@ -276,6 +277,8 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000028"/>
         <obo:ICDO_0000005>H60.900</obo:ICDO_0000005>
+        <obo:ICDO_0000006>EG4Z</obo:ICDO_0000006>
+        <obo:ICDO_0000039>H60</obo:ICDO_0000039>
         <rdfs:label xml:lang="en">otitis externa DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳炎</rdfs:label>
     </owl:Class>
@@ -1963,32 +1966,6 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ICDO_10H61.81 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_10H61.81">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000108"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000066"/>
-        <obo:ICDO_0000005>H61.802</obo:ICDO_0000005>
-        <obo:ICDO_0000039>H61.8</obo:ICDO_0000039>
-        <rdfs:label xml:lang="en">exostosis of external canal DP</rdfs:label>
-        <rdfs:label xml:lang="zh">外耳道外生骨疣</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ICDO_10H62 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_10H62">
@@ -2634,6 +2611,33 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000006>AA40</obo:ICDO_0000006>
         <rdfs:label xml:lang="en">acquired deformity of external auditory canal DP</rdfs:label>
         <rdfs:label xml:lang="zh">获得性外耳道畸形</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_11AA40.0 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA40.0">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000108"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000066"/>
+        <obo:ICDO_0000005>H61.802</obo:ICDO_0000005>
+        <obo:ICDO_0000006>AA40.0</obo:ICDO_0000006>
+        <obo:ICDO_0000039>H61.8</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">exostosis of external canal DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳道外生骨疣</rdfs:label>
     </owl:Class>
     
 
@@ -3993,6 +3997,39 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     
 
 
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_11EG40.0 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_11EG40.0">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_11EG40"/>
+        <obo:ICDO_0000006>EG40.0</obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">Allergic contact dermatitis of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳过敏性接触性皮炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_11EG4Y -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_11EG4Y">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
+        <obo:ICDO_0000006>EG4Y</obo:ICDO_0000006>
+        <obo:ICDO_0000006 xml:lang="zh">其他特指的外耳炎性疾患</obo:ICDO_0000006>
+        <rdfs:label xml:lang="en">Other specified inflammatory disorder of external ear DP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_11EK02.10 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_11EK02.10">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_11EG40"/>
+        <obo:ICDO_0000006>EK02.10</obo:ICDO_0000006>
+        <rdfs:label xml:lang="en"> Irritant contact dermatitis of external ear DP</rdfs:label>
+        <rdfs:label xml:lang="zh">刺激物接触性外耳皮炎</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -4017,5 +4054,5 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
