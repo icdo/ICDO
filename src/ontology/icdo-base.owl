@@ -1,27 +1,28 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/icdo/"
      xml:base="http://purl.obolibrary.org/obo/icdo/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:icdo="http://purl.obolibrary.org/obo/icdo.owl/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/icdo.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/BFO_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/UBERON_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/OGMS_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/PATO_imports.owl"/>
-        <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
-        <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
-        <owl:versionInfo>1.0.6</owl:versionInfo>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/UBERON_imports.owl"/>
         <obo:IAO_0000115>ICDO: International Classification of Diseases Ontology</obo:IAO_0000115>
-        <oboInOwl:creation_date>4-13-2019</oboInOwl:creation_date>
         <dc:contributor>Edison Ong</dc:contributor>
+        <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
+        <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
+        <oboInOwl:creation_date>4-13-2019</oboInOwl:creation_date>
+        <owl:versionInfo>1.0.6</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -69,6 +70,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000004 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000004">
+        <rdfs:label xml:lang="en">has ICD name</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -84,7 +93,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000012">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
-        <rdfs:label xml:lang="en">occurs in anatomical side</rdfs:label>
+        <rdfs:label xml:lang="en">DP occurs in anatomical side</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -116,7 +125,7 @@
     <!-- http://purl.obolibrary.org/obo/ICDO_0000078 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000078">
-        <rdfs:label xml:lang="en">occurs in</rdfs:label>
+        <rdfs:label xml:lang="en">DP occurs in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -126,7 +135,7 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000081">
         <obo:IAO_0000115>An object property that represents a relation between a disease process and a material entity where the disease process has the material entity as a typically abnormal material output.</obo:IAO_0000115>
         <obo:IAO_0000117>Eric Wan, Oliver He</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">has disease output</rdfs:label>
+        <rdfs:label xml:lang="en">has DP output</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -165,7 +174,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001690"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">diseases of the ear or mastoid process DP</rdfs:label>
+        <icdo:OS_000000000000004>diseases of the ear or mastoid process</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">the ear or mastoid DP</rdfs:label>
         <rdfs:label xml:lang="zh">耳或乳突疾病</rdfs:label>
     </owl:Class>
     
@@ -209,7 +219,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">infectious diseases of external ear DP</rdfs:label>
+        <icdo:OS_000000000000004>infectious diseases of external ear</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">infectious DP of external ear</rdfs:label>
         <rdfs:label xml:lang="zh">外耳感染性疾病</rdfs:label>
     </owl:Class>
     
@@ -231,7 +242,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">disease of external ear DP</rdfs:label>
+        <icdo:OS_000000000000004>disease of external ear</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">external ear DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳疾病</rdfs:label>
     </owl:Class>
     
@@ -251,7 +263,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000044"/>
-        <oboInOwl:hasRelatedSynonym>cellulitis</oboInOwl:hasRelatedSynonym>
+        <icdo:OS_000000000000004>cellulitis</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">cellulitis DP</rdfs:label>
         <rdfs:label xml:lang="zh">蜂窝织炎</rdfs:label>
     </owl:Class>
@@ -279,6 +291,7 @@
         <obo:ICDO_0000005>H60.900</obo:ICDO_0000005>
         <obo:ICDO_0000006>EG4Z</obo:ICDO_0000006>
         <obo:ICDO_0000039>H60</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>otitis externa</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">otitis externa DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳炎</rdfs:label>
     </owl:Class>
@@ -348,6 +361,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000020"/>
         <obo:ICDO_0000005>H61.102</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>pinna fistula</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">pinna fistula DP</rdfs:label>
         <rdfs:label xml:lang="zh">耳郭瘘</rdfs:label>
     </owl:Class>
@@ -430,6 +444,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000099"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <icdo:OS_000000000000004>granuloma</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">granuloma DP</rdfs:label>
         <rdfs:label xml:lang="zh">肉芽肿</rdfs:label>
     </owl:Class>
@@ -440,7 +455,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
-        <rdfs:label xml:lang="en">noninflammatory disorders DP</rdfs:label>
+        <icdo:OS_000000000000004>noninflammatory disorders</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">noninflammatory  DP</rdfs:label>
         <rdfs:label xml:lang="zh">非炎症性疾病</rdfs:label>
     </owl:Class>
     
@@ -494,7 +510,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">noninflammatory disorders of the external ear DP</rdfs:label>
+        <icdo:OS_000000000000004>noninflammatory disorders of the external ear</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">noninflammatory DP of the external ear</rdfs:label>
         <rdfs:label xml:lang="zh">非炎症性外耳疾患</rdfs:label>
     </owl:Class>
     
@@ -593,8 +610,9 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000044"/>
+        <icdo:OS_000000000000004>infectious disease</icdo:OS_000000000000004>
         <oboInOwl:hasExactSynonym xml:lang="zh">感染</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">infectious disease DP</rdfs:label>
+        <rdfs:label xml:lang="en">infectious DP</rdfs:label>
         <rdfs:label xml:lang="zh">感染性疾病过程</rdfs:label>
     </owl:Class>
     
@@ -604,7 +622,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
-        <rdfs:label xml:lang="en">immune system disease process DP</rdfs:label>
+        <rdfs:label xml:lang="en">immune system DP</rdfs:label>
         <rdfs:label xml:lang="zh">免疫系统疾病过程</rdfs:label>
     </owl:Class>
     
@@ -689,7 +707,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000033"/>
         <obo:IAO_0000115 xml:lang="en">a disease process of a tissue reaction to an internal or external injury.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://purl.obolibrary.org/obo/MPATH_212</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">inflammation disease process DP</rdfs:label>
+        <rdfs:label xml:lang="en">inflammation DP</rdfs:label>
         <rdfs:label xml:lang="zh">炎症</rdfs:label>
     </owl:Class>
     
@@ -829,6 +847,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000131"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <icdo:OS_000000000000004>chondrodermatitis</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">chondrodermatitis DP</rdfs:label>
         <rdfs:label xml:lang="zh">软骨皮炎</rdfs:label>
     </owl:Class>
@@ -865,7 +884,8 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">skin disease DP</rdfs:label>
+        <icdo:OS_000000000000004>skin disease</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">skin DP</rdfs:label>
         <rdfs:label xml:lang="zh">皮肤疾病</rdfs:label>
     </owl:Class>
     
@@ -1246,7 +1266,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>dermatitis</obo:IAO_0000118>
+        <icdo:OS_000000000000004>dermatitis</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">dermatitis DP</rdfs:label>
         <rdfs:label xml:lang="zh">皮炎</rdfs:label>
     </owl:Class>
@@ -1499,6 +1519,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000005>H60.000</obo:ICDO_0000005>
         <obo:ICDO_0000006>AA00</obo:ICDO_0000006>
         <obo:ICDO_0000039>H60.0</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>abscess of external ear</icdo:OS_000000000000004>
         <oboInOwl:hasRelatedSynonym xml:lang="zh">疖</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym xml:lang="zh">痈</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">abscess of external ear DP</rdfs:label>
@@ -1577,6 +1598,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <icdo:OS_000000000000004>mycosis</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">mycosis DP</rdfs:label>
         <rdfs:label xml:lang="zh">真菌病</rdfs:label>
     </owl:Class>
@@ -1721,7 +1743,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">infectious disorder in pinna</rdfs:label>
+        <rdfs:label xml:lang="en">infectious disorder in pinna PKDM</rdfs:label>
         <rdfs:label xml:lang="zh">耳廓感染 PKDM</rdfs:label>
     </owl:Class>
     
@@ -1798,7 +1820,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000099"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">granuloma in pinna</rdfs:label>
+        <rdfs:label xml:lang="en">granuloma in pinna PKPM</rdfs:label>
         <rdfs:label xml:lang="zh">耳廓肉芽肿 PKPM</rdfs:label>
     </owl:Class>
     
@@ -1823,6 +1845,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000113"/>
         <obo:ICDO_0000005>H60.002</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>external ear carbuncle</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">external ear carbuncle DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳痈</rdfs:label>
     </owl:Class>
@@ -1848,6 +1871,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000113"/>
         <obo:ICDO_0000005>H60.001</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>external ear furuncle</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">external ear furuncle DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳疖</rdfs:label>
     </owl:Class>
@@ -1904,6 +1928,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000014"/>
         <obo:ICDO_0000005>H60.400</obo:ICDO_0000005>
         <obo:ICDO_0000039>H60.4</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>cholesteatoma of external ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">cholesteatoma of external ear DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳胆脂瘤</rdfs:label>
     </owl:Class>
@@ -1930,7 +1955,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000007"/>
         <obo:ICDO_0000005>H61.100</obo:ICDO_0000005>
         <obo:ICDO_0000039>H61.1</obo:ICDO_0000039>
-        <rdfs:label xml:lang="en">noninfective disorders of pinna DP</rdfs:label>
+        <icdo:OS_000000000000004>noninfective disorders of pinna</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">noninfective DP of pinna</rdfs:label>
         <rdfs:label xml:lang="zh">耳郭非感染性疾患</rdfs:label>
     </owl:Class>
     
@@ -2035,6 +2061,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000035>B37.2†</obo:ICDO_0000035>
         <obo:ICDO_0000035>B44.8†</obo:ICDO_0000035>
         <obo:ICDO_0000039>H62.2</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>otitis externa in mycoses</icdo:OS_000000000000004>
         <oboInOwl:hasRelatedSynonym>Otitis externa in aspergillosis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Otitis externa in candidiasis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Otomycosis NOS</oboInOwl:hasRelatedSynonym>
@@ -2137,6 +2164,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:ICDO_0000006>1B70.01</obo:ICDO_0000006>
+        <icdo:OS_000000000000004>erysipelas of external ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">erysipelas of external ear DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳丹毒</rdfs:label>
     </owl:Class>
@@ -2166,6 +2194,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_11AA03"/>
         <obo:ICDO_0000006>1F20.10</obo:ICDO_0000006>
+        <icdo:OS_000000000000004>aspergillus otomycosis </icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">aspergillus otomycosis DP</rdfs:label>
         <rdfs:label xml:lang="zh">曲霉菌真菌病</rdfs:label>
     </owl:Class>
@@ -2195,6 +2224,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_11AA03"/>
         <obo:ICDO_0000006>1F23.16 </obo:ICDO_0000006>
+        <icdo:OS_000000000000004>candida otomycosis</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">candida otomycosis DP</rdfs:label>
         <rdfs:label xml:lang="zh">念珠菌属真菌病</rdfs:label>
     </owl:Class>
@@ -2222,6 +2252,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000005>H60.100</obo:ICDO_0000005>
         <obo:ICDO_0000006>AA01</obo:ICDO_0000006>
         <obo:ICDO_0000039>H60.1</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>cellulitis of external ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">cellulitis of external ear DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳蜂窝织炎</rdfs:label>
     </owl:Class>
@@ -2253,6 +2284,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000005>H60.200</obo:ICDO_0000005>
         <obo:ICDO_0000006>AA02</obo:ICDO_0000006>
         <obo:ICDO_0000039>H60.2</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>malignant otitis externa</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">malignant otitis externa DP</rdfs:label>
         <rdfs:label xml:lang="zh">恶性外耳炎</rdfs:label>
     </owl:Class>
@@ -2278,6 +2310,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000119"/>
         <obo:ICDO_0000006>AA03 </obo:ICDO_0000006>
+        <icdo:OS_000000000000004>otomycosis</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">otomycosis DP</rdfs:label>
         <rdfs:label xml:lang="zh">耳真菌病</rdfs:label>
     </owl:Class>
@@ -2305,6 +2338,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000005>H61.000</obo:ICDO_0000005>
         <obo:ICDO_0000006>AA04</obo:ICDO_0000006>
         <obo:ICDO_0000039>H61.0</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>perichondritis of external ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">perichondritis of external ear DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳软骨膜炎</rdfs:label>
     </owl:Class>
@@ -2363,7 +2397,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
         <obo:ICDO_0000006>AA0Z </obo:ICDO_0000006>
-        <rdfs:label xml:lang="en">Infectious diseases of external ear, unspecified DP</rdfs:label>
+        <icdo:OS_000000000000004>Infectious diseases of external ear, unspecified</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Infectious DP of external ear, unspecified</rdfs:label>
         <rdfs:label xml:lang="zh">耳廓感染，未特指的</rdfs:label>
     </owl:Class>
     
@@ -2392,6 +2427,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
         <obo:ICDO_0000006>AA10 </obo:ICDO_0000006>
+        <icdo:OS_000000000000004>seborrhoeic otitis externa DP</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">seborrhoeic otitis externa DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳脂溢性皮炎</rdfs:label>
     </owl:Class>
@@ -2427,6 +2463,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000005>H60.500</obo:ICDO_0000005>
         <obo:ICDO_0000006>AA11</obo:ICDO_0000006>
         <obo:ICDO_0000039>H60.5</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>acute noninfectious otitis externa</icdo:OS_000000000000004>
         <oboInOwl:hasExactSynonym xml:lang="en">acute otitis externa, noninfective DP</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">acute noninfectious otitis externa DP</rdfs:label>
         <rdfs:label xml:lang="zh">急性非感染性耳炎</rdfs:label>
@@ -2463,6 +2500,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:ICDO_0000006>AA12</obo:ICDO_0000006>
+        <icdo:OS_000000000000004>chondrodermatitis nodularis</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">chondrodermatitis nodularis DP</rdfs:label>
         <rdfs:label xml:lang="zh">结节性软骨皮炎</rdfs:label>
     </owl:Class>
@@ -2493,6 +2531,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
         <obo:ICDO_0000005>H60.801</obo:ICDO_0000005>
         <obo:ICDO_0000006>AA13</obo:ICDO_0000006>
+        <icdo:OS_000000000000004>chronic otitis externa</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">chronic otitis externa DP</rdfs:label>
         <rdfs:label xml:lang="zh">慢性外耳炎</rdfs:label>
     </owl:Class>
@@ -2551,6 +2590,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:ICDO_0000006>AA1Z</obo:ICDO_0000006>
+        <icdo:OS_000000000000004>Noninfectious inflammation of external ear, unspecified</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">Noninfectious inflammation of external ear, unspecified DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳非感染性炎症，未特指的</rdfs:label>
     </owl:Class>
@@ -2580,6 +2620,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
         <obo:ICDO_0000006>AA3Z </obo:ICDO_0000006>
+        <icdo:OS_000000000000004>otitis externa, unspecified</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">otitis externa, unspecified DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳炎，未特指的</rdfs:label>
     </owl:Class>
@@ -2609,6 +2650,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000013"/>
         <obo:ICDO_0000006>AA40</obo:ICDO_0000006>
+        <icdo:OS_000000000000004>acquired deformity of external auditory canal</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">acquired deformity of external auditory canal DP</rdfs:label>
         <rdfs:label xml:lang="zh">获得性外耳道畸形</rdfs:label>
     </owl:Class>
@@ -2636,6 +2678,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000005>H61.802</obo:ICDO_0000005>
         <obo:ICDO_0000006>AA40.0</obo:ICDO_0000006>
         <obo:ICDO_0000039>H61.8</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>exostosis of external canal</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">exostosis of external canal DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳道外生骨疣</rdfs:label>
     </owl:Class>
@@ -2646,9 +2689,28 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_11AA40.1">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000029"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001352"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000111"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:ICDO_0000005>H61.300</obo:ICDO_0000005>
         <obo:ICDO_0000006>AA40.1</obo:ICDO_0000006>
         <obo:ICDO_0000039>H61.3</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>acquired stenosis of external auditory canal</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">acquired stenosis of external auditory canal DP</rdfs:label>
         <rdfs:label xml:lang="zh">后天性外耳道狭窄</rdfs:label>
     </owl:Class>
@@ -2675,6 +2737,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_10H60.4"/>
         <obo:ICDO_0000006>AA40.2</obo:ICDO_0000006>
         <obo:ICDO_0000039>H60.4 </obo:ICDO_0000039>
+        <icdo:OS_000000000000004>cholesteatoma of external auditory canal</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">cholesteatoma of external auditory canal DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳道胆脂瘤</rdfs:label>
     </owl:Class>
@@ -2745,6 +2808,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000013"/>
         <obo:ICDO_0000006>AA41 </obo:ICDO_0000006>
+        <icdo:OS_000000000000004>acquired deformity of pinna</icdo:OS_000000000000004>
         <oboInOwl:hasExactSynonym xml:lang="zh">后天性耳廓畸形</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">acquired deformity of pinna DP</rdfs:label>
         <rdfs:label xml:lang="zh">获得性耳廓畸形</rdfs:label>
@@ -2771,7 +2835,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:IAO_0000118>Cauliflower ear</obo:IAO_0000118>
         <obo:ICDO_0000006>AA41.0 </obo:ICDO_0000006>
         <rdfs:label xml:lang="en">cauliflower ear DP</rdfs:label>
-        <rdfs:label xml:lang="zh">后天性外耳道狭窄</rdfs:label>
+        <rdfs:label xml:lang="zh">菜花耳</rdfs:label>
     </owl:Class>
     
 
@@ -2838,6 +2902,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000005>H61.200</obo:ICDO_0000005>
         <obo:ICDO_0000006>AA42</obo:ICDO_0000006>
         <obo:ICDO_0000039>H61.2</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>impacted cerumen</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">impacted cerumen DP</rdfs:label>
         <rdfs:label xml:lang="zh">耵聍栓塞</rdfs:label>
     </owl:Class>
@@ -2877,8 +2942,21 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:ICDO_0000006>AA4Z</obo:ICDO_0000006>
-        <rdfs:label xml:lang="en">noninflammatory disorders of the external ear, unspecified DP</rdfs:label>
+        <icdo:OS_000000000000004>noninflammatory disorders of the external ear, unspecified</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">noninflammatory DP of the external ear, unspecified</rdfs:label>
         <rdfs:label xml:lang="zh">外耳非感染性疾患，未特指的</rdfs:label>
     </owl:Class>
     
@@ -2905,7 +2983,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000005>H61.900</obo:ICDO_0000005>
         <obo:ICDO_0000006>AA6Z </obo:ICDO_0000006>
         <obo:ICDO_0000039>H61.9</obo:ICDO_0000039>
-        <rdfs:label xml:lang="en">diseases of external ear, unspecified DP</rdfs:label>
+        <icdo:OS_000000000000004>diseases of external ear, unspecified</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">external ear, unspecified DP</rdfs:label>
         <rdfs:label xml:lang="zh">耳廓疾病，未特指的</rdfs:label>
     </owl:Class>
     
@@ -2930,6 +3009,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000065"/>
         <obo:ICDO_0000006>EE60.00</obo:ICDO_0000006>
+        <icdo:OS_000000000000004>ear-lobe keloid</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">ear-lobe keloid DP</rdfs:label>
         <rdfs:label xml:lang="zh">耳垂瘢痕瘤</rdfs:label>
     </owl:Class>
@@ -2959,6 +3039,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
         <obo:ICDO_0000006>EG40 </obo:ICDO_0000006>
+        <icdo:OS_000000000000004>contact dermatitis of external ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">contact dermatitis of external ear DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳接触性皮炎</rdfs:label>
     </owl:Class>
@@ -2984,6 +3065,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000021"/>
         <obo:ICDO_0000005>H60.401</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>granuloma of external ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">granuloma of external ear DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳肉芽肿</rdfs:label>
     </owl:Class>
@@ -3013,6 +3095,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000070"/>
         <obo:ICDO_0000005>H60.402</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>obstructive keratosis of external ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">obstructive keratosis of external ear DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳阻塞性角化病</rdfs:label>
     </owl:Class>
@@ -3038,6 +3121,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000018"/>
         <obo:ICDO_0000005>H61.806</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>external ear canal cyst</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">external ear canal cyst DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳道囊肿</rdfs:label>
     </owl:Class>
@@ -3081,6 +3165,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:ICDO_0000005>H60.301</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>hemorrhagic otitis externa</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">hemorrhagic otitis externa DP</rdfs:label>
         <rdfs:label xml:lang="zh">出血性外耳炎</rdfs:label>
     </owl:Class>
@@ -3110,6 +3195,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
         <obo:ICDO_0000005>H60.302</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>diffuse otitis externa</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">diffuse otitis externa DP</rdfs:label>
         <rdfs:label xml:lang="zh">弥漫性外耳炎</rdfs:label>
     </owl:Class>
@@ -3169,6 +3255,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:ICDO_0000005>H60.303</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>swimmer&apos;s ear</icdo:OS_000000000000004>
         <oboInOwl:hasExactSynonym>beach ear DP</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">swimmer&apos;s ear DP</rdfs:label>
         <rdfs:label xml:lang="zh">游泳者耳病</rdfs:label>
@@ -3195,6 +3282,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000021"/>
         <obo:ICDO_0000005>H60.403</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>granuloma  of external ear canal</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">granuloma  of external ear canal DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳道肉芽肿</rdfs:label>
     </owl:Class>
@@ -3221,6 +3309,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
         <obo:ICDO_0000005>H60.501</obo:ICDO_0000005>
         <obo:ICDO_0000039>H60.54</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>acute eczematoid otitis externa</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">acute eczematoid otitis externa DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳湿疹</rdfs:label>
     </owl:Class>
@@ -3255,6 +3344,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
         <obo:ICDO_0000005>H60.502</obo:ICDO_0000005>
         <obo:ICDO_0000039>H60.51</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>acute actinic otitis externa</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">acute actinic otitis externa DP</rdfs:label>
         <rdfs:label xml:lang="zh">急性光化性外耳炎</rdfs:label>
     </owl:Class>
@@ -3289,6 +3379,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
         <obo:ICDO_0000005>H60.503</obo:ICDO_0000005>
         <obo:ICDO_0000039>H60.52</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>acute chemical otitis externa</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">acute chemical otitis externa DP</rdfs:label>
         <rdfs:label xml:lang="zh">急性化学性外耳炎</rdfs:label>
     </owl:Class>
@@ -3322,6 +3413,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
         <obo:ICDO_0000005>H61.001</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>chondrodermatitis nodularis chronica helicis</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">chondrodermatitis nodularis chronica helicis DP</rdfs:label>
         <rdfs:label xml:lang="zh">慢性结节性耳轮软骨皮炎</rdfs:label>
     </owl:Class>
@@ -3347,6 +3439,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000024"/>
         <obo:ICDO_0000005>H61.002</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>pinna scar</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">pinna scar DP</rdfs:label>
         <rdfs:label xml:lang="zh">耳郭瘢痕</rdfs:label>
     </owl:Class>
@@ -3376,6 +3469,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000013"/>
         <obo:ICDO_0000005>H61.101</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>acquired deformity of external ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">acquired deformity of external ear DP</rdfs:label>
         <rdfs:label xml:lang="zh">后天性外耳畸形</rdfs:label>
     </owl:Class>
@@ -3401,6 +3495,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000030"/>
         <obo:ICDO_0000005>H61.103</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>pinna pseudocyst</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">pinna pseudocyst DP</rdfs:label>
         <rdfs:label xml:lang="zh">耳郭假性囊肿</rdfs:label>
     </owl:Class>
@@ -3411,7 +3506,26 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH61.104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000069"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000114"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:ICDO_0000005>H61.104</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>hematoma  ossification behind ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">hematoma  ossification behind ear DP</rdfs:label>
         <rdfs:label xml:lang="zh">耳后血肿骨化</rdfs:label>
     </owl:Class>
@@ -3437,6 +3551,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000023"/>
         <obo:ICDO_0000005>H61.105</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>pinna tumor</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">pinna tumor DP</rdfs:label>
         <rdfs:label xml:lang="zh">耳郭肿物</rdfs:label>
     </owl:Class>
@@ -3466,6 +3581,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000026"/>
         <obo:ICDO_0000005>H61.801</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>temporomandibular joint  external ear canal   hernia</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">temporomandibular joint  external ear canal   hernia DP</rdfs:label>
         <rdfs:label xml:lang="zh">颞下颌关节外耳道疝</rdfs:label>
     </owl:Class>
@@ -3491,6 +3607,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000020"/>
         <obo:ICDO_0000005>H61.803</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>external ear fistula</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">external ear fistula DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳瘘</rdfs:label>
     </owl:Class>
@@ -3516,6 +3633,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000070"/>
         <obo:ICDO_0000005>H61.804</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>external ear canal keratosis</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">external ear canal keratosis DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳道角化症</rdfs:label>
     </owl:Class>
@@ -3541,6 +3659,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000048"/>
         <obo:ICDO_0000005>H61.805</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>external ear canal necrosis</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">external ear canal necrosis DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳道坏死</rdfs:label>
     </owl:Class>
@@ -3566,6 +3685,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000023"/>
         <obo:ICDO_0000005>H61.901</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>external ear canal tumor</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">external ear canal tumor DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳道肿物</rdfs:label>
     </owl:Class>
@@ -3595,6 +3715,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000003"/>
         <obo:ICDO_0000005>H61.902</obo:ICDO_0000005>
+        <icdo:OS_000000000000004>acquired external ear canal atresia</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">acquired external ear canal atresia DP</rdfs:label>
         <rdfs:label xml:lang="zh">后天性外耳道闭锁</rdfs:label>
     </owl:Class>
@@ -3672,6 +3793,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/UBERON_0001352 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001352">
+        <oboInOwl:hasExactSynonym>external auditory canal</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">external acoustic meatus</rdfs:label>
         <rdfs:label xml:lang="zh">外耳道</rdfs:label>
     </rdf:Description>
@@ -3781,7 +3903,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">external ear canal eczema</rdfs:label>
+        <rdfs:label xml:lang="en">external ear canal eczema JYPM</rdfs:label>
         <rdfs:label xml:lang="zh">外耳道湿疹 JYPM</rdfs:label>
     </owl:Class>
     
@@ -3955,13 +4077,13 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000001">
-        <owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">swimmer&apos;s ear LHEM</rdfs:label>
         <rdfs:label xml:lang="zh">游泳者耳病 LHEM</rdfs:label>
     </owl:Class>
@@ -4002,6 +4124,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_11EG40.0">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_11EG40"/>
         <obo:ICDO_0000006>EG40.0</obo:ICDO_0000006>
+        <icdo:OS_000000000000004>Allergic contact dermatitis of external ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">Allergic contact dermatitis of external ear DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳过敏性接触性皮炎</rdfs:label>
     </owl:Class>
@@ -4012,9 +4135,34 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_11EG4Y">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:ICDO_0000006>EG4Y</obo:ICDO_0000006>
         <obo:ICDO_0000006 xml:lang="zh">其他特指的外耳炎性疾患</obo:ICDO_0000006>
-        <rdfs:label xml:lang="en">Other specified inflammatory disorder of external ear DP</rdfs:label>
+        <icdo:OS_000000000000004>Other specified inflammatory disorder of external ear</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Other specified inflammatory DP of external ear</rdfs:label>
     </owl:Class>
     
 
@@ -4024,8 +4172,124 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_11EK02.10">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_11EG40"/>
         <obo:ICDO_0000006>EK02.10</obo:ICDO_0000006>
+        <icdo:OS_000000000000004> Irritant contact dermatitis of external ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en"> Irritant contact dermatitis of external ear DP</rdfs:label>
         <rdfs:label xml:lang="zh">刺激物接触性外耳皮炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:ICDO_0000005>H65.000</obo:ICDO_0000005>
+        <icdo:OS_000000000000004 xml:lang="zh"> Acute serous otitis media</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en"> Acute serous otitis media DP</rdfs:label>
+        <rdfs:label xml:lang="zh">急性浆液性中耳炎</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en"> Other acute nonsuppurative otitis media DP</rdfs:label>
+        <rdfs:label xml:lang="zh">急性非化脓性中耳炎，其他的</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:label xml:lang="en">blue drum syndrome DP</rdfs:label>
+        <rdfs:label xml:lang="zh">蓝鼓膜综合征</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <rdfs:label xml:lang="en">serous</rdfs:label>
+        <rdfs:label xml:lang="zh">浆液性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001690"/>
+        <rdfs:label xml:lang="en">middle ear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <rdfs:label xml:lang="en">nonsuppurative</rdfs:label>
+        <rdfs:label xml:lang="zh">非化脓性</rdfs:label>
     </owl:Class>
     
 
@@ -4054,5 +4318,5 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
