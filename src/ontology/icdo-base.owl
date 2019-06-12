@@ -92,8 +92,11 @@
     <!-- http://purl.obolibrary.org/obo/ICDO_0000012 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000012">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
-        <rdfs:label xml:lang="en">DP occurs in anatomical side</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <obo:IAO_0000112>A disease process may occurs in the left side of ear. In this case, the domain is the disease process, and the range is the left side.</obo:IAO_0000112>
+        <obo:IAO_0000117>An object property that represents a relation between a disease process (i.e., DP) and the lateral side of an anatomical entity where the disease process occurs.</obo:IAO_0000117>
+        <obo:IAO_0000117>Eric Wan, Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">DP occurs in anatomical lateral side</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -101,7 +104,7 @@
     <!-- http://purl.obolibrary.org/obo/ICDO_0000031 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000031">
-        <rdfs:label xml:lang="en">has syndrome of</rdfs:label>
+        <rdfs:label xml:lang="en">has syndrome</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -109,7 +112,8 @@
     <!-- http://purl.obolibrary.org/obo/ICDO_0000042 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000042">
-        <rdfs:label xml:lang="en">has quality of</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has quality</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -125,6 +129,8 @@
     <!-- http://purl.obolibrary.org/obo/ICDO_0000078 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/ICDO_0000078">
+        <obo:IAO_0000115>An object property that represents a relation between a disease process (i.e., DP) and the anatomical entity where the disease process occurs.</obo:IAO_0000115>
+        <obo:IAO_0000117>Eric Wan, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">DP occurs in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -190,7 +196,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000107"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
@@ -252,7 +258,7 @@
     <!-- http://purl.obolibrary.org/obo/ICDO_0000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000017"/>
         <rdfs:label xml:lang="en">ossification DP</rdfs:label>
         <rdfs:label xml:lang="zh">骨化</rdfs:label>
     </owl:Class>
@@ -317,7 +323,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000088"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000017"/>
         <obo:IAO_0000115 xml:lang="en">is a major abnormality in the shape of a body part or organ compared to the normal shape of that part.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">deformity DP</rdfs:label>
         <rdfs:label xml:lang="en">畸形</rdfs:label>
@@ -335,7 +341,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000096"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000017"/>
         <rdfs:label xml:lang="en">cholesteatoma DP</rdfs:label>
         <rdfs:label xml:lang="zh">胆脂瘤</rdfs:label>
     </owl:Class>
@@ -384,10 +390,31 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000017">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">pathological anatomical entity DP</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ICDO_0000018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000017"/>
         <obo:IAO_0000115>A disease process that has the outcome of the formation of a cyst</obo:IAO_0000115>
         <rdfs:label xml:lang="en">cyst DP</rdfs:label>
         <rdfs:label xml:lang="zh">囊肿</rdfs:label>
@@ -421,7 +448,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000102"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
@@ -465,7 +492,7 @@
     <!-- http://purl.obolibrary.org/obo/ICDO_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
@@ -526,7 +553,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000084"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
@@ -577,7 +604,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     <!-- http://purl.obolibrary.org/obo/ICDO_0000029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000017"/>
         <rdfs:label xml:lang="en">stenosis DP</rdfs:label>
         <rdfs:label xml:lang="zh">狭窄</rdfs:label>
     </owl:Class>
@@ -593,7 +620,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000103"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
@@ -701,6 +728,15 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:label xml:lang="en">syndrome DP</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ICDO_0000044 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000044">
@@ -711,8 +747,8 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">a disease process of a tissue reaction to an internal or external injury and has disease process output of  inflammatory anatomical entity.</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">http://purl.obolibrary.org/obo/MPATH_212</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">an immune system disease process that undergoes an inflammation process and has output of an inflammatory anatomical entity.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">https://www.webmd.com/arthritis/about-inflammation</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym xml:lang="zh">炎</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">inflammation DP</rdfs:label>
         <rdfs:label xml:lang="zh">炎症</rdfs:label>
@@ -753,7 +789,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     <!-- http://purl.obolibrary.org/obo/ICDO_0000048 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000048">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000017"/>
         <rdfs:label xml:lang="en">necrosis DP</rdfs:label>
         <rdfs:label xml:lang="zh">坏死</rdfs:label>
     </owl:Class>
@@ -980,7 +1016,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000108"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
@@ -1373,7 +1409,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000110"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">cellulitis of external ear TSEM</rdfs:label>
+        <rdfs:label xml:lang="en">TEST: cellulitis of external ear</rdfs:label>
         <rdfs:label xml:lang="zh">外耳蜂窝织炎 TSEM</rdfs:label>
     </owl:Class>
     
@@ -1667,8 +1703,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000096"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">cholesteatoma of external auditory canal JYEM</rdfs:label>
-        <rdfs:label xml:lang="zh">外耳道胆脂瘤 JYEM</rdfs:label>
+        <rdfs:label xml:lang="en">TEST: cholesteatoma of external auditory canal</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳道胆脂瘤</rdfs:label>
     </owl:Class>
     
 
@@ -4265,7 +4301,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000043"/>
         <rdfs:label xml:lang="en">blue drum syndrome DP</rdfs:label>
         <rdfs:label xml:lang="zh">蓝鼓膜综合征</rdfs:label>
     </owl:Class>
