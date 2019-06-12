@@ -705,8 +705,15 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000033"/>
-        <obo:IAO_0000115 xml:lang="en">a disease process of a tissue reaction to an internal or external injury.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">a disease process of a tissue reaction to an internal or external injury and has disease process output of  inflammatory anatomical entity.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://purl.obolibrary.org/obo/MPATH_212</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym xml:lang="zh">炎</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">inflammation DP</rdfs:label>
         <rdfs:label xml:lang="zh">炎症</rdfs:label>
     </owl:Class>
@@ -4290,6 +4297,15 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
         <rdfs:label xml:lang="en">nonsuppurative</rdfs:label>
         <rdfs:label xml:lang="zh">非化脓性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:label xml:lang="en">inlammation DP</rdfs:label>
     </owl:Class>
     
 
