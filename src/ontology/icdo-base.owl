@@ -21,8 +21,8 @@
         <dc:contributor>Edison Ong</dc:contributor>
         <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
         <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
-        <oboInOwl:creation_date>4-13-2019</oboInOwl:creation_date>
-        <owl:versionInfo>1.0.6</owl:versionInfo>
+        <oboInOwl:creation_date>8-12-2019</oboInOwl:creation_date>
+        <owl:versionInfo>1.0.7</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3231,7 +3231,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
