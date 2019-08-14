@@ -21,8 +21,8 @@
         <dc:contributor>Edison Ong</dc:contributor>
         <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
         <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
-        <oboInOwl:creation_date>8-12-2019</oboInOwl:creation_date>
-        <owl:versionInfo>1.0.7</owl:versionInfo>
+        <oboInOwl:creation_date>4-13-2019</oboInOwl:creation_date>
+        <owl:versionInfo>1.0.6</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -74,6 +74,14 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000004">
         <rdfs:label xml:lang="en">has ICD name</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000011 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000011">
+        <rdfs:label xml:lang="zh">is part of</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -146,6 +154,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000009 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000009">
+        <rdfs:label xml:lang="zh">is part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -165,7 +181,7 @@
         <obo:IAO_0000119>https://www.cdc.gov/ophss/csels/dsepd/ss1978/lesson1/section9.html</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym xml:lang="en">disorder</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">disease process</rdfs:label>
-        <rdfs:label xml:lang="zh">疾病过程</rdfs:label>
+        <rdfs:label xml:lang="zh">病程</rdfs:label>
     </owl:Class>
     
 
@@ -250,7 +266,7 @@
         </rdfs:subClassOf>
         <icdo:OS_000000000000004>disease of external ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">external ear DP</rdfs:label>
-        <rdfs:label xml:lang="zh">外耳疾病</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳疾病病程</rdfs:label>
     </owl:Class>
     
 
@@ -259,6 +275,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000017"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000114"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ossification DP</rdfs:label>
         <rdfs:label xml:lang="zh">骨化</rdfs:label>
     </owl:Class>
@@ -269,9 +291,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000044"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000110"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <icdo:OS_000000000000004>cellulitis</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">cellulitis DP</rdfs:label>
-        <rdfs:label xml:lang="zh">蜂窝织炎</rdfs:label>
+        <rdfs:label xml:lang="zh">蜂窝织炎病程</rdfs:label>
     </owl:Class>
     
 
@@ -380,12 +408,24 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000090"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000058"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">noninfectious inflammation of external ear DP</rdfs:label>
-        <rdfs:label xml:lang="zh">外耳非感染性炎症</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳非感染性炎症病程</rdfs:label>
     </owl:Class>
     
 
@@ -473,7 +513,7 @@
         </rdfs:subClassOf>
         <icdo:OS_000000000000004>granuloma</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">granuloma DP</rdfs:label>
-        <rdfs:label xml:lang="zh">肉芽肿</rdfs:label>
+        <rdfs:label xml:lang="zh">肉芽肿病程</rdfs:label>
     </owl:Class>
     
 
@@ -482,9 +522,15 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <icdo:OS_000000000000004>noninflammatory disorders</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">noninflammatory  DP</rdfs:label>
-        <rdfs:label xml:lang="zh">非炎症性疾病</rdfs:label>
+        <rdfs:label xml:lang="zh">非炎症性疾病病程</rdfs:label>
     </owl:Class>
     
 
@@ -516,7 +562,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000059"/>
         <rdfs:label xml:lang="en">scar DP</rdfs:label>
-        <rdfs:label xml:lang="zh">瘢痕</rdfs:label>
+        <rdfs:label xml:lang="zh">瘢痕病程</rdfs:label>
     </owl:Class>
     
 
@@ -596,7 +642,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">otitis DP</rdfs:label>
-        <rdfs:label xml:lang="zh">耳炎</rdfs:label>
+        <rdfs:label xml:lang="zh">耳炎病程</rdfs:label>
     </owl:Class>
     
 
@@ -636,7 +682,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     <!-- http://purl.obolibrary.org/obo/ICDO_0000032 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000032">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000044"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000033"/>
         <icdo:OS_000000000000004>infectious disease</icdo:OS_000000000000004>
         <oboInOwl:hasExactSynonym xml:lang="zh">感染</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">infectious DP</rdfs:label>
@@ -659,6 +705,8 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002062"/>
+        <obo:IAO_0000115>developed after birth : not congenital or hereditary</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.merriam-webster.com/dictionary/acquired</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym xml:lang="zh">获得性</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">acquired</rdfs:label>
         <rdfs:label xml:lang="zh">后天性</rdfs:label>
@@ -741,17 +789,11 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000033"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">an immune system disease process that undergoes an inflammation process and has output of an inflammatory anatomical entity.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">https://www.webmd.com/arthritis/about-inflammation</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym xml:lang="zh">炎</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">inflammation DP</rdfs:label>
-        <rdfs:label xml:lang="zh">炎症</rdfs:label>
+        <rdfs:label xml:lang="zh">炎症病程</rdfs:label>
     </owl:Class>
     
 
@@ -938,6 +980,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000032"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000044"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
@@ -946,7 +989,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
         </rdfs:subClassOf>
         <oboInOwl:hasRelatedSynonym xml:lang="zh">疖</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">abscess DP</rdfs:label>
-        <rdfs:label xml:lang="zh">脓肿</rdfs:label>
+        <rdfs:label xml:lang="zh">脓肿病程</rdfs:label>
     </owl:Class>
     
 
@@ -1002,7 +1045,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000024"/>
         <rdfs:label xml:lang="en">keloid DP</rdfs:label>
-        <rdfs:label xml:lang="zh">瘢痕瘤</rdfs:label>
+        <rdfs:label xml:lang="zh">瘢痕瘤病程</rdfs:label>
     </owl:Class>
     
 
@@ -1023,6 +1066,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>骨疣</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">exostosis DP</rdfs:label>
         <rdfs:label xml:lang="zh">外生骨疣</rdfs:label>
     </owl:Class>
@@ -1049,9 +1093,10 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000106"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>角化病</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="zh">角化症</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">keratosis DP</rdfs:label>
-        <rdfs:label xml:lang="zh">角化病</rdfs:label>
+        <rdfs:label xml:lang="zh">角化病程</rdfs:label>
     </owl:Class>
     
 
@@ -1141,6 +1186,8 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <obo:IAO_0000115>is a  pathological anatomical structures transformed from pathological continuant entities.</obo:IAO_0000115>
+        <obo:IAO_0000119>On carcinomas and other pathological entities ,Comp Funct Genomics. 2005;6(7-8):379-87. doi: 10.1002/cfg.497.. https://www.ncbi.nlm.nih.gov/pubmed/18629199</obo:IAO_0000119>
         <rdfs:label xml:lang="en">pathological anatomical entity</rdfs:label>
     </owl:Class>
     
@@ -1157,7 +1204,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">erysipelas DP</rdfs:label>
-        <rdfs:label xml:lang="zh">丹毒</rdfs:label>
+        <rdfs:label xml:lang="zh">丹毒病程</rdfs:label>
     </owl:Class>
     
 
@@ -1177,6 +1224,8 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000085">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
+        <obo:IAO_0000115>is a form of cell injury which results in the premature death of cells in living tissue by autolysis.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Necrosis</obo:IAO_0000119>
         <rdfs:label xml:lang="en">necrotic</rdfs:label>
         <rdfs:label xml:lang="zh">坏死性</rdfs:label>
     </owl:Class>
@@ -1228,9 +1277,10 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
         <obo:IAO_0000115 xml:lang="en">abnormality in the shape of a body part or organ</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">defect</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>畸形</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="zh">缺损</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">deformity</rdfs:label>
-        <rdfs:label xml:lang="zh">畸形</rdfs:label>
+        <rdfs:label xml:lang="en">deformity entity</rdfs:label>
+        <rdfs:label xml:lang="zh">畸形体</rdfs:label>
     </owl:Class>
     
 
@@ -1255,7 +1305,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">noninfectious inflammation DP</rdfs:label>
-        <rdfs:label xml:lang="zh">非感染性炎症</rdfs:label>
+        <rdfs:label xml:lang="zh">非感染性炎症病程</rdfs:label>
     </owl:Class>
     
 
@@ -1311,7 +1361,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
         </rdfs:subClassOf>
         <icdo:OS_000000000000004>dermatitis</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">dermatitis DP</rdfs:label>
-        <rdfs:label xml:lang="zh">皮炎</rdfs:label>
+        <rdfs:label xml:lang="zh">皮炎病程</rdfs:label>
     </owl:Class>
     
 
@@ -1342,8 +1392,8 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000096">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
         <obo:IAO_0000115>is a destructive and expanding growth consisting of keratinizing squamous epithelium in the middle ear and/or mastoid process. Cholesteatomas are not cancerous as the name may suggest, but can cause significant problems because of their erosive and expansile properties. This can result in the destruction of the bones of the middle ear (ossicles), as well as growth through the base of the skull into the brain. They often become infected and can result in chronically draining ears. Treatment almost always consists of surgical removal.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">cholesteatoma</rdfs:label>
-        <rdfs:label xml:lang="zh">胆脂瘤</rdfs:label>
+        <rdfs:label xml:lang="en">cholesteatoma entity</rdfs:label>
+        <rdfs:label xml:lang="zh">胆脂瘤体</rdfs:label>
     </owl:Class>
     
 
@@ -1353,8 +1403,9 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000097">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
         <obo:IAO_0000115 xml:lang="en">is an area of fibrous tissue that replaces normal skin after an injury. Scars result from the biological process of wound repair in the skin, as well as in other organs and tissues of the body. Thus, scarring is a natural part of the healing process. With the exception of very minor lesions, every wound (e.g., after accident, disease, or surgery) results in some degree of scarring. An exception to this are animals with complete regeneration, which regrow tissue without scar formation.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">scar</rdfs:label>
-        <rdfs:label xml:lang="zh">瘢痕</rdfs:label>
+        <oboInOwl:hasExactSynonym>瘢痕</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">scar entity</rdfs:label>
+        <rdfs:label xml:lang="zh">瘢痕体</rdfs:label>
     </owl:Class>
     
 
@@ -1364,8 +1415,8 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000098">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000097"/>
         <obo:IAO_0000115 xml:lang="zh">Keloid, also known as keloid disorder and keloidal scar,[1] is the formation of a type of scar which, depending on its maturity, is composed mainly of either type III (early) or type I (late) collagen. It is a result of an overgrowth of granulation tissue (collagen type 3) at the site of a healed skin injury which is then slowly replaced by collagen type 1. Keloids are firm, rubbery lesions or shiny, fibrous nodules, and can vary from pink to the color of the person&apos;s skin or red to dark brown in color. A keloid scar is benign and not contagious, but sometimes accompanied by severe itchiness, pain,[2] and changes in texture. In severe cases, it can affect movement of skin. Keloid scars are seen 15 times more frequently in people of sub-Saharan African descent than in people of European descent.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">keloid </rdfs:label>
-        <rdfs:label xml:lang="zh">瘢痕瘤</rdfs:label>
+        <rdfs:label xml:lang="en">keloid entity</rdfs:label>
+        <rdfs:label xml:lang="zh">瘢痕瘤体</rdfs:label>
     </owl:Class>
     
 
@@ -1375,8 +1426,9 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000099">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
         <obo:IAO_0000115 xml:lang="zh">is a structure formed during inflammation that is found in many diseases. It is a collection of immune cells known as macrophages.[1] Granulomas form when the immune system attempts to wall off substances it perceives as foreign but is unable to eliminate. Such substances include infectious organisms including bacteria and fungi, as well as other materials such as keratin and suture fragments.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>肉芽肿</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">granuloma</rdfs:label>
-        <rdfs:label xml:lang="zh">肉芽肿</rdfs:label>
+        <rdfs:label xml:lang="zh">肉芽肿体</rdfs:label>
     </owl:Class>
     
 
@@ -1411,16 +1463,6 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">TEST: cellulitis of external ear</rdfs:label>
         <rdfs:label xml:lang="zh">外耳蜂窝织炎 TSEM</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000101 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000101">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
-        <rdfs:label xml:lang="en">exostosis</rdfs:label>
-        <rdfs:label xml:lang="zh">外生骨疣</rdfs:label>
     </owl:Class>
     
 
@@ -1477,10 +1519,9 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
         <obo:IAO_0000115 xml:lang="zh">is a growth of keratin on the skin or on mucous membranes stemming from keratinocytes, the prominent cell type in the epidermis.</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Keratosis</obo:IAO_0000119>
-        <oboInOwl:hasExactSynonym xml:lang="zh">角化病</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="zh">角质化</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">keratosis</rdfs:label>
-        <rdfs:label xml:lang="zh">角化症</rdfs:label>
+        <oboInOwl:hasRelatedSynonym xml:lang="zh">角质化体</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">keratosis entity</rdfs:label>
+        <rdfs:label xml:lang="zh">角化体</rdfs:label>
     </owl:Class>
     
 
@@ -1491,8 +1532,9 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
         <obo:IAO_0000115>is a condition in which an orifice or passage in the body is (usually abnormally) closed or absent. Examples of atresia include: Biliary atresia, a condition in newborns in which the common bile duct between the liver and the small intestine is blocked or absent.</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Atresia</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">atresia</rdfs:label>
-        <rdfs:label xml:lang="zh">闭锁</rdfs:label>
+        <oboInOwl:hasExactSynonym>闭锁</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">atresia entity</rdfs:label>
+        <rdfs:label xml:lang="zh">闭锁体</rdfs:label>
     </owl:Class>
     
 
@@ -1502,6 +1544,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000108">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
         <obo:IAO_0000115 xml:lang="en">An exostosis, also known as bone spur, is the formation of new bone on the surface of a bone.[1] Exostoses can cause chronic pain ranging from mild to debilitatingly severe, depending on the shape, size, and location of the lesion. It is most commonly found in places like the ribs, where small bone growths form, but sometimes larger growths can grow on places like the ankles, knees, shoulders, elbows and hips. Very rarely are they on the skull.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>骨疣</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">exostosis</rdfs:label>
         <rdfs:label xml:lang="zh">外生骨疣</rdfs:label>
     </owl:Class>
@@ -1524,8 +1567,9 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000111">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
         <obo:IAO_0000115>abnormal narrowed structure or organ</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>狭窄</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">stenosis</rdfs:label>
-        <rdfs:label xml:lang="zh">狭窄</rdfs:label>
+        <rdfs:label xml:lang="zh">狭窄体</rdfs:label>
     </owl:Class>
     
 
@@ -1558,6 +1602,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000060"/>
         <obo:ICDO_0000005>H60.000</obo:ICDO_0000005>
         <obo:ICDO_0000006>AA00</obo:ICDO_0000006>
@@ -1566,7 +1611,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <oboInOwl:hasRelatedSynonym xml:lang="zh">疖</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym xml:lang="zh">痈</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">abscess of external ear DP</rdfs:label>
-        <rdfs:label xml:lang="zh">外耳脓肿</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳脓肿病程</rdfs:label>
     </owl:Class>
     
 
@@ -1576,8 +1621,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000114">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
         <obo:IAO_0000115>bony substance</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">ossification</rdfs:label>
-        <rdfs:label xml:lang="zh">骨化</rdfs:label>
+        <rdfs:label xml:lang="en">ossification entity</rdfs:label>
+        <rdfs:label xml:lang="zh">骨化体</rdfs:label>
     </owl:Class>
     
 
@@ -1588,6 +1633,9 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
         <obo:IAO_0000115 xml:lang="en">a physical pathological anatomic entity that is a result of an inflammation process</obo:IAO_0000115>
         <obo:IAO_0000117>Eric Wan, Oliver He</obo:IAO_0000117>
+        <oboInOwl:hasBroadSynonym>感染</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>炎</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>炎症</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym xml:lang="zh">炎症体</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">inflammatory anatomical entity</rdfs:label>
         <rdfs:label xml:lang="zh">发炎体</rdfs:label>
@@ -1653,8 +1701,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000120">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
         <obo:IAO_0000115 xml:lang="en">a necrotic object</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">necrosis</rdfs:label>
-        <rdfs:label xml:lang="zh">坏死</rdfs:label>
+        <rdfs:label xml:lang="en">necrosis entity</rdfs:label>
+        <rdfs:label xml:lang="zh">坏死体</rdfs:label>
     </owl:Class>
     
 
@@ -1890,7 +1938,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000005>H60.002</obo:ICDO_0000005>
         <icdo:OS_000000000000004>external ear carbuncle</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">external ear carbuncle DP</rdfs:label>
-        <rdfs:label xml:lang="zh">外耳痈</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳痈病程</rdfs:label>
     </owl:Class>
     
 
@@ -1916,7 +1964,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000005>H60.001</obo:ICDO_0000005>
         <icdo:OS_000000000000004>external ear furuncle</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">external ear furuncle DP</rdfs:label>
-        <rdfs:label xml:lang="zh">外耳疖</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳疖病程</rdfs:label>
     </owl:Class>
     
 
@@ -2000,7 +2048,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000039>H61.1</obo:ICDO_0000039>
         <icdo:OS_000000000000004>noninfective disorders of pinna</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">noninfective DP of pinna</rdfs:label>
-        <rdfs:label xml:lang="zh">耳郭非感染性疾患</rdfs:label>
+        <rdfs:label xml:lang="zh">耳郭非感染性疾患病程</rdfs:label>
     </owl:Class>
     
 
@@ -2297,7 +2345,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000039>H60.1</obo:ICDO_0000039>
         <icdo:OS_000000000000004>cellulitis of external ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">cellulitis of external ear DP</rdfs:label>
-        <rdfs:label xml:lang="zh">外耳蜂窝织炎</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳蜂窝织炎病程</rdfs:label>
     </owl:Class>
     
 
@@ -2323,7 +2371,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
         <obo:ICDO_0000005>H60.200</obo:ICDO_0000005>
         <obo:ICDO_0000006>AA02</obo:ICDO_0000006>
         <obo:ICDO_0000039>H60.2</obo:ICDO_0000039>
@@ -2545,7 +2593,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000006>AA12</obo:ICDO_0000006>
         <icdo:OS_000000000000004>chondrodermatitis nodularis</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">chondrodermatitis nodularis DP</rdfs:label>
-        <rdfs:label xml:lang="zh">结节性软骨皮炎</rdfs:label>
+        <rdfs:label xml:lang="zh">结节性软骨皮炎病程</rdfs:label>
     </owl:Class>
     
 
@@ -2630,6 +2678,24 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000058"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:ICDO_0000006>AA1Z</obo:ICDO_0000006>
@@ -3028,7 +3094,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000039>H61.9</obo:ICDO_0000039>
         <icdo:OS_000000000000004>diseases of external ear, unspecified</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">external ear, unspecified DP</rdfs:label>
-        <rdfs:label xml:lang="zh">耳廓疾病，未特指的</rdfs:label>
+        <rdfs:label xml:lang="zh">耳廓疾病病程，未特指的</rdfs:label>
     </owl:Class>
     
 
@@ -3054,7 +3120,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000006>EE60.00</obo:ICDO_0000006>
         <icdo:OS_000000000000004>ear-lobe keloid</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">ear-lobe keloid DP</rdfs:label>
-        <rdfs:label xml:lang="zh">耳垂瘢痕瘤</rdfs:label>
+        <rdfs:label xml:lang="zh">耳垂瘢痕瘤病程</rdfs:label>
     </owl:Class>
     
 
@@ -3080,7 +3146,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
         <obo:ICDO_0000006>EG40 </obo:ICDO_0000006>
         <icdo:OS_000000000000004>contact dermatitis of external ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">contact dermatitis of external ear DP</rdfs:label>
@@ -3140,7 +3206,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000005>H60.402</obo:ICDO_0000005>
         <icdo:OS_000000000000004>obstructive keratosis of external ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">obstructive keratosis of external ear DP</rdfs:label>
-        <rdfs:label xml:lang="zh">外耳阻塞性角化病</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳阻塞性角化病程</rdfs:label>
     </owl:Class>
     
 
@@ -3188,7 +3254,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
@@ -3231,12 +3297,12 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000115"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
         <obo:ICDO_0000005>H60.302</obo:ICDO_0000005>
         <icdo:OS_000000000000004>diffuse otitis externa</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">diffuse otitis externa DP</rdfs:label>
@@ -3248,12 +3314,6 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_gbtH60.303 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_gbtH60.303">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3283,12 +3343,6 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000078"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3454,7 +3508,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000093"/>
         <obo:ICDO_0000005>H61.001</obo:ICDO_0000005>
         <icdo:OS_000000000000004>chondrodermatitis nodularis chronica helicis</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">chondrodermatitis nodularis chronica helicis DP</rdfs:label>
@@ -3484,7 +3538,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000005>H61.002</obo:ICDO_0000005>
         <icdo:OS_000000000000004>pinna scar</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">pinna scar DP</rdfs:label>
-        <rdfs:label xml:lang="zh">耳郭瘢痕</rdfs:label>
+        <rdfs:label xml:lang="zh">耳郭瘢痕病程</rdfs:label>
     </owl:Class>
     
 
@@ -3678,7 +3732,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000005>H61.804</obo:ICDO_0000005>
         <icdo:OS_000000000000004>external ear canal keratosis</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">external ear canal keratosis DP</rdfs:label>
-        <rdfs:label xml:lang="zh">外耳道角化症</rdfs:label>
+        <rdfs:label xml:lang="zh">外耳道角化症病程</rdfs:label>
     </owl:Class>
     
 
@@ -3836,6 +3890,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/UBERON_0001352 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001352">
+        <icdo:OS_000000000000011>外耳</icdo:OS_000000000000011>
         <oboInOwl:hasExactSynonym>external auditory canal</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">external acoustic meatus</rdfs:label>
         <rdfs:label xml:lang="zh">外耳道</rdfs:label>
@@ -3956,8 +4011,9 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
-        <rdfs:label xml:lang="en">eczema</rdfs:label>
-        <rdfs:label xml:lang="zh">湿疹</rdfs:label>
+        <oboInOwl:hasExactSynonym>湿疹</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">eczema entity</rdfs:label>
+        <rdfs:label xml:lang="zh">湿疹体</rdfs:label>
     </owl:Class>
     
 
@@ -4121,24 +4177,8 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">swimmer&apos;s ear LHEM</rdfs:label>
         <rdfs:label xml:lang="zh">游泳者耳病 LHEM</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
-        <rdfs:label xml:lang="en">swimmer&apos;s ear</rdfs:label>
-        <rdfs:label xml:lang="zh">游泳者耳病</rdfs:label>
     </owl:Class>
     
 
@@ -4147,6 +4187,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>the etiology entity is the reason or origination of disease process</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Etiology Entity</rdfs:label>
     </owl:Class>
     
@@ -4311,7 +4352,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
         <rdfs:label xml:lang="en">serous</rdfs:label>
         <rdfs:label xml:lang="zh">浆液性</rdfs:label>
     </owl:Class>
@@ -4333,15 +4374,6 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
         <rdfs:label xml:lang="en">nonsuppurative</rdfs:label>
         <rdfs:label xml:lang="zh">非化脓性</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
-        <rdfs:label xml:lang="en">inlammation DP</rdfs:label>
     </owl:Class>
     
 
