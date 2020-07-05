@@ -16,10 +16,15 @@ http://purl.obolibrary.org/obo/UBERON_0002297 #cerumen
 http://purl.obolibrary.org/obo/UBERON_0001847 #lobule of pinna
 http://purl.obolibrary.org/obo/UBERON_0001459 #skin of external ear
 http://purl.obolibrary.org/obo/UBERON_0000178 #blood
+http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/UBERON_0000061 #anatomical structure
 subClassOf http://purl.obolibrary.org/obo/BFO_0000040   #material entity
+
+http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040   #material entity
+
 
 [Source term retrieval setting]
 includeAllIntermediates
