@@ -16,13 +16,14 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/BFO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/OGMS_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/PATO_imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/UBERON_imports.owl"/>
         <obo:IAO_0000115>ICDO: International Classification of Diseases Ontology</obo:IAO_0000115>
         <dc:contributor>Edison Ong</dc:contributor>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
         <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
         <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
-        <oboInOwl:creation_date>4-13-2019</oboInOwl:creation_date>
-        <owl:versionInfo>1.0.6</owl:versionInfo>
+        <oboInOwl:created_by>Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7-5-2020</oboInOwl:creation_date>
+        <owl:versionInfo>1.0.8</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1073,6 +1074,29 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <obo:IAO_0000118>disease of the circulatory system</obo:IAO_0000118>
+        <obo:ICDO_0000039>I100-I99</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Diseases of the circulatory system</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">disease process of the circulatory system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000067"/>
+        <obo:ICDO_0000039>I10-I16</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Hypertensive diseases</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">hypertensive disease process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ICDO_0000069 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000069">
@@ -1168,6 +1192,18 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
         <rdfs:label xml:lang="en">viral</rdfs:label>
         <rdfs:label xml:lang="zh">病毒性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000068"/>
+        <obo:IAO_0000118>primary hypertension DP</obo:IAO_0000118>
+        <obo:ICDO_0000039>I10</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Essential (primary) hypertension</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">essential hypertension DP</rdfs:label>
     </owl:Class>
     
 
@@ -3872,102 +3908,114 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000014 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000014">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000014">
         <rdfs:label xml:lang="en">zong of skin</rdfs:label>
         <rdfs:label xml:lang="zh">皮肤</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000465 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000479"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001352 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001352">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001352">
         <icdo:OS_000000000000011>外耳</icdo:OS_000000000000011>
         <oboInOwl:hasExactSynonym>external auditory canal</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">external acoustic meatus</rdfs:label>
         <rdfs:label xml:lang="zh">外耳道</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001690 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001690">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001690">
         <rdfs:label xml:lang="en">ear</rdfs:label>
         <rdfs:label xml:lang="zh">耳</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001691 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001691">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001691">
         <rdfs:label xml:lang="en">external ear</rdfs:label>
         <rdfs:label xml:lang="zh">外耳</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001757 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001757">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001757">
         <oboInOwl:hasExactSynonym xml:lang="zh">耳郭</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">pinna</rdfs:label>
         <rdfs:label xml:lang="zh">耳廓</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001847 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001847">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001847">
         <rdfs:label xml:lang="en">lobule of pinna</rdfs:label>
         <rdfs:label xml:lang="zh">耳垂</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0002297 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002297">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002297">
         <rdfs:label xml:lang="zh">耵聍</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0002418 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002418">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002418">
         <rdfs:label xml:lang="en">cartilage tissue</rdfs:label>
         <rdfs:label xml:lang="zh">软骨组织</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0002488 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002488">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002488">
         <oboInOwl:hasExactSynonym>helix of external ear</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">helix of outer ear</rdfs:label>
         <rdfs:label xml:lang="zh">耳轮</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0003700 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0003700">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003700">
         <rdfs:label xml:lang="en">temporomandibular joint</rdfs:label>
         <rdfs:label xml:lang="zh">颞下颌关节</rdfs:label>
-    </rdf:Description>
+    </owl:Class>
     
 
 

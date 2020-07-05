@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1580050553724" name="duplicate:http://purl.obolibrary.org/obo/icdo/" uri="icdo-base.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580050553724" name="duplicate:http://purl.obolibrary.org/obo/icdo/" uri="icdo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580050553724" name="http://purl.obolibrary.org/obo/icdo/BFO_imports.owl" uri="imports/BFO_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580050553724" name="http://purl.obolibrary.org/obo/icdo/DOID_imports.owl" uri="imports/DOID_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580050553724" name="http://purl.obolibrary.org/obo/icdo/OGMS_imports.owl" uri="imports/OGMS_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580050553724" name="http://purl.obolibrary.org/obo/icdo/PATO_imports.owl" uri="imports/PATO_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1580050553724" name="http://purl.obolibrary.org/obo/icdo/UBERON_imports.owl" uri="imports/UBERON_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1593980354389" name="http://ontofox.hegroup.org/2hhokh85.owl" uri="imports/UBERON_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1593980354389" name="duplicate:http://purl.obolibrary.org/obo/icdo/" uri="icdo-base.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1593980354389" name="duplicate:http://purl.obolibrary.org/obo/icdo/" uri="icdo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1593980354389" name="http://purl.obolibrary.org/obo/icdo/BFO_imports.owl" uri="imports/BFO_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1593980354389" name="http://purl.obolibrary.org/obo/icdo/DOID_imports.owl" uri="imports/DOID_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1593980354389" name="http://purl.obolibrary.org/obo/icdo/OGMS_imports.owl" uri="imports/OGMS_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1593980354389" name="http://purl.obolibrary.org/obo/icdo/PATO_imports.owl" uri="imports/PATO_imports.owl"/>
     </group>
 </catalog>

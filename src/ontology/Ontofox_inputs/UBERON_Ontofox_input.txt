@@ -13,8 +13,10 @@ http://purl.obolibrary.org/obo/UBERON_0002418 #cartilage tissue
 http://purl.obolibrary.org/obo/UBERON_0001757 #pinna
 http://purl.obolibrary.org/obo/UBERON_0001690 #ear
 http://purl.obolibrary.org/obo/UBERON_0002297 #cerumen
-http://purl.obolibrary.org/obo/UBERON_0001847  #lobule of pinna
+http://purl.obolibrary.org/obo/UBERON_0001847 #lobule of pinna
 http://purl.obolibrary.org/obo/UBERON_0001459 #skin of external ear
+http://purl.obolibrary.org/obo/UBERON_0000178 #blood
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/UBERON_0000061 #anatomical structure
 subClassOf http://purl.obolibrary.org/obo/BFO_0000040   #material entity
