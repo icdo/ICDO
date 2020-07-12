@@ -17,6 +17,9 @@ http://purl.obolibrary.org/obo/UBERON_0001847 #lobule of pinna
 http://purl.obolibrary.org/obo/UBERON_0001459 #skin of external ear
 http://purl.obolibrary.org/obo/UBERON_0000178 #blood
 http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0001009 #circulatory system
+http://purl.obolibrary.org/obo/UBERON_0004572 #arterial system 
+http://purl.obolibrary.org/obo/UBERON_0003509 #arterial blood vessel 
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/UBERON_0000061 #anatomical structure
