@@ -24,8 +24,8 @@
         <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
         <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
         <oboInOwl:created_by>Virginia He</oboInOwl:created_by>
-        <oboInOwl:creation_date>7-12-2020</oboInOwl:creation_date>
-        <owl:versionInfo>1.0.9</owl:versionInfo>
+        <oboInOwl:creation_date>8-8-2020</oboInOwl:creation_date>
+        <owl:versionInfo>1.0.37</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -96,7 +96,7 @@
     <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000004 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000004">
-        <rdfs:label xml:lang="en">has ICD name</rdfs:label>
+        <rdfs:label xml:lang="en">has ICD10 name</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -218,8 +218,11 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001690"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H60-H95</obo:IAO_0000119>
+        <obo:ICDO_0000039>H60-H95</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Diseases of the ear and mastoid process</icdo:OS_000000000000004>
         <icdo:OS_000000000000004>diseases of the ear or mastoid process</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">the ear or mastoid DP</rdfs:label>
+        <rdfs:label xml:lang="en">ear or mastoid disease process</rdfs:label>
         <rdfs:label xml:lang="zh">耳或乳突疾病</rdfs:label>
     </owl:Class>
     
@@ -286,7 +289,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <icdo:OS_000000000000004>disease of external ear</icdo:OS_000000000000004>
+        <obo:IAO_0000117>Eric Wan, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H60-H95/H60-H62</obo:IAO_0000119>
+        <obo:ICDO_0000039>H60-H95</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Diseases of external ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">external ear DP</rdfs:label>
         <rdfs:label xml:lang="zh">外耳疾病病程</rdfs:label>
     </owl:Class>
@@ -332,17 +338,15 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ICDO_0000028"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001691"/>
                     </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000138"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000157"/>
-                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000007"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000028"/>
         <obo:ICDO_0000005>H60.900</obo:ICDO_0000005>
         <obo:ICDO_0000006>EG4Z</obo:ICDO_0000006>
@@ -785,7 +789,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     <!-- http://purl.obolibrary.org/obo/ICDO_0000041 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000041">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000010"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
@@ -938,6 +942,10 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>Perichondritis is inflammation of the perichondrium, a layer of connective tissue which surrounds cartilage</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Eric Wan</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Perichondritis</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Index/P/Perichondritis</obo:IAO_0000119>
         <rdfs:label xml:lang="en">perichondritis DP</rdfs:label>
         <rdfs:label xml:lang="zh">软骨膜炎</rdfs:label>
     </owl:Class>
@@ -1335,7 +1343,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     <!-- http://purl.obolibrary.org/obo/ICDO_0000086 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000086">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
@@ -1846,7 +1854,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000121 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000121">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
@@ -1951,7 +1959,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000128 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000128">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
@@ -1989,7 +1997,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000130 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000130">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
@@ -2034,7 +2042,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000132 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000132">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
@@ -5860,6 +5868,150 @@ resistance</icdo:OS_000000000000004>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000375 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000375">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000002"/>
+        <obo:IAO_0000117>Eric Wan, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H60-H95/H65-H75</obo:IAO_0000119>
+        <obo:ICDO_0000039>H65-H75</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Diseases of middle ear and mastoid</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">middle ear or mastoid DP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000376 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000376">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000002"/>
+        <obo:IAO_0000117>Eric Wan, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H60-H95/H80-H83</obo:IAO_0000119>
+        <obo:ICDO_0000039>H80-H83</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Diseases of inner ear</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">inner ear DP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000377 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000381"/>
+        <obo:IAO_0000117>Eric Wan, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H60-H95/H95-H95</obo:IAO_0000119>
+        <obo:ICDO_0000039>H95-H95</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Not billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Intraoperative and postprocedural complications and disorders of ear and mastoid process, not elsewhere classified</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Intraoperative and postprocedural complications and disorders of ear and mastoid process, not elsewhere classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000378 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000378">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000379"/>
+        <obo:IAO_0000117>Eric Wan, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H60-H95/H65-H75</obo:IAO_0000119>
+        <obo:ICDO_0000039>H65-H75</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Diseases of middle ear and mastoid</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Conductive and sensorineural hearing loss</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000379 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000379">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000002"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">hearing loss</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000380 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000380">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000379"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H60-H95/H90-H94/H91-/H91.90</obo:IAO_0000119>
+        <obo:ICDO_0000039>H91.90</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Unspecified hearing loss, unspecified ear</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Unspecified hearing loss, unspecified ear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000381 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000381">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000002"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">interoperative and postprocedural ear and mastoid disease process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000383 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000383">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000007"/>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H60-H95/H60-H62/H61-/H61.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>H61.0</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Chondritis and perichondritis of external ear</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">chondritis or perichondritis of external ear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000384 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000384">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000375"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000042"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H60-H95/H65-H75/H65-/H65</obo:IAO_0000119>
+        <obo:ICDO_0000039>H65</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Non-Billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Nonsuppurative otitis media</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Nonsuppurative otitis media DP</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ICDO_10H60.3 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_10H60.3">
@@ -6317,6 +6469,7 @@ resistance</icdo:OS_000000000000004>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000055"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000383"/>
         <obo:ICDO_0000005>H61.000</obo:ICDO_0000005>
         <obo:ICDO_0000006>AA04</obo:ICDO_0000006>
         <obo:ICDO_0000039>H61.0</obo:ICDO_0000039>
@@ -6979,7 +7132,7 @@ resistance</icdo:OS_000000000000004>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000007"/>
         <obo:ICDO_0000005>H61.900</obo:ICDO_0000005>
         <obo:ICDO_0000006>AA6Z </obo:ICDO_0000006>
         <obo:ICDO_0000039>H61.9</obo:ICDO_0000039>
@@ -7891,7 +8044,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
@@ -7924,7 +8077,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_11AA13"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
@@ -7952,7 +8105,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000113"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
@@ -7974,7 +8127,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
@@ -8006,7 +8159,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO14396_0000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
@@ -8079,7 +8232,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000002"/>
         <rdfs:label xml:lang="en">swimmer&apos;s ear LHEM</rdfs:label>
         <rdfs:label xml:lang="zh">游泳者耳病 LHEM</rdfs:label>
     </owl:Class>
@@ -8169,7 +8322,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000384"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
@@ -8194,8 +8347,12 @@ resistance</icdo:OS_000000000000004>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000117>Eric Wan, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H60-H95/H65-H75/H65-/H65.00</obo:IAO_0000119>
         <obo:ICDO_0000005>H65.000</obo:ICDO_0000005>
-        <icdo:OS_000000000000004 xml:lang="zh"> Acute serous otitis media</icdo:OS_000000000000004>
+        <obo:ICDO_0000039>H65.00</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Acute serous otitis media, unspecified ear</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en"> Acute serous otitis media DP</rdfs:label>
         <rdfs:label xml:lang="zh">急性浆液性中耳炎</rdfs:label>
     </owl:Class>
@@ -8205,7 +8362,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/OS_000000000000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000384"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
@@ -8236,7 +8393,12 @@ resistance</icdo:OS_000000000000004>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en"> Other acute nonsuppurative otitis media DP</rdfs:label>
+        <obo:IAO_0000117>Oliver He, Eric Wan</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H60-H95/H65-H75/H65-/H65.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>H65.1</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Non-Billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Other acute nonsuppurative otitis media</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">other acute nonsuppurative otitis media DP</rdfs:label>
         <rdfs:label xml:lang="zh">急性非化脓性中耳炎，其他的</rdfs:label>
     </owl:Class>
     
