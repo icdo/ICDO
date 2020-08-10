@@ -21,6 +21,58 @@ http://purl.obolibrary.org/obo/UBERON_0001009 #circulatory system
 http://purl.obolibrary.org/obo/UBERON_0004572 #arterial system 
 http://purl.obolibrary.org/obo/UBERON_0003509 #arterial blood vessel 
 
+# add UBERON terms provided by Justin and Virginia for 4CE project
+
+http://purl.obolibrary.org/obo/UBERON_0000004
+http://purl.obolibrary.org/obo/UBERON_0000014
+http://purl.obolibrary.org/obo/UBERON_0000033
+http://purl.obolibrary.org/obo/UBERON_0000065
+http://purl.obolibrary.org/obo/UBERON_0000160
+http://purl.obolibrary.org/obo/UBERON_0000170
+http://purl.obolibrary.org/obo/UBERON_0000178
+http://purl.obolibrary.org/obo/UBERON_0000310
+http://purl.obolibrary.org/obo/UBERON_0000341
+http://purl.obolibrary.org/obo/UBERON_0000468
+http://purl.obolibrary.org/obo/UBERON_0000945
+http://purl.obolibrary.org/obo/UBERON_0000948
+http://purl.obolibrary.org/obo/UBERON_0000955
+http://purl.obolibrary.org/obo/UBERON_0000970
+http://purl.obolibrary.org/obo/UBERON_0000977
+http://purl.obolibrary.org/obo/UBERON_0000978
+http://purl.obolibrary.org/obo/UBERON_0000995
+http://purl.obolibrary.org/obo/UBERON_0001004
+http://purl.obolibrary.org/obo/UBERON_0001007
+http://purl.obolibrary.org/obo/UBERON_0001009
+http://purl.obolibrary.org/obo/UBERON_0001016
+http://purl.obolibrary.org/obo/UBERON_0001043
+http://purl.obolibrary.org/obo/UBERON_0001137
+http://purl.obolibrary.org/obo/UBERON_0001255
+http://purl.obolibrary.org/obo/UBERON_0001264
+http://purl.obolibrary.org/obo/UBERON_0001301
+http://purl.obolibrary.org/obo/UBERON_0001443
+http://purl.obolibrary.org/obo/UBERON_0001474
+http://purl.obolibrary.org/obo/UBERON_0001558
+http://purl.obolibrary.org/obo/UBERON_0001621
+http://purl.obolibrary.org/obo/UBERON_0002046
+http://purl.obolibrary.org/obo/UBERON_0002048
+http://purl.obolibrary.org/obo/UBERON_0002081
+http://purl.obolibrary.org/obo/UBERON_0002084
+http://purl.obolibrary.org/obo/UBERON_0002107
+http://purl.obolibrary.org/obo/UBERON_0002108
+http://purl.obolibrary.org/obo/UBERON_0002113
+http://purl.obolibrary.org/obo/UBERON_0002204
+http://purl.obolibrary.org/obo/UBERON_0002367
+http://purl.obolibrary.org/obo/UBERON_0002405
+http://purl.obolibrary.org/obo/UBERON_0002481
+http://purl.obolibrary.org/obo/UBERON_0002930
+http://purl.obolibrary.org/obo/UBERON_0003129
+http://purl.obolibrary.org/obo/UBERON_0004237
+http://purl.obolibrary.org/obo/UBERON_0005090
+http://purl.obolibrary.org/obo/UBERON_0005409
+http://purl.obolibrary.org/obo/UBERON_0007119
+http://purl.obolibrary.org/obo/UBERON_0013702
+http://purl.obolibrary.org/obo/UBERON_0013755
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/UBERON_0000061 #anatomical structure
 subClassOf http://purl.obolibrary.org/obo/BFO_0000040   #material entity
