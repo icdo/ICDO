@@ -2407,10 +2407,11 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:IAO_0000115>Heart conditions caused by high blood pressure</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.healthline.com/health/hypertensive-heart-disease#:~:text=Hypertensive%20heart%20disease%20refers%20to,artery%20disease%2C%20and%20other%20conditions</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I10-I16/I11-/I11.9</obo:IAO_0000119>
         <obo:ICDO_0000039>I11.9</obo:ICDO_0000039>
         <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
         <icdo:OS_000000000000004>Hypertensive heart disease without heart failure</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">Hypertensive heart disease without heart failure</rdfs:label>
+        <rdfs:label xml:lang="en">hypertensive heart disease process without heart failure</rdfs:label>
     </owl:Class>
     
 
@@ -3526,7 +3527,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <obo:ICDO_0000039>I46</obo:ICDO_0000039>
         <obo:ICDO_0000140>Non-billable</obo:ICDO_0000140>
         <icdo:OS_000000000000004>Cardiac arrest</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">cardiac arrest</rdfs:label>
+        <rdfs:label xml:lang="en">cardiac arrest DP</rdfs:label>
     </owl:Class>
     
 
@@ -4770,12 +4771,6 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000306">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000310"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>any health problem that occurs in the digestive tract.</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He</obo:IAO_0000117>
         <obo:IAO_0000118>disease of the digestive system</obo:IAO_0000118>
@@ -4828,15 +4823,6 @@ resistance</icdo:OS_000000000000004>
         <obo:ICDO_0000140>Non-billable</obo:ICDO_0000140>
         <icdo:OS_000000000000004>Constipation</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">constipation DP</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000310 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000310">
-        <obo:IAO_0000119>https://www.dictionary.com/browse/digestive-system#:~:text=the%20system%20by%20which%20ingested,and%20enzymes%20assisting%20in%20digestion.</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">digestive system</rdfs:label>
     </owl:Class>
     
 
@@ -8023,6 +8009,2765 @@ resistance</icdo:OS_000000000000004>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0003700">
         <rdfs:label xml:lang="en">temporomandibular joint</rdfs:label>
         <rdfs:label xml:lang="zh">颞下颌关节</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <obo:IAO_0000115>Actions done to prevent a disease or to relieve a symptom i.e.: Surgery to remove blood clots</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>mchp-appserv.cpe.umanitoba.ca</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z29.0</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000374</oboInOwl:id>
+        <rdfs:label>encounter for prophylactic measures, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000375 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000375">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>having problems or an inability adapting to a new environment or culture</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z55-Z65/Z60-/Z60.3</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z60.3</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000375</oboInOwl:id>
+        <rdfs:label>acculturation difficulty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000376 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000376">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>no symptoms, but HIV was found in patient&apos;s bloodstream</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z20-Z29/Z21-/Z21</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z21</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000376</oboInOwl:id>
+        <rdfs:label>asymptomatic human immunodeficiency virus [HIV] infection status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000377 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>code that can be used to indicate a diagnosis for reimbursement purposes.	code that can be used to indicate a diagnosis for reimbursement purposes.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z40-Z53/Z51-/Z51.89</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z51.3</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000377</oboInOwl:id>
+        <rdfs:label>blood transfusion without reported diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000378 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000378">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>Care involving use of other rehabilitation procedures</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www0.sun.ac.za/aotc/icd10/mf_icd10_codelist.php?showmaster=mf_icd10_node3&amp;icd10_block=Z00-Z99&amp;icd10_subblock=Z40-Z54&amp;icd10_n3=Z50</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z50.8</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000378</oboInOwl:id>
+        <rdfs:label>care involving use of other rehabilitation procedures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000379 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000379">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000378"/>
+        <obo:IAO_0000115>the treatment of disease, injury, or deformity by physical methods rather than by drugs or surgery.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://medcode.ch/us/en/icds/ICD10-2016/Z50.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z50.1</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000379</oboInOwl:id>
+        <rdfs:label>other physical therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000380 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000380">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>Patient is thought to have been exposed to the virus in question</obo:IAO_0000115>
+        <obo:IAO_0000115>code is used to show that patient has probably been infected because they have been exposed to the infection</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.aafp.org/journals/fpm/blogs/gettingpaid/entry/coronavirus_diagnosis_coding.html</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.icd10monitor.com/covid-19-coding-dilemma-z20-828-and-z03-818</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z20.8</obo:ICDO_0000039>
+        <obo:ICDO_0000039>Z20.828</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000380</oboInOwl:id>
+        <rdfs:label>contact with and (suspected) exposure to other communicable diseases</rdfs:label>
+        <rdfs:label>contact with and (suspected) exposure to other viral communicable diseases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000381 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000381">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000380"/>
+        <obo:IAO_0000115>patient kept under observation for suspected disease/condition</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www0.sun.ac.za/aotc/icd10/mf_icd10_codelist.php?showmaster=mf_icd10_node3&amp;icd10_block=Z00-Z99&amp;icd10_subblock=Z00-Z13&amp;icd10_n3=Z03</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z03.9</obo:ICDO_0000039>
+        <rdfs:label>observation for suspected disease or condition, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000382 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000382">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>the provision of assistance and guidance in resolving personal, social, or psychological problems and difficulties, especially by a professional.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z69-Z76/Z71-/Z71.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z71.9</obo:ICDO_0000039>
+        <rdfs:label>counseling, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000383 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000383">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000382"/>
+        <obo:IAO_0000115>help with diet means the person is not eating healthy.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.healthyct.org/files/2015/12/Nutritional-Diet-Counseling_Benefit-Payment-Guideline-__FINAL.pdf</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z71.3</obo:ICDO_0000039>
+        <rdfs:label>dietary counseling and surveillance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000384 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000384">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000382"/>
+        <obo:IAO_0000115>a medical diagnosis of other specified counseling</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icdlist.com/icd-10/Z71.89</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z71.89</obo:ICDO_0000039>
+        <rdfs:label>other specified counseling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000385 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000385">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>Encounter for antineoplastic chemotherapy and immunotherapy</obo:IAO_0000115>
+        <obo:IAO_0000115>the treatment of disease by the use of chemical substances, especially the treatment of cancer by cytotoxic and other drugs.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www0.sun.ac.za/aotc/icd10/mf_icd10_codelist.php?showmaster=mf_icd10_node3&amp;icd10_block=Z00-Z99&amp;icd10_subblock=Z40-Z54&amp;icd10_n3=Z51</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z40-Z53/Z51-/Z51.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z51.1</obo:ICDO_0000039>
+        <obo:ICDO_0000039>Z51.2</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000386</oboInOwl:id>
+        <rdfs:label>encounter for antineoplastic chemotherapy and immunotherapy</rdfs:label>
+        <rdfs:label>other chemotherapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000386">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>patient under observation for other suspected diseases and conditions</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z00-Z13/Z03-/Z03.8</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z03.8</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000386</oboInOwl:id>
+        <rdfs:label>encounter for observation for other suspected diseases and conditions ruled out</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000387 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000387">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>encounter for observation due to suspected exposure to biological agents</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z00-Z13/Z03-/Z03.818</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z03.818</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000387</oboInOwl:id>
+        <rdfs:label>encounter for observation for suspected exposure to other biological agents ruled out</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000388 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000388">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>Encounter for other specified aftercare</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z40-Z53/Z51-/Z51.8</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z51.8</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000388</oboInOwl:id>
+        <rdfs:label>encounter for other specified aftercare</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000389 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000389">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000388"/>
+        <obo:IAO_0000115>Encounter for fitting and adjustment of extracorporeal dialysis catheter</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/Z4901#:~:text=MS%2DDRG%20codes.-,Z49.,to%20specify%20a%20medical%20diagnosis.</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z49.1</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000389</oboInOwl:id>
+        <rdfs:label>encounter for fitting and adjustment of extracorporeal dialysis catheter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000390 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000390">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000388"/>
+        <obo:IAO_0000115>unirary device needs replacement</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z40-Z53/Z46-/Z46.6</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z46.6</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000390</oboInOwl:id>
+        <rdfs:label>encounter for fitting and adjustment of urinary device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000391 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000391">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000388"/>
+        <obo:IAO_0000115>improves the quality of life of patients and their families facing the problem associated with life-threatening illness</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icdlist.com/icd-10/Z51.5</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z51.5</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000391</oboInOwl:id>
+        <rdfs:label>encounter for palliative care</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000392 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000392">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000388"/>
+        <obo:IAO_0000115>Follow-up examination after other treatment for other conditions</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/Z09</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z09.8</obo:ICDO_0000039>
+        <rdfs:label>follow-up examination after other treatment for other conditions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000393 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000393">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>screening is done to prevent a disease or to help identify the disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z00-Z13/Z13-</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z13.9</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000393</oboInOwl:id>
+        <rdfs:label>encounter for screening, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000394 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000394">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000393"/>
+        <obo:IAO_0000115>screening for respiratory condition</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z00-Z13/Z13-/Z13.83</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z13.83</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000394</oboInOwl:id>
+        <rdfs:label>encounter for screening for respiratory disorder NEC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000395 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000395">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>Persons lacking permanent or reliable shelter, variously due to poverty, lack of affordable housing, mental illness, substance abuse, juvenile alienation, or other factors.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z55-Z65/Z59-/Z59.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z59.0</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000395</oboInOwl:id>
+        <rdfs:label>homelessness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000396 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000396">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000395"/>
+        <obo:IAO_0000115>used to specify what condition the patient is under</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>http://resources.hwb.wales.gov.uk/VTC/2012-13/22032013/hsc/eng/unit-4/u4-rthawb/u4-rthawb12.htm#:~:text=Inadequate%20housing%20is%20housing%20that,Unsafe%20%E2%80%93%20need%20repairs%2C%20electrical%20faults</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z59.1</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000396</oboInOwl:id>
+        <rdfs:label>inadequate housing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000397 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000397">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000395"/>
+        <obo:IAO_0000115>Patient awaiting admission to adequate facility elsewhere</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z69-Z76/Z75-/Z75.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z75.1</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000397</oboInOwl:id>
+        <rdfs:label>person awaiting admission to adequate facility elsewhere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000398 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000398">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>patient needs assisstance with personal care</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z69-Z76/Z74-/Z74.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z74.1</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000398</oboInOwl:id>
+        <rdfs:label>need for assistance with personal care</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000399 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000399">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000398"/>
+        <obo:IAO_0000115>the patient needs help living everyday life at home.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/Z742#:~:text=Disorders%2C%20Version%205)-,Z74.,to%20specify%20a%20medical%20diagnosis.</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z74.2</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000399</oboInOwl:id>
+        <rdfs:label>need for assistance at home and no other household member able to render care</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000400 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000400">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000398"/>
+        <obo:IAO_0000115>patient whose mobility is reduced</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z69-Z76/Z74-/Z74.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z74.0</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000400</oboInOwl:id>
+        <rdfs:label>reduced mobility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000401 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000401">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>person is disabled physically or mentally, so they are in need of medical services</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/Z7689</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z76.8</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000401</oboInOwl:id>
+        <rdfs:label>persons encountering health services in other specified circumstances</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000402 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000402">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000401"/>
+        <obo:IAO_0000115>used to specify that the patient has used insulin. This can help identify diseases</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/Z794</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z79.4</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000402</oboInOwl:id>
+        <rdfs:label>long term (current) use of insulin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000403 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000403">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000401"/>
+        <obo:IAO_0000115>Therapeutic drug induced immunosuppression, long term use</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z79-/Z79.899</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z79.899</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000403</oboInOwl:id>
+        <rdfs:label>other long term (current) drug therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000404 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000404">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000401"/>
+        <obo:IAO_0000115>a procedure used to widen blocked or narrowed coronary arteries</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z95-/Z95.5</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z95.5</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000404</oboInOwl:id>
+        <rdfs:label>presence of coronary angioplasty implant and graft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000405 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000405">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000401"/>
+        <obo:IAO_0000115>may be used to specify diseases</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icdlist.com/icd-10/Z96.698</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z96.6</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000405</oboInOwl:id>
+        <rdfs:label>presence of orthopedic joint implants</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000406 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000406">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000401"/>
+        <obo:IAO_0000115>a surgical procedure that redirects blood flow from one area of the body to another by reconnecting the blood vessels</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z95-/Z95.8</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z95.8</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000406</oboInOwl:id>
+        <rdfs:label>presence of other cardiac and vascular implants and grafts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000407">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>someone that lives  alone is more keen to become stressed, bored, or other mental states</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.apartmenttherapy.com/5-problems-you-only-face-while-living-alone-and-how-to-deal-with-them-205760</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z60.2</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000407</oboInOwl:id>
+        <rdfs:label>problems related to living alone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>signs such as jaw pain or chills that help identify the disease</obo:IAO_0000115>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/R688</obo:IAO_0000119>
+        <obo:ICDO_0000039>R68.89</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>other general symptoms and signs</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:id>ICDO_0000408</oboInOwl:id>
+        <rdfs:label>general symptoms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>signs such as jaw pain or chills that help identify the disease</obo:IAO_0000115>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/R688</obo:IAO_0000119>
+        <obo:ICDO_0000039>R68.89</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>other general symptoms and signs</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000409</oboInOwl:id>
+        <rdfs:label>general signs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000410 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000410">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>a medical diagnosis of person with feared health complaint in whom no diagnosis is made.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z69-Z76/Z71-/Z71.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z71.1</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000410</oboInOwl:id>
+        <rdfs:label>person with feared health complaint in whom no diagnosis is made</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000411 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000411">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>describes the circumstance causing an injury</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/V00-Y99/Y90-Y99/Y95-/Y95</obo:IAO_0000119>
+        <obo:ICDO_0000039>Y95</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000411</oboInOwl:id>
+        <rdfs:label>nosocomial condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000412 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000412">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>abnormal results from cardiogram</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R90-R94/R94-/R94.31</obo:IAO_0000119>
+        <obo:ICDO_0000039>R94.31</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Abnormal electrocardiogram [ECG] [EKG]</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000412</oboInOwl:id>
+        <rdfs:label>abnormal electrocardiogram</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000413 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000413">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>Abnormal findings on diagnostic imaging of lung</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R90-R94/R91-/R91</obo:IAO_0000119>
+        <obo:ICDO_0000039>R91</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000413</oboInOwl:id>
+        <rdfs:label>abnormal findings on diagnostic imaging of lung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000414 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000414">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000413"/>
+        <obo:IAO_0000115>nonspecific abnormal finding of lung field</obo:IAO_0000115>
+        <obo:IAO_0000119>https://icdlist.com/icd-10/R91.8</obo:IAO_0000119>
+        <obo:ICDO_0000039>R91.8</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000414</oboInOwl:id>
+        <rdfs:label>other nonspecific abnormal finding of lung field</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000415 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000415">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>this abnormal level indicates damage to the liver</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.mayoclinic.org/symptoms/elevated-liver-enzymes/basics/definition/sym-20050830</obo:IAO_0000119>
+        <obo:ICDO_0000039>R74.8</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000415</oboInOwl:id>
+        <rdfs:label>abnormal levels of other serum enzymes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000416 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000416">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>tests on the patients liver have given results that are abnormal</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R90-R94/R94-/R94.5</obo:IAO_0000119>
+        <obo:ICDO_0000039>R94.5</obo:ICDO_0000039>
+        <oboInOwl:created_by>7/23/2020</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:id>ICDO_0000416</oboInOwl:id>
+        <rdfs:label>abnormal results of liver function studies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000417 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000417">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>Oliguria is defined as a urine output that is less than 400 mL/24 h or less than 17 mL/h in adults. Anuria is defined as urine output that is less than 100 mL/24 h or 0 mL/12 h.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://link.springer.com/chapter/10.1007/978-981-13-7677-1_25#:~:text=Oliguria%20is%20defined%20as%20a,or%200%20mL%2F12%20h.</obo:IAO_0000119>
+        <obo:ICDO_0000039>R34</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000417</oboInOwl:id>
+        <rdfs:label>anuria and oliguria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000418 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000418">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>Excessive slowness in the action of the heart</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R00-R09/R00-/R00.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>R00.1</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000418</oboInOwl:id>
+        <rdfs:label>bradycardia, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000419 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000419">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>could be a sign of bowel cancer</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.oncolink.org/frequently-asked-questions/cancers/what-is-meant-by-a-change-in-bowel-habits#:~:text=The%20term%20%22change%20in%20bowel,can%20do%20the%20same%20thing.</obo:IAO_0000119>
+        <obo:ICDO_0000039>R19.4</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000419</oboInOwl:id>
+        <rdfs:label>change in bowel habit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000420 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000420">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>blood pressure above 120/80 mm</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R00-R09/R03-/R03.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>R03.0</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000420</oboInOwl:id>
+        <rdfs:label>elevated blood-pressure reading, without diagnosis of hypertension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000421 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000421">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>high LDH levels indicate tissue damage.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.healthline.com/health/lactate-dehydrogenase-test#results</obo:IAO_0000119>
+        <obo:ICDO_0000039>R74.0</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000421</oboInOwl:id>
+        <rdfs:label>nonspecific elevation of levels of transaminase and lactic acid dehydrogenase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000422 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000422">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>a deviation from normal walking (gait)</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/D50-D89/D60-D64/D62-/D62</obo:IAO_0000119>
+        <obo:ICDO_0000039>R26.8</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000422</oboInOwl:id>
+        <rdfs:label>other abnormalities of gait and mobility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000423 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000423">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>blood tests have found abnormalities of protiens in the blood which can indicate clues for a potential ilness</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R70-R79/R77-/R77.8</obo:IAO_0000119>
+        <obo:ICDO_0000039>R77.8</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000423</oboInOwl:id>
+        <rdfs:label>other specified abnormalities of plasma proteins</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000424 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000424">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>A condition characterized by alterations of the sense of taste which may range from mild to severe, including gross distortions of taste quality.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R40-R46/R43-/R43.2</obo:IAO_0000119>
+        <obo:ICDO_0000039>R43.2</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000424</oboInOwl:id>
+        <rdfs:label>parageusia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000425 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000425">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>Prediabetes is when your blood sugar level is higher than it should be but not high enough for your doctor to diagnose diabetes</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R70-R79/R73-/R73.03</obo:IAO_0000119>
+        <obo:ICDO_0000039>R73.03</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000425</oboInOwl:id>
+        <rdfs:label>prediabetes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000426 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000426">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>Abnormally rapid heartbeat, usually with a heart rate above 100 beats per minute for adults.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R00-R09/R00-/R00.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>R00.0</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000426</oboInOwl:id>
+        <rdfs:label>tachycardia, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000427 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000427">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>a person urinates when they do not want to</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R30-R39/R32-/R32</obo:IAO_0000119>
+        <obo:ICDO_0000039>R32</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000427</oboInOwl:id>
+        <rdfs:label>unspecified urinary incontinence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000428 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000428">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>A profound state of unconsciousness associated with depressed cerebral activity from which the individual cannot be aroused.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R40-R46/R40-/R40.2</obo:IAO_0000119>
+        <obo:ICDO_0000039>R40.2</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000428</oboInOwl:id>
+        <rdfs:label>coma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000429 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000429">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>main symptom of dyspnea is labored breathing. It&apos;s definition as a word is &quot;labored breathing&quot;</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.healthline.com/health/dyspnea</obo:IAO_0000119>
+        <obo:ICDO_0000039>R06.0</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:id>ICDO_0000429</oboInOwl:id>
+        <rdfs:label>dyspnea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000430 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000430">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000429"/>
+        <obo:IAO_0000115>shortness of breath</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/A00-B99/B95-B97/B97-/B97.2</obo:IAO_0000119>
+        <icdo:OS_000000000000004>R06.00</icdo:OS_000000000000004>
+        <icdo:OS_000000000000004>dyspnea, unspecified</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/22/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000430</oboInOwl:id>
+        <rdfs:label>dyspnea, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>Body temprature is raised to fight pathogens</obo:IAO_0000115>
+        <obo:ICDO_0000039>R50.9</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym>fever</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>ICDO_0000431</oboInOwl:id>
+        <rdfs:label>fever, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000432 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000432">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000431"/>
+        <obo:IAO_0000115>a fever caused by a drug</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R50-R69/R50-/R50.2</obo:IAO_0000119>
+        <obo:ICDO_0000039>R50.2</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000432</oboInOwl:id>
+        <rdfs:label>drug induced fever</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000433 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000433">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000431"/>
+        <obo:IAO_0000115>when your temperature rises above its normal range</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R50-R69/R50-/R50.8</obo:IAO_0000119>
+        <icdo:OS_000000000000004>other specified fever</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/22/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000433</oboInOwl:id>
+        <rdfs:label>specified fever</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000434 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000434">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>Coughing or spitting up blood from the respiratory tract.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R00-R09/R04-/R04.2</obo:IAO_0000119>
+        <obo:ICDO_0000039>R04.2</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000434</oboInOwl:id>
+        <rdfs:label>hemoptysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000435 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000435">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>a symptom that makes one feel weakness, discomfort, or illness</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.healthline.com/health/malaise</obo:IAO_0000119>
+        <obo:ICDO_0000039>R53</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>malaise</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/22/2020</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>fatigue</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>ICDO_0000435</oboInOwl:id>
+        <rdfs:label>malaise and fatigue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000436 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000436">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000435"/>
+        <obo:IAO_0000115>feelings of tiredness/lack of energy</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R50-R69/R53-/R53.83</obo:IAO_0000119>
+        <obo:ICDO_0000039>R53.83</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>other fatigue</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/22/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000436</oboInOwl:id>
+        <rdfs:label>other fatigue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000437 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000437">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000435"/>
+        <obo:IAO_0000115>A disorder characterized by a feeling of general discomfort or uneasiness, an out-of-sorts feeling.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R50-R69/R53-/R53.81</obo:IAO_0000119>
+        <obo:ICDO_0000039>R53.81</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000437</oboInOwl:id>
+        <rdfs:label>other malaise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000438 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000438">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>A disorder characterized by a queasy sensation and/or the urge to vomit</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R10-R19/R11-/R11.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>R11.0</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000438</oboInOwl:id>
+        <rdfs:label>nausea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000439 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000439">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000438"/>
+        <obo:IAO_0000115>symptoms of dizziness and vomiting that can help find the disease the patient is under</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.webmd.com/digestive-disorders/digestive-diseases-nausea-vomiting#1</obo:IAO_0000119>
+        <obo:ICDO_0000039>R11</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>nausea with vomiting</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/22/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000439</oboInOwl:id>
+        <rdfs:label>nausea with vomiting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000440 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000440">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000439"/>
+        <obo:IAO_0000115>symptoms that can help find the disease the patient is under</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.webmd.com/digestive-disorders/digestive-diseases-nausea-vomiting#1</obo:IAO_0000119>
+        <obo:ICDO_0000039>R11.2</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/22/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000440</oboInOwl:id>
+        <rdfs:label>nausea with vomiting, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000441 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000441">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>patient is traumatized to a point that they cannot send commands to body parts</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R50-R69/R57-/R57.8</obo:IAO_0000119>
+        <obo:ICDO_0000039>R57.8</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000441</oboInOwl:id>
+        <rdfs:label>other shock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000442 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000442">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000441"/>
+        <obo:IAO_0000115>Shock resulting from primary failure of the heart in its pumping function</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R50-R69/R57-/R57.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>R57.0</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000442</oboInOwl:id>
+        <rdfs:label>cardiogenic shock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000443 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000443">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000441"/>
+        <obo:IAO_0000115>when a patient has lost more than 20% of their blood and he or she enter shock</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.healthline.com/health/hypovolemic-shock#:~:text=Hypovolemic%20shock%20is%20a%20life,can%20lead%20to%20organ%20failure.</obo:IAO_0000119>
+        <obo:ICDO_0000039>R57.1</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>hyopolvemic shock</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/22/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000443</oboInOwl:id>
+        <rdfs:label>hypovolemic shock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000444 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000444">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000441"/>
+        <obo:IAO_0000115>severe and potentially fatal condition that occurs when sepsis leads to life-threatening low blood pressure.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.galenreasoner.com/icd10codes/R57.2</obo:IAO_0000119>
+        <obo:ICDO_0000039>R57.2</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000444</oboInOwl:id>
+        <rdfs:label>septic shock</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000445 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000445">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>A category of mental health disorders that primarily affect cognitive abilities including learning, memory, perception, and problem solving.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R40-R46/R41-/R41.8</obo:IAO_0000119>
+        <obo:ICDO_0000039>R41.8</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000445</oboInOwl:id>
+        <rdfs:label>other symptoms and signs involving cognitive functions and awareness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000446 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000446">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>physical suffering or discomfort caused by illness or injury</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R50-R69/R52-/R52</obo:IAO_0000119>
+        <obo:ICDO_0000039>R52</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>pain, unspecified</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000446</oboInOwl:id>
+        <rdfs:label>pain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000447 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000447">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000446"/>
+        <obo:IAO_0000115>pain that lasts from 3-6 months related to soft tissue</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.spine-health.com/glossary/acute-pain#:~:text=Acute%20pain%20is%20a%20type,as%20the%20injured%20tissues%20heal.</obo:IAO_0000119>
+        <obo:ICDO_0000039>R52.0</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/22/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000447</oboInOwl:id>
+        <rdfs:label>acute pain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000448 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000448">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000446"/>
+        <obo:IAO_0000115>pain in the chest not caused by heart disease or heart attack</obo:IAO_0000115>
+        <obo:IAO_0000119>https://my.clevelandclinic.org/health/diseases/15851-gerd-non-cardiac-chest-pain#:~:text=In%20most%20people%2C%20non%2Dcardiac,stress%2C%20anxiety%2C%20and%20depression.</obo:IAO_0000119>
+        <obo:ICDO_0000039>R07.4</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>chest pain, unspecified</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/22/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000448</oboInOwl:id>
+        <rdfs:label>chest pain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000449 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000449">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000448"/>
+        <obo:IAO_0000115>pain in the chest, unspecified cause</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R00-R09/R07-/R07.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>R07.9</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000449</oboInOwl:id>
+        <rdfs:label>chest pain, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000450 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000450">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000448"/>
+        <obo:IAO_0000115>Usually a symptom of a disease or caused by physical damage</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R00-R09/R07-/R07.89</obo:IAO_0000119>
+        <obo:ICDO_0000039>R07.89</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>other chest pain</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000450</oboInOwl:id>
+        <rdfs:label>other chest pain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000451 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000451">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000446"/>
+        <obo:IAO_0000115>a disorder characterized by a sensation of marked discomfort in the head</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R50-R69/R51-/R51</obo:IAO_0000119>
+        <obo:ICDO_0000039>R51</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/22/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000451</oboInOwl:id>
+        <rdfs:label>headache</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000452 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000452">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000446"/>
+        <obo:IAO_0000115>stomach pain or a stomachache</obo:IAO_0000115>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/R109</obo:IAO_0000119>
+        <obo:ICDO_0000039>R10.4</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/22/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000452</oboInOwl:id>
+        <rdfs:label>other and unspecified abdominal pain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000453 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000453">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000446"/>
+        <obo:IAO_0000115>pain that lasts more that half a year</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www0.sun.ac.za/aotc/icd10/mf_icd10_codelist.php?showmaster=mf_icd10_node3&amp;icd10_block=R00-R99&amp;icd10_subblock=R50-R69&amp;icd10_n3=R52</obo:IAO_0000119>
+        <icdo:OS_000000000000004>R52.2</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000453</oboInOwl:id>
+        <rdfs:label>other chronic pain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000454 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000454">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000453"/>
+        <obo:IAO_0000115>a type of pain that can&apos;t be controlled with standard medical care</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.healthline.com/health/intractable-pain#:~:text=Intractable%20pain%20refers%20to%20a,intractable%20pain%20disease%2C%20or%20IP.</obo:IAO_0000119>
+        <obo:ICDO_0000039>R52.1</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000454</oboInOwl:id>
+        <rdfs:label>chronic intractable pain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000455 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000455">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>A sudden movement downward (fall), usually resulting in injury.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R25-R29/R29-/R29.6</obo:IAO_0000119>
+        <obo:ICDO_0000039>R29.6</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000455</oboInOwl:id>
+        <rdfs:label>repeated falls</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000456 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000456">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>this is a symptom of many diseases that attack the respiratory system</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.healthline.com/health/coronavirus-shortness-of-breath#what-it-feels-like</obo:IAO_0000119>
+        <obo:ICDO_0000039>R06.02</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:hasBroadSynonym>Respiratory distress</oboInOwl:hasBroadSynonym>
+        <oboInOwl:id>ICDO_0000456</oboInOwl:id>
+        <rdfs:label>shortness of breath</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000457 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000457">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>Examples: fever &gt;38 degrees c or hypothermia &lt;36 degrees c;  tachycardia &gt;90 beat/minute; tachypnea &gt;24 breaths/minute; (4) leukocytosis &gt;12,000 cells/cubic mm or 10% immature forms.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.galenreasoner.com/icd10codes/R65.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>R65.0</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Symptoms and signs specifically associated with systemic inflammation and infection.</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000457</oboInOwl:id>
+        <rdfs:label>symptoms specifically associated with systemic inflammation and infection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000458 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000458">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000457"/>
+        <obo:IAO_0000115>is inflammation (swelling and irritation) of the epididymis, a tube at the back of the testicle that carries sperm</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://my.clevelandclinic.org/health/diseases/17697-epididymitis#:~:text=Epididymitis%20is%20inflammation%20(swelling%20and,ages%20of%2014%20and%2035.</obo:IAO_0000119>
+        <obo:ICDO_0000039>R45.1</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000458</oboInOwl:id>
+        <rdfs:label>epididymitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000459 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000459">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000457"/>
+        <obo:IAO_0000115>A disorder characterized by swelling due to excessive fluid accumulation at a specific anatomic site</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R50-R69/R60-/R60.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>R60.0</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000459</oboInOwl:id>
+        <rdfs:label>localized edema</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000460 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000460">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000457"/>
+        <obo:IAO_0000115>a serious condition related to systemic inflammation, organ dysfunction, and organ failure.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/R651#:~:text=ICD%2D10%2DCM%20Code%20R65.,SIRS)%20of%20non%2Dinfectious%20origin</obo:IAO_0000119>
+        <obo:ICDO_0000039>R65.1</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000460</oboInOwl:id>
+        <rdfs:label>systemic inflammatory response syndrome of non-infectious origin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000461 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000461">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>fainting or passing out</obo:IAO_0000115>
+        <obo:IAO_0000115>insufficient blood flow to the brain</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.heart.org/en/health-topics/arrhythmia/symptoms-diagnosis--monitoring-of-arrhythmia/syncope-fainting#:~:text=Syncope%20is%20a%20temporary%20loss,enough%20oxygen%20to%20the%20brain.</obo:IAO_0000119>
+        <obo:ICDO_0000039>R55</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000461</oboInOwl:id>
+        <rdfs:label>syncope and collapse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000462 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000462">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>decrease of strength in one or more muscles</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.medicinenet.com/weakness/symptoms.htm</obo:IAO_0000119>
+        <obo:ICDO_0000039>R53.1</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>weakness</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000462</oboInOwl:id>
+        <rdfs:label>weakness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000463 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000463">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <obo:IAO_0000115>Death occurring less than 24 hours from onset symptoms, not otherwise</obo:IAO_0000115>
+        <obo:IAO_0000119>https://medcode.ch/us/en/icds/ICD10-2016/R96</obo:IAO_0000119>
+        <obo:ICDO_0000039>R96.1</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/22/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000463</oboInOwl:id>
+        <rdfs:label>sudden death, cause unknown</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000464 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000464">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>A condition in which the blood is too acidic.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E87-/E87.2</obo:IAO_0000119>
+        <obo:ICDO_0000039>E87.2</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000464</oboInOwl:id>
+        <rdfs:label>acidosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000465 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000465">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>blood sugar (glucose) levels are abnormally high because the body does not produce enough insulin to meet its needs.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E08-E13/E11-/E11.9#:~:text=Type%202%20diabetes%20mellitus%20without%20complications,-2016%202017%202018&amp;text=9%20is%20a%20billable%2Fspecific,effective%20on%20October%201%2C%202019.</obo:IAO_0000119>
+        <obo:ICDO_0000039>E11.90</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000465</oboInOwl:id>
+        <rdfs:label>diabetes mellitus without complications</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000466 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000466">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000465"/>
+        <obo:IAO_0000115>combined defect of insulin serection and insulin resistance</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1336077/</obo:IAO_0000119>
+        <obo:ICDO_0000039>E11.7</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000466</oboInOwl:id>
+        <rdfs:label>non-insulin-dependent diabetes mellitus with multiple complications</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000467 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000467">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>disorders of lipoprotein metabolism that lead to atherosclerosis. These abnormalities arise from genetic and secondary factors and are caused by excessive entry of lipoproteins into the bloodstream or an impairment in their removal, or both.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E78-/E78.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>E78.9</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000467</oboInOwl:id>
+        <rdfs:label>disorder of lipoprotein metabolism, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000468 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000468">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>occur when the body has too little or too much calcium.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E83-/E83.5</obo:IAO_0000119>
+        <obo:ICDO_0000039>E83.5</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000468</oboInOwl:id>
+        <rdfs:label>disorders of calcium metabolism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000469 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000469">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>Conditions with excess lipids in the blood.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E78-/E78.5</obo:IAO_0000119>
+        <obo:ICDO_0000039>E78.5</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000469</oboInOwl:id>
+        <rdfs:label>hyperlipidemia, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000470 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000470">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>A condition characterized by a dry, waxy type of swelling (edema) with abnormal deposits of mucopolysaccharides in the skin and other tissues. It is caused by a deficiency of thyroid hormones.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E00-E07/E03-/E03.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>E87.1</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000470</oboInOwl:id>
+        <rdfs:label>hypo-osmolality and hyponatremia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000471 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000471">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000472"/>
+        <obo:IAO_0000115>A disorder characterized by laboratory test results that indicate a low concentration of potassium in the blood.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E87-/E87.6</obo:IAO_0000119>
+        <obo:ICDO_0000039>E87.6</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000471</oboInOwl:id>
+        <rdfs:label>hypokalemia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000472 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000472">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>A disorder characterized by laboratory test results that indicate a low concentration of potassium in the blood.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E87-/E87.6</obo:IAO_0000119>
+        <obo:ICDO_0000039>E87.6</obo:ICDO_0000039>
+        <obo:ICDO_0000140>unbillable</obo:ICDO_0000140>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000472</oboInOwl:id>
+        <rdfs:label>hypokalemia (unbillable)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000473 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000473">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>A condition characterized by a dry, waxy type of swelling (edema) with abnormal deposits of mucopolysaccharides in the skin and other tissues. It is caused by a deficiency of thyroid hormones.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E00-E07/E03-/E03.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>E03.9</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000473</oboInOwl:id>
+        <rdfs:label>hypothyroidism, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000474 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000474">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>A disorder of lipoprotein metabolism characterized by high levels of cholesterol and triglycerides in the blood. It is caused by elevation of low density and very low density lipoproteins.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E78-/E78.2</obo:IAO_0000119>
+        <obo:ICDO_0000039>E78.2</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000474</oboInOwl:id>
+        <rdfs:label>mixed hyperlipidemia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000475 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000475">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>an energy deficit due to chronic deficiency of all macronutrients</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E40-E46/E44-/E44.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>E44.0</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000475</oboInOwl:id>
+        <rdfs:label>moderate protein-calorie malnutrition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000476 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000476">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>an underactive thyroid gland.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E00-E07/E03-/E03.8</obo:IAO_0000119>
+        <obo:ICDO_0000039>E03.8</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000476</oboInOwl:id>
+        <rdfs:label>other specified hypothyroidism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000477 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000477">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>having more weight than the average human</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E65-E68/E66-</obo:IAO_0000119>
+        <obo:ICDO_0000039>E66</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000477</oboInOwl:id>
+        <rdfs:label>overweight and obesity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000478 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000478">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000477"/>
+        <obo:IAO_0000115>an abnormally high, unhealthy amount of body fat</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E65-E68/E66-/E66.01</obo:IAO_0000119>
+        <obo:ICDO_0000039>E66.01</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000478</oboInOwl:id>
+        <rdfs:label>morbid (severe) obesity due to excess calories</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000479">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000477"/>
+        <obo:IAO_0000115>a condition marked by an abnormally high, unhealthy amount of body fat.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E65-E68/E66-#E66.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>E66.0</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000479</oboInOwl:id>
+        <rdfs:label>obesity due to excess calories</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000480 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000480">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000477"/>
+        <obo:IAO_0000115>A condition marked by an abnormally high, unhealthy amount of body fat.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E65-E68/E66-/E66.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>E66.9</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000480</oboInOwl:id>
+        <rdfs:label>obesity, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000481 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000481">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>blood glucose, or blood sugar, levels are too high. With type 2 diabetes, the more common type, your body does not make or use insulin well.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E08-E13/E11-/E11.5</obo:IAO_0000119>
+        <obo:ICDO_0000039>E11.5</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000481</oboInOwl:id>
+        <rdfs:label>type 2 diabetes mellitus with circulatory complications</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000482 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000482">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>a chronic medical condition in which sugar, or glucose, levels build up in your bloodstream. In type 2 diabetes, your body&apos;s cells aren&apos;t able to respond to insulin as well as they should.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E08-E13/E11-/E11.22</obo:IAO_0000119>
+        <obo:ICDO_0000039>E11.22</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000482</oboInOwl:id>
+        <rdfs:label>type 2 diabetes mellitus with diabetic chronic kidney disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000483 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000483">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>A chronic condition that affects the way the body processes blood sugar (glucose)</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E08-E13/E11-/E11.65</obo:IAO_0000119>
+        <obo:ICDO_0000039>E11.65</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000483</oboInOwl:id>
+        <rdfs:label>type 2 diabetes mellitus with hyperglycemia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000484 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000484">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>poorly controlled diabetes can lead to problems within the kidneys</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/diabetic-nephropathy/symptoms-causes/syc-20354556#:~:text=Diabetic%20nephropathy%20is%20a%20common,and%20cause%20high%20blood%20pressure.</obo:IAO_0000119>
+        <obo:ICDO_0000039>E11.2</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000484</oboInOwl:id>
+        <rdfs:label>type 2 diabetes mellitus with kidney complications</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000485 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000485">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>high levels of sugar in the blood</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.health.harvard.edu/a_to_z/type-2-diabetes-mellitus-a-to-z</obo:IAO_0000119>
+        <obo:ICDO_0000039>E11.9</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000485</oboInOwl:id>
+        <rdfs:label>type 2 diabetes mellitus without complications</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000486 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000486">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>an energy deficit due to chronic deficiency of all macronutrients</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E40-E46/E43-/E43</obo:IAO_0000119>
+        <obo:ICDO_0000039>E43</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000486</oboInOwl:id>
+        <rdfs:label>unspecified severe protein-calorie malnutrition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000487 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000487">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>A nutritional condition produced by a deficiency of vitamin d in the diet, insufficient production of vitamin d in the skin, inadequate absorption of vitamin d from the diet, or abnormal conversion of vitamin d to its bioactive metabolites.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E50-E64/E55-/E55.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>E55.9</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000487</oboInOwl:id>
+        <rdfs:label>vitamin D deficiency, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000488 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000488">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>Abnormally decreased volume of circulating fluid (plasma) in body.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E86-/E86</obo:IAO_0000119>
+        <obo:ICDO_0000039>E86</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000488</oboInOwl:id>
+        <rdfs:label>volume depletion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000489 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000489">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#disease_processes_related_to_pregnancy"/>
+        <obo:IAO_0000115>symptoms during pregnancy and the puerperium (after the pregnancy)</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O94-O9A/O99-/O99.89</obo:IAO_0000119>
+        <obo:ICDO_0000039>O99.89</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000489</oboInOwl:id>
+        <rdfs:label>other specified diseases and conditions complicating pregnancy, childbirth and the puerperium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000490 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000490">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000489"/>
+        <obo:IAO_0000115>symptoms that are related to being pregnant, pregnancy is in the first trimester</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O20-O29/O26-/O26.891</obo:IAO_0000119>
+        <obo:ICDO_0000039>O26.891</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000490</oboInOwl:id>
+        <rdfs:label>other specified pregnancy related conditions, first trimester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000491 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000491">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000490"/>
+        <obo:IAO_0000115>a rare, itchy skin eruption that usually happens in the second or third trimester of pregnancy. It often begins with the appearance of very itchy red bumps or blisters on your abdomen and trunk, though it can show up on other parts of your body</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O20-O29/O26-/O26.41</obo:IAO_0000119>
+        <obo:ICDO_0000039>O26.41</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000491</oboInOwl:id>
+        <rdfs:label>herpes gestationis, first trimester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000492 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000492">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000490"/>
+        <obo:IAO_0000115>when a mother gains weight during pregnancy</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O20-O29/O26-/O26.11</obo:IAO_0000119>
+        <obo:ICDO_0000039>O26.11</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000492</oboInOwl:id>
+        <rdfs:label>low weight gain in pregnancy, first trimester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000493 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000493">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000490"/>
+        <obo:IAO_0000115>when a mother becomes exhausted or fatigued during pregnancy</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O20-O29/O26-/O26.811</obo:IAO_0000119>
+        <obo:ICDO_0000039>O26.811</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:id>ICDO_0000493</oboInOwl:id>
+        <rdfs:label>pregnancy related exhaustion and fatigue, first trimester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000494 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000494">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000489"/>
+        <obo:IAO_0000115>symptoms that are related to being pregnant, pregnancy is in the second trimester</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O20-O29/O26-/O26.892</obo:IAO_0000119>
+        <obo:ICDO_0000039>O26.892</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000494</oboInOwl:id>
+        <rdfs:label>other specified pregnancy related conditions, second trimester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000495 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000495">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000494"/>
+        <obo:IAO_0000115>a rare, itchy skin eruption that usually happens in the second or third trimester of pregnancy. It often begins with the appearance of very itchy red bumps or blisters on your abdomen and trunk, though it can show up on other parts of your body</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O20-O29/O26-/O26.42</obo:IAO_0000119>
+        <obo:ICDO_0000039>O26.42</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000495</oboInOwl:id>
+        <rdfs:label>herpes gestationis, second trimester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000496 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000496">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000494"/>
+        <obo:IAO_0000115>when a mother gains weight during pregnancy</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O20-O29/O26-/O26.12</obo:IAO_0000119>
+        <obo:ICDO_0000039>O26.12</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000496</oboInOwl:id>
+        <rdfs:label>low weight gain in pregnancy, second trimester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000497 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000497">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000494"/>
+        <obo:IAO_0000115>Fatigue caused from being pregnant, pregnancy is in the second trimester</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O20-O29/O26-/O26.812</obo:IAO_0000119>
+        <obo:ICDO_0000039>O26.812</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000497</oboInOwl:id>
+        <rdfs:label>pregnancy related exhaustion and fatigue, second trimester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000498 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000498">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000489"/>
+        <obo:IAO_0000115>symptoms that are related to being pregnant, pregnancy is in the third trimester</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O20-O29/O26-/O26.893</obo:IAO_0000119>
+        <obo:ICDO_0000039>O26.893</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000498</oboInOwl:id>
+        <rdfs:label>other specified pregnancy related conditions, third trimester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000499 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000499">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000498"/>
+        <obo:IAO_0000115>a rare, itchy skin eruption that usually happens in the second or third trimester of pregnancy. It often begins with the appearance of very itchy red bumps or blisters on your abdomen and trunk, though it can show up on other parts of your body</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O20-O29/O26-/O26.43</obo:IAO_0000119>
+        <obo:ICDO_0000039>O26.43</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000499</oboInOwl:id>
+        <rdfs:label>herpes gestationis, third trimester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000500 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000500">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000498"/>
+        <obo:IAO_0000115>when a mother gains weight during pregnancy</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O20-O29/O26-/O26.13</obo:IAO_0000119>
+        <obo:ICDO_0000039>O26.13</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000500</oboInOwl:id>
+        <rdfs:label>low weight gain in pregnancy, third trimester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000498"/>
+        <obo:IAO_0000115>Fatigue caused from being pregnant, pregnancy is in the third trimester</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O20-O29/O26-/O26.813</obo:IAO_0000119>
+        <obo:ICDO_0000039>O26.813</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000501</oboInOwl:id>
+        <rdfs:label>pregnancy related exhaustion and fatigue, third trimester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000502">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#mental_disease_processes"/>
+        <obo:IAO_0000115>general changes in brain function, such as confusion, amnesia (memory loss), loss of alertness, disorientation (not cognizant of self, time, or place), defects in judgment or thought, unusual or strange behavior, poor regulation of emotions, and disruptions in perception</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R40-R46/R41-/R41.82</obo:IAO_0000119>
+        <obo:ICDO_0000039>R41.82</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000502</oboInOwl:id>
+        <rdfs:label>altered mental status, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000503 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000503">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000502"/>
+        <obo:IAO_0000115>emotional disorder that makes the patient try to lose weight</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.google.com/search?q=anorexia&amp;rlz=1C1CHBF_enUS889US889&amp;oq=Anorexia&amp;aqs=chrome.0.0l8.466j0j4&amp;sourceid=chrome&amp;ie=UTF-8</obo:IAO_0000119>
+        <obo:ICDO_0000039>R63.0</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>anorexia</icdo:OS_000000000000004>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000503</oboInOwl:id>
+        <rdfs:label>anorexia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000504">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000502"/>
+        <obo:IAO_0000115>Aphasia is the term for full loss of language and dysphasia is the term for partial loss of language.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R47-R49/R47-/R47.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>R47.0</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000504</oboInOwl:id>
+        <rdfs:label>dysphasia and aphasia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000505 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000502"/>
+        <obo:IAO_0000115>a strong desire for sleep</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Somnolence#:~:text=Somnolence%20(alternatively%20%22sleepiness%22%20or,long%20periods%20(compare%20hypersomnia).</obo:IAO_0000119>
+        <obo:ICDO_0000039>R40.0</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000505</oboInOwl:id>
+        <rdfs:label>somnolence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000506 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000506">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#mental_disease_processes"/>
+        <obo:IAO_0000115>effects a persons mental health and emotional state</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://my.clevelandclinic.org/health/diseases/17843-mood-disorders#:~:text=A%20mood%20disorder%20is%20a,change%2C%20depending%20on%20the%20situation.</obo:IAO_0000119>
+        <obo:ICDO_0000039>F06.7</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000506</oboInOwl:id>
+        <rdfs:label>mood disorder due to known physiological condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000507 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000507">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000506"/>
+        <obo:IAO_0000115>someone has drank alcohol so much, that they depend on it to function</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3860472/</obo:IAO_0000119>
+        <obo:ICDO_0000039>F10.2</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000507</oboInOwl:id>
+        <rdfs:label>alcohol dependence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000508 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000508">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000506"/>
+        <obo:IAO_0000115>feelings of stress or fear that the patient cannot understand</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/F01-F99/F40-F48/F41-/F41.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>F41.1</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000508</oboInOwl:id>
+        <rdfs:label>generalized anxiety disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000509 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000509">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000508"/>
+        <obo:IAO_0000115>A category of psychiatric disorders which are characterized by anxious feelings or fear often accompanied by physical symptoms associated with anxiety.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/F01-F99/F40-F48/F41-/F41.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>F41.9</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:id>ICDO_0000509</oboInOwl:id>
+        <rdfs:label>anxiety disorder, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000510 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000510">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000508"/>
+        <obo:IAO_0000115>feelings of severe despondency and dejection, a feeling of worry, nervousness, or unease, typically about an imminent event or something with an uncertain outcome</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www0.sun.ac.za/aotc/icd10/mf_icd10_codelist.php?showmaster=mf_icd10_node3&amp;icd10_block=F00-F99&amp;icd10_subblock=F40-F48&amp;icd10_n3=F41</obo:IAO_0000119>
+        <obo:ICDO_0000039>F41.2</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000510</oboInOwl:id>
+        <rdfs:label>mixed anxiety and depressive disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000511 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000511">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000506"/>
+        <obo:IAO_0000115>A disorder characterized by melancholic feelings of grief or unhappiness.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/F01-F99/F30-F39/F32-/F32.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>F32.9</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000511</oboInOwl:id>
+        <rdfs:label>major depressive disorder, single episode, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000512 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000512">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000506"/>
+        <obo:IAO_0000115>nicotine gives temprorary pleasure effects in your brain</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/nicotine-dependence/symptoms-causes/syc-20351584#:~:text=Nicotine%20dependence%20occurs%20when%20you,you%20need%20to%20feel%20good.</obo:IAO_0000119>
+        <obo:ICDO_0000039>F17.2</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000512</oboInOwl:id>
+        <rdfs:label>nicotine dependence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000513 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000513">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000506"/>
+        <obo:IAO_0000115>A condition in which a person loses the ability to think, remember, learn, make decisions, and solve problems. Symptoms may also include personality changes and emotional problems.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/F01-F99/F01-F09/F03-/F03</obo:IAO_0000119>
+        <obo:ICDO_0000039>F03</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000513</oboInOwl:id>
+        <rdfs:label>unspecified dementia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000514 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000514">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000513"/>
+        <obo:IAO_0000115>majority of diagnosed are above the age of 65, this disease is not treatable.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.alz.org/alzheimers-dementia/what-is-alzheimers</obo:IAO_0000119>
+        <obo:ICDO_0000039>F00.1</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000514</oboInOwl:id>
+        <rdfs:label>dementia in alzheimer&apos;s disease with late onset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000515 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000515">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000115>a damaging immune response by the body to a substance, especially pollen, fur, a particular food, or dust, to which it has become hypersensitive.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z88-/Z88.8</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z88.8</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000515</oboInOwl:id>
+        <rdfs:label>allergy status to other drugs, medicaments and biological substances status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000516 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000516">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000515"/>
+        <obo:IAO_0000115>allergy to opiate agonist</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z88-/Z88.5</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z88.5</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000516</oboInOwl:id>
+        <rdfs:label>allergy status to narcotic agent status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000517 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000517">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000515"/>
+        <obo:IAO_0000115>code is used to show the patient cannot be given penicillin</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/penicillin-allergy/symptoms-causes/syc-20376222</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z88.0</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000517</oboInOwl:id>
+        <rdfs:label>allergy status to penicillin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000518 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000518">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000115>patient is depending on renal dialysis which is a procedure that is a substitute for many of the normal functions of the kidneys</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z99-/Z99.2</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z99.2</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000518</oboInOwl:id>
+        <rdfs:label>dependence on renal dialysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000519 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000519">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000115>inability to breathe independently leading to dependence on respirator</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z99-/Z99.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z99.1</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000519</oboInOwl:id>
+        <rdfs:label>dependence on respirator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000520 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000520">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000519"/>
+        <obo:IAO_0000115>inability to breathe independently leading to dependence on respirator</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z99-/Z99.11</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z99.11</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000520</oboInOwl:id>
+        <rdfs:label>dependence on respirator [ventilator] status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000521 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000521">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000115>dependence on wheelchair</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z99-/Z99.3</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z99.3</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000521</oboInOwl:id>
+        <rdfs:label>dependence on wheelchair</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000522 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000522">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000115>used to specify conditions like chronic kidey disease</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icdlist.com/icd-10/Z94.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z94.0</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000522</oboInOwl:id>
+        <rdfs:label>kidney transplant status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000523 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000523">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000115>Interruptions, blockage, or diseases that affect how your heart or blood vessels pump blood can cause complications such as heart disease or stroke.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z86-/Z86.7</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z86.7</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000523</oboInOwl:id>
+        <rdfs:label>personal history of diseases of the circulatory system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000524 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000524">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000115>Treatment that lowers the activity of the body&apos;s immune system.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z92-/Z92.25</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z92.2</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000524</oboInOwl:id>
+        <rdfs:label>personal history of immunosupression therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000525 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000525">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000115>thinner blood</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www0.sun.ac.za/aotc/icd10/mf_icd10_codelist.php?showmaster=mf_icd10_node3&amp;icd10_block=Z00-Z99&amp;icd10_subblock=Z80-Z99&amp;icd10_n3=Z92</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z92.1</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000525</oboInOwl:id>
+        <rdfs:label>personal history of long-term (current) use of anticoagulants</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000526 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000526">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000115>malignant, aggressive tumor that forms in the breast</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song, Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z85-/Z85.3</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z85.3</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000526</oboInOwl:id>
+        <rdfs:label>personal history of malignant neoplasm of breast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000527 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000527">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000115>tumors appear in the digestive system and stops functions</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Digestive_system_neoplasm#:~:text=Digestive%20system%20neoplasms%20are%20tumors,gastric%20cancer</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z95.0</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000527</oboInOwl:id>
+        <rdfs:label>personal history of malignant neoplasm of digestive organs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000528 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000528">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000115>a history of medical treatment</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/Z92#:~:text=ICD%2D10%2DCM%20Code%20Z92%20%2D%20Personal%20history%20of%20medical%20treatment</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z92.6</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000528</oboInOwl:id>
+        <rdfs:label>personal history of medical treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000529 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000529">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000115>patient has had a history with nicotine. This information can be used to help pin down the exact disease</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z87-/Z87.891#:~:text=Personal%20history%20of%20nicotine%20dependence,-2016%202017%202018&amp;text=Code%20POA%20Exempt-,Z87.,effective%20on%20October%201%2C%202019.</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z87.891</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000529</oboInOwl:id>
+        <rdfs:label>personal history of nicotine dependence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000530 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000530">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>A cough that lasts for at least eight weeks. Usually just a minor annoyance</obo:IAO_0000115>
+        <obo:IAO_0000119>www.mayoclinic.org</obo:IAO_0000119>
+        <obo:ICDO_0000039>R05</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:id>ICDO_0000530</oboInOwl:id>
+        <rdfs:label>chronic cough</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000531 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000531">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000203"/>
+        <obo:IAO_0000115>A condition due to lack of oxygen in respired air due to inhaling too much carbon monoxide</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R00-R09/R09-/R09.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>R09.0</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000531</oboInOwl:id>
+        <rdfs:label>asphyxia and hypoxemia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000533 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000533">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000203"/>
+        <obo:IAO_0000115>A condition in which there is not enough oxygen in the blood.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R00-R09/R09-/R09.02</obo:IAO_0000119>
+        <obo:ICDO_0000039>R09.02</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <oboInOwl:id>ICDO_0000533</oboInOwl:id>
+        <rdfs:label>hypoxemia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000534 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000534">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>A condition of frequent and watery bowel movements. Causes of diarrhea include bacteria, viruses or parasites, certain medicines, food intolerances and diseases that affect the stomach, small intestine or colon.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R10-R19/R19-/R19.7</obo:IAO_0000119>
+        <obo:ICDO_0000039>R19.7</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000534</oboInOwl:id>
+        <rdfs:label>diarrhea, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000535 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000535">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000408"/>
+        <obo:IAO_0000115>A disorder characterized by a lack of clear and orderly thought and behavior.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R40-R46/R41-/R41.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>R41.0</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000535</oboInOwl:id>
+        <rdfs:label>disorientation, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000536 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000536">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>A disorder characterized by elevation of the body&apos;s temperature above the upper limit of normal</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.icd9data.com/2015/Volume1/780-799/780-789/780/780.6.htm</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z80.6</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000536</oboInOwl:id>
+        <rdfs:label>fever and other physiologic disturbances of temperature regulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000537 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>Uremia resulting not from primary renal disease but from disturbances in circulation, fluid balance, or metabolism arising in other parts of the body.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R30-R39/R39-/R39.2</obo:IAO_0000119>
+        <obo:ICDO_0000039>R39.2</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000537</oboInOwl:id>
+        <rdfs:label>extrarenal uremia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000538 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000538">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>high blood potassium levels</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E87-/E87.5</obo:IAO_0000119>
+        <obo:ICDO_0000039>E87.5</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000538</oboInOwl:id>
+        <rdfs:label>hyperkalemia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000539 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000539">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <obo:IAO_0000115>chemistry tests are used to diagnose many conditions and diseases</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.cancer.gov/publications/dictionaries/cancer-terms/def/blood-chemistry-test</obo:IAO_0000119>
+        <obo:ICDO_0000039>R79.89</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000539</oboInOwl:id>
+        <rdfs:label>other specified abnormal findings of blood chemistry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000540 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000540">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>diabetes is usually an inherited disease that makes people obese and have problems with daily life</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/E118#:~:text=a%20principal%20diagnosis.-,E11.,to%20specify%20a%20medical%20diagnosis.</obo:IAO_0000119>
+        <obo:ICDO_0000039>E11.8</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000540</oboInOwl:id>
+        <rdfs:label>type 2 diabetes mellitus with unspecified complications</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000541 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000541">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>when a patient uses or loses more fluid than they take in</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/dehydration/symptoms-causes/syc-20354086#:~:text=Overview,fluids%2C%20you%20will%20get%20dehydrated.</obo:IAO_0000119>
+        <obo:ICDO_0000039>E86.0</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000541</oboInOwl:id>
+        <rdfs:label>dehydration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000542 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000542">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>genetic anomaly that causes high cholesterol levels</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.medicalnewstoday.com/articles/316173#complications</obo:IAO_0000119>
+        <obo:ICDO_0000039>E78.0</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000542</oboInOwl:id>
+        <rdfs:label>pure hypercholesterolemia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000543 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000543">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001961"/>
+        <obo:IAO_0000115>careful watch of patient who has a high chance of being pregnant</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www0.sun.ac.za/aotc/icd10/mf_icd10_codelist.php?showmaster=mf_icd10_node3&amp;icd10_block=Z00-Z99&amp;icd10_subblock=Z30-Z39&amp;icd10_n3=Z35</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z35.8</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000543</oboInOwl:id>
+        <rdfs:label>supervision of other high-risk pregnancies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000544 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000544">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000543"/>
+        <obo:IAO_0000115>used to just note the patient&apos;s status with their pregnancy</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icdlist.com/icd-10/Z37.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z37.0</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000544</oboInOwl:id>
+        <rdfs:label>single live birth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000545">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>high blood sugar because body cannot break down the sugar being taken in</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/E1169#:~:text=a%20principal%20diagnosis.-,E11.,to%20specify%20a%20medical%20diagnosis.</obo:IAO_0000119>
+        <obo:ICDO_0000039>E11.6</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000545</oboInOwl:id>
+        <rdfs:label>type 2 diabetes mellitus with other specified complications</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000546 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000546">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000422"/>
+        <obo:IAO_0000115>patient is unable to walk due to an unspecified reason</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:ICDO_0000039>R26.2</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000546</oboInOwl:id>
+        <rdfs:label>difficulty in walking, not elsewhere classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000547 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000547">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000425"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>Abnormally high blood glucose level, could be a sign of diabetes</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R70-R79/R73-/R73.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>R73.9</obo:ICDO_0000039>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:creation_date>7/23/2020</oboInOwl:creation_date>
+        <oboInOwl:id>ICDO_0000547</oboInOwl:id>
+        <rdfs:label>hyperglycemia, unspecified</rdfs:label>
+        <rdfs:label>type 2 diabetes mellitus with ketoacidosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000548 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000548">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000528"/>
+        <obo:IAO_0000115>this is a record of the patient</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www0.sun.ac.za/aotc/icd10/mf_icd10_codelist.php?showmaster=mf_icd10_node3&amp;icd10_block=Z00-Z99&amp;icd10_subblock=Z80-Z99&amp;icd10_n3=Z92</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z92.4</obo:ICDO_0000039>
+        <oboInOwl:id>ICDO_0000548</oboInOwl:id>
+        <rdfs:label>personal history of major surgery, not elsewhere classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000549 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000549">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>a serious condition resulting from the presence of harmful microorganisms in the blood or other tissues and the body’s response to their presence, potentially leading to the malfunctioning of various organs, shock, and death.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/A00-B99/A30-A49/A41-/A41.89</obo:IAO_0000119>
+        <obo:ICDO_0000039>A41.89</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <oboInOwl:id>ICDO_0000549</oboInOwl:id>
+        <rdfs:label>other specified sepsis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000550 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000550">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>A disorder characterized by insufficiently healthy hematapoietic cell production by the bone marrow.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/C00-D49/D37-D48/D46-/D46.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>D46.9</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <oboInOwl:id>ICDO_0000550</oboInOwl:id>
+        <rdfs:label>myelodysplastic syndrome, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000551 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000551">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>A blood disorder characterized by the appearance of sickle-shaped red blood cells and anemia.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/D50-D89/D55-D59/D57-/D57.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>D57.1</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <oboInOwl:id>ICDO_0000551</oboInOwl:id>
+        <rdfs:label>sickle-cell disease without crisis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000552 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>body does not have enough nutrition to sustain itself</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E40-E46/E44-/E44.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>E44.1</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <oboInOwl:id>ICDO_0000552</oboInOwl:id>
+        <rdfs:label>mild protein-calorie malnutrition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000553 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000553">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>iron deficiecy is due to insufficient iron</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E50-E64/E61-/E61.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>E61.1</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <oboInOwl:id>ICDO_0000553</oboInOwl:id>
+        <rdfs:label>iron deficiency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000554">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000506"/>
+        <obo:IAO_0000115>this code must be sequenced as the second code, since it specifies that the disease has dementia in other diseases</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://acdis.org/articles/qa-%E2%80%98code-first%E2%80%99-versus-%E2%80%98-diseases-classified-elsewhere%E2%80%99  https://www.icd10data.com/ICD10CM/Codes/F01-F99/F01-F09/F02-/F02.8</obo:IAO_0000119>
+        <obo:ICDO_0000039>F02.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Non-Billable</obo:ICDO_0000140>
+        <oboInOwl:id>ICDO_0000554</oboInOwl:id>
+        <rdfs:label>dementia in other diseases classified elsewhere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000555 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000555">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000506"/>
+        <obo:IAO_0000115>An acutely disturbed state of mind that occurs in fever, intoxication, and other disorders and is characterized by restlessness, illusions, and incoherence of thought and speech</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.lexico.com/en/definition/delirium</obo:IAO_0000119>
+        <obo:ICDO_0000039>F05.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <oboInOwl:id>ICDO_0000555</oboInOwl:id>
+        <rdfs:label>delirium due to known physiological condition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000556 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000556">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000506"/>
+        <obo:IAO_0000115>patients falls into depression, one episode</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/F01-F99/F30-F39/F32-/F32.2</obo:IAO_0000119>
+        <obo:ICDO_0000039>F32.2</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <oboInOwl:id>ICDO_0000556</oboInOwl:id>
+        <rdfs:label>major depressive disorder, single episode, severe without psychotic features</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000559 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000559">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000502"/>
+        <obo:IAO_0000115>A disorder characterized by difficulty in falling asleep and/or remaining asleep.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/G00-G99/G40-G47/G47-/G47.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>G47.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Non-Billable</obo:ICDO_0000140>
+        <oboInOwl:id>ICDO_0000559</oboInOwl:id>
+        <rdfs:label>insomnia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000560 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000560">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>a sudden blockage in a lung artery. The cause is usually a blood clot in the leg called a deep vein thrombosis that breaks loose and travels through the bloodstream to the lung</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I26-I28/I26-/I26.99</obo:IAO_0000119>
+        <obo:ICDO_0000039>I26.99</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <oboInOwl:id>ICDO_0000560</oboInOwl:id>
+        <rdfs:label>other pulmonary embolism without acute cor pulmonale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000561 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000561">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>A pathological constriction that can occur above (supravalvular stenosis), below (subvalvular stenosis), or at the aortic valve. It is characterized by restricted outflow from the left ventricle into the aorta.</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I30-I52/I35-/I35.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>I35.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <oboInOwl:id>ICDO_0000561</oboInOwl:id>
+        <rdfs:label>nonrheumatic aortic (valve) stenosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000562 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000562">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <obo:IAO_0000115>Cessation of heart beat or myocardial contraction. If it is treated within a few minutes, heart arrest can be reversed in most cases to normal cardiac rhythm and effective circulation</obo:IAO_0000115>
+        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I30-I52/I46-</obo:IAO_0000119>
+        <obo:ICDO_0000039>I46.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Non-Billable</obo:ICDO_0000140>
+        <oboInOwl:id>ICDO_0000562</oboInOwl:id>
+        <rdfs:label>cardiac arrest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#blood -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#blood">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000067"/>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <rdfs:label>disease processes of the blood stream</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#disease_processes_related_to_pregnancy -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#disease_processes_related_to_pregnancy">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:label>disease processes related to pregnancy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#mental_disease_processes -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#mental_disease_processes">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:label>mental disease processes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl#personal_history -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#personal_history">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <rdfs:label>personal status and history</rdfs:label>
     </owl:Class>
     
 
