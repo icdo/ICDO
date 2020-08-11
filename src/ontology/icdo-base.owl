@@ -24,8 +24,8 @@
         <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
         <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
         <oboInOwl:created_by>Virginia He</oboInOwl:created_by>
-        <oboInOwl:creation_date>8-8-2020</oboInOwl:creation_date>
-        <owl:versionInfo>1.0.37</owl:versionInfo>
+        <oboInOwl:creation_date>8-11-2020</oboInOwl:creation_date>
+        <owl:versionInfo>1.0.39</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -724,7 +724,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000258"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002405"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">immune system DP</rdfs:label>
@@ -2169,7 +2169,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000165"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:ICDO_0000039>J00-J99</obo:ICDO_0000039>
@@ -2479,8 +2479,20 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000165 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000165">
-        <obo:IAO_0000117>Virginia He</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">respiratory system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>acute or chronic inflammation of the renal tubules and interstitium. Acute interstitial nephritis is commonly caused by allergic reactions to drugs, but infection or systemic disease may also precipitate the disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Virginia He, Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.amboss.com/us/knowledge/Tubulointerstitial_diseases#:~:text=Tubulointerstitial%20diseases%20are%20characterized%20by,may%20also%20precipitate%20the%20disease.</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N10-N16</obo:IAO_0000119>
+        <obo:ICDO_0000039>N10-N16</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Renal tubulo-interstitial diseases</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">renal tubulo-interstitial disease processes</rdfs:label>
     </owl:Class>
     
 
@@ -3968,16 +3980,6 @@ resistance</icdo:OS_000000000000004>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000258 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000258">
-        <obo:IAO_0000117>Virginia He</obo:IAO_0000117>
-        <obo:IAO_0000119>https://www.ebi.ac.uk/ols/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0002405</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">immune system</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ICDO_0000259 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000259">
@@ -4003,12 +4005,6 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000260">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000261"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Genitourinary disease involves disorders of the genital and urinary organs. These organs are involved in reproduction and urination</obo:IAO_0000115>
         <obo:IAO_0000118>disease of the genitourinary system</obo:IAO_0000118>
         <obo:IAO_0000119>https://www.encyclopedia.com/education/encyclopedias-almanacs-transcripts-and-maps/genitourinary-disease#:~:text=Genitourinary%20disease%20involves%20disorders%20of,and%20the%20uterus%20in%20females.</obo:IAO_0000119>
@@ -4019,32 +4015,24 @@ resistance</icdo:OS_000000000000004>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000261 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000261">
-        <obo:IAO_0000119>https://www.encyclopedia.com/education/encyclopedias-almanacs-transcripts-and-maps/genitourinary-disease#:~:text=Genitourinary%20disease%20involves%20disorders%20of,and%20the%20uterus%20in%20females.</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">genitourinary system</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ICDO_0000262 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000262">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000165"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000138"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000156"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>primary injury to renal tubules and interstitium resulting in decreased renal function. The acute form is most often due to allergic drug reactions or to infections</obo:IAO_0000115>
+        <obo:IAO_0000115>a bacterial infection causing inflammation of the kidneys and is one of the most common diseases of the kidney.</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He, Justin Song</obo:IAO_0000117>
-        <obo:IAO_0000119>https://www.merckmanuals.com/professional/genitourinary-disorders/tubulointerstitial-diseases/tubulointerstitial-nephritis</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N10-N16/N10-/N10</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/books/NBK519537/#:~:text=Acute%20pyelonephritis%20is%20a%20bacterial,kidneys%20and%20their%20collecting%20systems.</obo:IAO_0000119>
         <obo:ICDO_0000039>N10</obo:ICDO_0000039>
         <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
-        <icdo:OS_000000000000004>Acute tubulo-interstitial nephritis</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">acute tubulo-interstitial nephritis DP</rdfs:label>
+        <icdo:OS_000000000000004>Acute pyelonephritis</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">acute pyelonephritis DP</rdfs:label>
     </owl:Class>
     
 
@@ -4052,11 +4040,17 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000263 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000263">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000264"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000138"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000156"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A disorder characterized by the acute loss of renal function</obo:IAO_0000115>
@@ -4076,14 +4070,21 @@ resistance</icdo:OS_000000000000004>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001863"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000138"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ICDO_0000156"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ICDO_0000157"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A disorder characterized by the acute loss of renal function</obo:IAO_0000115>
@@ -4091,7 +4092,7 @@ resistance</icdo:OS_000000000000004>
         <obo:IAO_0000119>https://myhealth.alberta.ca/Health/Pages/conditions.aspx?hwid=aa106178&amp;lang=en-ca#:~:text=Kidney%20problems%20can%20develop%20suddenly,reversible%20than%20chronic%20kidney%20failure.</obo:IAO_0000119>
         <obo:ICDO_0000039>N17-N19.9</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Acute kidney failure and chronic kidney disease</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">acute kidney failure and chronic kidney DP</rdfs:label>
+        <rdfs:label xml:lang="en">acute kidney failure or chronic kidney DP</rdfs:label>
     </owl:Class>
     
 
@@ -4099,7 +4100,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000265 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000265">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000263"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -4127,12 +4128,15 @@ resistance</icdo:OS_000000000000004>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>kidney is no longer able to filter blood</obo:IAO_0000115>
+        <obo:IAO_0000115>kidney is no longer able to filter blood.</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He, Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N17-N19/N17-/N17.8</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/kidney-failure/symptoms-causes/syc-20369048</obo:IAO_0000119>
         <obo:ICDO_0000039>N17.8</obo:ICDO_0000039>
         <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
         <icdo:OS_000000000000004>other acute kidney failure</icdo:OS_000000000000004>
+        <terms:source>https://icdlist.com/icd-10/N17.8</terms:source>
+        <rdfs:comment>N17.8 is a billable code used to specify a medical diagnosis of other acute kidney failure. The code is valid for the year 2020 for the submission of HIPAA-covered transactions. The ICD-10-CM code N17.8 might also be used to specify conditions or terms like acute renal failure due to ischemia or ischemic nephropathy or post-renal renal failure.</rdfs:comment>
         <rdfs:label xml:lang="en">other acute kidney failure DP</rdfs:label>
     </owl:Class>
     
@@ -4162,7 +4166,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000268 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000268">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000264"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -4229,6 +4233,12 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000272">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000268"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Chronic, irreversible renal failure.</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He, Justin Song</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N17-N19/N18-/N18.6</obo:IAO_0000119>
@@ -4259,6 +4269,12 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000274">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -4325,12 +4341,6 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000278">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000261"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Diseases that affect the male reproductive and genital organs</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N40-N53</obo:IAO_0000119>
         <obo:ICDO_0000039>N40-N53</obo:ICDO_0000039>
@@ -4612,7 +4622,7 @@ resistance</icdo:OS_000000000000004>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000297"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>a small class of medical conditions affecting the nervous system.</obo:IAO_0000115>
@@ -4622,16 +4632,6 @@ resistance</icdo:OS_000000000000004>
         <obo:ICDO_0000039>G00-G99</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Diseases of the nervous system</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">disease process of the nervous system</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000297 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000297">
-        <obo:IAO_0000117>Virginia He</obo:IAO_0000117>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Nervous_system_disease#:~:text=Nervous%20system%20diseases%2C%20also%20known,conditions%20affecting%20the%20nervous%20system.</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">nervous system</rdfs:label>
     </owl:Class>
     
 
@@ -5834,14 +5834,8 @@ resistance</icdo:OS_000000000000004>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001863"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>inflammation of the glomeruli, which are structures in your kidneys that are made up of tiny blood vessels. These knots of vessels help filter your blood and remove excess fluids. If your glomeruli are damaged, your kidneys will stop working properly, and you can go into kidney failure</obo:IAO_0000115>
@@ -9614,6 +9608,12 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000482">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>a chronic medical condition in which sugar, or glucose, levels build up in your bloodstream. In type 2 diabetes, your body&apos;s cells aren&apos;t able to respond to insulin as well as they should.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E08-E13/E11-/E11.22</obo:IAO_0000119>
         <obo:ICDO_0000039>E11.22</obo:ICDO_0000039>
@@ -9644,6 +9644,12 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000484">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>poorly controlled diabetes can lead to problems within the kidneys</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/diabetic-nephropathy/symptoms-causes/syc-20354556#:~:text=Diabetic%20nephropathy%20is%20a%20common,and%20cause%20high%20blood%20pressure.</obo:IAO_0000119>
         <obo:ICDO_0000039>E11.2</obo:ICDO_0000039>
@@ -10135,6 +10141,12 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000518">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>patient is depending on renal dialysis which is a procedure that is a substitute for many of the normal functions of the kidneys</obo:IAO_0000115>
         <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z99-/Z99.2</obo:IAO_0000119>
@@ -10191,6 +10203,12 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000522">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>used to specify conditions like chronic kidey disease</obo:IAO_0000115>
         <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
         <obo:IAO_0000119>https://icdlist.com/icd-10/Z94.0</obo:IAO_0000119>
@@ -10389,6 +10407,12 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000537">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000409"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Uremia resulting not from primary renal disease but from disturbances in circulation, fluid balance, or metabolism arising in other parts of the body.</obo:IAO_0000115>
         <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R30-R39/R39-/R39.2</obo:IAO_0000119>
