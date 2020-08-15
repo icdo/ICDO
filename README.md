@@ -5,6 +5,8 @@ ICDO is an ontology representation of ICD. This ICD ontology (ICDO)logically rep
 
 The ICDO developers include Dr. Ling (Eric) Wan, Justin Song, Virginia He, Edison Ong, and Yongqun (Oliver) He. We appreciate the support by Ms. Meiu Wong, Dr. Xubin Song, and many other. 
 
+The ICDO work was first presented as an oral presentation in the 10th International Conference on Biomedical Ontology (ICBO-2019), July 30 - August 2, 2019, Buffalo, by Dr. Ling (Eric) Wan.
+
 More collaborations are welcome! Thanks! 
 
 ## Source codes:
