@@ -13,8 +13,8 @@ More collaborations are welcome! Thanks!
 https://raw.githubusercontent.com/icdo/ICDO/master/src/ontology/icdo.owl
 
 ## Depositions:
-BioPortal: https://bioportal.bioontology.org/ontologies/ICDO 
-Ontobee: http://www.ontobee.org/ontology/ICDO  
+- BioPortal: https://bioportal.bioontology.org/ontologies/ICDO 
+- Ontobee: http://www.ontobee.org/ontology/ICDO  
 
 ## Reference:
 Wan L, Ong E, He Y. ICDO: Ontological representation of the International Classification of Diseases (ICD) and its application in English and Chinese healthy data standardization. The 10th International Conference on Biomedical Ontology (ICBO-2019), July 30 - August 2, 2019, Buffalo, NY, USA. 10-page full length article. URL: https://drive.google.com/file/d/1p-fCiuGuIZtOIQ7qesd9d-uhrM90fxHb/view. 
