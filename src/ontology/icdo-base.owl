@@ -20,12 +20,14 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/icdo/UBERON_imports.owl"/>
         <obo:IAO_0000115>ICDO: International Classification of Diseases Ontology</obo:IAO_0000115>
         <dc:contributor>Edison Ong</dc:contributor>
+        <oboInOwl:created_by>Grace Whah</oboInOwl:created_by>
+        <oboInOwl:created_by>Jennifer Roman</oboInOwl:created_by>
         <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
         <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
         <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
         <oboInOwl:created_by>Virginia He</oboInOwl:created_by>
-        <oboInOwl:creation_date>8-15-2020</oboInOwl:creation_date>
-        <owl:versionInfo>1.0.41</owl:versionInfo>
+        <oboInOwl:creation_date>12-1-2020</oboInOwl:creation_date>
+        <owl:versionInfo>1.0.51</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1122,7 +1124,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
         <obo:IAO_0000118>disease of the circulatory system</obo:IAO_0000118>
         <obo:ICDO_0000039>I00-I99</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Diseases of the circulatory system</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">disease process of the circulatory system</rdfs:label>
+        <rdfs:label xml:lang="en">disease (process) of the circulatory system</rdfs:label>
     </owl:Class>
     
 
@@ -2174,7 +2176,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </rdfs:subClassOf>
         <obo:ICDO_0000039>J00-J99</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Diseases of the respiratory system</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">disease process in the respiratory system</rdfs:label>
+        <rdfs:label xml:lang="en">disease (process) in the respiratory system</rdfs:label>
     </owl:Class>
     
 
@@ -3980,6 +3982,15 @@ resistance</icdo:OS_000000000000004>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000258 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000318"/>
+        <rdfs:label xml:lang="en">bacterial disease (process)</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ICDO_0000259 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000259">
@@ -4010,7 +4021,22 @@ resistance</icdo:OS_000000000000004>
         <obo:IAO_0000119>https://www.encyclopedia.com/education/encyclopedias-almanacs-transcripts-and-maps/genitourinary-disease#:~:text=Genitourinary%20disease%20involves%20disorders%20of,and%20the%20uterus%20in%20females.</obo:IAO_0000119>
         <obo:ICDO_0000039>N00-N99</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Diseases of the genitourinary system</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">disease process of the genitourinary system</rdfs:label>
+        <rdfs:label xml:lang="en">disease (process) of the genitourinary system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000261 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000261">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000258"/>
+        <obo:IAO_0000115>Erysipelas is a relatively common bacterial infection of the superficial layer of the skin (upper dermis), extending to the superficial lymphatic vessels within the skin, characterized by a raised, well-defined, tender, bright red rash, typically on the face or legs, but which can occur anywhere on the skin. It is a form of cellulitis and is potentially serious. Erysipelas is usually caused by the bacteria Streptococcus pyogenes.</obo:IAO_0000115>
+        <obo:IAO_0000117>Grace Whah, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>St. Anthony&apos;s fire</obo:IAO_0000118>
+        <obo:ICDO_0000039>A46</obo:ICDO_0000039>
+        <terms:source>https://en.wikipedia.org/wiki/Erysipelas</terms:source>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/A00-B99/A30-A49/A46-/A46</terms:source>
+        <rdfs:label xml:lang="en">Erysipelas</rdfs:label>
     </owl:Class>
     
 
@@ -4631,7 +4657,7 @@ resistance</icdo:OS_000000000000004>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Nervous_system_disease#:~:text=Nervous%20system%20diseases%2C%20also%20known,conditions%20affecting%20the%20nervous%20system.</obo:IAO_0000119>
         <obo:ICDO_0000039>G00-G99</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Diseases of the nervous system</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">disease process of the nervous system</rdfs:label>
+        <rdfs:label xml:lang="en">disease (process) of the nervous system</rdfs:label>
     </owl:Class>
     
 
@@ -4777,7 +4803,7 @@ resistance</icdo:OS_000000000000004>
         <obo:IAO_0000119>https://medlineplus.gov/ency/article/007447.htm#:~:text=A%20digestive%20disease%20is%20any,Gallstones%2C%20cholecystitis%2C%20and%20cholangitis</obo:IAO_0000119>
         <obo:ICDO_0000039>K00-K99</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Diseases of the digestive system</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">disease process of the digestive system</rdfs:label>
+        <rdfs:label xml:lang="en">disease (process) of the digestive system</rdfs:label>
     </owl:Class>
     
 
@@ -4944,10 +4970,11 @@ resistance</icdo:OS_000000000000004>
         </rdfs:subClassOf>
         <obo:IAO_0000115>disorders caused by organisms — such as bacteria, viruses, fungi or parasites.</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He</obo:IAO_0000117>
+        <obo:IAO_0000118>infectious and parasitic disease processes</obo:IAO_0000118>
         <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/infectious-diseases/symptoms-causes/syc-20351173#:~:text=Infectious%20diseases%20are%20disorders%20caused,passed%20from%20person%20to%20person.</obo:IAO_0000119>
         <obo:ICDO_0000039>A00-B99</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Certain infectious and parasitic diseases</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">infectious and parasitic disease processes</rdfs:label>
+        <rdfs:label xml:lang="en">infectious and parasitic disease (process)</rdfs:label>
     </owl:Class>
     
 
@@ -5310,7 +5337,7 @@ resistance</icdo:OS_000000000000004>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H00-H59</obo:IAO_0000119>
         <obo:ICDO_0000039>H00-H59</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Diseases of the eye and adnexa</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">disease processes of the eye and adnexa</rdfs:label>
+        <rdfs:label xml:lang="en">disease (process) of the eye and adnexa</rdfs:label>
     </owl:Class>
     
 
@@ -5413,7 +5440,7 @@ resistance</icdo:OS_000000000000004>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/M00-M99</obo:IAO_0000119>
         <obo:ICDO_0000039>M00-M99</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Diseases of the musculoskeletal system and connective tissue</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">disease processes of the musculoskeletal system and connective tissue</rdfs:label>
+        <rdfs:label xml:lang="en">disease (process) of the musculoskeletal system and connective tissue</rdfs:label>
     </owl:Class>
     
 
@@ -10772,7 +10799,7 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#disease_processes_related_to_pregnancy">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
-        <rdfs:label>disease processes related to pregnancy</rdfs:label>
+        <rdfs:label>disease (process) related to pregnancy</rdfs:label>
     </owl:Class>
     
 
