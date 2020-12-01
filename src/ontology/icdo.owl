@@ -5548,7 +5548,7 @@ For example, protein A (transcription factor) indirectly increases by expression
         <obo:IAO_0000115>Disease process is the progression disease in an individual over time. The process begins with the appropriate exposure to or accumulation of factors sufficient for the disease process to begin in a susceptible host. For an infectious disease, the exposure is a microorganism. For cancer, the exposure may be a factor that initiates the process, such as asbestos fibers or components in tobacco smoke (for lung cancer), or one that promotes the process, such as estrogen (for endometrial cancer).</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.cdc.gov/ophss/csels/dsepd/ss1978/lesson1/section9.html</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym xml:lang="en">disorder</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">disease process</rdfs:label>
+        <rdfs:label xml:lang="en">disease (process)</rdfs:label>
         <rdfs:label xml:lang="zh">病程</rdfs:label>
     </owl:Class>
     
@@ -6468,7 +6468,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
         <obo:IAO_0000118>disease of the circulatory system</obo:IAO_0000118>
         <obo:ICDO_0000039>I00-I99</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Diseases of the circulatory system</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">disease process of the circulatory system</rdfs:label>
+        <rdfs:label xml:lang="en">disease (process) of the circulatory system</rdfs:label>
     </owl:Class>
     
 
@@ -7520,7 +7520,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         </rdfs:subClassOf>
         <obo:ICDO_0000039>J00-J99</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Diseases of the respiratory system</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">disease process in the respiratory system</rdfs:label>
+        <rdfs:label xml:lang="en">disease (process) in the respiratory system</rdfs:label>
     </owl:Class>
     
 
@@ -9356,7 +9356,7 @@ resistance</icdo:OS_000000000000004>
         <obo:IAO_0000119>https://www.encyclopedia.com/education/encyclopedias-almanacs-transcripts-and-maps/genitourinary-disease#:~:text=Genitourinary%20disease%20involves%20disorders%20of,and%20the%20uterus%20in%20females.</obo:IAO_0000119>
         <obo:ICDO_0000039>N00-N99</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Diseases of the genitourinary system</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">disease process of the genitourinary system</rdfs:label>
+        <rdfs:label xml:lang="en">disease (process) of the genitourinary system</rdfs:label>
     </owl:Class>
     
 
@@ -9977,7 +9977,7 @@ resistance</icdo:OS_000000000000004>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Nervous_system_disease#:~:text=Nervous%20system%20diseases%2C%20also%20known,conditions%20affecting%20the%20nervous%20system.</obo:IAO_0000119>
         <obo:ICDO_0000039>G00-G99</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Diseases of the nervous system</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">disease process of the nervous system</rdfs:label>
+        <rdfs:label xml:lang="en">disease (process) of the nervous system</rdfs:label>
     </owl:Class>
     
 
@@ -10123,7 +10123,7 @@ resistance</icdo:OS_000000000000004>
         <obo:IAO_0000119>https://medlineplus.gov/ency/article/007447.htm#:~:text=A%20digestive%20disease%20is%20any,Gallstones%2C%20cholecystitis%2C%20and%20cholangitis</obo:IAO_0000119>
         <obo:ICDO_0000039>K00-K99</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Diseases of the digestive system</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">disease process of the digestive system</rdfs:label>
+        <rdfs:label xml:lang="en">disease (process) of the digestive system</rdfs:label>
     </owl:Class>
     
 
@@ -10656,7 +10656,7 @@ resistance</icdo:OS_000000000000004>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H00-H59</obo:IAO_0000119>
         <obo:ICDO_0000039>H00-H59</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Diseases of the eye and adnexa</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">disease processes of the eye and adnexa</rdfs:label>
+        <rdfs:label xml:lang="en">disease (process) of the eye and adnexa</rdfs:label>
     </owl:Class>
     
 
@@ -10759,7 +10759,7 @@ resistance</icdo:OS_000000000000004>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/M00-M99</obo:IAO_0000119>
         <obo:ICDO_0000039>M00-M99</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Diseases of the musculoskeletal system and connective tissue</icdo:OS_000000000000004>
-        <rdfs:label xml:lang="en">disease processes of the musculoskeletal system and connective tissue</rdfs:label>
+        <rdfs:label xml:lang="en">disease (process) of the musculoskeletal system and connective tissue</rdfs:label>
     </owl:Class>
     
 
@@ -21354,7 +21354,7 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#disease_processes_related_to_pregnancy">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
-        <rdfs:label>disease processes related to pregnancy</rdfs:label>
+        <rdfs:label>disease (process) related to pregnancy</rdfs:label>
     </owl:Class>
     
 
@@ -21872,18 +21872,6 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
-    </rdf:Description>
-    <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
     </rdf:Description>
     <rdf:Description>
@@ -21891,6 +21879,18 @@ This interpretation is *not* the same as an at-all-times relation
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
     </rdf:Description>
     
 
@@ -21904,34 +21904,34 @@ This interpretation is *not* the same as an at-all-times relation
      -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/bfo.owl">
-        <dc:contributor>Leonard Jacuzzo</dc:contributor>
         <dc:contributor>Janna Hastings</dc:contributor>
+        <dc:contributor>Leonard Jacuzzo</dc:contributor>
         <foaf:mbox rdf:resource="mailto:bfo-owl-devel@googlegroups.com"/>
         <dc:contributor>Barry Smith</dc:contributor>
         <rdfs:comment xml:lang="en">Please see the project site https://github.com/BFO-ontology/BFO, the bfo2 owl discussion group http://groups.google.com/group/bfo-owl-devel , the bfo2 discussion group http://groups.google.com/group/bfo-devel, the tracking google doc http://goo.gl/IlrEE, and the current version of the bfo2 reference http://purl.obolibrary.org/obo/bfo/dev/bfo2-reference.docx . This ontology is generated from a specification at https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/ and with the code that generates the OWL version in https://github.com/BFO-ontology/BFO/tree/master/src/tools/. A very early version of BFO version 2 in CLIF is at http://purl.obolibrary.org/obo/bfo/dev/bfo.clif</rdfs:comment>
         <rdfs:comment xml:lang="en">The BSD license on the BFO project site refers to code used to build BFO.</rdfs:comment>
-        <dc:contributor>David Osumi-Sutherland</dc:contributor>
         <dc:contributor>Pierre Grenon</dc:contributor>
+        <dc:contributor>David Osumi-Sutherland</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.clif"/>
-        <dc:contributor>Selja Seppälä</dc:contributor>
         <dc:contributor>Werner Ceusters</dc:contributor>
+        <dc:contributor>Selja Seppälä</dc:contributor>
         <dc:contributor>Jie Zheng</dc:contributor>
         <dc:contributor>Thomas Bittner</dc:contributor>
         <dc:contributor>Mathias Brochhausen</dc:contributor>
         <rdfs:comment>This BFO 2.0 version represents a major update to BFO and is not strictly backwards compatible with BFO 1.1. The previous OWL version of BFO, version 1.1.1 will remain available at http://ifomis.org/bfo/1.1 and will no longer be updated. The BFO 2.0 OWL is a classes-only specification. The incorporation of core relations has been held over for a later version.</rdfs:comment>
         <dc:contributor>Mauricio Almeida</dc:contributor>
-        <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
         <dc:contributor>Melanie Courtot</dc:contributor>
+        <foaf:homepage rdf:resource="https://github.com/BFO-ontology/BFO"/>
         <dc:contributor>Bjoern Peters</dc:contributor>
-        <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-owl-devel"/>
+        <dc:contributor>Yongqun &quot;Oliver&quot; He</dc:contributor>
         <rdfs:seeAlso rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/tools/"/>
-        <dc:contributor>James A. Overton</dc:contributor>
         <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. ‘Entity’ is an example of a  primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
+        <dc:contributor>James A. Overton</dc:contributor>
         <dc:contributor>Jonathan Bona</dc:contributor>
         <dc:contributor>Holger Stenzhorn</dc:contributor>
-        <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
         <dc:contributor>Fabian Neuhaus</dc:contributor>
+        <foaf:homepage rdf:resource="http://ifomis.org/bfo"/>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
         <dc:contributor>Randall Dipert</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
@@ -21940,14 +21940,14 @@ This interpretation is *not* the same as an at-all-times relation
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <dc:contributor>Chris Mungall</dc:contributor>
         <rdfs:isDefinedBy rdf:resource="https://github.com/BFO-ontology/BFO/tree/master/src/ontology/owl-group/specification/"/>
-        <dc:contributor>Ron Rudnicki</dc:contributor>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: BFO does not claim to provide complete coverage of entities of all types. It seeks only to provide coverage of those entities studied by empirical science together with those entities which affect or are involved in human activities such as data processing and planning - coverage that is sufficiently broad to provide assistance to those engaged in building domain ontologies for purposes of data annotation.</obo:IAO_0000116>
+        <dc:contributor>Ron Rudnicki</dc:contributor>
         <dc:contributor>Mark Ressler</dc:contributor>
-        <obo:IAO_0000116>BFO 2 Reference: BFO’s treatment of continuants and occurrents - as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality - earlier called the ‘SNAP’ and ‘SPAN’ perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science</obo:IAO_0000116>
         <dc:contributor>Albert Goldfain</dc:contributor>
-        <dc:contributor>Bill Duncan</dc:contributor>
-        <dc:contributor>Ludger Jansen</dc:contributor>
+        <obo:IAO_0000116>BFO 2 Reference: BFO’s treatment of continuants and occurrents - as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality - earlier called the ‘SNAP’ and ‘SPAN’ perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science</obo:IAO_0000116>
         <dc:contributor>Alan Ruttenberg</dc:contributor>
+        <dc:contributor>Ludger Jansen</dc:contributor>
+        <dc:contributor>Bill Duncan</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ro.owl">
