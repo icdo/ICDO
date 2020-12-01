@@ -3,13 +3,20 @@ ICDO: International Classification of Diseases Ontology
 
 ICDO is an ontology representation of the ICD system, which includes ICD-10, ICD-9, and the future ICD-11. The ICD ontology (ICDO) logically represent ICD terms and their relations with anatomic entities, qualities, etc. Different from other disease ontologies, all ICD diseases are defined as disease processes in ICDO. The current ICDO focuses on English and Chinese representation. ICDO can identify and standardize local ICD versions and will be used to integrate ICD related data. 
 
-The ICDO developers include Dr. Ling (Eric) Wan, Justin Song, Virginia He, Edison Ong, and Yongqun (Oliver) He. We appreciate the support by Ms. Meiu Wong, Dr. Xubin Song, and many other. 
+The ICDO developers include Dr. Ling (Eric) Wan, Justin Song, Virginia He, Jennifer Roman, Grace Whah, Edison Ong, and Yongqun (Oliver) He. We appreciate the support by Ms. Meiu Wong, Dr. Xubin Song, and many other. More collaborations are welcome! Thanks! 
 
 The ICDO work was first presented as an oral presentation by Dr. Ling (Eric) Wan in the 10th International Conference on Biomedical Ontology (ICBO-2019), August 1, 2019, Buffalo. 
 
 Currently we have two use cases. One use case is on the COVID-19 diagnosis data analysis. Another use case is the application of ICDO for Chinese ICD clinical data integration and analysis. 
 
-More collaborations are welcome! Thanks! 
+## ICDO developers: 
+- Ling (Eric) Wan
+- Justin Song
+- Virginia He
+- Jennifer Roman
+- Grace Whah
+- Edison Ong
+- Yongqun (Oliver) He
 
 ## Source codes:
 https://raw.githubusercontent.com/icdo/ICDO/master/src/ontology/icdo.owl
@@ -18,6 +25,9 @@ https://raw.githubusercontent.com/icdo/ICDO/master/src/ontology/icdo.owl
 - BioPortal: https://bioportal.bioontology.org/ontologies/ICDO 
 - Ontobee: http://www.ontobee.org/ontology/ICDO  
 
-## Reference:
-Wan L, Ong E, He Y. ICDO: Ontological representation of the International Classification of Diseases (ICD) and its application in English and Chinese healthy data standardization. The 10th International Conference on Biomedical Ontology (ICBO-2019), July 30 - August 2, 2019, Buffalo, NY, USA. 10-page full length article. URL: https://drive.google.com/file/d/1p-fCiuGuIZtOIQ7qesd9d-uhrM90fxHb/view. 
+## References:
+- Wan L, Ong E, He Y. ICDO: Ontological representation of the International Classification of Diseases (ICD) and its application in English and Chinese healthy data standardization. The 10th International Conference on Biomedical Ontology (ICBO-2019), July 30 - August 2, 2019, Buffalo, NY, USA. 10-page full length article. URL: https://drive.google.com/file/d/1p-fCiuGuIZtOIQ7qesd9d-uhrM90fxHb/view. 
+
+- Ling Wan, Justin Song, Virginia He, Jennifer Roman, Grace Whah, Edison Ong, and Yongqun He. Development of the International Classification of Diseases Ontology (ICDO) and its application for COVID-19 diagnostic data analysis. The 19th International Conference on Bioinformatics (InCoB-2020), Zoom meeting, November 25, 2020. Oral presentation. 
+
 
