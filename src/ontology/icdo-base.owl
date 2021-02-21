@@ -27,7 +27,7 @@
         <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
         <oboInOwl:created_by>Virginia He</oboInOwl:created_by>
         <oboInOwl:creation_date>2-21-2020</oboInOwl:creation_date>
-        <owl:versionInfo>1.0.54</owl:versionInfo>
+        <owl:versionInfo>1.0.56</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -14884,7 +14884,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000518"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000268"/>
         <obo:IAO_0000115>Chronic kidney disease (CKD), also known as chronic renal disease, is progressive loss in kidney function over a period of months or years.</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.kidney.org/atoz/content/about-chronic-kidney-disease</obo:IAO_0000119>
@@ -14899,7 +14899,13 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000036">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000518"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Abortion is the ending of pregnancy by removing a fetus or embryo before it can survive outside the uterus. An abortion may be caused purposely and is then called an induced abortion, or less frequently, &quot;induced miscarriage&quot;.</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000118>Complete abortion complicated by renal failure</obo:IAO_0000118>
@@ -14915,7 +14921,13 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000037">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000518"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The biopsy findings were consistent with the renal lesions of toxemia of pregnancy, although other renal diseases such as Henoch Schonlein nephritis or lupus proliferative glomerulonephritis cannot be excluded</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000118>Kidney failure (acute) following ectopic and molar pregnancy</obo:IAO_0000118>
@@ -15493,6 +15505,18 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000071">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000138"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000156"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Acute proliferative glomerulonephritis is a disorder of the glomeruli (glomerulonephritis), or small blood vessels in the kidneys.</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000119>https://icd.codes/icd10cm/N008</obo:IAO_0000119>
@@ -15511,6 +15535,12 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000072">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>a kidney disorder that causes your body to pass too much protein in your urine</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000119>https://ada.com/conditions/nephritic-syndrome/</obo:IAO_0000119>
@@ -15548,6 +15578,12 @@ kidney</icdo:ICDO_0000014>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000074">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A genetic or acquired polyuric disorder characterized by persistent hypotonic urine and hypokalemia. ~ an inability to concentrate urine due to impaired renal tubule response to vasopressin (ADH), which leads to excretion of large amounts of dilute urine.</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.merckmanuals.com/professional/genitourinary-disorders/renal-transport-abnormalities/nephrogenic-diabetes-insipidus#:~:text=Nephrogenic%20diabetes%20insipidus%20(NDI)%20is,that%20impair%20renal%20concentrating%20ability.</obo:IAO_0000119>
@@ -16819,6 +16855,12 @@ kidney</icdo:ICDO_0000014>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000150">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000331"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Renal cell carcinoma is a kidney cancer that originates in the lining of the proximal convoluted tubule, a part of the very small tubes in the kidney that transport waste molecules from the blood to the urine.</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000119>http://www.globenewswire.com/news-release/2020/03/27/2007560/0/en/Renal-Cell-Carcinoma-Epidemiology-Forecast-to-2028.html</obo:IAO_0000119>
