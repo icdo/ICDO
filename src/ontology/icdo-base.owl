@@ -26,8 +26,8 @@
         <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
         <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
         <oboInOwl:created_by>Virginia He</oboInOwl:created_by>
-        <oboInOwl:creation_date>2-20-2020</oboInOwl:creation_date>
-        <owl:versionInfo>1.0.53</owl:versionInfo>
+        <oboInOwl:creation_date>2-21-2020</oboInOwl:creation_date>
+        <owl:versionInfo>1.0.54</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -92,6 +92,12 @@
         <rdfs:comment>The following 72,186 ICD-10-CM codes are billable/specific and can be used to indicate a diagnosis for reimbursement purposes as there are no codes with a greater level of specificity under each code. Reference: https://www.icd10data.com/ICD10CM/Codes/Rules/Billable_Specific_Codes</rdfs:comment>
         <rdfs:label xml:lang="en">code billability</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000014 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000014"/>
     
 
 
@@ -14519,6 +14525,2394 @@ resistance</icdo:OS_000000000000004>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000089"/>
+        <obo:IAO_0000115>Inflammation of bone caused by infection, generally in the legs, arm, or spine.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://my.clevelandclinic.org/health/diseases/9495-osteomyelitis#:~:text=Osteomyelitis%20is%20a%20bacterial%2C%20or,supply%20to%20the%20affected%20bone.</obo:IAO_0000119>
+        <obo:ICDO_0000039>M86.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>bone spine</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M86-M90/M86-/M86.8</terms:source>
+        <oboInOwl:hasRelatedSynonym>Bone infection</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0013706</oboInOwl:id>
+        <rdfs:label xml:lang="en">Other osteomyelitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <obo:IAO_0000115>a broken bone that&apos;s caused by a disease, rather than an injury.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.healthline.com/health/pathologic-fracture#:~:text=A%20pathologic%20fracture%20is%20a,been%20weakened%20by%20an%20illness.</obo:IAO_0000119>
+        <obo:ICDO_0000039>M84.453S</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>femur</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M80-M85/M84/M84.4-/M84.453S</terms:source>
+        <rdfs:label xml:lang="en">Pathological fracture, unspecified femur, sequela</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000089"/>
+        <rdfs:label xml:lang="en">other unspecified acquired perforation of ear DP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000008"/>
+        <obo:IAO_0000115>When fluid remains in the middle ear, the condition is called chronic serous otitis media. Sometimes a middle ear infection causes a hole (perforation) in the eardrum. A hole that does not heal within six weeks</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.health.harvard.edu/a_to_z/chronic-otitis-media-cholesteatoma-and-mastoiditis-a-to-z</obo:IAO_0000119>
+        <obo:ICDO_0000039>H65.2</obo:ICDO_0000039>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H60-H95/H65-H75/H65-/H65.2</terms:source>
+        <rdfs:label xml:lang="en">Chronic serous otitis media</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000008"/>
+        <obo:IAO_0000115>When fluid remains in the middle ear, the condition is called chronic serous otitis media. Sometimes a middle ear infection causes a hole (perforation) in the eardrum. A hole that does not heal within six weeks</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Chronic serous otitis media</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.health.harvard.edu/a_to_z/chronic-otitis-media-cholesteatoma-and-mastoiditis-a-to-z</obo:IAO_0000119>
+        <obo:ICDO_0000039>H65.20</obo:ICDO_0000039>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H60-H95/H65-H75/H65-/H65.20</terms:source>
+        <rdfs:label xml:lang="en">Chronic serous otitis media, unspecified ear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_11AA0Y"/>
+        <obo:IAO_0000115>Pain in the inner or outer ear that may interfere with ability to hear, often caused by excess fluid and infection.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Ear pain</obo:IAO_0000118>
+        <obo:IAO_0000119>https://emedicine.medscape.com/article/845173-overview</obo:IAO_0000119>
+        <icdo:OS_000000000000004>H92.09</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H60-H95/H90-H94/H92-/H92.09</terms:source>
+        <rdfs:label xml:lang="en">Otalgia, unspecified ear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000156"/>
+        <obo:IAO_0000115>Acute lymphoblastic leukemia is an acute form of leukemia, or cancer of the white blood cells, characterized by the overproduction and accumulation of cancerous, immature white blood cells, known as lymphoblasts.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Acute lymphoid leukemia in relapse</obo:IAO_0000118>
+        <obo:ICDO_0000039>C91.02</obo:ICDO_0000039>
+        <terms:source>https://icd.codes/icd10cm/C9102</terms:source>
+        <rdfs:label xml:lang="en">Acute lymphoblastic leukemia, in relapse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000156"/>
+        <obo:IAO_0000115>Acute myeloid leukemia (AML), also known as acute myelogenous leukemia or acute nonlymphocytic leukemia (ANLL), is a cancer of the myeloid line of blood cells, characterized by the rapid growth of abnormal white blood cells that accumulate in the bone marrow and interfere with the production of normal blood cells.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Acute myeloblastic leukemia, minimal differentiation</obo:IAO_0000118>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/C920</obo:IAO_0000119>
+        <obo:ICDO_0000039>C92.0</obo:ICDO_0000039>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/C00-D49/C81-C96/C92-/C92.0</terms:source>
+        <rdfs:label xml:lang="en">Acute myeloblastic leukemia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000156"/>
+        <obo:IAO_0000115>Acute promyelocytic leukemia (APML, APL) is the M3 subtype of acute myelogenous leukemia (AML), a cancer of the white blood cells.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/C924</obo:IAO_0000119>
+        <obo:ICDO_0000039>C92.4</obo:ICDO_0000039>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/C00-D49/C81-C96/C92-/C92.4</terms:source>
+        <rdfs:label xml:lang="en">Acute promyelocytic leukemia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <obo:IAO_0000115>a broken bone that&apos;s caused by a disease, rather than an injury.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.healthline.com/health/pathologic-fracture#:~:text=A%20pathologic%20fracture%20is%20a,been%20weakened%20by%20an%20illness.</obo:IAO_0000119>
+        <obo:ICDO_0000039>M84.459S</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>hip</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M80-M85/M84/M84.4-/M84.459S</terms:source>
+        <rdfs:label xml:lang="en">Pathological fracture, hip, unspecified, sequela</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000015"/>
+        <obo:IAO_0000115>An acute myeloid leukemia (aml) in which abnormal promyelocytes predominate. It is characterized by the t(15;17)(q22;q12) translocation. There are two variants: the typical and microgranular variant. This aml is particularly sensitive to treatment with all trans-retinoic acid and has a favorable prognosis.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Acute promyelocytic leukemia, fab m3</obo:IAO_0000118>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/C924</obo:IAO_0000119>
+        <obo:ICDO_0000039>C92.40</obo:ICDO_0000039>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/C00-D49/C81-C96/C92-/C92.40</terms:source>
+        <rdfs:label xml:lang="en">Acute promyelocytic leukemia, not having achieved remission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000013"/>
+        <obo:IAO_0000115>Acute myeloid leukemia (AML), also known as acute myelogenous leukemia or acute nonlymphocytic leukemia (ANLL), is a cancer of the myeloid line of blood cells, characterized by the rapid growth of abnormal white blood cells that accumulate in the bone marrow and interfere with the production of normal blood cells.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Acute myelocytic leukemia w maturation</obo:IAO_0000118>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/C920</obo:IAO_0000119>
+        <obo:ICDO_0000039>C92.00</obo:ICDO_0000039>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/C00-D49/C81-C96/C92-/C92.00</terms:source>
+        <rdfs:label xml:lang="en">Acute myeloblastic leukemia, not having achieved remission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000156"/>
+        <obo:IAO_0000115>Subacute bacterial endocarditis is a type of endocarditis (more specifically, infective endocarditis). Subacute bacterial endocarditis can be considered a form of type III hypersensitivity.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>endocarditis lenta</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Subacute_bacterial_endocarditis</obo:IAO_0000119>
+        <obo:ICDO_0000039>I33.0</obo:ICDO_0000039>
+        <terms:source>https://icd.codes/icd10cm/I330</terms:source>
+        <rdfs:label xml:lang="en">Acute and subacute infective endocarditis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000156"/>
+        <obo:IAO_0000115>Infective endocarditis is a form of endocarditis. It is an inflammation of the inner tissues of the heart, the endocardium (such as its valves)</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Acute endocarditis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/I339</obo:IAO_0000119>
+        <obo:ICDO_0000039>I33.9</obo:ICDO_0000039>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I30-I52/I33-/I33.9</terms:source>
+        <rdfs:label xml:lang="en">Acute and subacute endocarditis, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000156"/>
+        <obo:IAO_0000115>omental infarction, or omental torsion, is an acute vascular disorder which compromises tissue of the greater omentum – the largest peritoneal fold in the abdomen.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Acute ischemic colitis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Omental_infarction</obo:IAO_0000119>
+        <obo:ICDO_0000039>K55.0</obo:ICDO_0000039>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K55-K64/K55-/K55.0</terms:source>
+        <rdfs:label xml:lang="en">Acute vascular disorders of intestine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000156"/>
+        <obo:IAO_0000115>an irreversible injury to the intestine resulting from insufficient blood flow.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Bowel_infarction#:~:text=Bowel%20infarction%20or%20gangrenous%20bowel,life%2Dthreatening%20infection%20and%20death.</obo:IAO_0000119>
+        <obo:ICDO_0000039>K55.06</obo:ICDO_0000039>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K55-K64/K55-/K55.06</terms:source>
+        <rdfs:label xml:lang="en">Acute infarction of intestine, part unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000155"/>
+        <rdfs:label xml:lang="en">Rheumatic  disease profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000023"/>
+        <rdfs:label xml:lang="en">Rheumatic aortic stenosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000023"/>
+        <rdfs:label xml:lang="en">Rheumatic tricuspid valve diseases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000023"/>
+        <rdfs:label xml:lang="en">Rheumatic tricuspid stenosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000023"/>
+        <rdfs:label xml:lang="en">Rheumatic tricuspid insufficiency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000023"/>
+        <rdfs:label xml:lang="en">Rheumatic tricuspid stenosis and insufficiency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000023"/>
+        <rdfs:label xml:lang="en">Other rheumatic tricuspid valve diseases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000023"/>
+        <rdfs:label xml:lang="en">Rheumatic tricuspid valve disease, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000023"/>
+        <rdfs:label xml:lang="en">Other nonrheumatic mitral valve disorders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <obo:IAO_0000115>a broken bone that&apos;s caused by a disease, rather than an injury.</obo:IAO_0000115>
+        <obo:IAO_0000115>https://www.healthline.com/health/pathologic-fracture#:~:text=A%20pathologic%20fracture%20is%20a,been%20weakened%20by%20an%20illness.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>M84.469S</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>fibula</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M80-M85/M84/M84.4-/M84.469S</terms:source>
+        <rdfs:label xml:lang="en">Pathological fracture, unspecified tibia and fibula, sequela</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <obo:IAO_0000115>a broken bone that&apos;s caused by a disease, rather than an injury.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.healthline.com/health/pathologic-fracture#:~:text=A%20pathologic%20fracture%20is%20a,been%20weakened%20by%20an%20illness.</obo:IAO_0000119>
+        <obo:ICDO_0000039>M84.675D</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>hairline fracture</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M80-M85/M84/M84.6-/M84.675D</terms:source>
+        <rdfs:label xml:lang="en">Pathological fracture in other disease, left foot, subsequent encounter for fracture with routine healing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000522"/>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.hipaaspace.com/medical_billing/coding/icd-9/procedure/5598</obo:IAO_0000119>
+        <obo:ICDO_0000039 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5598</obo:ICDO_0000039>
+        <rdfs:label xml:lang="en">Remove mechanical kidney</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000518"/>
+        <obo:IAO_0000115>Chronic kidney disease (CKD), also known as chronic renal disease, is progressive loss in kidney function over a period of months or years.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.kidney.org/atoz/content/about-chronic-kidney-disease</obo:IAO_0000119>
+        <obo:ICDO_0000039>N18.1</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>kidney</icdo:ICDO_0000014>
+        <terms:source>https://icd.codes/icd10cm/N181</terms:source>
+        <rdfs:label xml:lang="en">Chronic kidney disease, stage 1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000518"/>
+        <obo:IAO_0000115>Abortion is the ending of pregnancy by removing a fetus or embryo before it can survive outside the uterus. An abortion may be caused purposely and is then called an induced abortion, or less frequently, &quot;induced miscarriage&quot;.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Complete abortion complicated by renal failure</obo:IAO_0000118>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/O0482</obo:IAO_0000119>
+        <obo:ICDO_0000039>O04.82</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>womb</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O00-O08/O04-/O04.82</terms:source>
+        <rdfs:label xml:lang="en">Renal failure following (induced) termination of pregnancy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000518"/>
+        <obo:IAO_0000115>The biopsy findings were consistent with the renal lesions of toxemia of pregnancy, although other renal diseases such as Henoch Schonlein nephritis or lupus proliferative glomerulonephritis cannot be excluded</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Kidney failure (acute) following ectopic and molar pregnancy</obo:IAO_0000118>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/7042259/</obo:IAO_0000119>
+        <obo:ICDO_0000039>O08.4</obo:ICDO_0000039>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O00-O08/O08-/O08.4</terms:source>
+        <rdfs:label xml:lang="en">Renal failure following ectopic and molar pregnancy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <obo:IAO_0000115>Osteonecrosis occurs when your bones lose their blood supply. The bones die and eventually collapse, leading to pain and arthritis. You can have osteonecrosis in one or several bones. It is most common in the upper leg.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.niams.nih.gov/health-topics/osteonecrosis</obo:IAO_0000119>
+        <obo:ICDO_0000039>M87.9</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>billable</icdo:ICDO_0000014>
+        <icdo:ICDO_0000014>upper arm bone</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M86-M90/M87-/M87.9</terms:source>
+        <oboInOwl:hasRelatedSynonym>Bone necrosis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0004250</oboInOwl:id>
+        <rdfs:label xml:lang="en">Osteonecrosis, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000162"/>
+        <obo:IAO_0000115>Bronchopneumonia, bronchial pneumonia or bronchogenic pneumonia (not to be confused with lobar pneumonia) is the acute inflammation of the walls of the bronchioles.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J18-/J18</obo:IAO_0000119>
+        <obo:ICDO_0000039>J18</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Non-Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lung</icdo:ICDO_0000014>
+        <terms:source>https://icd.codes/icd10cm/J18</terms:source>
+        <oboInOwl:id>UBERON:0002048</oboInOwl:id>
+        <rdfs:label xml:lang="en">Pneumonia, unspecified organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000162"/>
+        <obo:IAO_0000115>Respiratory disease is a medical term that encompasses pathological conditions affecting the organs and tissues that make gas exchange possible in higher organisms, and includes conditions of the upper respiratory tract, trachea, bronchi, bronchioles, alveoli, pleura and pleural cavity, and the nerves and muscles of breathing.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/J101</obo:IAO_0000119>
+        <obo:ICDO_0000039>J10.1</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>upper respiratory tract</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J10-/J10.1</terms:source>
+        <oboInOwl:hasRelatedSynonym>Influenza due to influenza a virus subtype h1n1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0001557</oboInOwl:id>
+        <rdfs:label xml:lang="en">Influenza due to other identified influenza virus with other respiratory manifestations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000162"/>
+        <obo:IAO_0000115>Influenza, commonly known as &quot;the flu&quot;, is an infectious disease caused by an influenza virus.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/J112</obo:IAO_0000119>
+        <obo:ICDO_0000039>J11.2</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lumen of gastrointestinal system</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J11-/J11.2</terms:source>
+        <oboInOwl:hasRelatedSynonym>Gastroenteritis due to influenza</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0011565</oboInOwl:id>
+        <rdfs:label xml:lang="en">Influenza due to unidentified influenza virus with gastrointestinal manifestations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000162"/>
+        <obo:IAO_0000115>Gastroenteritis, also known as infectious diarrhea, is inflammation of the gastrointestinal tract that involves the stomach and small intestine.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/J1181</obo:IAO_0000119>
+        <obo:ICDO_0000039>J11.81</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>gastrointestinal peritoneum</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J11-/J11.81</terms:source>
+        <oboInOwl:hasRelatedSynonym>Influenza with encephalopathy</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:3010819</oboInOwl:id>
+        <rdfs:label xml:lang="en">Influenza due to unidentified influenza virus with encephalopathy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000162"/>
+        <obo:IAO_0000115>Gastroenteritis, also known as infectious diarrhea, is inflammation of the gastrointestinal tract that involves the stomach and small intestine.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/J1189</obo:IAO_0000119>
+        <obo:ICDO_0000039>J11.89</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>upper respiratory tract</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J11-/J11.89</terms:source>
+        <oboInOwl:id>UBERON:0001557</oboInOwl:id>
+        <rdfs:label xml:lang="en">Influenza due to unidentified influenza virus with other manifestations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000205"/>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>J84.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>UBERON:0002048</icdo:ICDO_0000014>
+        <icdo:ICDO_0000014>lung</icdo:ICDO_0000014>
+        <rdfs:label xml:lang="en">Other specified interstitial pulmonary diseases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000192"/>
+        <obo:IAO_0000115>Chronic obstructive pulmonary disease (COPD) is a type of obstructive lung disease characterized by chronically poor airflow.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/J40</obo:IAO_0000119>
+        <obo:ICDO_0000039>J40</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>bronchial tube</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J40-J47/J40-/J40</terms:source>
+        <oboInOwl:hasExactSynonym>Bronchitis</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>UBERON:3010524</oboInOwl:id>
+        <rdfs:label xml:lang="en">Bronchitis, not specified as acute or chronic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000192"/>
+        <obo:IAO_0000115>Chronic obstructive pulmonary disease (COPD) is a type of obstructive lung disease characterized by chronically poor airflow.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/J410</obo:IAO_0000119>
+        <obo:ICDO_0000039>J41.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>bronchiole</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J40-J47/J41-/J41.0</terms:source>
+        <oboInOwl:hasRelatedSynonym>Chronic bronchitis, simple</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0002186</oboInOwl:id>
+        <rdfs:label xml:lang="en">Simple chronic bronchitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000192"/>
+        <obo:IAO_0000115>Asthma is a common chronic inflammatory disease of the airways characterized by variable and recurring symptoms, reversible airflow obstruction and bronchospasm.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>J45.901</obo:IAO_0000119>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/J45901</obo:IAO_0000119>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>UBERON:0002185</icdo:ICDO_0000014>
+        <icdo:ICDO_0000014>bronchus</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J40-J47/J45-/J45.901</terms:source>
+        <oboInOwl:hasRelatedSynonym>bronchial asthma</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">Unspecified asthma with (acute) exacerbation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000214"/>
+        <obo:IAO_0000115>the collapse or closure of a lung resulting in reduced or absent gas exchange.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J96-J99/J98-/J98.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>J98.1</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lung</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J96-J99/J98-/J98.1</terms:source>
+        <oboInOwl:id>UBERON:0002048</oboInOwl:id>
+        <rdfs:label xml:lang="en">Pulmonary collapse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <obo:IAO_0000115>Osteolysis is an active resorption of bone matrix by osteoclasts during the natural formation of healthy bones</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://books.google.com/books?id=uOn4DwAAQBAJ&amp;pg=PA600&amp;lpg=PA600&amp;dq=Osteolysis+is+an+active+resorption+of+bone+matrix+by+osteoclasts+during+the+natural+formation+of+healthy+bones&amp;source=bl&amp;ots=BKEQQs9AVH&amp;sig=ACfU3U3KFgc-S_WMZ_V6_XSP42z8lZ52jg&amp;hl=en&amp;sa=X&amp;ved=2ahUKEwii2JmtptruAhWRK80KHVkbCOoQ6AEwAHoECBEQAg#v=onepage&amp;q=Osteolysis%20is%20an%20active%20resorption%20of%20bone%20matrix%20by%20osteoclasts%20during%20the%20natural%20formation%20of%20healthy%20bones&amp;f=false</obo:IAO_0000119>
+        <obo:ICDO_0000039>M89.572</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>pes bone</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M86-M90/M89-/M89.572</terms:source>
+        <oboInOwl:hasRelatedSynonym>Osteolysis of left ankle and foot</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0005899</oboInOwl:id>
+        <rdfs:label xml:lang="en">Osteolysis, left ankle and foot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000163"/>
+        <obo:IAO_0000115>Coronary artery disease (CAD), also known as ischemic heart disease (IHD), is a group of diseases that includes: stable angina, unstable angina, myocardial infarction, and sudden coronary death. It is within the group of cardiovascular diseases of which it is the most common type.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/I209</obo:IAO_0000119>
+        <obo:ICDO_0000039>I20.9</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>heart</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I20-I25/I20-/I20.9</terms:source>
+        <oboInOwl:hasRelatedSynonym>Cardiac syndrome x</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000948</oboInOwl:id>
+        <rdfs:label xml:lang="en">Angina pectoris, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000163"/>
+        <obo:IAO_0000115>Unstable angina (UA) is a type of angina pectoris that is irregular.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/I210</obo:IAO_0000119>
+        <obo:ICDO_0000039>I21.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Non-Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>heart</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I20-I25/I21-/I21.0</terms:source>
+        <oboInOwl:id>UBERON:0000948</oboInOwl:id>
+        <rdfs:label xml:lang="en">ST elevation (STEMI) myocardial infarction of anterior wall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000242"/>
+        <obo:IAO_0000115>First-degree atrioventricular block (AV block), or PR prolongation, is a disease of the electrical conduction system of the heart in which the PR interval is lengthened beyond 0.20 seconds.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/I440</obo:IAO_0000119>
+        <obo:ICDO_0000039>I44.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>heart</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I30-I52/I44-/I44.0</terms:source>
+        <oboInOwl:hasRelatedSynonym>First degree atrioventricular block</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000948</oboInOwl:id>
+        <rdfs:label xml:lang="en">Atrioventricular block, first degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000228"/>
+        <obo:IAO_0000115>Pulmonary hypertension (PH) is an increase of blood pressure in the pulmonary artery, pulmonary vein, or pulmonary capillaries, together known as the lung vasculature, leading to shortness of breath, dizziness, fainting, leg swelling and other symptoms.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/I272</obo:IAO_0000119>
+        <obo:ICDO_0000039>I27.2</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>artery</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I26-I28/I27-/I27.2</terms:source>
+        <oboInOwl:hasRelatedSynonym>Pulmonary arterial hypertension</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0001637</oboInOwl:id>
+        <rdfs:label xml:lang="en">Other secondary pulmonary hypertension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000115>Enteritis (entero- + -itis) is inflammation of the small intestine.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/K509</obo:IAO_0000119>
+        <obo:ICDO_0000039>K50.9</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Non-Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>intestine</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K50-K52/K50-/K50.9</terms:source>
+        <oboInOwl:hasRelatedSynonym>ileitis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000160</oboInOwl:id>
+        <rdfs:label xml:lang="en">Crohn&apos;s disease, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000115>An enterolith is a mineral concretion or calculus formed anywhere in the gastrointestinal system.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/K564</obo:IAO_0000119>
+        <obo:ICDO_0000039>K56.4</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>intestine</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K55-K64/K56-/K56.4</terms:source>
+        <oboInOwl:id>UBERON:0000160</oboInOwl:id>
+        <rdfs:label xml:lang="en">Other impaction of intestine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000115>A congenital or acquired weakness or opening in the diaphragm which allows abdominal contents to protrude into the chest cavity; congenital diaphragmatic hernias are caused when the embryonic diaphragm fails to fuse.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K40-K46/K44-/K44.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>K44.9</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K40-K46/K44-/K44.9</terms:source>
+        <rdfs:label xml:lang="en">Diaphragmatic hernia without obstruction or gangrene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000115>A mouth ulcer (also termed an oral ulcer, or a mucosal ulcer) is an ulcer that occurs on the mucous membrane of the oral cavity.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/K1230</obo:IAO_0000119>
+        <obo:ICDO_0000039>K12.30</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>mouth mucosa</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K00-K14/K12-/K12.30</terms:source>
+        <oboInOwl:hasExactSynonym>Oral mucositis</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>UBERON:0003729</oboInOwl:id>
+        <rdfs:label xml:lang="en">Oral mucositis (ulcerative), unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000115>A disorder characterized by acute inflammation to the vermiform appendix caused by a pathogenic agent.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>K35.80</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>vermiform appendix</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K35-K38/K35-/K35.80</terms:source>
+        <oboInOwl:id>UBERON:0001154</oboInOwl:id>
+        <rdfs:label xml:lang="en">Unspecified acute appendicitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000115>Acute inflammation of the appendix. Acute appendicitis is classified as simple, gangrenous, or perforated.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>K37</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>crypt of Lieberkuhn of appendix</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K35-K38/K37-/K37</terms:source>
+        <oboInOwl:hasRelatedSynonym>Appendicitis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0013486</oboInOwl:id>
+        <rdfs:label xml:lang="en">Unspecified appendicitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000115>A hernia is caused by the protrusion of a viscus (in the case of groin hernias, an intraabdominal organ) through a weakness in the containing wall.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>K41.30</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>hindlimb stylopod muscle</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K40-K46/K41-/K41.30</terms:source>
+        <oboInOwl:hasRelatedSynonym>Femoral hernia, unilateral with obstruction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0004252</oboInOwl:id>
+        <rdfs:label xml:lang="en">Unilateral femoral hernia, with obstruction, without gangrene, not specified as recurrent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000115>a hernia is the exit of an organ, such as the bowel, through the wall of the cavity in which it normally resides.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>K46.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>anterior abdominal wall muscle</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K40-K46/K46-/K46.0</terms:source>
+        <oboInOwl:hasRelatedSynonym>Abdominal hernia with obstruction</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0002461</oboInOwl:id>
+        <rdfs:label xml:lang="en">Unspecified abdominal hernia with obstruction, without gangrene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000115>Enterocolitis or coloenteritis is an inflammation of the digestive tract, involving enteritis of the small intestine and colitis of the colon.</obo:IAO_0000115>
+        <obo:ICDO_0000039>K51.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>digestive tract</obo:ICDO_0000140>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K50-K52/K51-/K51.0</terms:source>
+        <oboInOwl:id>UBERON:0001555</oboInOwl:id>
+        <rdfs:label xml:lang="en">Ulcerative (chronic) pancolitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000062"/>
+        <obo:IAO_0000115>A chronic, inflammatory bowel disease that causes inflammation in the digestive tract.</obo:IAO_0000115>
+        <obo:IAO_0000115>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K50-K52/K51-/K51.80</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>K51.80</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>digestive tract</icdo:ICDO_0000014>
+        <oboInOwl:hasRelatedSynonym>Eosinophilic ulcerative colitis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0001555</oboInOwl:id>
+        <rdfs:label xml:lang="en">Other ulcerative colitis without complications</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000115>A biliary obstruction is a blockage of the bile ducts.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>K82.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>bile duct</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K80-K87/K82-/K82.0</terms:source>
+        <oboInOwl:id>UBERON:0002394</oboInOwl:id>
+        <rdfs:label xml:lang="en">Obstruction of gallbladder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <obo:IAO_0000115>an eye disorder that involves a layer of blood vessels called the choroid.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/H312</obo:IAO_0000119>
+        <obo:ICDO_0000039>H31.2</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>optic choroid</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H30-H36/H31-/H31.2</terms:source>
+        <oboInOwl:id>UBERON:0001776</oboInOwl:id>
+        <rdfs:label xml:lang="en">Hereditary choroidal dystrophy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000065"/>
+        <obo:IAO_0000115>an eye disorder that involves a layer of blood vessels called the choroid.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/H3120</obo:IAO_0000119>
+        <obo:ICDO_0000039>H31.20</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>optic choroid</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H30-H36/H31-/H31.20</terms:source>
+        <oboInOwl:id>UBERON:0001776</oboInOwl:id>
+        <rdfs:label xml:lang="en">Hereditary choroidal dystrophy, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000339"/>
+        <obo:IAO_0000115>affect this vital tissue. They can affect your vision, and some can be serious enough to cause blindness.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://medlineplus.gov/retinaldisorders.html#:~:text=Retinal%20disorders%20affect%20this%20vital,Diabetic%20eye%20disease</obo:IAO_0000119>
+        <obo:ICDO_0000039>H35</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H30-H36/H35-/H35</terms:source>
+        <rdfs:label xml:lang="en">Other retinal disorders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <obo:IAO_0000115>a decreased ability to see to a degree that causes problems not fixable by usual means, such as glasses.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>H47.6</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>visual cortex</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H46-H47/H47-/H47.6</terms:source>
+        <oboInOwl:hasRelatedSynonym>vision impairment or vision loss</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000411</oboInOwl:id>
+        <rdfs:label xml:lang="en">Disorders of visual cortex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000268"/>
+        <obo:IAO_0000115>progressive loss in kidney function over a period of months or years.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/N182</obo:IAO_0000119>
+        <obo:ICDO_0000039>N18.2</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>kidney</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N17-N19/N18-/N18.2</terms:source>
+        <oboInOwl:hasExactSynonym>Chronic kidney disease stage 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>UBERON:0002113</oboInOwl:id>
+        <rdfs:label xml:lang="en">Chronic kidney disease, stage 2 (mild)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000165"/>
+        <obo:IAO_0000115>Reflux nephropathy is kidney damage (nephropathy) due to urine flowing backward (reflux) from the bladder toward the kidneys; the latter is called vesicoureteral reflux (VUR).</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Reflux_nephropathy</obo:IAO_0000119>
+        <obo:ICDO_0000039>N11.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>kidney</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N10-N16/N11-/N11.0</terms:source>
+        <oboInOwl:id>UBERON:0002113</oboInOwl:id>
+        <rdfs:label xml:lang="en">Nonobstructive reflux-associated chronic pyelonephritis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <obo:IAO_0000115>Acute proliferative glomerulonephritis is a disorder of the glomeruli (glomerulonephritis), or small blood vessels in the kidneys.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/N008</obo:IAO_0000119>
+        <obo:ICDO_0000039>N00.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>kidney</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N00-N08/N00-/N00.8</terms:source>
+        <oboInOwl:hasRelatedSynonym>Acute proliferative glomerulonephritis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0002113</oboInOwl:id>
+        <rdfs:label xml:lang="en">Acute nephritic syndrome with other morphologic changes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <obo:IAO_0000115>a kidney disorder that causes your body to pass too much protein in your urine</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ada.com/conditions/nephritic-syndrome/</obo:IAO_0000119>
+        <obo:ICDO_0000039>N05.9</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>UBERON:0001981
+UBERON:0002113</icdo:ICDO_0000014>
+        <icdo:ICDO_0000014>blood vessel
+kidney</icdo:ICDO_0000014>
+        <terms:source>https://icd.codes/icd10cm/N059</terms:source>
+        <rdfs:label xml:lang="en">Unspecified nephritic syndrome with unspecified morphologic changes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <obo:IAO_0000115>Ureteral stones are kidney stones that have become stuck in one or both ureters (the tubes that carry urine from the kidneys to the bladder)</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://my.clevelandclinic.org/health/diseases/16514-ureteral-stones#:~:text=Ureteral%20stones%20are%20kidney%20stones%20that%20have%20become%20stuck%20in,blockage%20can%20cause%20severe%20pain.</obo:IAO_0000119>
+        <obo:ICDO_0000039>N20.1</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>urothelium</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N20-N23/N20-/N20.1</terms:source>
+        <oboInOwl:hasRelatedSynonym>ureter stones</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000365</oboInOwl:id>
+        <rdfs:label xml:lang="en">Calculus of ureter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <obo:IAO_0000115>A genetic or acquired polyuric disorder characterized by persistent hypotonic urine and hypokalemia. ~ an inability to concentrate urine due to impaired renal tubule response to vasopressin (ADH), which leads to excretion of large amounts of dilute urine.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.merckmanuals.com/professional/genitourinary-disorders/renal-transport-abnormalities/nephrogenic-diabetes-insipidus#:~:text=Nephrogenic%20diabetes%20insipidus%20(NDI)%20is,that%20impair%20renal%20concentrating%20ability.</obo:IAO_0000119>
+        <obo:ICDO_0000039>N25.1</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>renal tubule</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N30-N39/N30-/N30.0</terms:source>
+        <oboInOwl:id>UBERON:0009773</oboInOwl:id>
+        <rdfs:label xml:lang="en">Nephrogenic diabetes insipidus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
+        <obo:IAO_0000115>An acute infection of the bladder</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>N30.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>urinary bladder</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N30-N39/N30-/N30.0</terms:source>
+        <oboInOwl:hasRelatedSynonym>Urinary bladder disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0001255</oboInOwl:id>
+        <rdfs:label xml:lang="en">Acute cystitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000075"/>
+        <obo:IAO_0000115>a sudden inflammation of the urinary bladder</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.healthline.com/health/cystitis-acute#:~:text=Acute%20cystitis%20is%20a%20sudden,can%20also%20cause%20acute%20cystitis.</obo:IAO_0000119>
+        <obo:ICDO_0000039>N30.00</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>urinary bladder</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N30-N39/N30-/N30.00</terms:source>
+        <oboInOwl:hasRelatedSynonym>urinary tract infection (UTI)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0001255</oboInOwl:id>
+        <rdfs:label xml:lang="en">Acute cystitis without hematuria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000075"/>
+        <obo:IAO_0000115>sudden onset of hematuria combined with bladder pain and irritative bladder symptoms. Hematuria is blood in the urine.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>http://chemocare.com/chemotherapy/side-effects/hemorrhagic-cystitis.aspx#:~:text=Hemorrhagic%20cystitis%20is%20the%20sudden,variety%20of%20causes%20of%20hematuria.</obo:IAO_0000119>
+        <obo:ICDO_0000039>N30.01</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>urinary bladder</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N40-N53/N40-/N40.0</terms:source>
+        <oboInOwl:id>UBERON:0001255</oboInOwl:id>
+        <rdfs:label xml:lang="en">Acute cystitis with hematuria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000276"/>
+        <obo:IAO_0000115>Age-associated prostate gland enlargement that can cause urination difficulty.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/benign-prostatic-hyperplasia/symptoms-causes/syc-20370087#:~:text=Benign%20prostatic%20hyperplasia%20(BPH)%20%E2%80%94,urinary%20tract%20or%20kidney%20problems.</obo:IAO_0000119>
+        <obo:ICDO_0000039>N40.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <obo:ICDO_0000140>prostate gland enlargement</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>prostate gland</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/O00-O9A/O00-O08/O04-/O04.82</terms:source>
+        <oboInOwl:id>UBERON:0002367</oboInOwl:id>
+        <rdfs:label xml:lang="en">Benign prostatic hyperplasia without lower urinary tract symptoms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <obo:IAO_0000115>Osteoarthritis (OA) is a type of joint disease that results from breakdown of joint cartilage and underlying bone.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/M179</obo:IAO_0000119>
+        <obo:ICDO_0000039>M17.9</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>UBERON:0000982</icdo:ICDO_0000014>
+        <icdo:ICDO_0000014>skeletal joint</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M15-M19/M17-/M17.9</terms:source>
+        <oboInOwl:hasRelatedSynonym>Arthritis of left/right knee</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">Osteoarthritis of knee, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <obo:IAO_0000115>Spondyloarthropathy or spondyloarthrosis refers to any joint disease of the vertebral column.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Spondyloarthropathy#:~:text=Specialty,disease%20of%20the%20vertebra%20itself.</obo:IAO_0000119>
+        <obo:ICDO_0000039>M45</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>spine</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M45-M49/M45-/M45</terms:source>
+        <oboInOwl:hasRelatedSynonym>Bechterew&apos;s disease</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0013706</oboInOwl:id>
+        <rdfs:label xml:lang="en">Ankylosing spondylitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <obo:IAO_0000115>Childhood arthritis is any form of arthritis or arthritis-related conditions which affects individuals under the age of 16.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/juvenile-idiopathic-arthritis/symptoms-causes/syc-20374082#:~:text=Juvenile%20idiopathic%20arthritis%2C%20formerly%20known,joint%20pain%2C%20swelling%20and%20stiffness.</obo:IAO_0000119>
+        <obo:ICDO_0000039>M08.3</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>immune system</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M05-M14/M08-/M08.3</terms:source>
+        <oboInOwl:hasRelatedSynonym>juvenile arthritis (JA)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0002405</oboInOwl:id>
+        <rdfs:label xml:lang="en">Juvenile rheumatoid polyarthritis (seronegative)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000081"/>
+        <obo:IAO_0000115>Childhood arthritis is any form of arthritis or arthritis-related conditions which affects individuals under the age of 16</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/juvenile-idiopathic-arthritis/symptoms-causes/syc-20374082#:~:text=Juvenile%20idiopathic%20arthritis%2C%20formerly%20known,joint%20pain%2C%20swelling%20and%20stiffness.</obo:IAO_0000119>
+        <obo:ICDO_0000039>M08.90</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>immune system</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M05-M14/M08-/M08.90</terms:source>
+        <oboInOwl:hasRelatedSynonym>juvenile arthritis (JA)</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0002405</oboInOwl:id>
+        <rdfs:label xml:lang="en">Juvenile arthritis, unspecified, unspecified site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <obo:IAO_0000115>Toxic oil syndrome is a musculoskeletal disease most famous for a 1981 outbreak in Spain which killed over 600 people and was likely caused by contaminated colza oil.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Toxic_oil_syndrome</obo:IAO_0000119>
+        <obo:ICDO_0000039>M35.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M30-M36/M35-/M35.8</terms:source>
+        <oboInOwl:hasRelatedSynonym>musculoskeletal system</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>toxic syndrome</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0002204</oboInOwl:id>
+        <rdfs:label xml:lang="en">Other specified systemic involvement of connective tissue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <obo:IAO_0000115>A disorder characterized by an infectious process involving the skeletal muscles.</obo:IAO_0000115>
+        <obo:ICDO_0000039>M60.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>skeletal muscle organ</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M60-M63/M60-/M60.0</terms:source>
+        <oboInOwl:id>UBERON:0014892</oboInOwl:id>
+        <rdfs:label xml:lang="en">Infective myositis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000084"/>
+        <obo:IAO_0000115>bacterial infection of the skeletal muscles which results in a pus-filled abscess.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.sciencedirect.com/topics/immunology-and-microbiology/pyomyositis#:~:text=Pyomyositis%20is%20a%20pyogenic%20infection,contained%20by%20hypervascular%20connective%20tissue.</obo:IAO_0000119>
+        <obo:ICDO_0000039>M60.00</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>skeletal muscle organ</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M60-M63/M60-/M60.00</terms:source>
+        <oboInOwl:id>UBERON:0014892</oboInOwl:id>
+        <rdfs:label xml:lang="en">Infective myositis, unspecified site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <obo:IAO_0000115>A chronic condition in which both the breakdown and regrowth of bone are increased.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Paget&apos;s disease</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.cancer.gov/publications/dictionaries/cancer-terms/def/paget-disease-of-bone</obo:IAO_0000119>
+        <obo:ICDO_0000039>M90.60</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>leg bone</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M86-M90/M90-/M90.60</terms:source>
+        <oboInOwl:id>UBERON:0005893</oboInOwl:id>
+        <rdfs:label xml:lang="en">Osteitis deformans in neoplastic diseases, unspecified site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <obo:IAO_0000115>a fatigue-induced fracture of the bone caused by repeated stress over time.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3658382/#:~:text=A%20stress%20fracture%20is%20a,applications%20of%20stress%20over%20time.</obo:IAO_0000119>
+        <obo:ICDO_0000039>M84.369S</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>billable</icdo:ICDO_0000014>
+        <icdo:ICDO_0000014>skeletal muscle organ</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M80-M85/M84/M84.3-/M84.369S</terms:source>
+        <oboInOwl:hasRelatedSynonym>hairline fracture</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0014892</oboInOwl:id>
+        <rdfs:label xml:lang="en">Stress fracture, unspecified tibia and fibula, sequela</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000087"/>
+        <obo:IAO_0000115>a fatigue-induced fracture of the bone caused by repeated stress over time.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3658382/#:~:text=A%20stress%20fracture%20is%20a,applications%20of%20stress%20over%20time.</obo:IAO_0000119>
+        <obo:ICDO_0000039>M84.376S</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>skeletal muscle organ</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M80-M85/M84/M84.3-/M84.376S</terms:source>
+        <oboInOwl:hasRelatedSynonym>hairline fracture</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0014892</oboInOwl:id>
+        <rdfs:label xml:lang="en">Stress fracture, unspecified foot, sequela</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <obo:IAO_0000115>infection and inflammation of the bone or bone marrow</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.medicalnewstoday.com/articles/178819#:~:text=Osteomyelitis%20is%20an%20infection%20and,due%20to%20injury%20or%20surgery.</obo:IAO_0000119>
+        <obo:ICDO_0000039>M86.6</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>bone marrow</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M86-M90/M86-/M86.6</terms:source>
+        <oboInOwl:hasRelatedSynonym>OM</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0002371</oboInOwl:id>
+        <rdfs:label xml:lang="en">Other chronic osteomyelitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000296"/>
+        <obo:IAO_0000115>Flaccid paralysis is a clinical manifestation characterized by weakness or paralysis and reduced muscle tone without other obvious cause (e.g., trauma).</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Flaccid_paralysis</obo:IAO_0000119>
+        <obo:ICDO_0000039>G81.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>brain</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/G00-G99/G80-G83/G81-/G81.0</terms:source>
+        <oboInOwl:id>UBERON:0000955</oboInOwl:id>
+        <rdfs:label xml:lang="en">Flaccid hemiplegia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000302"/>
+        <obo:IAO_0000115>If you have epilepsy, you may have seizures repeatedly. A seizure that lasts longer than 5 minutes, or having more than 1 seizure within a 5 minutes period, without returning to a normal level of consciousness between episodes</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.hopkinsmedicine.org/health/conditions-and-diseases/status-epilepticus#:~:text=A%20seizure%20that%20lasts%20longer,episodes%20is%20called%20status%20epilepticus.</obo:IAO_0000119>
+        <obo:ICDO_0000039>G40.909</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>UBERON:0000955</icdo:ICDO_0000014>
+        <icdo:ICDO_0000014>brain</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/G00-G99/G40-G47/G40-/G40.909</terms:source>
+        <oboInOwl:hasRelatedSynonym>seizure disorder</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">Epilepsy, unspecified, not intractable, without status epilepticus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000296"/>
+        <obo:IAO_0000115>A slight paralysis or weakness of both legs.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.medicalnewstoday.com/articles/paralysis#:~:text=Types%20of%20paralysis%20include%3A,organs%20in%20the%20lower%20abdomen.</obo:IAO_0000119>
+        <obo:ICDO_0000039>G82.2</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>pelvic region of trunk</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/G00-G99/G80-G83/G82-/G82.2</terms:source>
+        <oboInOwl:hasRelatedSynonym>leg paralysis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0002355</oboInOwl:id>
+        <rdfs:label xml:lang="en">Paraplegia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000092"/>
+        <obo:IAO_0000115>A slight paralysis or weakness of both legs.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.medicalnewstoday.com/articles/paralysis#:~:text=Types%20of%20paralysis%20include%3A,organs%20in%20the%20lower%20abdomen.</obo:IAO_0000119>
+        <obo:ICDO_0000039>G82.20</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>pelvic region of trunk</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/G00-G99/G80-G83/G82-/G82.20</terms:source>
+        <oboInOwl:hasRelatedSynonym>leg paralysis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0002355</oboInOwl:id>
+        <rdfs:label xml:lang="en">Paraplegia, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000296"/>
+        <obo:IAO_0000115>symmetric, ascending weakness that progresses over days and is associated with normal sensation, with often preserved tendon reflexes, and with an increased cerebrospinal fluid protein concentration.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.sciencedirect.com/topics/neuroscience/paralytic-syndrome#:~:text=Acute%20Motor%20Axonal%20Neuropathy,increased%20cerebrospinal%20fluid%20protein%20concentration.</obo:IAO_0000119>
+        <obo:ICDO_0000039>G83.9</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>brain</icdo:ICDO_0000014>
+        <terms:source>https://icd.codes/icd10cm/G839</terms:source>
+        <oboInOwl:hasRelatedSynonym>Paralysis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000955</oboInOwl:id>
+        <rdfs:label xml:lang="en">Paralytic syndrome, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000296"/>
+        <obo:IAO_0000115>inadequate reabsorption of CSF</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://onlinelibrary.wiley.com/doi/full/10.1002/9780470015902.a0002191.pub2</obo:IAO_0000119>
+        <obo:ICDO_0000039>G91.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>cerebrospinal fluid</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/G00-G99/G89-G99/G91-/G91.0</terms:source>
+        <oboInOwl:hasRelatedSynonym>Hydrocephalus, communicating</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0001359</oboInOwl:id>
+        <rdfs:label xml:lang="en">Communicating hydrocephalus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000095"/>
+        <obo:IAO_0000115>a rare medical condition in which there is an abnormal accumulation of cerebrospinal fluid (CSF) in the brain.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.hopkinsmedicine.org/health/conditions-and-diseases/hydrocephalus#:~:text=Hydrocephalus%20is%20a%20condition%20characterized,the%20brain%20and%20spinal%20cord.</obo:IAO_0000119>
+        <obo:ICDO_0000039>G91.9</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>cerebrospinal fluid</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/G00-G99/G89-G99/G91-/G91.9</terms:source>
+        <oboInOwl:hasRelatedSynonym>Acquired hydrocephalus</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0001359</oboInOwl:id>
+        <rdfs:label xml:lang="en">Hydrocephalus, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000380"/>
+        <obo:IAO_0000115>large number of infections of the bowels including: cholera, typhoid fever, paratyphoid fever, other types of salmonella infections, shigellosis, botulism, gastroenteritis, and amoebiasis among others.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Intestinal_infectious_diseases#:~:text=Intestinal%20infectious%20diseases%20include%20a,gastroenteritis%2C%20and%20amoebiasis%20among%20others.</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z20.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>body proper</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z20-Z29/Z20-/Z20.0</terms:source>
+        <oboInOwl:id>UBERON:0013702</oboInOwl:id>
+        <rdfs:label xml:lang="en">Contact with and (suspected) exposure to intestinal infectious diseases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>Z39.1</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>abdomen</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z30-Z39/Z39-/Z39.1</terms:source>
+        <oboInOwl:hasRelatedSynonym>Encounter for supervision of lactation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000916</oboInOwl:id>
+        <rdfs:label xml:lang="en">Encounter for care and examination of lactating mother</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>Z48.0</obo:ICDO_0000039>
+        <obo:ICDO_0000039>non-billable</obo:ICDO_0000039>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z40-Z53/Z48-/Z48.0</terms:source>
+        <rdfs:label xml:lang="en">Encounter for attention to dressings, sutures and drains</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000099"/>
+        <obo:IAO_0000115>Aftercare visit codes cover situations occurring when the initial treatment of a disease has been performed and the patient requires continued care during the healing or recovery phase, or care for the long-term consequences of the disease</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>Z48.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>body proper</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z40-Z53/Z48-/Z48.8</terms:source>
+        <oboInOwl:id>UBERON:0013702</oboInOwl:id>
+        <rdfs:label xml:lang="en">Encounter for other specified postprocedural aftercare</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>Z60.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z55-Z65/Z60-/Z60.8</terms:source>
+        <oboInOwl:hasRelatedSynonym>Peer problem</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">Other problems related to social environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>Z63.9</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z55-Z65/Z63-/Z63.9</terms:source>
+        <rdfs:label xml:lang="en">Problem related to primary support group, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>Z90.2</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lung</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z90-/Z90.2</terms:source>
+        <oboInOwl:id>UBERON:0002048</oboInOwl:id>
+        <rdfs:label xml:lang="en">Acquired absence of lung [part of]</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>a person or other organism that has become infected with a pathogen, but that displays no signs or symptoms. Although unaffected by the pathogen, carriers can transmit it to others or develop symptoms in later stages of the disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Asymptomatic_carrier#:~:text=An%20asymptomatic%20carrier%20is%20a,later%20stages%20of%20the%20disease.</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z22.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z20-Z29/Z22-/Z22.8</terms:source>
+        <rdfs:label xml:lang="en">Carrier of other infectious diseases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>complication inserting a temporary long, flexible, y-shaped tube that is inserted through one of the central veins found in your neck, chest or groin to allow access to the bloodstream</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.azuravascularcare.com/infodialysisaccess/difference-between-cvc-and-picc/</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z46.82</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>internal jugular vein</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z40-Z53/Z46-/Z46.82</terms:source>
+        <oboInOwl:id>UBERON:0001586</oboInOwl:id>
+        <rdfs:label xml:lang="en">Encounter for fitting and adjustment of non-vascular catheter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>places one among the people considered obese, but also fall in the higher end of this category, meaning that gaining even more weight would put one in the danger of classifying as extremely obese</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.marinahospital.com/weight-loss/bmi/38</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z68.38</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>subcutaneous adipose tissue</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z68-Z68/Z68-/Z68.38</terms:source>
+        <oboInOwl:hasRelatedSynonym>Adult body mass index 38-38.9 - obesity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0002190</oboInOwl:id>
+        <rdfs:label xml:lang="en">Body mass index [BMI] 38.0-38.9, adult</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>Cancer that occurs in the stomach.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Stomach cancer</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.cancer.org/cancer/stomach-cancer/about/what-is-stomach-cancer.html</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z85.02</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>stomach</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z85-/Z85.02</terms:source>
+        <oboInOwl:id>UBERON:0000945</oboInOwl:id>
+        <rdfs:label xml:lang="en">Personal history of malignant neoplasm of stomach</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000107"/>
+        <obo:IAO_0000115>adenocarcinoma, primary gastric lymphoma, gastrointestinal stromal tumor (GIST), and neuroendocrine (carcinoid) tumors in the stomach</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Stomach cancer</obo:IAO_0000118>
+        <obo:IAO_0000119>https://rarediseases.org/rare-diseases/stomach-cancer/#:~:text=There%20are%20several%20different%20forms,carcinoid)%20tumors%20in%20the%20stomach.</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z85.028</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>stomach</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z85-/Z85.028</terms:source>
+        <oboInOwl:id>UBERON:0000945</oboInOwl:id>
+        <rdfs:label xml:lang="en">Personal history of other malignant neoplasm of stomach</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>medications used to treat cancer</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>History of chemotherapy</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.cdc.gov/niosh/topics/repro/antineoplastic.html#:~:text=Antineoplastic%20drugs%20are%20medications%20used,are%20pills%20that%20patients%20take.</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z92.21</obo:ICDO_0000039>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z92-/Z92.21</terms:source>
+        <rdfs:label xml:lang="en">Personal history of antineoplastic chemotherapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>a medical procedure — either temporary or permanent — that involves creating an opening in the neck in order to place a tube into a person&apos;s windpipe.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.healthline.com/health/tracheostomy#:~:text=A%20tracheostomy%20is%20a%20medical,air%20to%20enter%20the%20lungs.</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z93.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>trachea</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z93-/Z93.0</terms:source>
+        <oboInOwl:hasRelatedSynonym>Tracheostomy present</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0003126</oboInOwl:id>
+        <rdfs:label xml:lang="en">Tracheostomy status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>a medical procedure performed to replace bone marrow that has been damaged or destroyed by disease, infection, or chemotherapy</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.healthline.com/health/bone-marrow-transplant#:~:text=A%20bone%20marrow%20transplant%20is,promote%20growth%20of%20new%20marrow.</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z94.81</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>bone marrow</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z94-/Z94.81</terms:source>
+        <oboInOwl:hasRelatedSynonym>Growth hormone deficiency after bone marrow transplant</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0002371</oboInOwl:id>
+        <rdfs:label xml:lang="en">Bone marrow transplant status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000374"/>
+        <obo:IAO_0000115>a condition or factor that serves as a reason to withhold a certain medical treatment due to the harm that it would cause the patient.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://medlineplus.gov/ency/article/002314.htm#:~:text=A%20contraindication%20is%20a%20specific,or%20procedures%20are%20used%20together.</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z53.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z40-Z53/Z53-/Z53.0</terms:source>
+        <rdfs:label xml:lang="en">Procedure and treatment not carried out because of contraindication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000368"/>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Needs assistance with community resources</obo:IAO_0000118>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/Z748</obo:IAO_0000119>
+        <obo:ICDO_0000039>Z74.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z69-Z76/Z74-/Z74.8</terms:source>
+        <rdfs:label xml:lang="en">Other problems related to care provider dependency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000111"/>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>Z94.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>tissue</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z94-/Z94.8</terms:source>
+        <oboInOwl:id>UBERON:0000479</oboInOwl:id>
+        <rdfs:label xml:lang="en">Other transplanted organ and tissue status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000368"/>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>Z97.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z97-/Z97.8</terms:source>
+        <oboInOwl:hasRelatedSynonym>Presence of implanted intrathecal pump</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">Presence of other specified devices</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000364"/>
+        <obo:IAO_0000115>Abdominal pain, also known as stomach pain or stomachache, is a common symptom associated with both temporary, non-serious disorders and more serious conditions.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R10-R19/R10-/R10.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>R10.1</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>abdomen</icdo:ICDO_0000014>
+        <terms:source>https://icd.codes/icd10cm/R101</terms:source>
+        <oboInOwl:hasRelatedSynonym>stomach pain or stomachache</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000916</oboInOwl:id>
+        <rdfs:label xml:lang="en">Pain localized to upper abdomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000364"/>
+        <obo:IAO_0000115>voluntary or involuntary fecal soiling in children who have usually already been toilet trained.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odays Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/R15</obo:IAO_0000119>
+        <obo:ICDO_0000039>R15</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>feces</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R10-R19/R15-/R15</terms:source>
+        <oboInOwl:hasRelatedSynonym>paradoxical diarrhea</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0001988</oboInOwl:id>
+        <rdfs:label xml:lang="en">Fecal incontinence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000364"/>
+        <obo:IAO_0000115>Anterograde amnesia is a loss of the ability to create new memories after the event that caused the amnesia, leading to a partial or complete inability to recall the recent past, while long-term memories from before the event remain intact.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/R411</obo:IAO_0000119>
+        <obo:ICDO_0000039>R41.1</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>brain</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R40-R46/R41-/R41.1</terms:source>
+        <oboInOwl:hasRelatedSynonym>Amnesia, anterograde</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000955</oboInOwl:id>
+        <rdfs:label xml:lang="en">Anterograde amnesia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000364"/>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>poor hygiene</obo:IAO_0000118>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/R460</obo:IAO_0000119>
+        <obo:ICDO_0000039>R46.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>brain</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R40-R46/R46-/R46.0</terms:source>
+        <oboInOwl:id>UBERON:0000955</oboInOwl:id>
+        <rdfs:label xml:lang="en">Very low level of personal hygiene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000364"/>
+        <obo:IAO_0000115>A general state of ill health involving marked weight loss and muscle loss.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>wasting syndrome</obo:IAO_0000118>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/R64</obo:IAO_0000119>
+        <obo:ICDO_0000039>R64</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>body proper</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R50-R69/R64-/R64</terms:source>
+        <oboInOwl:id>UBERON:0013702</oboInOwl:id>
+        <rdfs:label xml:lang="en">Cachexia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000364"/>
+        <obo:IAO_0000115>Respiratory arrest is the cessation of normal breathing due to failure of the lungs to function effectively.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>R09.2</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lungs</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R00-R09/R09-/R09.2</terms:source>
+        <oboInOwl:id>UBERON:0002048</oboInOwl:id>
+        <rdfs:label xml:lang="en">Respiratory arrest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000364"/>
+        <obo:IAO_0000115>a life-threatening lung injury that allows fluid to leak into the lungs. Breathing becomes difficult and oxygen cannot get into the body.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.lung.org/lung-health-diseases/lung-disease-lookup/ards#:~:text=Acute%20respiratory%20distress%20syndrome%20(ARDS)%20is%20a%20life%2Dthreatening,hospital%20for%20trauma%20or%20illness.</obo:IAO_0000119>
+        <obo:ICDO_0000039>R06.03</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>pair of lungs</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R00-R09/R06-/R06.03</terms:source>
+        <oboInOwl:id>UBERON:0000170</oboInOwl:id>
+        <rdfs:label xml:lang="en">Acute respiratory distress</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000364"/>
+        <obo:IAO_0000115>A disorder characterized by the reflexive act of ejecting the contents of the stomach through the mouth.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.healthline.com/health/vomiting-causes-treatment</obo:IAO_0000119>
+        <obo:ICDO_0000039>R11.10</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>stomach</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R10-R19/R11-/R11.10</terms:source>
+        <oboInOwl:id>UBERON:0000945</oboInOwl:id>
+        <rdfs:label xml:lang="en">Vomiting, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000364"/>
+        <obo:IAO_0000115>An inability to experience pleasure from activities usually found enjoyable.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.webmd.com/depression/what-is-anhedonia</obo:IAO_0000119>
+        <obo:ICDO_0000039>R45.84</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>brain</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R40-R46/R45-/R45.84</terms:source>
+        <oboInOwl:id>UBERON:0000955</oboInOwl:id>
+        <rdfs:label xml:lang="en">Anhedonia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000318"/>
+        <obo:IAO_0000115>colitis (inflammation of the large intestine) resulting from infection with Clostridium difficile, a spore-forming bacterium.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>pseudomembranous colitis</obo:IAO_0000118>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/A047</obo:IAO_0000119>
+        <obo:ICDO_0000039>A04.7</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>intestine</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/A00-B99/A00-A09/A04-/A04.7</terms:source>
+        <oboInOwl:id>UBERON:0000160</oboInOwl:id>
+        <rdfs:label xml:lang="en">Enterocolitis due to Clostridium difficile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000320"/>
+        <obo:IAO_0000115>Sepsis is a whole-body inflammatory response to an infection.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.google.com/search?ei=NDeYX_fQBMaQtAbx5pH4CA&amp;q=Sepsis&amp;oq=Sepsis&amp;gs_lcp=CgZwc3ktYWIQAzIKCAAQsQMQyQMQQzIHCAAQsQMQQzIECAAQQzIFCAAQkQIyBwgAELEDEEMyBwgAELEDEEMyBAgAEEMyBwgAELEDEEMyBQgAELEDMgcIABCxAxBDUPEhWPEhYNgjaABwAXgAgAFiiAFikgEBMZgBAKABAaoBB2d3cy13aXrAAQE&amp;sclient=psy-ab&amp;ved=0ahUKEwj3utmChtXsAhVGCM0KHXFzBI8Q4dUDCA0&amp;uact=5</obo:IAO_0000119>
+        <obo:ICDO_0000039>A41.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>Blood</icdo:ICDO_0000014>
+        <icdo:ICDO_0000014>UBERON:0000178</icdo:ICDO_0000014>
+        <terms:source>https://icd.codes/icd10cm/A418</terms:source>
+        <rdfs:label xml:lang="en">Other specified sepsis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000318"/>
+        <obo:IAO_0000115>Enteritis (entero- + -itis) is inflammation of the small intestine.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Intestinal infection due to e. Coli</obo:IAO_0000118>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/A044</obo:IAO_0000119>
+        <obo:ICDO_0000039>A04.4</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>small intestine</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/A00-B99/A00-A09/A04-/A04.4</terms:source>
+        <oboInOwl:id>UBERON:0002108</oboInOwl:id>
+        <rdfs:label xml:lang="en">Other intestinal Escherichia coli infections</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000318"/>
+        <obo:IAO_0000115>The viral hemorrhagic (or haemorrhagic) fevers (VHFs) are a diverse group of animal and human illnesses in which fever and hemorrhage are caused by a viral infection.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000118>Jungle yellow fever</obo:IAO_0000118>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/A950</obo:IAO_0000119>
+        <obo:ICDO_0000039>A95.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/A00-B99/A90-A99/A95-/A95.0</terms:source>
+        <rdfs:label xml:lang="en">Sylvatic yellow fever</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000128"/>
+        <obo:IAO_0000115>The viral hemorrhagic (or haemorrhagic) fevers (VHFs) are a diverse group of animal and human illnesses in which fever and hemorrhage are caused by a viral infection.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/A951</obo:IAO_0000119>
+        <obo:ICDO_0000039>A95.1</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/A00-B99/A90-A99/A95-/A95.1</terms:source>
+        <rdfs:label xml:lang="en">Urban yellow fever</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000353"/>
+        <obo:IAO_0000115>A cervical fracture, commonly called a broken neck, is a catastrophic fracture of any of the seven cervical vertebrae in the neck</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/S129XXA</obo:IAO_0000119>
+        <obo:ICDO_0000039>S12.9XXA</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>neck bone</icdo:ICDO_0000014>
+        <terms:source>https://icd.codes/icd10cm/S129XXA</terms:source>
+        <oboInOwl:id>UBERON:0003458</oboInOwl:id>
+        <rdfs:label xml:lang="en">Fracture of neck, unspecified, initial encounter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000353"/>
+        <obo:IAO_0000115>occur when the bony block or vertebral body in the spine collapses, which can lead to severe pain, deformity and loss of height.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.aans.org/en/Patients/Neurosurgical-Conditions-and-Treatments/Vertebral-Compression-Fractures#:~:text=Vertebral%20compression%20fractures%20(VCFs)%20occur,especially%20in%20the%20lower%20part.</obo:IAO_0000119>
+        <obo:ICDO_0000039>S22.009A</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>bone spine</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/S20-S29/S22-/S22.009A</terms:source>
+        <oboInOwl:id>UBERON:0013706</oboInOwl:id>
+        <rdfs:label xml:lang="en">Unspecified fracture of unspecified thoracic vertebra, initial encounter for closed fracture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000353"/>
+        <obo:IAO_0000115>A break in the bone connecting the breastbone and shoulder.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://orthoinfo.aaos.org/en/diseases--conditions/clavicle-fracture-broken-collarbone/</obo:IAO_0000119>
+        <obo:ICDO_0000039>S42.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>clavicle bone</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/S40-S49/S42/S42.0-/S42.0</terms:source>
+        <oboInOwl:id>UBERON:0001105</oboInOwl:id>
+        <rdfs:label xml:lang="en">Fracture of clavicle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000353"/>
+        <obo:IAO_0000112>Gunshot wound of forearm</obo:IAO_0000112>
+        <obo:IAO_0000115>an injury involving an external or internal break in body tissue, usually involving the skin</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.healthline.com/health/open-wound#:~:text=An%20open%20wound%20is%20an,can%20be%20treated%20at%20home.</obo:IAO_0000119>
+        <obo:ICDO_0000039>S51.809A</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>skin of forearm</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/S50-S59/S51-/S51.809A</terms:source>
+        <oboInOwl:id>UBERON:0003403</oboInOwl:id>
+        <rdfs:label xml:lang="en">Unspecified open wound of unspecified forearm, initial encounter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000353"/>
+        <obo:IAO_0000115>A network of ligaments holds them in place and allows them to move. A tear in any of these ligaments can result in two or more of your carpal bones being pushed out of their usual position</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.healthline.com/health/dislocated-wrist</obo:IAO_0000119>
+        <obo:ICDO_0000039>S63.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>wrist joint</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/S60-S69/S63/S63.0-/S63.0</terms:source>
+        <oboInOwl:id>UBERON:0001491</oboInOwl:id>
+        <rdfs:label xml:lang="en">Subluxation and dislocation of wrist and hand joints</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000135 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000355"/>
+        <obo:IAO_0000115>A hip fracture is a serious femoral fracture that occurs in the proximal end of the femur (the long bone running through the thigh), near the hip.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.healthline.com/health/femoral-neck-fracture#:~:text=Femoral%20neck%20stress%20fracture%20causes,is%20also%20a%20risk%20factor.</obo:IAO_0000119>
+        <obo:ICDO_0000039>S72.009S</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>femur</icdo:ICDO_0000014>
+        <terms:source>https://icd.codes/icd10cm/S72009S</terms:source>
+        <oboInOwl:id>UBERON:0000981</oboInOwl:id>
+        <rdfs:label xml:lang="en">Fracture of unspecified part of neck of unspecified femur, sequela</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000136 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000355"/>
+        <obo:IAO_0000115>the proximal femur between the cervical region and the shaft. Subtrochanteric fracture, with a fracture line running from an area within 5 cm distal to the lesser trochanter</obo:IAO_0000115>
+        <obo:ICDO_0000039>S72.109A</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>femur</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/S70-S79/S72/S72.1-/S72.109A</terms:source>
+        <oboInOwl:id>UBERON:0000981</oboInOwl:id>
+        <rdfs:label xml:lang="en">Unspecified trochanteric fracture of unspecified femur, initial encounter for closed fracture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000137 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000361"/>
+        <obo:IAO_0000115>disruptions in the cartilaginous physis of long bones that may or may not involve epiphyseal or metaphyseal bone.</obo:IAO_0000115>
+        <obo:IAO_0000119>Jennifer Odalys Roman</obo:IAO_0000119>
+        <obo:IAO_0000119>https://emedicine.medscape.com/article/1260663-overview</obo:IAO_0000119>
+        <obo:ICDO_0000039>S79.009S</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>cartilaginous joint</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/S70-S79/S79-/S79.009S</terms:source>
+        <oboInOwl:id>UBERON:0002213</oboInOwl:id>
+        <rdfs:label xml:lang="en">Unspecified physeal fracture of upper end of unspecified femur, sequela</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000353"/>
+        <obo:IAO_0000115>is a break in the patella, or kneecap, the small bone that sits at the front of your knee</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://orthoinfo.aaos.org/en/diseases--conditions/patellar-kneecap-fractures/</obo:IAO_0000119>
+        <obo:ICDO_0000039>S82.009S</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>knee</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/S80-S89/S82/S82.0-/S82.009S</terms:source>
+        <oboInOwl:id>UBERON:0001465</oboInOwl:id>
+        <rdfs:label xml:lang="en">Unspecified fracture of unspecified patella, sequela</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000139 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000138"/>
+        <obo:IAO_0000115>a break or crack in one of the bones in your leg.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/broken-leg/symptoms-causes/syc-20370412#:~:text=Overview,and%20severity%20of%20the%20injury.</obo:IAO_0000119>
+        <obo:ICDO_0000039>S82.90XS</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>leg</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/S80-S89/S82/S82.9-/S82.90XS</terms:source>
+        <oboInOwl:id>UBERON:0000978</oboInOwl:id>
+        <rdfs:label xml:lang="en">Unspecified fracture of unspecified lower leg, sequela</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000140">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000353"/>
+        <obo:IAO_0000115>a complete or incomplete break in one of the five metatarsal bones in each foot.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://patient.info/foot-care/heel-and-foot-pain-plantar-fasciitis/metatarsal-fractures#:~:text=Acute%20metatarsal%20fracture%20is%20usually,bone%2C%20caused%20by%20repetitive%20stress.</obo:IAO_0000119>
+        <obo:ICDO_0000039>S92.302D</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>metatarsal bone</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/S90-S99/S92/S92.3-/S92.302D</terms:source>
+        <oboInOwl:id>UBERON:0001448</oboInOwl:id>
+        <rdfs:label xml:lang="en">Fracture of unspecified metatarsal bone(s), left foot, subsequent encounter for fracture with routine healing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000140"/>
+        <obo:IAO_0000115>a bone break that happens in the bones of your foot, heel, toes, or ankle. There are different types of foot fractures, but the most common is a hairline fracture.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://intermountainhealthcare.org/services/orthopedics/services/foot-and-ankle/foot-fractures/#:~:text=A%20foot%20fracture%20is%20a,common%20is%20a%20hairline%20fracture.</obo:IAO_0000119>
+        <obo:ICDO_0000039>S92.909S</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>billable</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/S90-S99/S92/S92.9-/S92.919S</terms:source>
+        <rdfs:label xml:lang="en">Unspecified fracture of unspecified foot, sequela</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000142">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000140"/>
+        <obo:IAO_0000115>Wound healing is a critical outcome in surgery, and postoperative wound disruption or separation of the layers of a surgical wound with disruption of the fascia is a serious complication</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.patientsafetyinstitute.ca/en/toolsResources/Hospital-Harm-Measure/Improvement-Resources/Wound%20Disruption-Introduction/Pages/default.aspx</obo:IAO_0000119>
+        <obo:ICDO_0000039>S92.919S</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>toe disc</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/S90-S99/S92/S92.9-/S92.919S</terms:source>
+        <oboInOwl:id>UBERON:4200151</oboInOwl:id>
+        <rdfs:label xml:lang="en">Unspecified fracture of unspecified toe(s), sequela</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000143">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000356"/>
+        <obo:IAO_0000115>Pathologic process consisting of a partial or complete disruption of the layers of a surgical wound.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>T81.31</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/T80-T88/T81-/T81.31</terms:source>
+        <rdfs:label xml:lang="en">Disruption of external operation (surgical) wound, not elsewhere classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000144">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000356"/>
+        <obo:IAO_0000115>Pathologic process consisting of a partial or complete disruption of the layers of a surgical wound.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>T81.31XA</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/T80-T88/T81-/T81.31XA</terms:source>
+        <rdfs:label xml:lang="en">Disruption of external operation (surgical) wound, not elsewhere classified, initial encounter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000145">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000353"/>
+        <obo:IAO_0000115>Complications of gaining I.V. may include infiltration, hematoma, an air embolism, phlebitis, extravascular drug administration, and intraarterial injection. Intraarterial injection is more rare, but as threatening.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ccnmtl.columbia.edu/projects/aegd/mod01_mec_ivcomp.html</obo:IAO_0000119>
+        <obo:ICDO_0000039>T82.594A</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>urinary bladder</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/T80-T88/T82-/T82.594A</terms:source>
+        <oboInOwl:id>UBERON:0001255</oboInOwl:id>
+        <rdfs:label xml:lang="en">Other mechanical complication of infusion catheter, initial encounter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000146 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000146">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000331"/>
+        <obo:IAO_0000115>used to specify a diagnosis of secondary and unspecified malignant neoplasm of intrathoracic lymph nodes.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/medgen/673463</obo:IAO_0000119>
+        <obo:ICDO_0000039>C77.1</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lymph node</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/C00-D49/C76-C80/C77-/C77.1</terms:source>
+        <oboInOwl:id>UBERON:0000029</oboInOwl:id>
+        <rdfs:label xml:lang="en">Secondary and unspecified malignant neoplasm of intrathoracic lymph nodes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000147">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000331"/>
+        <obo:IAO_0000115>A rare condition in which chronic lymphocytic leukemia (cll) changes into a fast-growing type of lymphoma. Symptoms of richter syndrome include fever, loss of weight and muscle mass, and other health problems.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/C911</obo:IAO_0000119>
+        <obo:ICDO_0000039>C91.1</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Non-Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>blood</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/C00-D49/C81-C96/C91-/C91.1</terms:source>
+        <oboInOwl:id>UBERON:0000178</oboInOwl:id>
+        <rdfs:label xml:lang="en">Chronic lymphocytic leukemia of B-cell type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000147"/>
+        <obo:IAO_0000115>B-cell chronic lymphocytic leukemia (B-CLL), also known as chronic lymphoid leukemia (CLL), is the most common type of leukemia (a type of cancer of the white blood cells) in adults.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.codes/icd10cm/C9110</obo:IAO_0000119>
+        <obo:ICDO_0000039>C91.10</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lymph nodes</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/C00-D49/C81-C96/C91-/C91.10</terms:source>
+        <oboInOwl:id>UBERON:0000029</oboInOwl:id>
+        <rdfs:label xml:lang="en">Chronic lymphocytic leukemia of B-cell type not having achieved remission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000331"/>
+        <obo:IAO_0000115>A state of bone marrow suppression and failure that is caused by a cytotoxic or adverse immunologic response to a drug treatment, leading to a failure of production of red blood cells, white cells and platelets.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>D61.1</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>bone marrow</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/D50-D89/D60-D64/D61-/D61.1</terms:source>
+        <oboInOwl:id>UBERON:0002371</oboInOwl:id>
+        <rdfs:label xml:lang="en">Drug-induced aplastic anemia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000331"/>
+        <obo:IAO_0000115>Renal cell carcinoma is a kidney cancer that originates in the lining of the proximal convoluted tubule, a part of the very small tubes in the kidney that transport waste molecules from the blood to the urine.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.globenewswire.com/news-release/2020/03/27/2007560/0/en/Renal-Cell-Carcinoma-Epidemiology-Forecast-to-2028.html</obo:IAO_0000119>
+        <obo:ICDO_0000039>C64</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>kidney</icdo:ICDO_0000014>
+        <terms:source>https://icd.codes/icd10cm/C64</terms:source>
+        <oboInOwl:id>UBERON:0002113</oboInOwl:id>
+        <rdfs:label xml:lang="en">Malignant neoplasm of kidney, except renal pelvis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000151 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000331"/>
+        <obo:IAO_0000115>Bladder cancer is any of several types of cancer arising from the epithelial lining of the urinary bladder.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/C00-D49/C64-C68/C67-/C67.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>C67.9</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>gall bladder</icdo:ICDO_0000014>
+        <terms:source>https://icd.codes/icd10cm/C679</terms:source>
+        <oboInOwl:id>UBERON:0002110</oboInOwl:id>
+        <rdfs:label xml:lang="en">Malignant neoplasm of bladder, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000152 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000152">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000335"/>
+        <obo:IAO_0000115>Pseudomyxoma peritonei (PMP) is a clinical condition caused by cancerous cells (mucinous adenocarcinoma) that produce abundant mucin or gelatinous ascites.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>C78.9</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>abdominal cavity</icdo:ICDO_0000014>
+        <terms:source>https://icd.codes/icd10cm/C786</terms:source>
+        <oboInOwl:id>UBERON:0003684</oboInOwl:id>
+        <rdfs:label xml:lang="en">Secondary malignant neoplasm of retroperitoneum and peritoneum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000153 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000153">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000331"/>
+        <obo:IAO_0000115>Evans syndrome is an autoimmune disease in which an individual&apos;s antibodies attack their own red blood cells and platelets.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.google.com/search?ei=ED6YX_TQEc6xtQbBqIvYDg&amp;q=Evans+syndrome+cause&amp;oq=Evans+syndrome+cause&amp;gs_lcp=CgZwc3ktYWIQAzIFCAAQyQM6BAgAEEc6CAgAEMkDEJECOgIIADoGCAAQFhAeOggIABAWEAoQHlCPCVjoE2CbFGgAcAJ4AIABYYgBrgOSAQE1mAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&amp;sclient=psy-ab&amp;ved=0ahUKEwj0mJDIjNXsAhXOWM0KHUHUAusQ4dUDCA0&amp;uact=5</obo:IAO_0000119>
+        <obo:ICDO_0000039>D69.3</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>Blood</icdo:ICDO_0000014>
+        <terms:source>https://icd.codes/icd10cm/D693</terms:source>
+        <oboInOwl:id>UBERON:0000178</oboInOwl:id>
+        <rdfs:label xml:lang="en">Immune thrombocytopenic purpura</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000154 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000154">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000331"/>
+        <obo:IAO_0000115>An immune disorder is a dysfunction of the immune system.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>D84.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>tissue</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/D50-D89/D80-D89/D84-/D84.8</terms:source>
+        <oboInOwl:id>UBERON:0000479</oboInOwl:id>
+        <rdfs:label xml:lang="en">Other specified immunodeficiencies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000155 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000155">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000331"/>
+        <obo:IAO_0000115>A neoplasm without malignant characteristics arising from the lip.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:ICDO_0000039>D10.0</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>lip</icdo:ICDO_0000014>
+        <terms:source>https://icd.codes/icd10cm/D100</terms:source>
+        <oboInOwl:id>UBERON:0001833</oboInOwl:id>
+        <rdfs:label xml:lang="en">Benign neoplasm of lip</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_11EG40.0 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_11EG40.0">
@@ -14699,6 +17093,24 @@ resistance</icdo:OS_000000000000004>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000051"/>
         <rdfs:label xml:lang="en">nonsuppurative</rdfs:label>
         <rdfs:label xml:lang="zh">非化脓性</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/Infective_myositis,_unspecified_site -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/Infective_myositis,_unspecified_site">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000084"/>
+        <obo:IAO_0000115>A disorder characterized by an infectious process involving the skeletal muscles.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.sciencedirect.com/topics/medicine-and-dentistry/pyomyositis#:~:text=Pyomyositis%20is%20a%20pyogenic%20infection,contained%20by%20hypervascular%20connective%20tissue.</obo:IAO_0000119>
+        <obo:ICDO_0000039>M60.009</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>UBERON:0014892</icdo:ICDO_0000014>
+        <icdo:ICDO_0000014>skeletal muscle organ</icdo:ICDO_0000014>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M60-M63/M60-/M60.009</terms:source>
+        <oboInOwl:hasRelatedSynonym>Infective myositis</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">Infective myositis, unspecified site</rdfs:label>
     </owl:Class>
     
 
