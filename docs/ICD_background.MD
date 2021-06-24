@@ -1,8 +1,6 @@
 # ICD Background
 
-ICD is ...
-
-
+The International Statistical Classification of Diseases and Related Health Problems (ICD) is a medical classification system developed and maintained by the World Health Organization (WHO). 
 
 
 ## Related web links:  
