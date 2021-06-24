@@ -15,6 +15,6 @@ WHO:
 CMS:
 - https://www.cms.gov/Medicare/Coding/ICD10/2020-ICD-10-CM
 
-COVID related: 
-- https://covidclinical.net/data/index.html
+4CE - Consortium for Clinical Characterization of COVID-19 by EHR  
+- https://covidclinical.net/data/index.html 
 
