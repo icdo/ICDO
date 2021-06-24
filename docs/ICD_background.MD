@@ -5,7 +5,7 @@ ICD is ...
 
 
 
-## Related web links 
+## Related web links:  
 
 WHO: 
 - https://www.who.int/standards/classifications/classification-of-diseases
