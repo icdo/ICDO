@@ -22,3 +22,6 @@ CMS:
 
 BioPortal ICD10
 - https://bioportal.bioontology.org/ontologies/ICD10 
+
+Wiki: 
+- https://en.wikipedia.org/wiki/ICD-10 
