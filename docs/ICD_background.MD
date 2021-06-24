@@ -18,3 +18,5 @@ CMS:
 4CE - Consortium for Clinical Characterization of COVID-19 by EHR  
 - https://covidclinical.net/data/index.html 
 
+BioPortal ICD10
+- https://bioportal.bioontology.org/ontologies/ICD10 
