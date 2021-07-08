@@ -26,8 +26,8 @@
         <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
         <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
         <oboInOwl:created_by>Virginia He</oboInOwl:created_by>
-        <oboInOwl:creation_date>2-21-2020</oboInOwl:creation_date>
-        <owl:versionInfo>1.0.56</owl:versionInfo>
+        <oboInOwl:creation_date>07-08-2021</oboInOwl:creation_date>
+        <owl:versionInfo>1.0.75</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -97,7 +97,9 @@
 
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000014 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000014"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000014">
+        <rdfs:label xml:lang="en">anatomical location</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -1138,7 +1140,7 @@ Hernias are most common in the abdomen, but they can also appear in the upper th
     <!-- http://purl.obolibrary.org/obo/ICDO_0000068 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000068">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000067"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000638"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Hypertension</obo:IAO_0000119>
         <obo:ICDO_0000039>I10-I15.9</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Hypertensive diseases</icdo:OS_000000000000004>
@@ -2191,6 +2193,12 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000143">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:ICDO_0000039>J09-J18</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Influenza and pneumonia</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">pneumonia due to pathogen</rdfs:label>
@@ -2442,7 +2450,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000162 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000162">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000616"/>
         <obo:ICDO_0000039>J09-J18</obo:ICDO_0000039>
         <icdo:OS_000000000000004>Influenza and pneumonia</icdo:OS_000000000000004>
         <rdfs:label xml:lang="en">influenza due to pathogen</rdfs:label>
@@ -2861,7 +2869,13 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000189 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000189">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000615"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -2880,7 +2894,13 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000190 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000190">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000615"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -2922,6 +2942,12 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001863"/>
             </owl:Restriction>
@@ -2952,7 +2978,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000194 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000194">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000192"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000613"/>
         <obo:IAO_0000115>a chronic inflammatory lung disease that causes obstructed airflow from the lungs</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J40-J47/J44-/J44</obo:IAO_0000119>
@@ -2967,7 +2993,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000195 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000195">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000192"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000613"/>
         <obo:IAO_0000115>a chronic inflammatory lung disease that causes obstructed airflow from the lungs</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J40-J47/J44-/J44.0</obo:IAO_0000119>
@@ -2982,7 +3008,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000196 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000196">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000192"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000613"/>
         <obo:IAO_0000115>a chronic inflammatory lung disease that causes airway inflammation and reduced air flow from exacerbations</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He, Justin Song</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J40-J47/J44-/J44.1</obo:IAO_0000119>
@@ -2997,7 +3023,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000197 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000197">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000192"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000613"/>
         <obo:IAO_0000115>a chronic inflammatory lung disease that causes obstructed airflow from the lungs</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He</obo:IAO_0000117>
         <obo:IAO_0000119>https://medlineplus.gov/ency/article/000091.htm</obo:IAO_0000119>
@@ -3011,7 +3037,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000198 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000198">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000192"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000613"/>
         <obo:IAO_0000115>a chronic inflammatory lung disease that causes permanent damage to the lungs, making it hard to breathe</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J40-J47/J44-/J44.9</obo:IAO_0000119>
@@ -3082,6 +3108,12 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000203">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>conditions of the lng caused by outside agents</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He</obo:IAO_0000117>
         <obo:ICDO_0000039>J60-J70</obo:ICDO_0000039>
@@ -3112,6 +3144,12 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000036"/>
             </owl:Restriction>
@@ -3129,6 +3167,12 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000206">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000205"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>fluids fill up the lung&apos;s air sacs, causing the lung to not function properly</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He, Justin Song</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.healthline.com/health/acute-respiratory-distress-syndrome</obo:IAO_0000119>
@@ -3189,6 +3233,12 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000210">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -3279,7 +3329,13 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000215 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000215">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000214"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000614"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -3342,7 +3398,7 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000218 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000218">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000214"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000614"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -3363,11 +3419,11 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000219 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000219">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000214"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000614"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3405,7 +3461,13 @@ This is not to be confused with the so-called &quot;pseudocystic appearance&quot
     <!-- http://purl.obolibrary.org/obo/ICDO_0000221 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000221">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000214"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000614"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>respiratory system has been attacked, used to specify symptoms</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He, Justin Song</obo:IAO_0000117>
         <obo:IAO_0000119>https://icd.codes/icd10cm/J9600#:~:text=J96.,whether%20with%20hypoxia%20or%20hypercapnia</obo:IAO_0000119>
@@ -4847,7 +4909,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000308 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000308">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000620"/>
         <obo:IAO_0000115>An inflammatory disorder that affects the upper and lower gastrointestinal tract; a disorder characterized by inflammation of the colon.</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K50-K52/K52-/K52.9</obo:IAO_0000119>
@@ -4877,6 +4939,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000310 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000661"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>A complication of type 2 diabetes, involving extremely high blood sugar (glucose) level without the presence of ketones.</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
@@ -4938,7 +5001,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000314 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000314">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000537"/>
         <obo:IAO_0000115>bleeding in the rectum caused by various things such as infections, proctitis, etc.</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He, Justin Song</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J11-/J11.0</obo:IAO_0000119>
@@ -4983,7 +5046,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000317 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000317">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000622"/>
         <obo:IAO_0000115>Abnormally dark tarry feces containing blood (usually from gastrointestinal bleeding)</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K90-K95/K92-/K92.1</obo:IAO_0000119>
@@ -5242,8 +5305,14 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000332 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000332">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000214"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000331"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000138"/>
@@ -5384,7 +5453,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000339 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000339">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000627"/>
         <obo:IAO_0000115>a common eye disorder among people over 50. It causes blurred or reduced central vision, due to thinning of the macula</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/dry-macular-degeneration/symptoms-causes/syc-20350375#:~:text=Dry%20macular%20degeneration%20is%20a,your%20direct%20line%20of%20sight.</obo:IAO_0000119>
@@ -5399,7 +5468,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000340 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000340">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000627"/>
         <obo:IAO_0000115>damage in the eyes due to diabetes</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He, Justin Song</obo:IAO_0000117>
         <obo:IAO_0000119>https://icd.codes/icd10cm/H36</obo:IAO_0000119>
@@ -5414,7 +5483,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000341 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000341">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000628"/>
         <obo:IAO_0000115>A disorder characterized by an increase in pressure in the eyeball due to obstruction of the aqueous humor outflow.</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He, Justin Song</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H40-H42/H40-/H40.9</obo:IAO_0000119>
@@ -5562,7 +5631,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000351 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000351">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000214"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -5695,7 +5764,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000360 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000360">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000658"/>
         <obo:IAO_0000115>An ulceration caused by prolonged pressure on the skin and tissues when one stays in one position for a long period of time, such as lying in bed.</obo:IAO_0000115>
         <obo:IAO_0000117>Virginia He</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L80-L99/L89-/L89</obo:IAO_0000119>
@@ -6224,7 +6293,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000395 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000395">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000214"/>
         <obo:IAO_0000115>A disorder characterized by bleeding from the nose</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R00-R09/R04-/R04.0</obo:IAO_0000119>
@@ -6374,6 +6443,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000405 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000405">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000661"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>The prescense of diabetic ketoacidosis (body produces high levels of ketones and not enough insulin) in type 1 diabetic patients</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
@@ -6389,6 +6459,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000406 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000406">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000667"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000477"/>
         <obo:IAO_0000115>Overweight and obesity caused by miscellaneous disorders</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
@@ -6582,8 +6653,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000419 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000419">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000644"/>
         <obo:IAO_0000115>Genetic malformation of the tongue</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q38-Q45/Q38-/Q38.3</obo:IAO_0000119>
@@ -6760,6 +6830,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000431 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000663"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>An unspecified condition in which the adrenal glands do not produce adequate amounts of steroid hormones (cortisol)</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
@@ -6775,6 +6846,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000432 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000432">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000665"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>A condition caused by not getting enough calories or the right amount of key nutrients, such as vitamins and minerals, that are needed for health.</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
@@ -6790,6 +6862,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000433 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000433">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000666"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>A nutritional condition produced by a deficiency of B group vitamins (folic acid, B-12) in the diet</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
@@ -6805,6 +6878,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000434 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000434">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000668"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>Disorders in the processing, absorption, transport, storage, and utilization of phosphorus in the body</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
@@ -6939,7 +7013,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000443 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000443">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000615"/>
         <obo:IAO_0000115>Respiratory tract infections not specified as acute, chronic, lower, or upper</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://icd.who.int/browse10/2019/en#/J98.7</obo:IAO_0000119>
@@ -7133,7 +7207,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000456 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000456">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000214"/>
         <obo:IAO_0000115>The aftereffect of respiratory disease and tuberculosis</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/A00-B99/B90-B94/B90-/B90.9</obo:IAO_0000119>
@@ -7208,7 +7282,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000461 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000461">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000622"/>
         <obo:IAO_0000115>A stomach bug or stomach flu</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.healthgrades.com/right-care/digestive-health/enteritis#:~:text=Most%20people%20call%20viral%20enteritis,Parasites%20include%20Giardia%20and%20Cryptosporidium.</obo:IAO_0000119>
@@ -7313,7 +7387,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000468 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000468">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000214"/>
         <obo:IAO_0000115>A lung disease characterized by the growth of inflammatory cells (granulomas) in the lungs</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/sarcoidosis/symptoms-causes/syc-20350358</obo:IAO_0000119>
@@ -7358,6 +7432,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000471 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000471">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000660"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>A common form of hyperthyroidism affecting the entire thyroid gland and causing the gland to become enlarged</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
@@ -7374,6 +7449,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000472 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000472">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000661"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>The prescense of diabetic ketoacidosis (body produces high levels of ketones and not enough insulin) in type 1 diabetic patients, resulting in a coma</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
@@ -7389,6 +7465,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000473 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000473">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000661"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>Type 1 diabetes (body cannot break down sugars very easily) with unspecified complications</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
@@ -7434,6 +7511,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000476 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000476">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000661"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>Cataracts (cloudy area in the lens of your eye) caused by type 2 diabetes</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
@@ -7449,6 +7527,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000477 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000477">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000661"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>Other eye diseases caused by type 2 diabetes</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
@@ -7657,7 +7736,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000491 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000491">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000626"/>
         <obo:IAO_0000115>Cataracts (cloudy area in the lens of your eye) in the center of the eye lens due to age</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.nvisioncenters.com/cataracts/types/#:~:text=Nuclear%20cataracts%20are%20often%20a,they%20often%20impact%20distance%20vision.</obo:IAO_0000119>
@@ -7672,7 +7751,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000492 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000492">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000626"/>
         <obo:IAO_0000115>Cataracts (cloudy area in the lens of your eye) caused by unspecified reason</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H25-H28/H26-/H26.9</obo:IAO_0000119>
@@ -7687,7 +7766,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000493 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000493">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000632"/>
         <obo:IAO_0000115>A localized defect in the visual field bordered by an area of normal vision. This occurs with a variety of eye diseases (e.g., retinal diseases and glaucoma); optic nerve diseases, and other conditions.</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H53-H54/H53-/H53.4</obo:IAO_0000119>
@@ -7702,7 +7781,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000494 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000494">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000632"/>
         <obo:IAO_0000115>Cannot see out of one eye</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H53-H54/H54-/H54.4</obo:IAO_0000119>
@@ -7825,6 +7904,12 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000502">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000190"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>contagious viral infection caused by rhinovirus that causes inflammation of the bronchial tubes</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://familydoctor.org/condition/acute-bronchitis/#:~:text=Acute%20bronchitis%20is%20a%20contagious,harder%20for%20you%20to%20breathe.</obo:IAO_0000119>
@@ -7944,7 +8029,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000510 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000510">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000622"/>
         <obo:IAO_0000115>Bleeding from the gastric wall.</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K90-K95/K92-/K92.2</obo:IAO_0000119>
@@ -8112,8 +8197,14 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000521 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000521">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000214"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000364"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>an acute bleeding from the lung, from the upper respiratory tract and the trachea, and the alveoli</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Pulmonary_hemorrhage#:~:text=Pulmonary%20hemorrhage%20(or%20pulmonary%20haemorrhage,the%20trachea%2C%20and%20the%20alveoli.&amp;text=The%20onset%20of%20pulmonary%20hemorrhage,of%20oxygenation%20leading%20to%20cyanosis.</obo:IAO_0000119>
@@ -8520,8 +8611,14 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000549 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000549">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000214"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000318"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Lung infections with the invasive forms of aspergillus</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/A00-B99/B35-B49/B44-/B44.0</obo:IAO_0000119>
@@ -8644,6 +8741,7 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000557">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000668"/>
         <obo:IAO_0000115>Abnormal increase in the volume of circulating fluid (plasma) in the body.</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E87-/E87.7</obo:IAO_0000119>
@@ -8833,6 +8931,12 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000570">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000190"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000389"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>an acute inflammatory injury of the bronchioles that is usually caused by a viral infection</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://emedicine.medscape.com/article/961963-overview#:~:text=Bronchiolitis%20is%20an%20acute%20inflammatory,seen%20in%20the%20image%20below.</obo:IAO_0000119>
@@ -8847,7 +8951,6 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000571 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000571">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000356"/>
         <obo:IAO_0000115>complications/disorders of the respiratory system that occur during or after a procedure/operation</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
@@ -8923,7 +9026,7 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000576">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000067"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000641"/>
         <obo:IAO_0000115>a heart defect in which there are holes between the chambers of the right and left sides of the heart, and the valves that control the flow of blood between these chambers may not be formed correctly.</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000118>AVSD</obo:IAO_0000118>
@@ -9406,7 +9509,7 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000608">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000331"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000633"/>
         <obo:IAO_0000115>cancerous tumor of the eye</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>http://www.icd9data.com/2015/Volume1/140-239/190-199/190/190.htm?__hstc=93424706.0924cc95575484610bd29b86124947dc.1603072069548.1605584482533.1606196534170.7&amp;__hssc=93424706.247.1606196534170&amp;__hsfp=3629513924</obo:IAO_0000119>
@@ -9471,6 +9574,724 @@ resistance</icdo:OS_000000000000004>
         <obo:ICDO_0000135 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5280</obo:ICDO_0000135>
         <terms:source>https://dexur.com/icd9/5280/</terms:source>
         <rdfs:label xml:lang="en">stomatitis and mucositis (ulcerative)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000613 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000613">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000192"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">chronic obstructive pulmonary disease (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000614 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000614">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">respiratory failure (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000615 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000615">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">respiratory infections (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000616 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000616">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>J09-J18</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Influenza and pneumonia</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18</terms:source>
+        <rdfs:label xml:lang="en">influeza and pneumonia (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000617 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000617">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>K00-K14</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>diseases of oral cavity and salivary glands</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K00-K14</terms:source>
+        <rdfs:label xml:lang="en">diseases of oral cavity and salivary glands (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000618 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000618">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>K35-K38</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>diseases of appendix</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K35-K38</terms:source>
+        <rdfs:label xml:lang="en">diseases of appendix (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000619 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000619">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>K40-K46</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>hernia</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K40-K46</terms:source>
+        <rdfs:label xml:lang="en">hernia (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000620 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000620">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>K50-K52</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>noninfective enteritis and colitis</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K50-K52</terms:source>
+        <rdfs:label xml:lang="en">noninfective enteritis and colitis (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000621 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000621">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>K65-K68</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>diseases of peritoneum and retroperitoneum</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K65-K68</terms:source>
+        <rdfs:label xml:lang="en">diseases of peritoneum and retroperitoneum (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000622 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000622">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>K90-K95</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>other diseases of the digestive system</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K90-K95</terms:source>
+        <rdfs:label xml:lang="en">other diseases of the digestive system (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000623 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000623">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>H00-H05</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>disorders of eyelid, lacrimal system and orbit</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H00-H05</terms:source>
+        <rdfs:label xml:lang="en">disorders of eyelid, lacrimal system and orbit (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000624 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000624">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>H10-H11</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>disorders of conjunctiva</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H10-H11</terms:source>
+        <rdfs:label xml:lang="en">disorders of conjunctiva (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000625 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000625">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>H15-H22</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>disorders of sclera, cornea, iris and ciliary body</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H15-H22</terms:source>
+        <rdfs:label xml:lang="en">disorders of sclera, cornea, iris and ciliary body (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000626 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000626">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>H25-H28</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>disorders of lens</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H25-H28</terms:source>
+        <rdfs:label xml:lang="en">disorders of lens (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000627 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000627">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>H30-H36</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>disorders of choroid and retina</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H30-H36</terms:source>
+        <rdfs:label xml:lang="en">disorders of choroid and retina (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000628 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000628">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>H40-H42</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>glaucoma</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H40-H42</terms:source>
+        <rdfs:label xml:lang="en">glaucoma (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000629 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000629">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>H43-H44</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>disorders of vitreous body and globe</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H43-H44</terms:source>
+        <rdfs:label xml:lang="en">disorders of vitreous body and globe (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000630 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000630">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>H46-H47</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>disorders of optic nerve and visual pathways</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H46-H47</terms:source>
+        <rdfs:label xml:lang="en">disorders of optic nerve and visual pathways (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000631 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000631">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>H49-H52</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Disorders of ocular muscles, binocular movement, accommodation and refraction</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H49-H52</terms:source>
+        <rdfs:label xml:lang="en">disorders of ocular muscles, binocular movement, accommodation and refraction (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000632 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000632">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>H53-H54</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>visual disturbances and blindness</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H53-H54</terms:source>
+        <rdfs:label xml:lang="en">visual disturbances and blindness (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000633 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000633">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>H55-H57</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>other disorders of eye and adnexa</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H55-H57</terms:source>
+        <rdfs:label xml:lang="en">other disorders of eye and adnexa (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000635 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000635">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>H59-H59</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>intraoperative and postprocedural complications and disorders of eye and adnexa, not elsewhere classified</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H59-H59</terms:source>
+        <rdfs:label xml:lang="en">intraoperative and postprocedural complications and disorders of eye and adnexa, not elsewhere classified (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000636 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000636">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000067"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>I00-I02</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>acute rheumatic fever</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I00-I02</terms:source>
+        <rdfs:label xml:lang="en">acute rheumatic fever (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000637 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000637">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000067"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>I05-I09</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>chronic rheumatic heart diseases</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I05-I09</terms:source>
+        <rdfs:label xml:lang="en">chronic rheumatic heart diseases (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000638 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000638">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000067"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>I10-I16</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>hypertensive diseases</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I10-I16</terms:source>
+        <rdfs:label xml:lang="en">hypertensive diseases (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000639 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000639">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>Q00-Q07</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>congential malformations of the nervous system</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q00-Q07</terms:source>
+        <rdfs:label xml:lang="en">congenital malformations of the nervous system (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000640 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000640">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>Q10-Q18</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>congenital malformations of eye, ear, face and neck</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q10-Q18</terms:source>
+        <rdfs:label xml:lang="en">congenital malformations of eye, ear, face and neck (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000641 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000641">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>Q20-Q28</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>congenital malformations of the circulatory system</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q20-Q28</terms:source>
+        <rdfs:label xml:lang="en">congenital malformations of the circulatory system (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000642 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000642">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>Q30-Q34</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>congenital malformations of the respiratory system</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q30-Q34</terms:source>
+        <rdfs:label xml:lang="en">congenital malformations of the respiratory system (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000643 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000643">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>Q35-Q37</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>cleft lip and cleft palate</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q35-Q37</terms:source>
+        <rdfs:label xml:lang="en">cleft lip and cleft palate (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000644 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000644">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>Q38-Q45</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>other congenital malformations of the digestive system</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q38-Q45</terms:source>
+        <rdfs:label xml:lang="en">other congenital malformations of the digestive system (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000645 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000645">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>Q50-Q56</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>congenital malformations of genital organs</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q50-Q56</terms:source>
+        <rdfs:label xml:lang="en">congenital malformations of genital organs (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000646 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000646">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>Q60-Q64</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>congenital malformations of the urinary system</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q60-Q64</terms:source>
+        <rdfs:label xml:lang="en">congenital malformations of the urinary system (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000647 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000647">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>Q65-Q79</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>congenital malformations and deformations of the musculoskeletal system</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q65-Q79</terms:source>
+        <rdfs:label xml:lang="en">congenital malformations and deformations of the musculoskeletal system (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000648 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000648">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>Q80-Q89</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>other congenital malformations</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q80-Q89</terms:source>
+        <rdfs:label xml:lang="en">other congenital malformations (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000649 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000649">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>Q90-Q99</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>chromosomal abnormalities, not elsewhere classified</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q90-Q99</terms:source>
+        <rdfs:label xml:lang="en">chromosomal abnormalities, not elsewhere classified (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000650 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000650">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>L00-L08</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>infections of the skin and subcutaneous tissue</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L00-L08v</terms:source>
+        <rdfs:label xml:lang="en">infections of the skin and subcutaneous tissue (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000651 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000651">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>L10-L14</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>bullous disorders</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L10-L14</terms:source>
+        <rdfs:label xml:lang="en">bullous disorders (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000652 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000652">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>L20-L30</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>dermatitis and eczema</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L20-L30</terms:source>
+        <rdfs:label xml:lang="en">dermatitis and eczema (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000653 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000653">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>L40-L45</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>papulosquamous disorders</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L40-L45</terms:source>
+        <rdfs:label xml:lang="en">papulosquamous disorders (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000654 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000654">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>L49-L54</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>urticaria and erythema</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L49-L54</terms:source>
+        <rdfs:label xml:lang="en">urticaria and erythema (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000655 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000655">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>L55-L59</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>radiation-related disorders of the skin and subcutaneous tissue</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L55-L59</terms:source>
+        <rdfs:label xml:lang="en">radiation-related disorders of the skin and subcutaneous tissue (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000656 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000656">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>L60-L75</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>disorders of skin appendages</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L60-L75</terms:source>
+        <rdfs:label xml:lang="en">disorders of skin appendages (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000657 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000657">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>L76-L76</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>intraoperative and postprocedural complications of skin and subcutaneous tissue</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L76-L76</terms:source>
+        <rdfs:label xml:lang="en">intraoperative and postprocedural complications of skin and subcutaneous tissue (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000658 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000658">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>L80-L99</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>other disorders of the skin and subcutaneous tissue</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L80-L99</terms:source>
+        <rdfs:label xml:lang="en">other disorders of the skin and subcutaneous tissue (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000659 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000659">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>E00-E89</obo:ICDO_0000039>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89</terms:source>
+        <rdfs:label xml:lang="en">endocrine, nutritional and metabolic diseases (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000660 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000660">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>E00-E07</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>disorders of thyroid gland</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E00-E07</terms:source>
+        <rdfs:label xml:lang="en">disorders of thyroid gland (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000661 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000661">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>E08-E13</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>diabetes mellitus</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E08-E13</terms:source>
+        <rdfs:label xml:lang="en">diabetes mellitus (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000662 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000662">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>E15-E16</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>other disorders of glucose regulation and pancreatic internal secretion</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E15-E16</terms:source>
+        <rdfs:label xml:lang="en">other disorders of glucose regulation and pancreatic internal secretion (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000663 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000663">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>E20-E35</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>disorders of other endocrine glands</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E20-E35</terms:source>
+        <rdfs:label xml:lang="en">disorders of other endocrine glands (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000664 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000664">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>E36-E36</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Intraoperative complications of endocrine system</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E36-E36</terms:source>
+        <rdfs:label xml:lang="en">intraoperative complications of endocrine system (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000665 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000665">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>E40-E46</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Malnutrition</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E40-E46</terms:source>
+        <rdfs:label xml:lang="en">malnutrition (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000666 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000666">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>E50-E64</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Other nutritional deficiencies</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E50-E64</terms:source>
+        <rdfs:label xml:lang="en">other nutritional deficiencies (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000667 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000667">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>E65-E68</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Overweight, obesity and other hyperalimentation</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E65-E68</terms:source>
+        <rdfs:label xml:lang="en">overweight, obesity and other hyperalimentation (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000668 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000668">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>E70-E88</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Metabolic disorders</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88</terms:source>
+        <rdfs:label xml:lang="en">metabolic disorders (NEW)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICDO_0000669 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000669">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
+        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
+        <obo:ICDO_0000039>E89-E89</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Postprocedural endocrine and metabolic complications and disorders, not elsewhere classified</icdo:OS_000000000000004>
+        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89</terms:source>
+        <rdfs:label xml:lang="en">postprocedural endocrine and metabolic complications and disorders, not elsewhere classified (NEW)</rdfs:label>
     </owl:Class>
     
 
@@ -12818,11 +13639,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000464 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000464">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000668"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>A condition in which the blood is too acidic.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E87-/E87.2</obo:IAO_0000119>
         <obo:ICDO_0000039>E87.2</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000464</oboInOwl:id>
         <rdfs:label>acidosis</rdfs:label>
@@ -12833,11 +13655,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000465 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000465">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000661"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>blood sugar (glucose) levels are abnormally high because the body does not produce enough insulin to meet its needs.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E08-E13/E11-/E11.9#:~:text=Type%202%20diabetes%20mellitus%20without%20complications,-2016%202017%202018&amp;text=9%20is%20a%20billable%2Fspecific,effective%20on%20October%201%2C%202019.</obo:IAO_0000119>
         <obo:ICDO_0000039>E11.90</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000465</oboInOwl:id>
         <rdfs:label>diabetes mellitus without complications</rdfs:label>
@@ -12863,11 +13686,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000467 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000467">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000668"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>disorders of lipoprotein metabolism that lead to atherosclerosis. These abnormalities arise from genetic and secondary factors and are caused by excessive entry of lipoproteins into the bloodstream or an impairment in their removal, or both.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E78-/E78.9</obo:IAO_0000119>
         <obo:ICDO_0000039>E78.9</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000467</oboInOwl:id>
         <rdfs:label>disorder of lipoprotein metabolism, unspecified</rdfs:label>
@@ -12878,11 +13702,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000468 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000468">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000668"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>occur when the body has too little or too much calcium.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E83-/E83.5</obo:IAO_0000119>
         <obo:ICDO_0000039>E83.5</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000468</oboInOwl:id>
         <rdfs:label>disorders of calcium metabolism</rdfs:label>
@@ -12893,11 +13718,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000469 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000469">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000668"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>Conditions with excess lipids in the blood.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E78-/E78.5</obo:IAO_0000119>
         <obo:ICDO_0000039>E78.5</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000469</oboInOwl:id>
         <rdfs:label>hyperlipidemia, unspecified</rdfs:label>
@@ -12923,13 +13749,14 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000471 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000471">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000668"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000472"/>
         <obo:IAO_0000115>A disorder characterized by laboratory test results that indicate a low concentration of potassium in the blood.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E87-/E87.6</obo:IAO_0000119>
         <obo:ICDO_0000039>E87.6</obo:ICDO_0000039>
         <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000471</oboInOwl:id>
         <rdfs:label>hypokalemia</rdfs:label>
@@ -12940,12 +13767,13 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000472 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000472">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000668"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>A disorder characterized by laboratory test results that indicate a low concentration of potassium in the blood.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E87-/E87.6</obo:IAO_0000119>
         <obo:ICDO_0000039>E87.6</obo:ICDO_0000039>
         <obo:ICDO_0000140>unbillable</obo:ICDO_0000140>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000472</oboInOwl:id>
         <rdfs:label>hypokalemia (unbillable)</rdfs:label>
@@ -12956,11 +13784,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000473 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000473">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000660"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>A condition characterized by a dry, waxy type of swelling (edema) with abnormal deposits of mucopolysaccharides in the skin and other tissues. It is caused by a deficiency of thyroid hormones.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E00-E07/E03-/E03.9</obo:IAO_0000119>
         <obo:ICDO_0000039>E03.9</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000473</oboInOwl:id>
         <rdfs:label>hypothyroidism, unspecified</rdfs:label>
@@ -12971,11 +13800,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000474 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000474">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000668"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>A disorder of lipoprotein metabolism characterized by high levels of cholesterol and triglycerides in the blood. It is caused by elevation of low density and very low density lipoproteins.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E78-/E78.2</obo:IAO_0000119>
         <obo:ICDO_0000039>E78.2</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000474</oboInOwl:id>
         <rdfs:label>mixed hyperlipidemia</rdfs:label>
@@ -12986,11 +13816,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000475 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000475">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000665"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>an energy deficit due to chronic deficiency of all macronutrients</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E40-E46/E44-/E44.0</obo:IAO_0000119>
         <obo:ICDO_0000039>E44.0</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000475</oboInOwl:id>
         <rdfs:label>moderate protein-calorie malnutrition</rdfs:label>
@@ -13001,11 +13832,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000476 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000476">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000660"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>an underactive thyroid gland.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E00-E07/E03-/E03.8</obo:IAO_0000119>
         <obo:ICDO_0000039>E03.8</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000476</oboInOwl:id>
         <rdfs:label>other specified hypothyroidism</rdfs:label>
@@ -13016,9 +13848,10 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000477 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000477">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000667"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>having more weight than the average human</obo:IAO_0000115>
-        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000117>Justin Song, Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E65-E68/E66-</obo:IAO_0000119>
         <obo:ICDO_0000039>E66</obo:ICDO_0000039>
         <oboInOwl:id>ICDO_0000477</oboInOwl:id>
@@ -13030,11 +13863,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000478 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000478">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000667"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000477"/>
         <obo:IAO_0000115>an abnormally high, unhealthy amount of body fat</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E65-E68/E66-/E66.01</obo:IAO_0000119>
         <obo:ICDO_0000039>E66.01</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000478</oboInOwl:id>
         <rdfs:label>morbid (severe) obesity due to excess calories</rdfs:label>
@@ -13045,11 +13879,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000479 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000479">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000667"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000477"/>
         <obo:IAO_0000115>a condition marked by an abnormally high, unhealthy amount of body fat.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E65-E68/E66-#E66.0</obo:IAO_0000119>
         <obo:ICDO_0000039>E66.0</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000479</oboInOwl:id>
         <rdfs:label>obesity due to excess calories</rdfs:label>
@@ -13060,11 +13895,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000480 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000480">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000667"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000477"/>
         <obo:IAO_0000115>A condition marked by an abnormally high, unhealthy amount of body fat.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E65-E68/E66-/E66.9</obo:IAO_0000119>
         <obo:ICDO_0000039>E66.9</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000480</oboInOwl:id>
         <rdfs:label>obesity, unspecified</rdfs:label>
@@ -13075,11 +13911,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000481 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000481">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000661"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>blood glucose, or blood sugar, levels are too high. With type 2 diabetes, the more common type, your body does not make or use insulin well.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E08-E13/E11-/E11.5</obo:IAO_0000119>
         <obo:ICDO_0000039>E11.5</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000481</oboInOwl:id>
         <rdfs:label>type 2 diabetes mellitus with circulatory complications</rdfs:label>
@@ -13090,6 +13927,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000482 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000482">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000661"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000484"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -13100,7 +13938,7 @@ resistance</icdo:OS_000000000000004>
         <obo:IAO_0000115>a chronic medical condition in which sugar, or glucose, levels build up in your bloodstream. In type 2 diabetes, your body&apos;s cells aren&apos;t able to respond to insulin as well as they should.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E08-E13/E11-/E11.22</obo:IAO_0000119>
         <obo:ICDO_0000039>E11.22</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000482</oboInOwl:id>
         <rdfs:label>type 2 diabetes mellitus with diabetic chronic kidney disease</rdfs:label>
@@ -13111,6 +13949,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000483 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000483">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000661"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>A chronic condition that affects the way the body processes blood sugar (glucose)</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E08-E13/E11-/E11.65</obo:IAO_0000119>
@@ -13162,11 +14001,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000486 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000486">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000665"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>an energy deficit due to chronic deficiency of all macronutrients</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E40-E46/E43-/E43</obo:IAO_0000119>
         <obo:ICDO_0000039>E43</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000486</oboInOwl:id>
         <rdfs:label>unspecified severe protein-calorie malnutrition</rdfs:label>
@@ -13177,11 +14017,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000487 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000487">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000666"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>A nutritional condition produced by a deficiency of vitamin d in the diet, insufficient production of vitamin d in the skin, inadequate absorption of vitamin d from the diet, or abnormal conversion of vitamin d to its bioactive metabolites.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E50-E64/E55-/E55.9</obo:IAO_0000119>
         <obo:ICDO_0000039>E55.9</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000487</oboInOwl:id>
         <rdfs:label>vitamin D deficiency, unspecified</rdfs:label>
@@ -13192,11 +14033,12 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000488 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000488">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000668"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>Abnormally decreased volume of circulating fluid (plasma) in body.</obo:IAO_0000115>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E86-/E86</obo:IAO_0000119>
         <obo:ICDO_0000039>E86</obo:ICDO_0000039>
-        <oboInOwl:created_by>Justin Song, Virginia He</oboInOwl:created_by>
+        <oboInOwl:created_by>Justin Song, Virginia He, Grace Whah</oboInOwl:created_by>
         <oboInOwl:creation_date>7/25/2020</oboInOwl:creation_date>
         <oboInOwl:id>ICDO_0000488</oboInOwl:id>
         <rdfs:label>volume depletion</rdfs:label>
@@ -13909,9 +14751,10 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000538 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000538">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000668"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>high blood potassium levels</obo:IAO_0000115>
-        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000117>Justin Song, Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E87-/E87.5</obo:IAO_0000119>
         <obo:ICDO_0000039>E87.5</obo:ICDO_0000039>
         <oboInOwl:id>ICDO_0000538</oboInOwl:id>
@@ -14110,9 +14953,10 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000552 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000665"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>body does not have enough nutrition to sustain itself</obo:IAO_0000115>
-        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000117>Justin Song, Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E40-E46/E44-/E44.1</obo:IAO_0000119>
         <obo:ICDO_0000039>E44.1</obo:ICDO_0000039>
         <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
@@ -14125,9 +14969,10 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000553 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000553">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000666"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#blood"/>
         <obo:IAO_0000115>iron deficiecy is due to insufficient iron</obo:IAO_0000115>
-        <obo:IAO_0000117>Justin Song</obo:IAO_0000117>
+        <obo:IAO_0000117>Justin Song, Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E50-E64/E61-/E61.1</obo:IAO_0000119>
         <obo:ICDO_0000039>E61.1</obo:ICDO_0000039>
         <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
@@ -14275,6 +15120,17 @@ resistance</icdo:OS_000000000000004>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000368"/>
         <oboInOwl:created_by>Justin Song</oboInOwl:created_by>
         <rdfs:label>personal status and history</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A disease is a particular abnormal condition that negatively affects the structure or function of all or part of an organism, and that is not due to any immediate external injury.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">New: disease</rdfs:label>
     </owl:Class>
     
 
@@ -14538,7 +15394,23 @@ resistance</icdo:OS_000000000000004>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M86-M90/M86-/M86.8</terms:source>
         <oboInOwl:hasRelatedSynonym>Bone infection</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0013706</oboInOwl:id>
-        <rdfs:label xml:lang="en">Other osteomyelitis</rdfs:label>
+        <rdfs:label xml:lang="en">New: Other osteomyelitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000167"/>
+        <obo:IAO_0000115>Coronary artery disease (CAD) is a group of diseases that includes: stable angina, unstable angina, myocardial infarction, and sudden coronary death.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I20-I25/I25-/I25.89</obo:IAO_0000119>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>coronary artery</icdo:ICDO_0000014>
+        <terms:source>https://icd.codes/icd10cm/I2589</terms:source>
+        <oboInOwl:id>UBERON:0001621</oboInOwl:id>
+        <rdfs:label xml:lang="en">Other forms of chronic ischemic heart disease</rdfs:label>
     </owl:Class>
     
 
@@ -14546,7 +15418,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/"/>
         <obo:IAO_0000115>a broken bone that&apos;s caused by a disease, rather than an injury.</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.healthline.com/health/pathologic-fracture#:~:text=A%20pathologic%20fracture%20is%20a,been%20weakened%20by%20an%20illness.</obo:IAO_0000119>
@@ -14657,7 +15529,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/"/>
         <obo:IAO_0000115>a broken bone that&apos;s caused by a disease, rather than an injury.</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.healthline.com/health/pathologic-fracture#:~:text=A%20pathologic%20fracture%20is%20a,been%20weakened%20by%20an%20illness.</obo:IAO_0000119>
@@ -14761,7 +15633,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000155"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000027"/>
         <rdfs:label xml:lang="en">Rheumatic  disease profile</rdfs:label>
     </owl:Class>
     
@@ -14842,7 +15714,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000032 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000032">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/"/>
         <obo:IAO_0000115>a broken bone that&apos;s caused by a disease, rather than an injury.</obo:IAO_0000115>
         <obo:IAO_0000115>https://www.healthline.com/health/pathologic-fracture#:~:text=A%20pathologic%20fracture%20is%20a,been%20weakened%20by%20an%20illness.</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
@@ -14857,7 +15729,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000033">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/"/>
         <obo:IAO_0000115>a broken bone that&apos;s caused by a disease, rather than an injury.</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.healthline.com/health/pathologic-fracture#:~:text=A%20pathologic%20fracture%20is%20a,been%20weakened%20by%20an%20illness.</obo:IAO_0000119>
@@ -14884,14 +15756,14 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000268"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000518"/>
         <obo:IAO_0000115>Chronic kidney disease (CKD), also known as chronic renal disease, is progressive loss in kidney function over a period of months or years.</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.kidney.org/atoz/content/about-chronic-kidney-disease</obo:IAO_0000119>
         <obo:ICDO_0000039>N18.1</obo:ICDO_0000039>
         <icdo:ICDO_0000014>kidney</icdo:ICDO_0000014>
         <terms:source>https://icd.codes/icd10cm/N181</terms:source>
-        <rdfs:label xml:lang="en">Chronic kidney disease, stage 1</rdfs:label>
+        <rdfs:label xml:lang="en">New: Chronic kidney disease, stage 1</rdfs:label>
     </owl:Class>
     
 
@@ -14899,13 +15771,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000036">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000518"/>
         <obo:IAO_0000115>Abortion is the ending of pregnancy by removing a fetus or embryo before it can survive outside the uterus. An abortion may be caused purposely and is then called an induced abortion, or less frequently, &quot;induced miscarriage&quot;.</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000118>Complete abortion complicated by renal failure</obo:IAO_0000118>
@@ -14921,13 +15787,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000037">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl#ICDO_0000518"/>
         <obo:IAO_0000115>The biopsy findings were consistent with the renal lesions of toxemia of pregnancy, although other renal diseases such as Henoch Schonlein nephritis or lupus proliferative glomerulonephritis cannot be excluded</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000118>Kidney failure (acute) following ectopic and molar pregnancy</obo:IAO_0000118>
@@ -15359,12 +16219,13 @@ resistance</icdo:OS_000000000000004>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
         <obo:IAO_0000115>Enterocolitis or coloenteritis is an inflammation of the digestive tract, involving enteritis of the small intestine and colitis of the colon.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:ICDO_0000039>K51.0</obo:ICDO_0000039>
         <obo:ICDO_0000140>digestive tract</obo:ICDO_0000140>
         <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K50-K52/K51-/K51.0</terms:source>
         <oboInOwl:id>UBERON:0001555</oboInOwl:id>
-        <rdfs:label xml:lang="en">Ulcerative (chronic) pancolitis</rdfs:label>
+        <rdfs:label xml:lang="en">New: Ulcerative (chronic) pancolitis</rdfs:label>
     </owl:Class>
     
 
@@ -15381,7 +16242,7 @@ resistance</icdo:OS_000000000000004>
         <icdo:ICDO_0000014>digestive tract</icdo:ICDO_0000014>
         <oboInOwl:hasRelatedSynonym>Eosinophilic ulcerative colitis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0001555</oboInOwl:id>
-        <rdfs:label xml:lang="en">Other ulcerative colitis without complications</rdfs:label>
+        <rdfs:label xml:lang="en">New: Other ulcerative colitis without complications</rdfs:label>
     </owl:Class>
     
 
@@ -15414,7 +16275,7 @@ resistance</icdo:OS_000000000000004>
         <icdo:ICDO_0000014>optic choroid</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H30-H36/H31-/H31.2</terms:source>
         <oboInOwl:id>UBERON:0001776</oboInOwl:id>
-        <rdfs:label xml:lang="en">Hereditary choroidal dystrophy</rdfs:label>
+        <rdfs:label xml:lang="en">New: Hereditary choroidal dystrophy</rdfs:label>
     </owl:Class>
     
 
@@ -15430,7 +16291,7 @@ resistance</icdo:OS_000000000000004>
         <icdo:ICDO_0000014>optic choroid</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H30-H36/H31-/H31.20</terms:source>
         <oboInOwl:id>UBERON:0001776</oboInOwl:id>
-        <rdfs:label xml:lang="en">Hereditary choroidal dystrophy, unspecified</rdfs:label>
+        <rdfs:label xml:lang="en">New: Hereditary choroidal dystrophy, unspecified</rdfs:label>
     </owl:Class>
     
 
@@ -15479,7 +16340,7 @@ resistance</icdo:OS_000000000000004>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N17-N19/N18-/N18.2</terms:source>
         <oboInOwl:hasExactSynonym>Chronic kidney disease stage 2</oboInOwl:hasExactSynonym>
         <oboInOwl:id>UBERON:0002113</oboInOwl:id>
-        <rdfs:label xml:lang="en">Chronic kidney disease, stage 2 (mild)</rdfs:label>
+        <rdfs:label xml:lang="en">New: Chronic kidney disease, stage 2 (mild)</rdfs:label>
     </owl:Class>
     
 
@@ -15505,18 +16366,6 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000071">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000138"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000156"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Acute proliferative glomerulonephritis is a disorder of the glomeruli (glomerulonephritis), or small blood vessels in the kidneys.</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000119>https://icd.codes/icd10cm/N008</obo:IAO_0000119>
@@ -15535,12 +16384,6 @@ resistance</icdo:OS_000000000000004>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000072">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>a kidney disorder that causes your body to pass too much protein in your urine</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000119>https://ada.com/conditions/nephritic-syndrome/</obo:IAO_0000119>
@@ -15569,7 +16412,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N20-N23/N20-/N20.1</terms:source>
         <oboInOwl:hasRelatedSynonym>ureter stones</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0000365</oboInOwl:id>
-        <rdfs:label xml:lang="en">Calculus of ureter</rdfs:label>
+        <rdfs:label xml:lang="en">New: Calculus of ureter</rdfs:label>
     </owl:Class>
     
 
@@ -15578,12 +16421,6 @@ kidney</icdo:ICDO_0000014>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000074">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000260"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>A genetic or acquired polyuric disorder characterized by persistent hypotonic urine and hypokalemia. ~ an inability to concentrate urine due to impaired renal tubule response to vasopressin (ADH), which leads to excretion of large amounts of dilute urine.</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.merckmanuals.com/professional/genitourinary-disorders/renal-transport-abnormalities/nephrogenic-diabetes-insipidus#:~:text=Nephrogenic%20diabetes%20insipidus%20(NDI)%20is,that%20impair%20renal%20concentrating%20ability.</obo:IAO_0000119>
@@ -15609,7 +16446,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N30-N39/N30-/N30.0</terms:source>
         <oboInOwl:hasRelatedSynonym>Urinary bladder disease</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0001255</oboInOwl:id>
-        <rdfs:label xml:lang="en">Acute cystitis</rdfs:label>
+        <rdfs:label xml:lang="en">New: Acute cystitis</rdfs:label>
     </owl:Class>
     
 
@@ -15627,7 +16464,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N30-N39/N30-/N30.00</terms:source>
         <oboInOwl:hasRelatedSynonym>urinary tract infection (UTI)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0001255</oboInOwl:id>
-        <rdfs:label xml:lang="en">Acute cystitis without hematuria</rdfs:label>
+        <rdfs:label xml:lang="en">New: Acute cystitis without hematuria</rdfs:label>
     </owl:Class>
     
 
@@ -15644,7 +16481,7 @@ kidney</icdo:ICDO_0000014>
         <icdo:ICDO_0000014>urinary bladder</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/N00-N99/N40-N53/N40-/N40.0</terms:source>
         <oboInOwl:id>UBERON:0001255</oboInOwl:id>
-        <rdfs:label xml:lang="en">Acute cystitis with hematuria</rdfs:label>
+        <rdfs:label xml:lang="en">New: Acute cystitis with hematuria</rdfs:label>
     </owl:Class>
     
 
@@ -15698,7 +16535,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M45-M49/M45-/M45</terms:source>
         <oboInOwl:hasRelatedSynonym>Bechterew&apos;s disease</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0013706</oboInOwl:id>
-        <rdfs:label xml:lang="en">Ankylosing spondylitis</rdfs:label>
+        <rdfs:label xml:lang="en">New: Ankylosing spondylitis</rdfs:label>
     </owl:Class>
     
 
@@ -15716,7 +16553,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M05-M14/M08-/M08.3</terms:source>
         <oboInOwl:hasRelatedSynonym>juvenile arthritis (JA)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0002405</oboInOwl:id>
-        <rdfs:label xml:lang="en">Juvenile rheumatoid polyarthritis (seronegative)</rdfs:label>
+        <rdfs:label xml:lang="en">New: Juvenile rheumatoid polyarthritis (seronegative)</rdfs:label>
     </owl:Class>
     
 
@@ -15734,7 +16571,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M05-M14/M08-/M08.90</terms:source>
         <oboInOwl:hasRelatedSynonym>juvenile arthritis (JA)</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0002405</oboInOwl:id>
-        <rdfs:label xml:lang="en">Juvenile arthritis, unspecified, unspecified site</rdfs:label>
+        <rdfs:label xml:lang="en">New: Juvenile arthritis, unspecified, unspecified site</rdfs:label>
     </owl:Class>
     
 
@@ -15762,12 +16599,13 @@ kidney</icdo:ICDO_0000014>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000084">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000345"/>
         <obo:IAO_0000115>A disorder characterized by an infectious process involving the skeletal muscles.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:ICDO_0000039>M60.0</obo:ICDO_0000039>
         <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
         <icdo:ICDO_0000014>skeletal muscle organ</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M60-M63/M60-/M60.0</terms:source>
         <oboInOwl:id>UBERON:0014892</oboInOwl:id>
-        <rdfs:label xml:lang="en">Infective myositis</rdfs:label>
+        <rdfs:label xml:lang="en">New: Infective myositis</rdfs:label>
     </owl:Class>
     
 
@@ -15784,7 +16622,7 @@ kidney</icdo:ICDO_0000014>
         <icdo:ICDO_0000014>skeletal muscle organ</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M60-M63/M60-/M60.00</terms:source>
         <oboInOwl:id>UBERON:0014892</oboInOwl:id>
-        <rdfs:label xml:lang="en">Infective myositis, unspecified site</rdfs:label>
+        <rdfs:label xml:lang="en">New: Infective myositis, unspecified site</rdfs:label>
     </owl:Class>
     
 
@@ -15820,7 +16658,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M80-M85/M84/M84.3-/M84.369S</terms:source>
         <oboInOwl:hasRelatedSynonym>hairline fracture</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0014892</oboInOwl:id>
-        <rdfs:label xml:lang="en">Stress fracture, unspecified tibia and fibula, sequela</rdfs:label>
+        <rdfs:label xml:lang="en">New: Stress fracture, unspecified tibia and fibula, sequela</rdfs:label>
     </owl:Class>
     
 
@@ -15838,7 +16676,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M80-M85/M84/M84.3-/M84.376S</terms:source>
         <oboInOwl:hasRelatedSynonym>hairline fracture</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0014892</oboInOwl:id>
-        <rdfs:label xml:lang="en">Stress fracture, unspecified foot, sequela</rdfs:label>
+        <rdfs:label xml:lang="en">New: Stress fracture, unspecified foot, sequela</rdfs:label>
     </owl:Class>
     
 
@@ -15856,7 +16694,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M86-M90/M86-/M86.6</terms:source>
         <oboInOwl:hasRelatedSynonym>OM</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0002371</oboInOwl:id>
-        <rdfs:label xml:lang="en">Other chronic osteomyelitis</rdfs:label>
+        <rdfs:label xml:lang="en">New: Other chronic osteomyelitis</rdfs:label>
     </owl:Class>
     
 
@@ -15909,7 +16747,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/G00-G99/G80-G83/G82-/G82.2</terms:source>
         <oboInOwl:hasRelatedSynonym>leg paralysis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0002355</oboInOwl:id>
-        <rdfs:label xml:lang="en">Paraplegia</rdfs:label>
+        <rdfs:label xml:lang="en">New: araplegia</rdfs:label>
     </owl:Class>
     
 
@@ -15927,7 +16765,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/G00-G99/G80-G83/G82-/G82.20</terms:source>
         <oboInOwl:hasRelatedSynonym>leg paralysis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0002355</oboInOwl:id>
-        <rdfs:label xml:lang="en">Paraplegia, unspecified</rdfs:label>
+        <rdfs:label xml:lang="en">New: Paraplegia, unspecified</rdfs:label>
     </owl:Class>
     
 
@@ -15963,7 +16801,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/G00-G99/G89-G99/G91-/G91.0</terms:source>
         <oboInOwl:hasRelatedSynonym>Hydrocephalus, communicating</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0001359</oboInOwl:id>
-        <rdfs:label xml:lang="en">Communicating hydrocephalus</rdfs:label>
+        <rdfs:label xml:lang="en">New: Communicating hydrocephalus</rdfs:label>
     </owl:Class>
     
 
@@ -15981,7 +16819,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/G00-G99/G89-G99/G91-/G91.9</terms:source>
         <oboInOwl:hasRelatedSynonym>Acquired hydrocephalus</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0001359</oboInOwl:id>
-        <rdfs:label xml:lang="en">Hydrocephalus, unspecified</rdfs:label>
+        <rdfs:label xml:lang="en">New: Hydrocephalus, unspecified</rdfs:label>
     </owl:Class>
     
 
@@ -16084,7 +16922,7 @@ kidney</icdo:ICDO_0000014>
         <icdo:ICDO_0000014>lung</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z90-/Z90.2</terms:source>
         <oboInOwl:id>UBERON:0002048</oboInOwl:id>
-        <rdfs:label xml:lang="en">Acquired absence of lung [part of]</rdfs:label>
+        <rdfs:label xml:lang="en">New: Acquired absence of lung [part of]</rdfs:label>
     </owl:Class>
     
 
@@ -16221,7 +17059,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z94-/Z94.81</terms:source>
         <oboInOwl:hasRelatedSynonym>Growth hormone deficiency after bone marrow transplant</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0002371</oboInOwl:id>
-        <rdfs:label xml:lang="en">Bone marrow transplant status</rdfs:label>
+        <rdfs:label xml:lang="en">New: Bone marrow transplant status</rdfs:label>
     </owl:Class>
     
 
@@ -16266,7 +17104,7 @@ kidney</icdo:ICDO_0000014>
         <icdo:ICDO_0000014>tissue</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/Z00-Z99/Z77-Z99/Z94-/Z94.8</terms:source>
         <oboInOwl:id>UBERON:0000479</oboInOwl:id>
-        <rdfs:label xml:lang="en">Other transplanted organ and tissue status</rdfs:label>
+        <rdfs:label xml:lang="en">New: Other transplanted organ and tissue status</rdfs:label>
     </owl:Class>
     
 
@@ -16316,7 +17154,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R10-R19/R15-/R15</terms:source>
         <oboInOwl:hasRelatedSynonym>paradoxical diarrhea</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0001988</oboInOwl:id>
-        <rdfs:label xml:lang="en">Fecal incontinence</rdfs:label>
+        <rdfs:label xml:lang="en">New: Fecal incontinence</rdfs:label>
     </owl:Class>
     
 
@@ -16333,7 +17171,7 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R40-R46/R41-/R41.1</terms:source>
         <oboInOwl:hasRelatedSynonym>Amnesia, anterograde</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>UBERON:0000955</oboInOwl:id>
-        <rdfs:label xml:lang="en">Anterograde amnesia</rdfs:label>
+        <rdfs:label xml:lang="en">New: Anterograde amnesia</rdfs:label>
     </owl:Class>
     
 
@@ -16401,7 +17239,7 @@ kidney</icdo:ICDO_0000014>
         <icdo:ICDO_0000014>pair of lungs</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/R00-R99/R00-R09/R06-/R06.03</terms:source>
         <oboInOwl:id>UBERON:0000170</oboInOwl:id>
-        <rdfs:label xml:lang="en">Acute respiratory distress</rdfs:label>
+        <rdfs:label xml:lang="en">New: Acute respiratory distress</rdfs:label>
     </owl:Class>
     
 
@@ -16702,7 +17540,7 @@ kidney</icdo:ICDO_0000014>
         <icdo:ICDO_0000014>metatarsal bone</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/S90-S99/S92/S92.3-/S92.302D</terms:source>
         <oboInOwl:id>UBERON:0001448</oboInOwl:id>
-        <rdfs:label xml:lang="en">Fracture of unspecified metatarsal bone(s), left foot, subsequent encounter for fracture with routine healing</rdfs:label>
+        <rdfs:label xml:lang="en">New: Fracture of unspecified metatarsal bone(s), left foot, subsequent encounter for fracture with routine healing</rdfs:label>
     </owl:Class>
     
 
@@ -16717,7 +17555,7 @@ kidney</icdo:ICDO_0000014>
         <obo:ICDO_0000039>S92.909S</obo:ICDO_0000039>
         <icdo:ICDO_0000014>billable</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/S90-S99/S92/S92.9-/S92.919S</terms:source>
-        <rdfs:label xml:lang="en">Unspecified fracture of unspecified foot, sequela</rdfs:label>
+        <rdfs:label xml:lang="en">New: Unspecified fracture of unspecified foot, sequela</rdfs:label>
     </owl:Class>
     
 
@@ -16734,7 +17572,7 @@ kidney</icdo:ICDO_0000014>
         <icdo:ICDO_0000014>toe disc</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/S00-T88/S90-S99/S92/S92.9-/S92.919S</terms:source>
         <oboInOwl:id>UBERON:4200151</oboInOwl:id>
-        <rdfs:label xml:lang="en">Unspecified fracture of unspecified toe(s), sequela</rdfs:label>
+        <rdfs:label xml:lang="en">New: Unspecified fracture of unspecified toe(s), sequela</rdfs:label>
     </owl:Class>
     
 
@@ -16813,7 +17651,7 @@ kidney</icdo:ICDO_0000014>
         <icdo:ICDO_0000014>blood</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/C00-D49/C81-C96/C91-/C91.1</terms:source>
         <oboInOwl:id>UBERON:0000178</oboInOwl:id>
-        <rdfs:label xml:lang="en">Chronic lymphocytic leukemia of B-cell type</rdfs:label>
+        <rdfs:label xml:lang="en">New: Chronic lymphocytic leukemia of B-cell type</rdfs:label>
     </owl:Class>
     
 
@@ -16830,7 +17668,7 @@ kidney</icdo:ICDO_0000014>
         <icdo:ICDO_0000014>lymph nodes</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/C00-D49/C81-C96/C91-/C91.10</terms:source>
         <oboInOwl:id>UBERON:0000029</oboInOwl:id>
-        <rdfs:label xml:lang="en">Chronic lymphocytic leukemia of B-cell type not having achieved remission</rdfs:label>
+        <rdfs:label xml:lang="en">New: Chronic lymphocytic leukemia of B-cell type not having achieved remission</rdfs:label>
     </owl:Class>
     
 
@@ -16846,7 +17684,7 @@ kidney</icdo:ICDO_0000014>
         <icdo:ICDO_0000014>bone marrow</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/D50-D89/D60-D64/D61-/D61.1</terms:source>
         <oboInOwl:id>UBERON:0002371</oboInOwl:id>
-        <rdfs:label xml:lang="en">Drug-induced aplastic anemia</rdfs:label>
+        <rdfs:label xml:lang="en">New: Drug-induced aplastic anemia</rdfs:label>
     </owl:Class>
     
 
@@ -16855,12 +17693,6 @@ kidney</icdo:ICDO_0000014>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000150">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000331"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002113"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Renal cell carcinoma is a kidney cancer that originates in the lining of the proximal convoluted tubule, a part of the very small tubes in the kidney that transport waste molecules from the blood to the urine.</obo:IAO_0000115>
         <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
         <obo:IAO_0000119>http://www.globenewswire.com/news-release/2020/03/27/2007560/0/en/Renal-Cell-Carcinoma-Epidemiology-Forecast-to-2028.html</obo:IAO_0000119>
@@ -16951,6 +17783,21 @@ kidney</icdo:ICDO_0000014>
         <terms:source>https://icd.codes/icd10cm/D100</terms:source>
         <oboInOwl:id>UBERON:0001833</oboInOwl:id>
         <rdfs:label xml:lang="en">Benign neoplasm of lip</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000156 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000156">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000122"/>
+        <obo:IAO_0000115>Respiratory arrest is the cessation of normal breathing due to failure of the lungs to function effectively.</obo:IAO_0000115>
+        <obo:IAO_0000118>Cardiorespiratory failure</obo:IAO_0000118>
+        <obo:ICDO_0000039 xml:lang="en">R09.2</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lungs</icdo:ICDO_0000014>
+        <oboInOwl:id>UBERON:0002048</oboInOwl:id>
+        <rdfs:label xml:lang="en">New: Respiratory arrest</rdfs:label>
     </owl:Class>
     
 
@@ -17152,729 +17999,10 @@ kidney</icdo:ICDO_0000014>
         <icdo:ICDO_0000014>skeletal muscle organ</icdo:ICDO_0000014>
         <terms:source>https://www.icd10data.com/ICD10CM/Codes/M00-M99/M60-M63/M60-/M60.009</terms:source>
         <oboInOwl:hasRelatedSynonym>Infective myositis</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">Infective myositis, unspecified site</rdfs:label>
-    </owl:Class>
-	
-
-    
-    // Note: Inserted Grace's work: 17157 (ICDO_0000613) - 17877 (ICDO_0000669) 
-    
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000613 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000613">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000192"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">chronic obstructive pulmonary disease (NEW)</rdfs:label>
+        <rdfs:label xml:lang="en">New: Infective myositis, unspecified site</rdfs:label>
     </owl:Class>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000614 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000614">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">respiratory failure (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000615 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000615">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">respiratory infections (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000616 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000616">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>J09-J18</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>Influenza and pneumonia</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18</terms:source>
-        <rdfs:label xml:lang="en">influeza and pneumonia (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000617 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000617">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>K00-K14</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>diseases of oral cavity and salivary glands</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K00-K14</terms:source>
-        <rdfs:label xml:lang="en">diseases of oral cavity and salivary glands (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000618 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000618">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>K35-K38</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>diseases of appendix</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K35-K38</terms:source>
-        <rdfs:label xml:lang="en">diseases of appendix (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000619 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000619">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>K40-K46</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>hernia</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K40-K46</terms:source>
-        <rdfs:label xml:lang="en">hernia (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000620 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000620">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>K50-K52</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>noninfective enteritis and colitis</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K50-K52</terms:source>
-        <rdfs:label xml:lang="en">noninfective enteritis and colitis (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000621 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000621">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>K65-K68</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>diseases of peritoneum and retroperitoneum</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K65-K68</terms:source>
-        <rdfs:label xml:lang="en">diseases of peritoneum and retroperitoneum (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000622 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000622">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000306"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>K90-K95</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>other diseases of the digestive system</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/K00-K95/K90-K95</terms:source>
-        <rdfs:label xml:lang="en">other diseases of the digestive system (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000623 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000623">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>H00-H05</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>disorders of eyelid, lacrimal system and orbit</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H00-H05</terms:source>
-        <rdfs:label xml:lang="en">disorders of eyelid, lacrimal system and orbit (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000624 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000624">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>H10-H11</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>disorders of conjunctiva</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H10-H11</terms:source>
-        <rdfs:label xml:lang="en">disorders of conjunctiva (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000625 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000625">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>H15-H22</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>disorders of sclera, cornea, iris and ciliary body</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H15-H22</terms:source>
-        <rdfs:label xml:lang="en">disorders of sclera, cornea, iris and ciliary body (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000626 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000626">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>H25-H28</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>disorders of lens</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H25-H28</terms:source>
-        <rdfs:label xml:lang="en">disorders of lens (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000627 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000627">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>H30-H36</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>disorders of choroid and retina</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H30-H36</terms:source>
-        <rdfs:label xml:lang="en">disorders of choroid and retina (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000628 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000628">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>H40-H42</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>glaucoma</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H40-H42</terms:source>
-        <rdfs:label xml:lang="en">glaucoma (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000629 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000629">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>H43-H44</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>disorders of vitreous body and globe</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H43-H44</terms:source>
-        <rdfs:label xml:lang="en">disorders of vitreous body and globe (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000630 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000630">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>H46-H47</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>disorders of optic nerve and visual pathways</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H46-H47</terms:source>
-        <rdfs:label xml:lang="en">disorders of optic nerve and visual pathways (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000631 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000631">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>H49-H52</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>Disorders of ocular muscles, binocular movement, accommodation and refraction</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H49-H52</terms:source>
-        <rdfs:label xml:lang="en">disorders of ocular muscles, binocular movement, accommodation and refraction (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000632 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000632">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>H53-H54</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>visual disturbances and blindness</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H53-H54</terms:source>
-        <rdfs:label xml:lang="en">visual disturbances and blindness (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000633 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000633">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>H55-H57</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>other disorders of eye and adnexa</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H55-H57</terms:source>
-        <rdfs:label xml:lang="en">other disorders of eye and adnexa (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000635 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000635">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000338"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>H59-H59</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>intraoperative and postprocedural complications and disorders of eye and adnexa, not elsewhere classified</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/H00-H59/H59-H59</terms:source>
-        <rdfs:label xml:lang="en">intraoperative and postprocedural complications and disorders of eye and adnexa, not elsewhere classified (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000636 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000636">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000067"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>I00-I02</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>acute rheumatic fever</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I00-I02</terms:source>
-        <rdfs:label xml:lang="en">acute rheumatic fever (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000637 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000637">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000067"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>I05-I09</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>chronic rheumatic heart diseases</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I05-I09</terms:source>
-        <rdfs:label xml:lang="en">chronic rheumatic heart diseases (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000638 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000638">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000067"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>I10-I16</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>hypertensive diseases</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/I00-I99/I10-I16</terms:source>
-        <rdfs:label xml:lang="en">hypertensive diseases (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000639 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000639">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>Q00-Q07</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>congential malformations of the nervous system</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q00-Q07</terms:source>
-        <rdfs:label xml:lang="en">congenital malformations of the nervous system (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000640 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000640">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>Q10-Q18</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>congenital malformations of eye, ear, face and neck</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q10-Q18</terms:source>
-        <rdfs:label xml:lang="en">congenital malformations of eye, ear, face and neck (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000641 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000641">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>Q20-Q28</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>congenital malformations of the circulatory system</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q20-Q28</terms:source>
-        <rdfs:label xml:lang="en">congenital malformations of the circulatory system (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000642 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000642">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>Q30-Q34</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>congenital malformations of the respiratory system</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q30-Q34</terms:source>
-        <rdfs:label xml:lang="en">congenital malformations of the respiratory system (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000643 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000643">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>Q35-Q37</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>cleft lip and cleft palate</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q35-Q37</terms:source>
-        <rdfs:label xml:lang="en">cleft lip and cleft palate (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000644 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000644">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>Q38-Q45</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>other congenital malformations of the digestive system</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q38-Q45</terms:source>
-        <rdfs:label xml:lang="en">other congenital malformations of the digestive system (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000645 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000645">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>Q50-Q56</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>congenital malformations of genital organs</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q50-Q56</terms:source>
-        <rdfs:label xml:lang="en">congenital malformations of genital organs (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000646 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000646">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>Q60-Q64</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>congenital malformations of the urinary system</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q60-Q64</terms:source>
-        <rdfs:label xml:lang="en">congenital malformations of the urinary system (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000647 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000647">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>Q65-Q79</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>congenital malformations and deformations of the musculoskeletal system</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q65-Q79</terms:source>
-        <rdfs:label xml:lang="en">congenital malformations and deformations of the musculoskeletal system (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000648 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000648">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>Q80-Q89</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>other congenital malformations</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q80-Q89</terms:source>
-        <rdfs:label xml:lang="en">other congenital malformations (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000649 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000649">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000577"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>Q90-Q99</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>chromosomal abnormalities, not elsewhere classified</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q90-Q99</terms:source>
-        <rdfs:label xml:lang="en">chromosomal abnormalities, not elsewhere classified (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000650 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000650">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>L00-L08</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>infections of the skin and subcutaneous tissue</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L00-L08v</terms:source>
-        <rdfs:label xml:lang="en">infections of the skin and subcutaneous tissue (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000651 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000651">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>L10-L14</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>bullous disorders</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L10-L14</terms:source>
-        <rdfs:label xml:lang="en">bullous disorders (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000652 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000652">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>L20-L30</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>dermatitis and eczema</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L20-L30</terms:source>
-        <rdfs:label xml:lang="en">dermatitis and eczema (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000653 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000653">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>L40-L45</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>papulosquamous disorders</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L40-L45</terms:source>
-        <rdfs:label xml:lang="en">papulosquamous disorders (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000654 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000654">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>L49-L54</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>urticaria and erythema</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L49-L54</terms:source>
-        <rdfs:label xml:lang="en">urticaria and erythema (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000655 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000655">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>L55-L59</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>radiation-related disorders of the skin and subcutaneous tissue</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L55-L59</terms:source>
-        <rdfs:label xml:lang="en">radiation-related disorders of the skin and subcutaneous tissue (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000656 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000656">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>L60-L75</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>disorders of skin appendages</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L60-L75</terms:source>
-        <rdfs:label xml:lang="en">disorders of skin appendages (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000657 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000657">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>L76-L76</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>intraoperative and postprocedural complications of skin and subcutaneous tissue</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L76-L76</terms:source>
-        <rdfs:label xml:lang="en">intraoperative and postprocedural complications of skin and subcutaneous tissue (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000658 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000658">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000342"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>L80-L99</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>other disorders of the skin and subcutaneous tissue</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/L00-L99/L80-L99</terms:source>
-        <rdfs:label xml:lang="en">other disorders of the skin and subcutaneous tissue (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000659 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000659">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000001"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>E00-E89</obo:ICDO_0000039>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89</terms:source>
-        <rdfs:label xml:lang="en">endocrine, nutritional and metabolic diseases (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000660 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000660">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>E00-E07</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>disorders of thyroid gland</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E00-E07</terms:source>
-        <rdfs:label xml:lang="en">disorders of thyroid gland (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000661 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000661">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>E08-E13</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>diabetes mellitus</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E08-E13</terms:source>
-        <rdfs:label xml:lang="en">diabetes mellitus (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000662 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000662">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>E15-E16</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>other disorders of glucose regulation and pancreatic internal secretion</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E15-E16</terms:source>
-        <rdfs:label xml:lang="en">other disorders of glucose regulation and pancreatic internal secretion (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000663 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000663">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>E20-E35</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>disorders of other endocrine glands</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E20-E35</terms:source>
-        <rdfs:label xml:lang="en">disorders of other endocrine glands (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000664 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000664">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>E36-E36</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>Intraoperative complications of endocrine system</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E36-E36</terms:source>
-        <rdfs:label xml:lang="en">intraoperative complications of endocrine system (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000665 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000665">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>E40-E46</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>Malnutrition</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E40-E46</terms:source>
-        <rdfs:label xml:lang="en">malnutrition (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000666 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000666">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>E50-E64</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>Other nutritional deficiencies</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E50-E64</terms:source>
-        <rdfs:label xml:lang="en">other nutritional deficiencies (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000667 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000667">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>E65-E68</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>Overweight, obesity and other hyperalimentation</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E65-E68</terms:source>
-        <rdfs:label xml:lang="en">overweight, obesity and other hyperalimentation (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000668 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000668">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>E70-E88</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>Metabolic disorders</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88</terms:source>
-        <rdfs:label xml:lang="en">metabolic disorders (NEW)</rdfs:label>
-    </owl:Class>
-    
-
-    <!-- http://purl.obolibrary.org/obo/ICDO_0000669 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000669">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000659"/>
-        <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
-        <obo:ICDO_0000039>E89-E89</obo:ICDO_0000039>
-        <icdo:OS_000000000000004>Postprocedural endocrine and metabolic complications and disorders, not elsewhere classified</icdo:OS_000000000000004>
-        <terms:source>https://www.icd10data.com/ICD10CM/Codes/E00-E89</terms:source>
-        <rdfs:label xml:lang="en">postprocedural endocrine and metabolic complications and disorders, not elsewhere classified (NEW)</rdfs:label>
-    </owl:Class>
-    
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
