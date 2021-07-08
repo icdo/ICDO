@@ -1,20 +1,9 @@
 # ICD Background
 
--The International Statistical Classification of Diseases and Related Health Problems (ICD) is a medical classification system developed and maintained by the World Health Organization (WHO). 
--the world's standard tool to capture mortality and morbidity data
--Used by physicians, researchers, policy-makers, insurers, and patient organizations
-
-## Ontology Background
-
--Ontology is the study or concern about what kinds of things exist - what entities or `things' there are in the universe
-   -In this case, Ontology is a representation of entities and the relations among them in a specific domain
+The International Statistical Classification of Diseases and Related Health Problems (ICD) is a medical classification system developed and maintained by the World Health Organization (WHO). 
 
 
 ## Related web links:  
-
-Data:
--https://figshare.com/articles/dataset/Labs_Data_for_International_Electronic_Health_Record-Derived_COVID-19_Clinical_Course_Profile_The_4CE_Consortium/12152766
--https://figshare.com/articles/dataset/Diagnosis_Data_for_International_Electronic_Health_Record-Derived_COVID-19_Clinical_Course_Profile_The_4CE_Consortium/12152967?file=22346613
 
 WHO: 
 - https://www.who.int/standards/classifications/classification-of-diseases
@@ -34,5 +23,3 @@ BioPortal ICD10
 
 Wiki: 
 - https://en.wikipedia.org/wiki/ICD-10 
-
-
