@@ -1,13 +1,12 @@
 # ICD Background
 
 - The International Statistical Classification of Diseases and Related Health Problems (ICD) is a medical classification system developed and maintained by the World Health Organization (WHO). 
-- the world's standard tool to capture mortality and morbidity data
-- Used by physicians, researchers, policy-makers, insurers, and patient organizations
+- It is the world's standard tool to capture mortality and morbidity data
+- ICD has been used by physicians, researchers, policy-makers, insurers, and patient organizations
 
 ## Ontology Background
 
-- Ontology is the study or concern about what kinds of things exist - what entities or `things' there are in the universe
-- In this case, Ontology is a representation of entities and the relations among them in a specific domain
+Ontology is the study or concern about what kinds of things exist - what entities or things exist in the universe. In this case, ontology is a representation of entities and the relations among them in a specific domain. In the IT era, a modern formal ontology is human- and computer-interpretable. 
 
 
 ## Related web links:  
