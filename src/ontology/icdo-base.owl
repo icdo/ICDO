@@ -26,8 +26,8 @@
         <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
         <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
         <oboInOwl:created_by>Virginia He</oboInOwl:created_by>
-        <oboInOwl:creation_date>07-08-2021</oboInOwl:creation_date>
-        <owl:versionInfo>1.0.75</owl:versionInfo>
+        <oboInOwl:creation_date>09-27-2021</oboInOwl:creation_date>
+        <owl:versionInfo>1.0.77</owl:versionInfo>
     </owl:Ontology>
     
 
