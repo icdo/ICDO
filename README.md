@@ -1,3 +1,8 @@
+# Note:
+
+11/1/2022: The ICDO website was designated as obsolete. The ICDO is now renamed as OICD (Ontology of International Classification of Diseases). The GitHub website for OICD is here: 
+https://github.com/OICD-ontology/OICD . 
+
 # ICDO
 ICDO: International Classification of Diseases Ontology
 
