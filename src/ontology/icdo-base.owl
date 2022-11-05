@@ -26,8 +26,8 @@
         <oboInOwl:created_by>Ling Wan (Eric)</oboInOwl:created_by>
         <oboInOwl:created_by>Oliver He</oboInOwl:created_by>
         <oboInOwl:created_by>Virginia He</oboInOwl:created_by>
-        <oboInOwl:creation_date>09-27-2021</oboInOwl:creation_date>
-        <owl:versionInfo>1.0.77</owl:versionInfo>
+        <oboInOwl:creation_date>11-4-2022</oboInOwl:creation_date>
+        <owl:versionInfo>1.0.83</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -6189,7 +6189,7 @@ resistance</icdo:OS_000000000000004>
     <!-- http://purl.obolibrary.org/obo/ICDO_0000388 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICDO_0000388">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000189"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000180"/>
         <obo:IAO_0000115>upper respiratory system is infected in multiple sites and parts will become inflamed or damaged.</obo:IAO_0000115>
         <obo:IAO_0000117>Grace Whah</obo:IAO_0000117>
         <obo:IAO_0000119>https://www.healthline.com/health/acute-upper-respiratory-infection#:~:text=An%20acute%20URI%20is%20a,pharyngitis%2C%20epiglottitis%2C%20and%20tracheobronchitis.</obo:IAO_0000119>
@@ -17798,6 +17798,1147 @@ kidney</icdo:ICDO_0000014>
         <icdo:ICDO_0000014>lungs</icdo:ICDO_0000014>
         <oboInOwl:id>UBERON:0002048</oboInOwl:id>
         <rdfs:label xml:lang="en">New: Respiratory arrest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000158 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000158">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000189"/>
+        <obo:IAO_0000115>A condition in which the cavities around the nasal passages become inflamed.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/acute-sinusitis/symptoms-causes/syc-20351671</obo:IAO_0000119>
+        <obo:ICDO_0000039>J01</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Non-Billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Acute Sinusitis</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*acute sinusitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000159">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000178"/>
+        <obo:IAO_0000115>An infection that inflames the air sacs in one or both lungs caused by Parainfluenza virus</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J12-/J12.2</obo:IAO_0000119>
+        <obo:ICDO_0000039>J12.2</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <obo:UBPROP_0000013>https://www.mayoclinic.org/diseases-conditions/pneumonia/symptoms-causes/syc-20354204#:~:text=Pneumonia%20is%20an%20infection%20that,and%20fungi%2C%20can%20cause%20pneumonia.</obo:UBPROP_0000013>
+        <icdo:OS_000000000000004>Jennifer Odalys Roman</icdo:OS_000000000000004>
+        <icdo:OS_000000000000004>Parainfluenza virus pneumonia</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Parainfluenza virus pneumonia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000160">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000161"/>
+        <obo:IAO_0000115>a disease that attacks one or both lungs, virus is unspecified</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.healthline.com/health/pneumonia#:~:text=Pneumonia%20is%20an%20infection%20in,and%20how%20to%20treat%20it.</obo:IAO_0000119>
+        <obo:ICDO_0000039>J12.89</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lungs</icdo:ICDO_0000014>
+        <rdfs:label xml:lang="en">Other viral pneumonia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000161 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000161">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000182"/>
+        <obo:IAO_0000115>Pneumonia (infection that inflames the air sacs in the lungs) caused by Klebsiella pneumoniae bacteria</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J15-/J15.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>J15.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lung</icdo:ICDO_0000014>
+        <rdfs:label xml:lang="en">Pneumonia due to Klebsiella pneumoniae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000162 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000162">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000182"/>
+        <obo:IAO_0000115>Pneumonia (infection that inflames the air sacs in the lungs) caused by Pseudomonas bacteria</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J15-/J15.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>J15.1</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lung</icdo:ICDO_0000014>
+        <rdfs:label xml:lang="en">Pneumonia due to Pseudomonas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000163 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000163">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000182"/>
+        <obo:IAO_0000115>An infection that inflames the air sacs in one or both lungs caused by Escherichia coli bacteria</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J15-/J15.5</obo:IAO_0000119>
+        <obo:ICDO_0000039>J15.5</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <obo:UBPROP_0000013>https://www.mayoclinic.org/diseases-conditions/pneumonia/symptoms-causes/syc-20354204#:~:text=Pneumonia%20is%20an%20infection%20that,and%20fungi%2C%20can%20cause%20pneumonia.</obo:UBPROP_0000013>
+        <icdo:ICDO_0000014>lung</icdo:ICDO_0000014>
+        <rdfs:label xml:lang="en">Pneumonia due to Escherichia coli</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000164 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000164">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000183"/>
+        <obo:IAO_0000115>infection that inflames the air sacs in one or both lungs. The air sacs may fill with fluid or pus (purulent material), causing cough with phlegm or pus, fever, chills, and difficulty breathing.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J16-/J16.8</obo:IAO_0000119>
+        <obo:ICDO_0000039>J16.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lungs</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Pneumonia due to other specified infectious organisms</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Pneumonia due to other specified infectious organisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000189"/>
+        <obo:IAO_0000115>Pharyngitis, or acute pharyngitis, is an inflammation of the back of the throat, otherwise known as the pharynx. The condition generally causes pain and a sensation of scratchiness in the region of the throat, as well as difficulty swallowing. The condition is typically referred to as a sore throat.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J00-J06/J02-</obo:IAO_0000119>
+        <obo:ICDO_0000039>J02</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Non-Billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Acute pharyngitis</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Acute pharyngitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000166 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000166">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000189"/>
+        <obo:IAO_0000115>An inflammation of the two oval-shaped pads of tissue at the back of the throat.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/22338587/</obo:IAO_0000119>
+        <obo:ICDO_0000039>J03</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Non-Billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Acute tonsillitis</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Acute tonsillitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000167 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000167">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000189"/>
+        <obo:IAO_0000115>Laryngitis may cause sore throat and hoarse voice but can also be associated with tracheitis and even bronchiolitis as the pathogen, infection, and host responses move further down the respiratory tree.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J00-J06/J04-/J04</obo:IAO_0000119>
+        <obo:ICDO_0000039>J04</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Non-Billable</obo:ICDO_0000140>
+        <rdfs:label xml:lang="en">*Acute laryngitis and tracheitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000189"/>
+        <obo:IAO_0000115>Epiglottitis, acute laryngitis, and croup are infections of the upper airway, affecting the epiglottis, larynx, and larynx and trachea, respectively. Croup may also involve the bronchi.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J00-J06/J05-/J05</obo:IAO_0000119>
+        <obo:ICDO_0000039>J05</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Acute obstructive laryngitis [croup] and epiglottitis</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Acute obstructive laryngitis [croup] and epiglottitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000169">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000192"/>
+        <obo:IAO_0000115>(bron-kye-tis) inflammation (swelling and reddening) of the bronchi.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J40-J47/J40-/J40</obo:IAO_0000119>
+        <obo:ICDO_0000039>J40</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Bronchitis, not specified as acute or chronic</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Bronchitis, not specified as acute or chronic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000170 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000192"/>
+        <obo:IAO_0000115>Mucoid sputum production characterizes simple chronic bronchitis. Persistent or recurrent purulent sputum production in the absence of localized suppurative disease, such as bronchiectasis, characterizes chronic mucopurulent bronchitis</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J40-J47/J41-/J41</obo:IAO_0000119>
+        <obo:ICDO_0000039>J41</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Simple and mucopurulent chronic bronchitis</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Simple and mucopurulent chronic bronchitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000171 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000171">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000192"/>
+        <obo:IAO_0000115>A subcategory of chronic obstructive pulmonary disease. The disease is characterized by hypersecretion of mucus accompanied by a chronic (more than 3 months in 2 consecutive years) productive cough. Infectious agents are a major cause of chronic bronchitis.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J40-J47/J42-/J42</obo:IAO_0000119>
+        <obo:ICDO_0000039>J42</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Unspecified chronic bronchitis</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Unspecified chronic bronchitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000172 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000172">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000192"/>
+        <obo:IAO_0000115>A condition of the lung characterized by increase beyond normal in the size of air spaces distal to the terminal bronchioles, either from dilatation of the alveoli or from destruction of their walls.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J40-J47/J43-/J43</obo:IAO_0000119>
+        <obo:ICDO_0000039>J43</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Emphysema</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Emphysema</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000173 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000196"/>
+        <obo:IAO_0000115>contagious viral infection caused by rhinovirus that causes inflammation of the bronchial tubes</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J20-J22/J20-/J20.6</obo:IAO_0000119>
+        <obo:ICDO_0000039>J20.6</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>bronchial tubes</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Acute bronchitis due to rhinovirus</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Acute bronchitis due to rhinovirus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000192"/>
+        <obo:IAO_0000115>A chronic disease in which the bronchial airways in the lungs become narrowed and swollen, making it difficult to breathe. Symptoms include wheezing, coughing, tightness in the chest, shortness of breath, and rapid breathing. An attack may be brought on by pet hair, dust, smoke, pollen, mold, exercise, cold air, or stress.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J40-J47/J45-/J45</obo:IAO_0000119>
+        <obo:ICDO_0000039>J45</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Asthma</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Asthma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000175 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000175">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000162"/>
+        <obo:IAO_0000115>Influenza is a viral infection that attacks your respiratory system — your nose, throat and lungs.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J09-/J09</obo:IAO_0000119>
+        <obo:ICDO_0000039>J09</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Influenza due to certain identified influenza viruses</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Influenza due to certain identified influenza viruses</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000176 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000176">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000162"/>
+        <obo:IAO_0000115>Influenza, commonly known as &quot;the flu&quot;, is an infectious disease caused by an influenza virus. Symptoms can be mild to severe.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J10-/J10</obo:IAO_0000119>
+        <obo:ICDO_0000039>J10</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Influenza due to other identified influenza virus</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Influenza due to other identified influenza virus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000177 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000177">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000162"/>
+        <obo:IAO_0000115>Influenza due to unidentified influenza virus with other respiratory manifestations</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J11-/J11</obo:IAO_0000119>
+        <obo:ICDO_0000039>J11</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Influenza due to unidentified influenza virus</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Influenza due to unidentified influenza virus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000178">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000162"/>
+        <obo:IAO_0000115>Viral pneumonia is an infection of your lungs caused by a virus.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J12-/J12</obo:IAO_0000119>
+        <obo:ICDO_0000039>J12</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Viral pneumonia, not elsewhere classified</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Viral pneumonia, not elsewhere classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000179 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000162"/>
+        <obo:IAO_0000115>Pneumococcal disease is caused by common bacteria (Streptococcus pneumoniae) that can attack different parts of the body. When these bacteria invade the lungs, they can cause pneumonia; when they invade the bloodstream, they can cause sepsis; and when they invade the covering of the brain, they can cause meningitis.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J13-/J13</obo:IAO_0000119>
+        <obo:ICDO_0000039>J13</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Pneumonia due to Streptococcus pneumoniae</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Pneumonia due to Streptococcus pneumoniae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000180 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000189"/>
+        <obo:IAO_0000115>An acute URI is a contagious infection of your upper respiratory tract. Your upper respiratory tract includes the nose, throat, pharynx, larynx, and bronchi.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J00-J06/J06-/J06</obo:IAO_0000119>
+        <obo:ICDO_0000039>J06</obo:ICDO_0000039>
+        <icdo:OS_000000000000004>Acute upper respiratory infections of multiple and unspecified sites</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Acute upper respiratory infections of multiple and unspecified sites</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000181 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000162"/>
+        <obo:IAO_0000115>H. influenzae most often cause pneumonia, but can also cause severe illnesses like meningitis and bloodstream infections</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J14-/J14</obo:IAO_0000119>
+        <obo:ICDO_0000039>J14</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Pneumonia due to Hemophilus influenzae</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Pneumonia due to Hemophilus influenzae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000182 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000162"/>
+        <obo:IAO_0000115>Inflammation of the lung parenchyma that is caused by bacterial infections.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J15-/J15</obo:IAO_0000119>
+        <obo:ICDO_0000039>J15</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Bacterial pneumonia, not elsewhere classified</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Bacterial pneumonia, not elsewhere classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000183 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000183">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000162"/>
+        <obo:IAO_0000115>Pneumonia is an infection of one or both of the lungs caused by bacteria, viruses, or fungi.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J16-/J16</obo:IAO_0000119>
+        <obo:ICDO_0000039>J16</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Pneumonia due to other infectious organisms, not elsewhere classified</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Pneumonia due to other infectious organisms, not elsewhere classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000184 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000184">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000162"/>
+        <obo:IAO_0000115>Infection that inflames air sacs in one or both lungs, which may fill with fluid.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J09-J18/J17-/J17</obo:IAO_0000119>
+        <obo:ICDO_0000039>J17</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Pneumonia in diseases classified elsewhere</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Pneumonia in diseases classified elsewhere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000203"/>
+        <obo:IAO_0000115>A type of disease that affects the lungs and other parts of the respiratory system</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J60-J70/J70-/J70</obo:IAO_0000119>
+        <obo:ICDO_0000039>J70</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Respiratory conditions due to other external agents</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Respiratory conditions due to other external agents</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000186 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000186">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000203"/>
+        <obo:IAO_0000115>Pneumonitis (noo-moe-NIE-tis) is a general term that refers to inflammation of lung tissue</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J60-J70/J69-</obo:IAO_0000119>
+        <obo:ICDO_0000039>J69</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Pneumonitis due to solids and liquids</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Pneumonitis due to solids and liquids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000187 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000187">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000203"/>
+        <obo:IAO_0000115>Respiratory conditions due to inhalation of chemicals, gases, fumes and vapors</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennfer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J60-J70/J68-/J68</obo:IAO_0000119>
+        <obo:ICDO_0000039>J68</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Respiratory conditions due to inhalation of chemicals, gases, fumes and vapors</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Respiratory conditions due to inhalation of chemicals, gases, fumes and vapors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000188 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000188">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000203"/>
+        <obo:IAO_0000115>allergic alveolitis and pneumonitis due to inhaled organic dust and particles of fungal, actinomycetic or other origin</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J60-J70/J67-/J67</obo:IAO_0000119>
+        <obo:ICDO_0000039>J67</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Hypersensitivity pneumonitis due to organic dust</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Hypersensitivity pneumonitis due to organic dust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000189 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000189">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000203"/>
+        <obo:IAO_0000115>Pneumoconiosis is one of a group of interstitial lung disease caused by breathing in certain kinds of dust particles that damage your lungs.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J60-J70/J66-/J66</obo:IAO_0000119>
+        <obo:ICDO_0000039>J66</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Airway disease due to specific organic dust</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Airway disease due to specific organic dust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000190 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000190">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000203"/>
+        <obo:IAO_0000115>Pneumoconiosis is one of a group of interstitial lung disease caused by breathing in certain kinds of dust particles that damage your lungs</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J60-J70/J65-/J65</obo:IAO_0000119>
+        <obo:ICDO_0000039>J65</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Pneumoconiosis associated with tuberculosis</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Pneumoconiosis associated with tuberculosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000191 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000191">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000203"/>
+        <obo:IAO_0000115>A diffuse parenchymal lung disease caused by inhalation of dust and by tissue reaction to their presence. These inorganic, organic, particulate, or vaporized matters usually are inhaled by workers in their occupational environment, leading to the various forms (asbestosis; byssinosis; and others). Similar air pollution can also have deleterious effects on the general population.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J60-J70/J64-/J64</obo:IAO_0000119>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>J64</icdo:OS_000000000000004>
+        <icdo:OS_000000000000004>Unspecified pneumoconiosis</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Unspecified pneumoconiosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000192 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000192">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000203"/>
+        <obo:IAO_0000115>Pneumoconiosis literally means “dust in the lung,” and the term has come to refer to disease of the lung related to the inhalation of dusts.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J60-J70/J63-/J63</obo:IAO_0000119>
+        <obo:ICDO_0000039>J63</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Pneumoconiosis due to other inorganic dusts</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Pneumoconiosis due to other inorganic dusts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000193 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000193">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000203"/>
+        <obo:IAO_0000115>A form of pneumoconiosis resulting from inhalation of dust containing crystalline form of silicon dioxide, usually in the form of quartz. Amorphous silica is relatively nontoxic.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J60-J70/J62-/J62</obo:IAO_0000119>
+        <obo:ICDO_0000039>J62</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Pneumoconiosis due to dust containing silica</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Pneumoconiosis due to dust containing silica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000194 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000194">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000203"/>
+        <obo:IAO_0000115>A form of pneumoconiosis caused by inhalation of asbestos fibers which elicit potent inflammatory responses in the parenchyma of the lung. The disease is characterized by interstitial fibrosis of the lung, varying from scattered sites to extensive scarring of the alveolar interstitium.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J60-J70/J61-/J61</obo:IAO_0000119>
+        <obo:ICDO_0000039>J61</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Pneumoconiosis due to asbestos and other mineral fibers</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Pneumoconiosis due to asbestos and other mineral fibers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000195 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000195">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000203"/>
+        <obo:IAO_0000115>A chronic lung disorder characterized by deposition of coal dust in the lung parenchyma leading to the formation of black nodules and emphysema. It occurs in coal miners.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J60-J70/J60-/J60</obo:IAO_0000119>
+        <obo:ICDO_0000039>J60</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Coalworker&apos;s pneumoconiosis</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Coalworker&apos;s pneumoconiosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000196 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000190"/>
+        <obo:IAO_0000115>Bronchitis is an inflammation of the bronchial tubes, the airways that carry air to your lungs. It causes a cough that often brings up mucus, as well as shortness of breath, wheezing, and chest tightness.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J20-J22/J20-/J20</obo:IAO_0000119>
+        <obo:ICDO_0000039>J20</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Acute bronchitis</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Acute bronchitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000197 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000197">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000190"/>
+        <obo:IAO_0000115>Bronchiolitis is an acute inflammatory injury of the bronchioles that is usually caused by a viral infection (most commonly respiratory syncytial virus)</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J20-J22/J21-/J21</obo:IAO_0000119>
+        <obo:ICDO_0000039>J21</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Acute bronchiolitis</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Acute bronchiolitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000198 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000198">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000210"/>
+        <obo:IAO_0000115>Pleural plaques are deposits of hyalinized collagen fibers in the parietal pleura.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J90-J94/J92-/J92</obo:IAO_0000119>
+        <obo:ICDO_0000039>J92</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Pleural plaque</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Pleural plaque</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000199 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000199">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000210"/>
+        <obo:IAO_0000115>The most frequent air leak, called a pneumothorax, is when the air collects between the lung and the chest wall.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J90-J94/J93-/J93</obo:IAO_0000119>
+        <obo:ICDO_0000039>J93</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Pneumothorax and air leak</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Pneumothorax and air leak</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000200 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000200">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000210"/>
+        <obo:IAO_0000115>There are three types of pleural disorders—pleurisy, pleural effusion, and pneumothorax—and they have varying causes.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J90-J94/J94-/J94</obo:IAO_0000119>
+        <obo:ICDO_0000039>J94</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Other pleural conditions</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Other pleural conditions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000201 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000201">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000214"/>
+        <obo:IAO_0000115>Respiratory disorders, or lung diseases, are disorders such as asthma, cystic fibrosis, emphysema, lung cancer, mesothelioma, pulmonary hypertension, and tuberculosis.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J96-J99/J99-/J99</obo:IAO_0000119>
+        <obo:ICDO_0000039>J99</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Respiratory disorders in diseases classified elsewhere</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Respiratory disorders in diseases classified elsewhere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000202 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000202">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000214"/>
+        <obo:IAO_0000115>Respiratory disorders, or lung diseases, are disorders such as asthma, cystic fibrosis, emphysema, lung cancer, mesothelioma, pulmonary hypertension, and tuberculosis.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J96-J99/J98-/J98</obo:IAO_0000119>
+        <obo:ICDO_0000039>J98</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Other respiratory disorders</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Other respiratory disorders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000203">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000214"/>
+        <obo:IAO_0000115>When a person has acute respiratory failure, the usual exchange between oxygen and carbon dioxide in the lungs does not occur.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J96-J99/J96-/J96</obo:IAO_0000119>
+        <obo:ICDO_0000039>J96</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Respiratory failure, not elsewhere classified</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Respiratory failure, not elsewhere classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000204">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000205"/>
+        <obo:IAO_0000115>Simple pulmonary eosinophilia (SPE), also known as Loeffler syndrome, is a rare, temporary (transient) respiratory disorder characterized by the accumulation of eosinophils in the lungs (pulmonary eosinophilia). Eosinophils are a type of white blood cell and are part of the immune system.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J80-J84/J82-/J82</obo:IAO_0000119>
+        <obo:ICDO_0000039>J82</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Pulmonary eosinophilia, not elsewhere classified</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Pulmonary eosinophilia, not elsewhere classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000205 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000205">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000205"/>
+        <obo:IAO_0000115>Interstitial pneumonia, Idiopathic pulmonary fibrosis, Nonspecific interstitial pneumonitis</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J80-J84/J84-/J84</obo:IAO_0000119>
+        <obo:ICDO_0000039>J84</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:OS_000000000000004>Other interstitial pulmonary diseases</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">*Other interstitial pulmonary diseases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000206 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000206">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000197"/>
+        <obo:IAO_0000115>an acute inflammatory injury of the bronchioles that is usually caused by a viral infection</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://emedicine.medscape.com/article/961963-overview#:~:text=Bronchiolitis%20is%20an%20acute%20inflammatory,seen%20in%20the%20image%20below.</obo:IAO_0000119>
+        <obo:ICDO_0000039>J21.9</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>bronchioles</icdo:ICDO_0000014>
+        <rdfs:label xml:lang="en">Acute bronchiolitis, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000207 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000207">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000172"/>
+        <obo:IAO_0000115>A condition of the lung characterized by increase beyond normal in the size of air spaces distal to the terminal bronchioles, either from dilatation of the alveoli or from destruction of their walls.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J40-J47/J43-/J43.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>J43.9</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lung</icdo:ICDO_0000014>
+        <rdfs:label xml:lang="en">Emphysema, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000208 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000208">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000174"/>
+        <obo:IAO_0000115>Nonallergic asthma (a condition in which your airways narrow and swell)</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.who.int/browse10/2016/en#/J45.1</obo:IAO_0000119>
+        <obo:ICDO_0000039>J45.1</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>respiratory system</icdo:ICDO_0000014>
+        <rdfs:label xml:lang="en">Nonallergic asthma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000209 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000209">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000174"/>
+        <obo:IAO_0000115>Asthma symptoms (airway swelling) occuring fewer than three times a week</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J40-J47/J45-/J45.20</obo:IAO_0000119>
+        <obo:ICDO_0000039>J45.20</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>respiratory system</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Mild intermittent asthma, uncomplicated</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Mild intermittent asthma, uncomplicated</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000210 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000210">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000142"/>
+        <obo:IAO_0000115>complications/disorders of the respiratory system that occur during or after a procedure/operation</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J95-J95/J95-/J95</obo:IAO_0000119>
+        <obo:ICDO_0000039>J95</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>respiratory system</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Intraoperative and postprocedural complications and disorders of respiratory system, not elsewhere classified</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Intraoperative and postprocedural complications and disorders of respiratory system, not elsewhere classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000211 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000211">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000202"/>
+        <obo:IAO_0000115>disease of the bronchus</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J96-J99/J98-/J98.0</obo:IAO_0000119>
+        <obo:ICDO_0000039>J98.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>bronchus</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Diseases of bronchus, not elsewhere classified</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Diseases of bronchus, not elsewhere classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000212 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000202"/>
+        <obo:IAO_0000115>Respiratory tract infections not specified as acute, chronic, lower, or upper</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.who.int/browse10/2019/en#/J98.7</obo:IAO_0000119>
+        <obo:ICDO_0000039>J98.7</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>respiratory system</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Respiratory infection, not elsewhere classified</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Respiratory infection, not elsewhere classified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000213 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000213">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000201"/>
+        <obo:IAO_0000115>respiratory disorder as a result of another disorder found elsewhere in the body</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.who.int/browse10/2016/en#/J99.8</obo:IAO_0000119>
+        <obo:ICDO_0000039>J99.8</obo:ICDO_0000039>
+        <icdo:ICDO_0000014>respiratory system</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Respiratory disorders in other diseases classified elsewhere</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Respiratory disorders in other diseases classified elsewhere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000214 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000214">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000158"/>
+        <obo:IAO_0000115>facial pain, localized to the cheek, but also in the frontal area or the teeth, that is made worse by stooping down or straining. The pain can be unilateral or bilateral, and tenderness may overlie the sinus.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.sciencedirect.com/topics/medicine-and-dentistry/maxilla-sinusitis#:~:text=Acute%20maxillary%20sinusitis%20is%20characterized,tenderness%20may%20overlie%20the%20sinus.</obo:IAO_0000119>
+        <obo:ICDO_0000039>J01.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Non-Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>sinuses</icdo:ICDO_0000014>
+        <rdfs:label xml:lang="en">Acute maxillary sinusitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000215 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000215">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000214"/>
+        <obo:IAO_0000115>Acute sinusitis causes the spaces inside your nose (sinuses) to become inflamed and swollen.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/acute-sinusitis/symptoms-causes/syc-20351671</obo:IAO_0000119>
+        <obo:ICDO_0000039>J01.00</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>sinuses</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Acute maxillary sinusitis, unspecified</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Acute maxillary sinusitis, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000216 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000216">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000158"/>
+        <obo:IAO_0000115>Acute frontal sinusitis (AFrS) is defined as an acute bacterial infection of the frontal sinus cavity.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://emedicine.medscape.com/article/862292-overview</obo:IAO_0000119>
+        <obo:ICDO_0000039>J01.10</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>sinuses</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Acute frontal sinusitis, unspecified</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Acute frontal sinusitis, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000217 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000217">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000158"/>
+        <obo:IAO_0000115>Acute sinusitis causes the spaces inside your nose (sinuses) to become inflamed and swollen</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/acute-sinusitis/symptoms-causes/syc-20351671</obo:IAO_0000119>
+        <obo:ICDO_0000039>J01.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>Non-Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>sinuses</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Other acute sinusitis</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Other acute sinusitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000218 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000218">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000158"/>
+        <obo:IAO_0000115>Acute sinusitis is most often caused by the common cold. Signs and symptoms may include a blocked and stuffy (congested) nose, which may block your sinuses and prevent drainage of mucus.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/acute-sinusitis/symptoms-causes/syc-20351671#:~:text=Acute%20sinusitis%20is%20most%20often,an%20infection%20with%20a%20virus.</obo:IAO_0000119>
+        <obo:ICDO_0000039>J01.90</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>sinuses</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Acute sinusitis, unspecified</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Acute sinusitis, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000219">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000165"/>
+        <obo:IAO_0000115>Strep throat is caused by infection with a bacterium known as Streptococcus pyogenes, also called group A streptococcus</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/strep-throat/symptoms-causes/syc-20350338</obo:IAO_0000119>
+        <obo:ICDO_0000039>J02.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>throat</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Streptococcal pharyngitis</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Streptococcal pharyngitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000220 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000220">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000165"/>
+        <obo:IAO_0000115>Acute pharyngitis is characterized by the rapid onset of sore throat and pharyngeal inflammation (with or without exudate)</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://bestpractice.bmj.com/topics/en-us/5#:~:text=Definition,%2C%20rather%20than%20viral%2C%20etiology.</obo:IAO_0000119>
+        <obo:ICDO_0000039>J02.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <rdfs:label xml:lang="en">Acute pharyngitis due to other specified organisms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000221 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000221">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000166"/>
+        <obo:IAO_0000115>An acute inflammation of the tonsils caused by viruses or bacteria. Signs and symptoms include fever, enlargement of the tonsils, difficulty swallowing, and enlargement of the regional lymph nodes.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.icd10data.com/ICD10CM/Codes/J00-J99/J00-J06/J03-/J03.9</obo:IAO_0000119>
+        <obo:ICDO_0000039>J03.9</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>tonsils</icdo:ICDO_0000014>
+        <rdfs:label xml:lang="en">Acute tonsillitis, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000222 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000222">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000167"/>
+        <obo:IAO_0000115>Acute laryngitis is characterized by inflammation and congestion of the larynx in the early stages</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/books/NBK534871/</obo:IAO_0000119>
+        <obo:ICDO_0000039>J04.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>larynx</icdo:ICDO_0000014>
+        <rdfs:label xml:lang="en">Acute laryngitis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000223 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000223">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000176"/>
+        <obo:IAO_0000115>Influenza is a common cause of pneumonia, especially among younger children, the elderly, pregnant women, or those with certain chronic health conditions or who live in a nursing home</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.lung.org/lung-health-diseases/lung-disease-lookup/pneumonia/what-is-the-connection</obo:IAO_0000119>
+        <obo:ICDO_0000039>J10.08</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lung</icdo:ICDO_0000014>
+        <rdfs:label xml:lang="en">Influenza due to other identified influenza virus with other specified pneumonia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000224">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000176"/>
+        <obo:IAO_0000115>Influenza is a common cause of pneumonia, especially among younger children, the elderly, pregnant women, or those with certain chronic health conditions or who live in a nursing home</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://icd.who.int/browse10/2019/en#/J10.8</obo:IAO_0000119>
+        <obo:ICDO_0000039>J10.8</obo:ICDO_0000039>
+        <obo:ICDO_0000140>non-billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>upper respiratory</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Influenza due to other identified influenza virus with other manifestations</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Influenza due to other identified influenza virus with other manifestations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000177"/>
+        <obo:IAO_0000115>Flu (influenza) is an infection of the nose, throat and lungs, which are part of the respiratory system. Influenza is commonly called the flu, but it&apos;s not the same as stomach &quot;flu&quot; viruses that cause diarrhea and vomiting</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.mayoclinic.org/diseases-conditions/flu/symptoms-causes/syc-20351719</obo:IAO_0000119>
+        <obo:ICDO_0000039>J11.00</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>throat</icdo:ICDO_0000014>
+        <rdfs:label xml:lang="en">Influenza due to unidentified influenza virus with unspecified type of pneumonia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000226">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000178"/>
+        <obo:IAO_0000115>Adenovirus pneumonia occasionally occurs in immunocompromised hosts and is characterized by rapid clinical deterioration compared to other viral pneumonias with a reported fatality rate of 50%.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5241922/#:~:text=Adenovirus%20pneumonia%20occasionally%20occurs%20in,immunocompetent%20hosts%20is%20very%20rare.</obo:IAO_0000119>
+        <obo:ICDO_0000039>J12.0</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>respiratory tract</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Adenoviral pneumonia</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Adenoviral pneumonia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000178"/>
+        <obo:IAO_0000115>RSV is the most common cause of bronchiolitis (inflammation of the small airways in the lung) and pneumonia (infection of the lungs) in children younger than 1 year of age in the United States.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.cdc.gov/rsv/index.html#:~:text=RSV%20is%20the%20most%20common,age%20in%20the%20United%20States.&amp;text=Know%20the%20symptoms%20to%20look,care%20for%20people%20with%20RSV.&amp;text=RSV%20can%20be%20dangerous%20for%20some%20infants%20and%20young%20children.</obo:IAO_0000119>
+        <obo:ICDO_0000006>J12.1</obo:ICDO_0000006>
+        <obo:ICDO_0000140>Billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lung</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Respiratory syncytial virus pneumonia</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Respiratory syncytial virus pneumonia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000228 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000228">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000178"/>
+        <obo:IAO_0000115>Human metapneumovirus is a negative-sense single-stranded RNA virus of the family Pneumoviridae and is closely related to the Avian metapneumovirus subgroup C.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.cdc.gov/surveillance/nrevss/hmpv/clinical.html</obo:IAO_0000119>
+        <obo:ICDO_0000039>J12.3</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>upper and lower respiratory tract</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Human metapneumovirus pneumonia</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Human metapneumovirus pneumonia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000230">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICDO_0000171"/>
+        <obo:IAO_0000115>MSSA, or methicillin-susceptible Staphylococcus aureus, is an infection caused by a type of bacteria commonly found on the skin.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.healthline.com/health/mssa</obo:IAO_0000119>
+        <obo:ICDO_0000039>J15.211</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lung</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Pneumonia due to Methicillin susceptible Staphylococcus aureus</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Pneumonia due to Methicillin susceptible Staphylococcus aureus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000231">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000182"/>
+        <obo:IAO_0000115>Group B (i.e.,Streptococcus agalactiae) streptococci are a major cause of neonatal sepsis and pneumonia. In adults, pneumonia accounts for approximately 15% of adult infections by group B streptococci. Most adults with group B streptococcal pneumonia are debilitated and develop pneumonia as a consequence of aspiration.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.sciencedirect.com/topics/medicine-and-dentistry/group-b-streptococcal-pneumonia#:~:text=Group%20B%20(i.e.%2CStreptococcus%20agalactiae,infections%20by%20group%20B%20streptococci.&amp;text=Most%20adults%20with%20group%20B,as%20a%20consequence%20of%20aspiration.</obo:IAO_0000119>
+        <obo:ICDO_0000006>J15.3</obo:ICDO_0000006>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>lung</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Pneumonia due to streptococcus, group B</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Pneumonia due to streptococcus, group B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000232 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000232">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000182"/>
+        <obo:IAO_0000115>Streptococcus pneumoniae is a gram-positive, lancet-shaped bacterium and a cause of community-acquired pneumonia.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/books/NBK470537/</obo:IAO_0000119>
+        <obo:ICDO_0000039>J15.4</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>respiratory tract</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Pneumonia due to other streptococci</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Pneumonia due to other streptococci</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000233">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/icdo.owl/ICDO_0000182"/>
+        <obo:IAO_0000115>Pneumonia is inflamed or swollen lung tissue due to infection with a germ. Mycoplasma pneumonia is caused by the bacteria Mycoplasma pneumoniae (M pneumoniae). This type of pneumonia is also called atypical pneumonia because the symptoms are different from those of pneumonia due to other common bacteria.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jennifer Odalys Roman</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.mountsinai.org/health-library/diseases-conditions/mycoplasma-pneumonia#:~:text=Pneumonia%20is%20inflamed%20or%20swollen,due%20to%20other%20common%20bacteria.</obo:IAO_0000119>
+        <obo:ICDO_0000039>J15.7</obo:ICDO_0000039>
+        <obo:ICDO_0000140>billable</obo:ICDO_0000140>
+        <icdo:ICDO_0000014>respiratory tract</icdo:ICDO_0000014>
+        <icdo:OS_000000000000004>Pneumonia due to Mycoplasma pneumoniae</icdo:OS_000000000000004>
+        <rdfs:label xml:lang="en">Pneumonia due to Mycoplasma pneumoniae</rdfs:label>
     </owl:Class>
     
 
