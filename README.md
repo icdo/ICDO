@@ -1,12 +1,7 @@
-# Note:
-
-11/1/2022: The ICDO website was designated as obsolete. The ICDO is now renamed as OICD (Ontology of International Classification of Diseases). The GitHub website for OICD is here: 
-https://github.com/OICD-ontology/OICD . 
-
 # ICDO
 ICDO: International Classification of Diseases Ontology
 
-ICDO is an ontology representation of the ICD system, which includes ICD-10, ICD-9, and the future ICD-11. The ICD ontology (ICDO) logically represent ICD terms and their relations with anatomic entities, qualities, etc. Different from other disease ontologies, all ICD diseases are defined as disease processes in ICDO. The current ICDO focuses on English and Chinese representation. ICDO can identify and standardize local ICD versions and will be used to integrate ICD related data. 
+ICDO is an ontology representation of the ICD system, which includes ICD-10 and ICD-9. The ICD ontology (ICDO) logically represent ICD terms and their relations with anatomic entities, qualities, etc. Different from other disease ontologies, all ICD diseases are defined as disease processes in ICDO. The current ICDO focuses on English and Chinese representation. ICDO can identify and standardize local ICD versions and will be used to integrate ICD related data. 
 
 The ICDO developers include Dr. Ling (Eric) Wan, Justin Song, Virginia He, Jennifer Roman, Grace Whah, Edison Ong, and Yongqun (Oliver) He. We appreciate the support by Ms. Meiu Wong, Dr. Xubin Song, and many other. More collaborations are welcome! Thanks! 
 
