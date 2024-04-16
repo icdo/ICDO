@@ -21,6 +21,8 @@ Currently we have two use cases. One use case is on the COVID-19 diagnosis data 
 ## Source codes:
 https://raw.githubusercontent.com/icdo/ICDO/master/src/ontology/icdo.owl
 
+(License: http://creativecommons.org/licenses/by/4.0/ )
+
 ## Depositions:
 - BioPortal: https://bioportal.bioontology.org/ontologies/ICDO 
 - Ontobee: http://www.ontobee.org/ontology/ICDO  
