@@ -28,6 +28,7 @@
         <oboInOwl:created_by>Virginia He</oboInOwl:created_by>
         <oboInOwl:creation_date>11-4-2022</oboInOwl:creation_date>
         <owl:versionInfo>1.0.83</owl:versionInfo>
+        <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
     </owl:Ontology>
     
 
